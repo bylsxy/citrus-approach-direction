@@ -1,0 +1,36 @@
+{
+  "capture_mode": "manual_cockpit_enter",
+  "input_contract": "RGB-D images plus base-frame camera 6D pose",
+  "auxiliary_channels": [
+    "joint_states",
+    "realsense_gyro",
+    "realsense_accel"
+  ],
+  "imu_required": true,
+  "imu_role": "raw motion/stability audit; no magnetometer or absolute camera heading is inferred",
+  "pose_provenance": "TF lookup at RGB timestamp; TF is produced from the installed eye-in-hand calibration and robot state",
+  "pose_parent_frame": "elfin_base_link",
+  "pose_child_frame": "camera_color_optical_frame",
+  "class_names": {
+    "0": "citrus",
+    "1": "tree"
+  },
+  "semantic_class_names": {
+    "0": "citrus",
+    "1": "tree"
+  },
+  "semantic_classes_available": [
+    "citrus",
+    "tree"
+  ],
+  "semantic_ooi_gap": "verified model classes do not include fruit_stem, petiole; no fruit-stem/petiole label is inferred from another class",
+  "semantic_instance_ids_available": true,
+  "sample_recommendation": {
+    "pilot_batches": 2,
+    "engineering_minimum_batches": 18,
+    "trend_minimum_batches": 24,
+    "formal_target_independent_scenes": "10-12"
+  },
+  "scene_id": "0",
+  "scene_notes": ""
+}

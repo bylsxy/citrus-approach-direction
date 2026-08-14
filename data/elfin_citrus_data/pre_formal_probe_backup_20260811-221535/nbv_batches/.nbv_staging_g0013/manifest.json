@@ -1,0 +1,2501 @@
+{
+  "schema_version": 2,
+  "kind": "semantic_nbv_rgbd_view_batch",
+  "complete": true,
+  "created_at": "2026-08-09T09:23:19",
+  "scene_id": "probe_L01R1",
+  "scene_notes": "",
+  "group_number": 13,
+  "max_views": 10,
+  "view_count": 10,
+  "archive_path": "semantic_nbv_batch_20260809-092319_g0013.zip",
+  "views": [
+    {
+      "index": 1,
+      "stamp_sec": 1786267383.3673089,
+      "wall_time": "2026-08-09T09:23:03.441",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9518913007577905,
+          0.01887383521770511,
+          -0.3058540990175163,
+          -0.18643056118751267
+        ],
+        [
+          0.3063804385708444,
+          -0.03963163796705316,
+          0.9510837818684459,
+          -0.04039336744124879
+        ],
+        [
+          0.005829099654215408,
+          -0.9990360912480707,
+          -0.0435075853271345,
+          0.6938856992505775
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7132724969623214,
+        0.11400071167035711,
+        -0.10515792167130886,
+        -0.6835115517108261
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.157809020232633,
+          -0.30158005335099486,
+          -1.9346976720131253,
+          1.6361034704989463,
+          2.4057455818495384,
+          -1.0538286641033057
+        ],
+        "velocities_rad_s": [
+          0.0,
+          -0.0003561094632272886,
+          0.0003561094632272886,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "efforts": [
+          3.7831831888665985,
+          -4.380527902898167,
+          15.194382020546215,
+          -3.11580998396011,
+          0.6828147642730383,
+          1.4288531178306172
+        ],
+        "stamp_sec": 1786267383.3693113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 803,
+          "stamp_sec": 1786267383.3673089,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3",
+        "inference_ms": 70.62574768066406,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.42775390625,
+      "sync": {
+        "rgb_stamp_sec": 1786267383.3673089,
+        "depth_stamp_sec": 1786267383.3673089,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267383.3673089,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267383.233857,
+        "target_color_delta_s": 0.1334519386291504,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267383.233857,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267383.233857,
+          "confidence": 1786267383.233857,
+          "instances": 1786267383.233857
+        },
+        "imu_sample_counts": {
+          "gyro": 61,
+          "accel": 31
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267383.3673089,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.054246232990408316,
+        "semantic_arrival_age_s": 0.05343137099407613,
+        "raw_arrival_age_s": 0.0421318489825353,
+        "color_arrival_age_s": 0.04073859698837623,
+        "depth_arrival_age_s": 0.0421318489825353,
+        "camera_info_arrival_age_s": 0.041028145991731435,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.047157408989733085,
+        "joint_stamp_delta_s": 0.0020024776458740234,
+        "target_timing": {
+          "result_frame_delta_s": 0.1334519386291504,
+          "result_arrival_age_s": 0.054246232990408316
+        }
+      },
+      "detections_file": "views/view_001/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 144497,
+      "semantic_label_histogram": {
+        "0": 162703,
+        "1": 5735,
+        "2": 138762
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 61,
+        "accel": 31
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_001/color.png",
+        "depth_mm": "views/view_001/depth_mm.png",
+        "depth_raw": "views/view_001/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_001/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_001/semantic_confidence.npy",
+        "instance_ids": "views/view_001/instance_ids.png",
+        "detections": "views/view_001/detections.json",
+        "pose": "views/view_001/pose.json",
+        "imu": "views/view_001/imu.json"
+      }
+    },
+    {
+      "index": 2,
+      "stamp_sec": 1786267384.4349139,
+      "wall_time": "2026-08-09T09:23:04.491",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9517496743533967,
+          0.04750635019042068,
+          -0.303176028174703,
+          -0.18423198806001392
+        ],
+        [
+          0.30682331036366706,
+          -0.12909673385092768,
+          0.9429705666278793,
+          -0.046544026029053186
+        ],
+        [
+          0.005658054938232515,
+          -0.990493402300393,
+          -0.13744383003142802,
+          0.6986176053963112
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.744696304289173,
+        0.11895106608075118,
+        -0.09987896593054293,
+        -0.6490780364621246
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.1961955605057193,
+          -0.2657996666999011,
+          -1.8395628604208725,
+          1.7171310695422126,
+          2.440618964389973,
+          -1.0289142911149143
+        ],
+        "velocities_rad_s": [
+          -0.0007122189264545771,
+          0.0003561094632272886,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "efforts": [
+          5.535394350025865,
+          -2.8274316464160894,
+          20.61819940003233,
+          0.38466789925433453,
+          1.8650958838939473,
+          1.4920767071151577
+        ],
+        "stamp_sec": 1786267384.4293113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 819,
+          "stamp_sec": 1786267384.4349139,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4",
+        "inference_ms": 71.82801055908203,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.4308854166666667,
+      "sync": {
+        "rgb_stamp_sec": 1786267384.4349139,
+        "depth_stamp_sec": 1786267384.4349139,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267384.4349139,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267384.3014655,
+        "target_color_delta_s": 0.13344836235046387,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267384.3014655,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267384.3014655,
+          "confidence": 1786267384.3014655,
+          "instances": 1786267384.3014655
+        },
+        "imu_sample_counts": {
+          "gyro": 60,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267384.4349139,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.08497451298171654,
+        "semantic_arrival_age_s": 0.08260293398052454,
+        "raw_arrival_age_s": 0.027514724002685398,
+        "color_arrival_age_s": 0.027514724002685398,
+        "depth_arrival_age_s": 0.02727635100018233,
+        "camera_info_arrival_age_s": 0.027200343000004068,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.055432274006307125,
+        "joint_stamp_delta_s": 0.005602598190307617,
+        "target_timing": {
+          "result_frame_delta_s": 0.13344836235046387,
+          "result_arrival_age_s": 0.08497451298171654
+        }
+      },
+      "detections_file": "views/view_002/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 158321,
+      "semantic_label_histogram": {
+        "0": 148879,
+        "1": 8489,
+        "2": 149832
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 60,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_002/color.png",
+        "depth_mm": "views/view_002/depth_mm.png",
+        "depth_raw": "views/view_002/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_002/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_002/semantic_confidence.npy",
+        "instance_ids": "views/view_002/instance_ids.png",
+        "detections": "views/view_002/detections.json",
+        "pose": "views/view_002/pose.json",
+        "imu": "views/view_002/imu.json"
+      }
+    },
+    {
+      "index": 3,
+      "stamp_sec": 1786267385.9028835,
+      "wall_time": "2026-08-09T09:23:05.953",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9766330893524865,
+          0.035009292337398315,
+          -0.21204282169376254,
+          -0.1972048234828447
+        ],
+        [
+          0.21483868440084353,
+          -0.13300749811585955,
+          0.967550177060536,
+          -0.05169367581018028
+        ],
+        [
+          0.005669961792899164,
+          -0.9904965193755072,
+          -0.1374208740995082,
+          0.6985820258006987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7495101011947842,
+        0.08333709848671933,
+        -0.06883592004654313,
+        -0.653108872494263
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.106681706361155,
+          -0.19892769172801147,
+          -1.7867212091094677,
+          1.734706825283609,
+          2.4442009424240614,
+          -1.006018963383845
+        ],
+        "velocities_rad_s": [
+          -0.0003561094632272886,
+          0.0,
+          0.0,
+          0.0,
+          -0.0003561094632272886,
+          0.0
+        ],
+        "efforts": [
+          -4.69911175038167,
+          -6.132739064057433,
+          19.521895887157477,
+          0.846269378359536,
+          1.4920767071151577,
+          1.0558339410518278
+        ],
+        "stamp_sec": 1786267385.9093113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 841,
+          "stamp_sec": 1786267385.9028835,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4",
+        "inference_ms": 84.51014709472656,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.43742513020833335,
+      "sync": {
+        "rgb_stamp_sec": 1786267385.9028835,
+        "depth_stamp_sec": 1786267385.9028835,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267385.9028835,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267385.7694304,
+        "target_color_delta_s": 0.1334531307220459,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267385.7694304,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267385.7694304,
+          "confidence": 1786267385.7694304,
+          "instances": 1786267385.7694304
+        },
+        "imu_sample_counts": {
+          "gyro": 58,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267385.9028835,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.06914345899713226,
+        "semantic_arrival_age_s": 0.06766275799600407,
+        "raw_arrival_age_s": 0.024480805004714057,
+        "color_arrival_age_s": 0.024480805004714057,
+        "depth_arrival_age_s": 0.024139436980476603,
+        "camera_info_arrival_age_s": 0.024095044005662203,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.03742262799642049,
+        "joint_stamp_delta_s": 0.006427764892578125,
+        "target_timing": {
+          "result_frame_delta_s": 0.1334531307220459,
+          "result_arrival_age_s": 0.06914345899713226
+        }
+      },
+      "detections_file": "views/view_003/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 145897,
+      "semantic_label_histogram": {
+        "0": 161303,
+        "1": 10080,
+        "2": 135817
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 58,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_003/color.png",
+        "depth_mm": "views/view_003/depth_mm.png",
+        "depth_raw": "views/view_003/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_003/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_003/semantic_confidence.npy",
+        "instance_ids": "views/view_003/instance_ids.png",
+        "detections": "views/view_003/detections.json",
+        "pose": "views/view_003/pose.json",
+        "imu": "views/view_003/imu.json"
+      }
+    },
+    {
+      "index": 4,
+      "stamp_sec": 1786267387.3708444,
+      "wall_time": "2026-08-09T09:23:07.442",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.992749637016316,
+          0.022139951648958184,
+          -0.1181438984668892,
+          -0.21072373468548816
+        ],
+        [
+          0.12006376528509063,
+          -0.1357811376248541,
+          0.9834369196500947,
+          -0.05559980598010197
+        ],
+        [
+          0.00573153291358397,
+          -0.9904914463064696,
+          -0.13745488104894021,
+          0.6985326149219984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7526595781267404,
+        0.047233745424147044,
+        -0.03733838447790705,
+        -0.6556511456471696
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.0220251416297161,
+          -0.1330144547485503,
+          -1.7307593877177536,
+          1.7491989568978727,
+          2.453854294913172,
+          -0.9876083461926062
+        ],
+        "velocities_rad_s": [
+          0.0010683283896818657,
+          0.0,
+          0.0003561094632272886,
+          0.0007122189264545771,
+          0.0,
+          0.0
+        ],
+        "efforts": [
+          -4.858403674123421,
+          -8.004419168023013,
+          19.598829467008347,
+          0.7501024035459524,
+          1.631168603541147,
+          0.9546761981965628
+        ],
+        "stamp_sec": 1786267387.3693113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 863,
+          "stamp_sec": 1786267387.3708444,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5",
+        "inference_ms": 61.849666595458984,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.4602506510416667,
+      "sync": {
+        "rgb_stamp_sec": 1786267387.3708444,
+        "depth_stamp_sec": 1786267387.3708444,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267387.3708444,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267387.2373905,
+        "target_color_delta_s": 0.1334538459777832,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267387.2373905,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267387.2373905,
+          "confidence": 1786267387.2373905,
+          "instances": 1786267387.2373905
+        },
+        "imu_sample_counts": {
+          "gyro": 60,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267387.3708444,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.11221448500873521,
+        "semantic_arrival_age_s": 0.11106750799808651,
+        "raw_arrival_age_s": 0.04534886599867605,
+        "color_arrival_age_s": 0.04534886599867605,
+        "depth_arrival_age_s": 0.04472764898673631,
+        "camera_info_arrival_age_s": 0.04566394898574799,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.06637926999246702,
+        "joint_stamp_delta_s": 0.0015330314636230469,
+        "target_timing": {
+          "result_frame_delta_s": 0.1334538459777832,
+          "result_arrival_age_s": 0.11221448500873521
+        }
+      },
+      "detections_file": "views/view_004/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 136014,
+      "semantic_label_histogram": {
+        "0": 171186,
+        "1": 10794,
+        "2": 125220
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 60,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_004/color.png",
+        "depth_mm": "views/view_004/depth_mm.png",
+        "depth_raw": "views/view_004/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_004/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_004/semantic_confidence.npy",
+        "instance_ids": "views/view_004/instance_ids.png",
+        "detections": "views/view_004/detections.json",
+        "pose": "views/view_004/pose.json",
+        "imu": "views/view_004/imu.json"
+      }
+    },
+    {
+      "index": 5,
+      "stamp_sec": 1786267389.372639,
+      "wall_time": "2026-08-09T09:23:09.455",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9679393360642081,
+          0.04709677631583911,
+          -0.24672927544220558,
+          -0.19541124254064945
+        ],
+        [
+          0.2511277459779716,
+          -0.16064496547869034,
+          0.9545302772915972,
+          -0.04723443800543934
+        ],
+        [
+          0.005319483020302815,
+          -0.9858879696633923,
+          -0.16732188850652663,
+          0.7103152838563723
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7576124170625058,
+        0.09840933490294795,
+        -0.07966138038740089,
+        -0.6403070667953175
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.1347689325571626,
+          -0.21991218819298294,
+          -1.756962361522701,
+          1.7202118459327342,
+          2.439630799785896,
+          -1.0497364665930486
+        ],
+        "velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "efforts": [
+          4.898226655058859,
+          -12.106186204373115,
+          12.617107095542174,
+          -4.039012942170513,
+          -0.4741769196340544,
+          -1.0115774285526493
+        ],
+        "stamp_sec": 1786267389.3693113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 893,
+          "stamp_sec": 1786267389.372639,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3",
+        "inference_ms": 73.15790557861328,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.4272688802083333,
+      "sync": {
+        "rgb_stamp_sec": 1786267389.372639,
+        "depth_stamp_sec": 1786267389.372639,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267389.372639,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267389.239187,
+        "target_color_delta_s": 0.1334519386291504,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267389.239187,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267389.239187,
+          "confidence": 1786267389.239187,
+          "instances": 1786267389.239187
+        },
+        "imu_sample_counts": {
+          "gyro": 61,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267389.372639,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.11063069599913433,
+        "semantic_arrival_age_s": 0.1091981359932106,
+        "raw_arrival_age_s": 0.056459047977114096,
+        "color_arrival_age_s": 0.056186367000918835,
+        "depth_arrival_age_s": 0.056459047977114096,
+        "camera_info_arrival_age_s": 0.056396852975012735,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.07949479098897427,
+        "joint_stamp_delta_s": 0.003327608108520508,
+        "target_timing": {
+          "result_frame_delta_s": 0.1334519386291504,
+          "result_arrival_age_s": 0.11063069599913433
+        }
+      },
+      "detections_file": "views/view_005/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 148123,
+      "semantic_label_histogram": {
+        "0": 159077,
+        "1": 8676,
+        "2": 139447
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 61,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_005/color.png",
+        "depth_mm": "views/view_005/depth_mm.png",
+        "depth_raw": "views/view_005/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_005/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_005/semantic_confidence.npy",
+        "instance_ids": "views/view_005/instance_ids.png",
+        "detections": "views/view_005/detections.json",
+        "pose": "views/view_005/pose.json",
+        "imu": "views/view_005/imu.json"
+      }
+    },
+    {
+      "index": 6,
+      "stamp_sec": 1786267391.1074705,
+      "wall_time": "2026-08-09T09:23:11.167",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9257573406080594,
+          0.06811439145134102,
+          -0.3719324884807821,
+          -0.17788386736417497
+        ],
+        [
+          0.37808033233722543,
+          -0.15283552195800598,
+          0.9130698579668461,
+          -0.03979443071812819
+        ],
+        [
+          0.005348701717873633,
+          -0.9859014823525913,
+          -0.1672413181151593,
+          0.7103532294137258
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7493053927184425,
+        0.14886945599691392,
+        -0.12230787591863784,
+        -0.6335772596922159
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.2659760238031545,
+          -0.3127189751056013,
+          -1.8276175545825353,
+          1.6938142767926898,
+          2.440003378659191,
+          -1.0844195254033036
+        ],
+        "velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0003561094632272886,
+          0.0
+        ],
+        "efforts": [
+          4.101767036350101,
+          -8.163711091764766,
+          14.367346037149396,
+          -3.4812444882517277,
+          1.4604649124728875,
+          -1.4225307589021632
+        ],
+        "stamp_sec": 1786267391.1093113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 919,
+          "stamp_sec": 1786267391.1074705,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:3 depth:1 tf:1 semantic_masks:4",
+        "inference_ms": 78.74137115478516,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.40678059895833335,
+      "sync": {
+        "rgb_stamp_sec": 1786267391.1074705,
+        "depth_stamp_sec": 1786267391.1074705,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267391.1074705,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267390.9740233,
+        "target_color_delta_s": 0.13344717025756836,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267390.9740233,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267390.9740233,
+          "confidence": 1786267390.9740233,
+          "instances": 1786267390.9740233
+        },
+        "imu_sample_counts": {
+          "gyro": 57,
+          "accel": 26
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267391.1074705,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.08010749600362033,
+        "semantic_arrival_age_s": 0.08033219500794075,
+        "raw_arrival_age_s": 0.03369312998256646,
+        "color_arrival_age_s": 0.03369312998256646,
+        "depth_arrival_age_s": 0.033487804990727454,
+        "camera_info_arrival_age_s": 0.03434460700373165,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.05331404600292444,
+        "joint_stamp_delta_s": 0.001840829849243164,
+        "target_timing": {
+          "result_frame_delta_s": 0.13344717025756836,
+          "result_arrival_age_s": 0.08010749600362033
+        }
+      },
+      "detections_file": "views/view_006/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 164110,
+      "semantic_label_histogram": {
+        "0": 143090,
+        "1": 6826,
+        "2": 157284
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 57,
+        "accel": 26
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_006/color.png",
+        "depth_mm": "views/view_006/depth_mm.png",
+        "depth_raw": "views/view_006/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_006/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_006/semantic_confidence.npy",
+        "instance_ids": "views/view_006/instance_ids.png",
+        "detections": "views/view_006/detections.json",
+        "pose": "views/view_006/pose.json",
+        "imu": "views/view_006/imu.json"
+      }
+    },
+    {
+      "index": 7,
+      "stamp_sec": 1786267393.175921,
+      "wall_time": "2026-08-09T09:23:13.307",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.8867088420941851,
+          0.08193414961044107,
+          -0.4550101366778583,
+          -0.16645324142152104
+        ],
+        [
+          0.46229751472449054,
+          -0.14578095074676822,
+          0.8746593178369093,
+          -0.03328624457204821
+        ],
+        [
+          0.005332657081500519,
+          -0.9859182063066805,
+          -0.16714321177202773,
+          0.7103381418658988
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7415580064951454,
+        0.1834757649250474,
+        -0.1515988961049019,
+        -0.6272528902958303
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.3660421659604236,
+          -0.37772236023779243,
+          -1.8727764871397614,
+          1.6705776952910483,
+          2.4493539218219804,
+          -1.114005135679557
+        ],
+        "velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0003561094632272886,
+          -0.0003561094632272886
+        ],
+        "efforts": [
+          4.2610589600918525,
+          -5.81415521657393,
+          14.63661356662743,
+          -2.192607025749707,
+          1.1569916839070926,
+          -0.8092619428421195
+        ],
+        "stamp_sec": 1786267393.1693113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 950,
+          "stamp_sec": 1786267393.175921,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2",
+        "inference_ms": 63.143802642822266,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.40380208333333334,
+      "sync": {
+        "rgb_stamp_sec": 1786267393.175921,
+        "depth_stamp_sec": 1786267393.175921,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267393.175921,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267393.1091964,
+        "target_color_delta_s": 0.06672453880310059,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267393.1091964,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267393.1091964,
+          "confidence": 1786267393.1091964,
+          "instances": 1786267393.1091964
+        },
+        "imu_sample_counts": {
+          "gyro": 56,
+          "accel": 28
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267393.175921,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.08707910601515323,
+        "semantic_arrival_age_s": 0.07670735899591818,
+        "raw_arrival_age_s": 0.0882008490152657,
+        "color_arrival_age_s": 0.039159110019681975,
+        "depth_arrival_age_s": 0.0882008490152657,
+        "camera_info_arrival_age_s": 0.08687083699624054,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.11076849099481478,
+        "joint_stamp_delta_s": 0.006609678268432617,
+        "target_timing": {
+          "result_frame_delta_s": 0.06672453880310059,
+          "result_arrival_age_s": 0.08707910601515323
+        }
+      },
+      "detections_file": "views/view_007/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 158358,
+      "semantic_label_histogram": {
+        "0": 148842,
+        "1": 4660,
+        "2": 153698
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 56,
+        "accel": 28
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_007/color.png",
+        "depth_mm": "views/view_007/depth_mm.png",
+        "depth_raw": "views/view_007/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_007/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_007/semantic_confidence.npy",
+        "instance_ids": "views/view_007/instance_ids.png",
+        "detections": "views/view_007/detections.json",
+        "pose": "views/view_007/pose.json",
+        "imu": "views/view_007/imu.json"
+      }
+    },
+    {
+      "index": 8,
+      "stamp_sec": 1786267395.311114,
+      "wall_time": "2026-08-09T09:23:15.429",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.8161195250428781,
+          0.10085484655913426,
+          -0.5690142535730722,
+          -0.15086601088551926
+        ],
+        [
+          0.5778588016778453,
+          -0.13339050710459843,
+          0.8051622059795301,
+          -0.021936101648555792
+        ],
+        [
+          0.005303410905422967,
+          -0.9859184918338392,
+          -0.1671424580794978,
+          0.7104037613247783
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7274360091620443,
+        0.23325545875713255,
+        -0.19373211597315892,
+        -0.6155458210170408
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.5310746726739384,
+          -0.471966779516285,
+          -1.9315746541962047,
+          1.6266200329609688,
+          2.481409943608427,
+          -1.1667922053725808
+        ],
+        "velocities_rad_s": [
+          0.0,
+          -0.0003561094632272886,
+          0.0,
+          0.0,
+          0.0003561094632272886,
+          0.0003561094632272886
+        ],
+        "efforts": [
+          3.0265465510932787,
+          -2.1902639514490834,
+          13.251809129311825,
+          -4.135179916984097,
+          0.5816570214177734,
+          -0.7397159946291249
+        ],
+        "stamp_sec": 1786267395.3093112,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 982,
+          "stamp_sec": 1786267395.311114,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:3 depth:1 tf:1 semantic_masks:4",
+        "inference_ms": 48.52505111694336,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.4077278645833333,
+      "sync": {
+        "rgb_stamp_sec": 1786267395.311114,
+        "depth_stamp_sec": 1786267395.3778386,
+        "rgb_depth_delta_s": 0.06672453880310059,
+        "timestamp_history_pair_delta_s": 0.06672453880310059,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267395.311114,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267395.2443893,
+        "target_color_delta_s": 0.06672477722167969,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267395.2443893,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267395.2443893,
+          "confidence": 1786267395.2443893,
+          "instances": 1786267395.2443893
+        },
+        "imu_sample_counts": {
+          "gyro": 51,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267395.311114,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.07683165001799352,
+        "semantic_arrival_age_s": 0.07718019100138918,
+        "raw_arrival_age_s": 0.0028221490210853517,
+        "color_arrival_age_s": 0.0028221490210853517,
+        "depth_arrival_age_s": 0.002128643012838438,
+        "camera_info_arrival_age_s": 0.06648207502439618,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.05532828700961545,
+        "joint_stamp_delta_s": 0.0018029212951660156,
+        "target_timing": {
+          "result_frame_delta_s": 0.06672477722167969,
+          "result_arrival_age_s": 0.07683165001799352
+        }
+      },
+      "detections_file": "views/view_008/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 167366,
+      "semantic_label_histogram": {
+        "0": 139834,
+        "1": 5808,
+        "2": 161558
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 51,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_008/color.png",
+        "depth_mm": "views/view_008/depth_mm.png",
+        "depth_raw": "views/view_008/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_008/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_008/semantic_confidence.npy",
+        "instance_ids": "views/view_008/instance_ids.png",
+        "detections": "views/view_008/detections.json",
+        "pose": "views/view_008/pose.json",
+        "imu": "views/view_008/imu.json"
+      }
+    },
+    {
+      "index": 9,
+      "stamp_sec": 1786267397.3819904,
+      "wall_time": "2026-08-09T09:23:17.474",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.8857740331465654,
+          0.06818510936872513,
+          -0.4590807696513132,
+          -0.1618253790022709
+        ],
+        [
+          0.4640890461342907,
+          -0.11931606789023053,
+          0.8777158043474993,
+          -0.03567605807415739
+        ],
+        [
+          0.00507143583527736,
+          -0.9905122244594402,
+          -0.13733103704181282,
+          0.6986454739062556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7318506061289218,
+        0.18182473856703946,
+        -0.155089492087182,
+        -0.6381862981876687
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.3781811178883205,
+          -0.38466371822752865,
+          -1.9240646981297709,
+          1.6774483344882736,
+          2.456057019181915,
+          -1.0796073251531881
+        ],
+        "velocities_rad_s": [
+          0.0003561094632272886,
+          0.0003561094632272886,
+          0.0,
+          0.0,
+          0.0,
+          0.0003561094632272886
+        ],
+        "efforts": [
+          -3.902652131672912,
+          -0.9159285615150712,
+          19.521895887157477,
+          0.38466789925433453,
+          -1.3529848106891684,
+          1.390918964259893
+        ],
+        "stamp_sec": 1786267397.3893113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 1013,
+          "stamp_sec": 1786267397.3819904,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2",
+        "inference_ms": 64.95027160644531,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.40564453125,
+      "sync": {
+        "rgb_stamp_sec": 1786267397.3819904,
+        "depth_stamp_sec": 1786267397.3819904,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267397.3819904,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267397.2485726,
+        "target_color_delta_s": 0.13341784477233887,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267397.2485726,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267397.2485726,
+          "confidence": 1786267397.2485726,
+          "instances": 1786267397.2485726
+        },
+        "imu_sample_counts": {
+          "gyro": 60,
+          "accel": 30
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267397.3819904,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.055250766017707065,
+        "semantic_arrival_age_s": 0.08725596001022495,
+        "raw_arrival_age_s": 0.02529885500553064,
+        "color_arrival_age_s": 0.02315175300464034,
+        "depth_arrival_age_s": 0.02529885500553064,
+        "camera_info_arrival_age_s": 0.026652091008145362,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.029196062998380512,
+        "joint_stamp_delta_s": 0.007320880889892578,
+        "target_timing": {
+          "result_frame_delta_s": 0.13341784477233887,
+          "result_arrival_age_s": 0.055250766017707065
+        }
+      },
+      "detections_file": "views/view_009/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 168158,
+      "semantic_label_histogram": {
+        "0": 139042,
+        "1": 4735,
+        "2": 163423
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 60,
+        "accel": 30
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_009/color.png",
+        "depth_mm": "views/view_009/depth_mm.png",
+        "depth_raw": "views/view_009/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_009/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_009/semantic_confidence.npy",
+        "instance_ids": "views/view_009/instance_ids.png",
+        "detections": "views/view_009/detections.json",
+        "pose": "views/view_009/pose.json",
+        "imu": "views/view_009/imu.json"
+      }
+    },
+    {
+      "index": 10,
+      "stamp_sec": 1786267399.5857272,
+      "wall_time": "2026-08-09T09:23:19.652",
+      "color_frame_id": "camera_color_optical_frame",
+      "depth_frame_id": "camera_color_optical_frame",
+      "pose_frame_id": "elfin_base_link -> camera_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "camera_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.9404924888354083,
+          0.05138220258907128,
+          -0.33590734987683013,
+          -0.1790082889785738
+        ],
+        [
+          0.3397768834674258,
+          -0.1274897175505918,
+          0.9318251130872323,
+          -0.045713547369886476
+        ],
+        [
+          0.005054493579267488,
+          -0.9905080722416982,
+          -0.13736160642148576,
+          0.6986218900636993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.7425200193346825,
+        0.13169985126802586,
+        -0.11139526990227455,
+        -0.6472328104346878
+      ],
+      "joint_state": {
+        "names": [
+          "elfin_joint1",
+          "elfin_joint2",
+          "elfin_joint3",
+          "elfin_joint4",
+          "elfin_joint5",
+          "elfin_joint6"
+        ],
+        "positions_rad": [
+          1.2336712996859984,
+          -0.28749752118597166,
+          -1.855921208760992,
+          1.7111522465270532,
+          2.443960308680417,
+          -1.0360483459486731
+        ],
+        "velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          -0.0003561094632272886,
+          0.0,
+          -0.0003561094632272886
+        ],
+        "efforts": [
+          -5.017695597865172,
+          -3.4645993413830953,
+          18.675626508797944,
+          1.1155369078375703,
+          -0.979965633910379,
+          0.6132688160600437
+        ],
+        "stamp_sec": 1786267399.6093113,
+        "frame_id": ""
+      },
+      "camera_info": {
+        "width": 640,
+        "height": 480,
+        "distortion_model": "plumb_bob",
+        "K": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "D": [
+          -0.0553581528365612,
+          0.06626121699810028,
+          -0.00045939956908114254,
+          0.0012684814864769578,
+          -0.02159438095986843
+        ],
+        "R": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "P": [
+          386.85882568359375,
+          0.0,
+          324.32928466796875,
+          0.0,
+          0.0,
+          386.4718017578125,
+          243.51365661621094,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "header": {
+          "seq": 1046,
+          "stamp_sec": 1786267399.5857272,
+          "frame_id": "camera_color_optical_frame"
+        }
+      },
+      "camera": {
+        "name": "RealSense",
+        "serial": "234222302617",
+        "device_type": "d455",
+        "usb_port_id": "2-3",
+        "usb_type": "3.2",
+        "configured_calibration_serial": "234222302617"
+      },
+      "calibration": {
+        "configured": true,
+        "quality_passed": true,
+        "installed": true,
+        "camera_serial": "234222302617",
+        "parent_frame": "elfin_end_link",
+        "child_frame": "camera_link",
+        "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+        "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+        "installed_at": "2026-08-04T05:51:10",
+        "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+        "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+        "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+      },
+      "model": {
+        "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+        "status": "model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4",
+        "inference_ms": 65.08800506591797,
+        "configured_sha256": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+        "class_names": {
+          "0": "citrus",
+          "1": "tree"
+        },
+        "code_version": "workspace"
+      },
+      "semantic_present": true,
+      "semantic_gap": "",
+      "depth_valid_ratio": 0.42535481770833333,
+      "sync": {
+        "rgb_stamp_sec": 1786267399.5857272,
+        "depth_stamp_sec": 1786267399.5857272,
+        "rgb_depth_delta_s": 0.0,
+        "timestamp_history_pair_delta_s": 0.0,
+        "timestamp_history_fallback": false,
+        "camera_info_stamp_sec": 1786267399.5857272,
+        "camera_info_static_stamp": false,
+        "targets_stamp_sec": 1786267399.5190358,
+        "target_color_delta_s": 0.06669139862060547,
+        "target_sync_slop_s": 0.25,
+        "semantic_stamp_sec": 1786267399.5190358,
+        "targets_synchronized": true,
+        "semantic_synchronized": true,
+        "semantic_available_topic": true,
+        "semantic_empty": false,
+        "semantic_component_stamps": {
+          "labels": 1786267399.5190358,
+          "confidence": 1786267399.5190358,
+          "instances": 1786267399.3856516
+        },
+        "imu_sample_counts": {
+          "gyro": 36,
+          "accel": 24
+        },
+        "imu_available": true,
+        "imu_reference_stamp_sec": 1786267399.5857272,
+        "semantic_components_synchronized": true,
+        "target_arrival_age_s": 0.001814022019971162,
+        "semantic_arrival_age_s": 0.003148866002447903,
+        "raw_arrival_age_s": 0.0018528120126575232,
+        "color_arrival_age_s": 0.0009340350225102156,
+        "depth_arrival_age_s": 0.0018528120126575232,
+        "camera_info_arrival_age_s": 0.0015687720151618123,
+        "camera_info_delta_s": 0.0,
+        "joint_arrival_age_s": 0.001516813994385302,
+        "joint_stamp_delta_s": 0.02358412742614746,
+        "target_timing": {
+          "result_frame_delta_s": 0.06669139862060547,
+          "result_arrival_age_s": 0.001814022019971162
+        }
+      },
+      "detections_file": "views/view_010/detections.json",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_input_dtype": "uint16",
+      "semantic_pixel_count": 157287,
+      "semantic_label_histogram": {
+        "0": 149913,
+        "1": 5755,
+        "2": 151532
+      },
+      "imu_present": true,
+      "imu_sample_counts": {
+        "gyro": 36,
+        "accel": 24
+      },
+      "depth_unit": "millimetres",
+      "files": {
+        "color": "views/view_010/color.png",
+        "depth_mm": "views/view_010/depth_mm.png",
+        "depth_raw": "views/view_010/depth_raw.png",
+        "depth_raw_format": "png",
+        "annotated": "",
+        "semantic_labels": "views/view_010/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_010/semantic_confidence.npy",
+        "instance_ids": "views/view_010/instance_ids.png",
+        "detections": "views/view_010/detections.json",
+        "pose": "views/view_010/pose.json",
+        "imu": "views/view_010/imu.json"
+      }
+    }
+  ],
+  "input_contract": "RGB-D images plus base-frame camera 6D pose",
+  "auxiliary_channels": [
+    "joint_states",
+    "realsense_gyro",
+    "realsense_accel"
+  ],
+  "imu_role": "raw motion/stability audit; no magnetometer or absolute camera heading is inferred",
+  "imu_required": false,
+  "imu_present_all_views": true,
+  "calibration": {
+    "file": "calibration/camera_to_robot.yaml",
+    "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d",
+    "camera_serial": "234222302617",
+    "installed": true,
+    "installed_at": "2026-08-04T05:51:10",
+    "backup_path": "/home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml",
+    "source_candidate": "/home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml",
+    "previous_live_sha256": "8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db"
+  },
+  "camera_info_file": "camera_info.json",
+  "semantic_classes_available": [
+    "citrus",
+    "tree"
+  ],
+  "semantic_ooi_gap": "verified model classes do not include fruit_stem, petiole; no fruit-stem/petiole label is inferred from another class",
+  "data_origin": "real_capture",
+  "paper_usable": true
+}
