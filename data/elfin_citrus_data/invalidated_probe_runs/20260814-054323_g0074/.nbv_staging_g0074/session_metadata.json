@@ -1,0 +1,91 @@
+{
+  "capture_mode": "auto_taught_two_layer_sweep",
+  "capture_trigger": "auto_ten_view_sweep",
+  "sweep_protocol_id": "probe_two_layer_five_view_60deg_20260811",
+  "sweep_protocol_config_file": "/home/catas/ros_ws/src/elfin_vision/config/probe_two_layer_sweep.yaml",
+  "sweep_fixed_joint_source_archive": "/home/catas/elfin_citrus_data/nbv_batches/semantic_nbv_batch_20260812-114231_g0025.zip",
+  "sweep_fixed_joint_source_archive_sha256": "e094de6b41607c93d52377a69de9c3acd4d12c9c086fd39b70d724192359be0f",
+  "sweep_fixed_joint_source_calibration_sha256": "a55857ab1cc5e13e7a35f6b411239535055e332abe4ff2e1857e93245f6fe021",
+  "sweep_fixed_joint_target_tolerance_rad": 0.03,
+  "sweep_source_point_file": "/home/catas/.ros/elfin_freedrive_points.yaml",
+  "sweep_source_point_file_sha256": "46ba3fea0871857dc2e8af98a8d3755b20c30df4fb7ea761b735bc2134ee589c",
+  "sweep_source_point_indices": [
+    1,
+    2
+  ],
+  "sweep_tree_center_m": [
+    -0.5978219906,
+    0.4798872267,
+    0.6910438808
+  ],
+  "sweep_center_azimuth_deg": -42.4,
+  "sweep_layer_camera_heights_m": [
+    0.7,
+    0.8
+  ],
+  "sweep_layer_horizontal_radii_m": [
+    0.88,
+    0.85
+  ],
+  "sweep_layer_elevations_deg": [
+    -5.0,
+    10.0
+  ],
+  "semantic_reconstruction": {
+    "voxel_resolution_m": 0.006,
+    "maximum_voxels": 600000,
+    "sample_stride": 4,
+    "maximum_points_per_view": 24000,
+    "maximum_range_m": 1.5,
+    "raw_depth_archive_cropped": false,
+    "fusion_points_beyond_range_discarded": true
+  },
+  "sweep_nominal_azimuth_span_deg": 60.0,
+  "sweep_measured_azimuth_span_deg": null,
+  "input_contract": "one frozen RGB-D pair plus unique fixed six-joint station, timestamp-exact measured base-frame camera TF and fresh joint state",
+  "auxiliary_channels": [
+    "joint_states",
+    "realsense_gyro",
+    "realsense_accel"
+  ],
+  "imu_required": false,
+  "imu_role": "raw motion/stability audit when available; no magnetometer or absolute camera heading is inferred",
+  "pose_provenance": "TF lookup at the frozen RGB timestamp; unique fixed joint target and its current-calibration camera pose are stored separately as the nominal target and deviation gate",
+  "pose_parent_frame": "elfin_base_link",
+  "pose_child_frame": "camera_color_optical_frame",
+  "nominal_station_present": true,
+  "nominal_station_error": {
+    "translation_m": 0.014999915205797989,
+    "orientation_deg": 0.5735747541176569,
+    "joint_max_error_rad": 6.2962110523479e-05,
+    "translation_tolerance_m": 0.025,
+    "orientation_tolerance_deg": 4.0,
+    "joint_tolerance_rad": 0.03,
+    "within_tolerance": true
+  },
+  "class_names": {
+    "0": "citrus",
+    "1": "tree"
+  },
+  "semantic_class_names": {
+    "0": "citrus",
+    "1": "tree"
+  },
+  "semantic_classes_available": [
+    "citrus",
+    "tree"
+  ],
+  "semantic_ooi_gap": "verified model classes do not include fruit_stem, petiole; no fruit-stem/petiole label is inferred from another class",
+  "semantic_instance_ids_available": false,
+  "sample_recommendation": {
+    "pilot_batches": 2,
+    "engineering_minimum_batches": 18,
+    "trend_minimum_batches": 24,
+    "formal_target_independent_scenes": "10-12"
+  },
+  "capture_pipeline": "serial_station_rgbd_yolo_semantic_cloud_octomap_fuse_write",
+  "background_inference_queue": false,
+  "next_motion_after_map_and_write": true,
+  "scene_id": "probe_L09R1",
+  "scene_notes": ""
+}
