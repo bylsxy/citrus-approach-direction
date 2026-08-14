@@ -1,0 +1,33 @@
+# These artifacts were copied from aiseon@192.168.200.82 and SHA256 verified.
+model_path: "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx"
+model_sha256: "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341"
+engine_path: "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg_fp16.engine"
+engine_sha256: "c876f0927ac1eb12ed8dc319f70d790796b5688e55b2cf99e3fa000c6ab16d15"
+model_repo: ""
+backend: "auto"
+remote_preferred: true
+remote_url: "http://aiseon.local:8765"
+remote_token_file: "/home/catas/.config/elfin_vision/remote_inference.token"
+remote_timeout_s: 0.80
+remote_failure_limit: 3
+remote_retry_interval_s: 5.0
+class_names: {"0": "citrus", "1": "tree"}
+# The verified exported model has citrus/tree only.  These are semantic map
+# classes, not a claim that fruit-stem/petiole labels exist in this model.
+semantic_labels: ["citrus", "tree"]
+semantic_class_ids: []
+device: "auto"
+confidence: 0.35
+iou: 0.45
+image_size: 640
+max_inference_hz: 8.0
+target_labels: ["citrus", "orange", "tangerine", "mandarin", "柑橘", "橘子"]
+target_class_ids: []
+depth_min_m: 0.20
+depth_max_m: 4.00
+depth_roi_scale: 0.35
+depth_min_samples: 20
+target_frame: "elfin_base_link"
+# The calibrated semantic rasters are consumed by the voxel map.  Do not
+# publish a misleading 2-D box/confidence overlay as a spatial result.
+publish_annotated_image: false

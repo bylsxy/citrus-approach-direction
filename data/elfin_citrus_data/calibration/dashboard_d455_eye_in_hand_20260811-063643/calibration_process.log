@@ -1,0 +1,41 @@
+ROS 日志目录：/home/catas/elfin_citrus_data/calibration/dashboard_d455_eye_in_hand_20260811-063643/ros_log
+复用当前已运行的 RealSense ROS 节点。
+已核验标定相机：model=d455 name=Intel RealSense D455 serial=234222302617 USB=3.2
+等待 RGB、对齐深度和机器人关节状态...
+已收到 RGB 相机内参：/camera/color/camera_info（第 1 次探测）
+已收到 对齐深度：/camera/aligned_depth_to_color/image_raw（第 1 次探测）
+已收到 机器人关节状态：/joint_states（第 1 次探测）
+连接完成。此工具只读相机与机器人状态，不会发送运动命令。
+本终端按 Ctrl+C 将关闭标定、视觉、Panel，并请求机械臂 Servo Off。
+
+(Elfin Eye-in-Hand Calibration:14534): dbind-WARNING **: 06:36:49.059: Couldn't register with accessibility bus: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+相机标定窗口按键：ENTER/SPACE=采样，U=删除最后一组，S=手动求解，Q=退出。
+也可在机械臂静止后按实体 POINT，程序会自动采样。
+达到 15 组后会自动求解；通常不需要按键盘 S。
+程序不会发送任何机械臂运动、Servo、FREE 或输出命令。
+[INFO] [1786430263.779195]: 已采集第 1 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430329.073648]: 已采集第 2 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430352.427772]: 已采集第 3 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430369.299144]: 已采集第 4 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430384.766813]: 已采集第 5 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430400.790049]: 已采集第 6 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430425.985372]: 已采集第 7 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430436.752975]: 已采集第 8 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430495.555236]: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[INFO] [1786430495.603637]: 已采集第 9 组；请改变距离和腕部俯仰/偏航后继续
+[INFO] [1786430515.556108]: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[INFO] [1786430519.252993]: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[INFO] [1786430519.836891]: 已采集第 10 组；请改变距离和腕部俯仰/偏航后继续
+标定采集已退出。数据目录：/home/catas/elfin_citrus_data/calibration/dashboard_d455_eye_in_hand_20260811-063643
+
+GLOBAL STOP requested by: eye-in-hand calibration terminal received Ctrl+C
+Closing dashboard/RViz/vision/Panel, revoking EXECUTE and requesting Servo Off...
+Stopping Panel/MoveIt...
+[1/2] Requesting Servo Off on all Elfin joint modules...
+success: True
+message: "robot is disabled"
+Servo Off confirmed by the driver.
+[2/2] Shutting down the EtherCAT hardware node...
+Elfin hardware stack stopped and its launch lock was released. Keep the robot power cut-off within reach.
+Elfin demo stopped: EXECUTE revoked, RViz/vision/Panel closed, hardware Servo Off.
+GLOBAL STOP complete; this terminal may now close.

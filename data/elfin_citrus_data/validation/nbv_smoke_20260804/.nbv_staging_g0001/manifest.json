@@ -1,0 +1,1163 @@
+{
+  "schema_version": 1,
+  "kind": "semantic_nbv_rgbd_view_batch",
+  "complete": true,
+  "created_at": "2026-08-04T02:26:03",
+  "scene_id": "synthetic-diagnostic",
+  "scene_notes": "synthetic diagnostic; paper_usable=false",
+  "group_number": 1,
+  "max_views": 10,
+  "view_count": 10,
+  "archive_path": "semantic_nbv_batch_20260804-022603_g0001.zip",
+  "views": [
+    {
+      "index": 1,
+      "stamp_sec": 1.0,
+      "wall_time": "synthetic-diagnostic-view-01",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          0.45
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          0.0
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_001/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_001/color.png",
+        "depth_mm": "views/view_001/depth_mm.png",
+        "depth_raw": "views/view_001/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_001/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_001/semantic_confidence.npy",
+        "instance_ids": "views/view_001/instance_ids.png",
+        "detections": "views/view_001/detections.json",
+        "pose": "views/view_001/pose.json"
+      }
+    },
+    {
+      "index": 2,
+      "stamp_sec": 2.0,
+      "wall_time": "synthetic-diagnostic-view-02",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.8090169943749475,
+          -0.5877852522924731,
+          0.0,
+          0.3640576474687264
+        ],
+        [
+          0.5877852522924731,
+          0.8090169943749475,
+          0.0,
+          0.2645033635316129
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.3090169943749474,
+        0.9510565162951535
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          0.6283185307179586
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_002/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_002/color.png",
+        "depth_mm": "views/view_002/depth_mm.png",
+        "depth_raw": "views/view_002/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_002/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_002/semantic_confidence.npy",
+        "instance_ids": "views/view_002/instance_ids.png",
+        "detections": "views/view_002/detections.json",
+        "pose": "views/view_002/pose.json"
+      }
+    },
+    {
+      "index": 3,
+      "stamp_sec": 3.0,
+      "wall_time": "synthetic-diagnostic-view-03",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.30901699437494745,
+          -0.9510565162951535,
+          0.0,
+          0.13905764746872637
+        ],
+        [
+          0.9510565162951535,
+          0.30901699437494745,
+          0.0,
+          0.4279754323328191
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.5877852522924731,
+        0.8090169943749475
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          1.2566370614359172
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_003/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_003/color.png",
+        "depth_mm": "views/view_003/depth_mm.png",
+        "depth_raw": "views/view_003/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_003/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_003/semantic_confidence.npy",
+        "instance_ids": "views/view_003/instance_ids.png",
+        "detections": "views/view_003/detections.json",
+        "pose": "views/view_003/pose.json"
+      }
+    },
+    {
+      "index": 4,
+      "stamp_sec": 4.0,
+      "wall_time": "synthetic-diagnostic-view-04",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          -0.30901699437494734,
+          -0.9510565162951536,
+          0.0,
+          -0.13905764746872631
+        ],
+        [
+          0.9510565162951536,
+          -0.30901699437494734,
+          0.0,
+          0.42797543233281915
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8090169943749475,
+        0.5877852522924731
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          1.8849555921538759
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_004/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_004/color.png",
+        "depth_mm": "views/view_004/depth_mm.png",
+        "depth_raw": "views/view_004/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_004/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_004/semantic_confidence.npy",
+        "instance_ids": "views/view_004/instance_ids.png",
+        "detections": "views/view_004/detections.json",
+        "pose": "views/view_004/pose.json"
+      }
+    },
+    {
+      "index": 5,
+      "stamp_sec": 5.0,
+      "wall_time": "synthetic-diagnostic-view-05",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          -0.8090169943749473,
+          -0.5877852522924732,
+          0.0,
+          -0.3640576474687263
+        ],
+        [
+          0.5877852522924732,
+          -0.8090169943749473,
+          0.0,
+          0.26450336353161297
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9510565162951535,
+        0.30901699437494745
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          2.5132741228718345
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_005/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_005/color.png",
+        "depth_mm": "views/view_005/depth_mm.png",
+        "depth_raw": "views/view_005/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_005/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_005/semantic_confidence.npy",
+        "instance_ids": "views/view_005/instance_ids.png",
+        "detections": "views/view_005/detections.json",
+        "pose": "views/view_005/pose.json"
+      }
+    },
+    {
+      "index": 6,
+      "stamp_sec": 6.0,
+      "wall_time": "synthetic-diagnostic-view-06",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0,
+          -0.45
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0.0,
+          5.5109105961630896e-17
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        1.0,
+        6.123233995736766e-17
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          3.141592653589793
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_006/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_006/color.png",
+        "depth_mm": "views/view_006/depth_mm.png",
+        "depth_raw": "views/view_006/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_006/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_006/semantic_confidence.npy",
+        "instance_ids": "views/view_006/instance_ids.png",
+        "detections": "views/view_006/detections.json",
+        "pose": "views/view_006/pose.json"
+      }
+    },
+    {
+      "index": 7,
+      "stamp_sec": 7.0,
+      "wall_time": "synthetic-diagnostic-view-07",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          -0.8090169943749476,
+          0.587785252292473,
+          0.0,
+          -0.36405764746872643
+        ],
+        [
+          -0.587785252292473,
+          -0.8090169943749476,
+          0.0,
+          -0.26450336353161286
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9510565162951536,
+        -0.30901699437494734
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          3.7699111843077517
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_007/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_007/color.png",
+        "depth_mm": "views/view_007/depth_mm.png",
+        "depth_raw": "views/view_007/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_007/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_007/semantic_confidence.npy",
+        "instance_ids": "views/view_007/instance_ids.png",
+        "detections": "views/view_007/detections.json",
+        "pose": "views/view_007/pose.json"
+      }
+    },
+    {
+      "index": 8,
+      "stamp_sec": 8.0,
+      "wall_time": "synthetic-diagnostic-view-08",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          -0.30901699437494756,
+          0.9510565162951535,
+          0.0,
+          -0.1390576474687264
+        ],
+        [
+          -0.9510565162951535,
+          -0.30901699437494756,
+          0.0,
+          -0.4279754323328191
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8090169943749475,
+        -0.587785252292473
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          4.39822971502571
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_008/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_008/color.png",
+        "depth_mm": "views/view_008/depth_mm.png",
+        "depth_raw": "views/view_008/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_008/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_008/semantic_confidence.npy",
+        "instance_ids": "views/view_008/instance_ids.png",
+        "detections": "views/view_008/detections.json",
+        "pose": "views/view_008/pose.json"
+      }
+    },
+    {
+      "index": 9,
+      "stamp_sec": 9.0,
+      "wall_time": "synthetic-diagnostic-view-09",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.30901699437494723,
+          0.9510565162951536,
+          0.0,
+          0.13905764746872626
+        ],
+        [
+          -0.9510565162951536,
+          0.30901699437494723,
+          0.0,
+          -0.42797543233281915
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.5877852522924732,
+        -0.8090169943749473
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          5.026548245743669
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_009/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_009/color.png",
+        "depth_mm": "views/view_009/depth_mm.png",
+        "depth_raw": "views/view_009/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_009/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_009/semantic_confidence.npy",
+        "instance_ids": "views/view_009/instance_ids.png",
+        "detections": "views/view_009/detections.json",
+        "pose": "views/view_009/pose.json"
+      }
+    },
+    {
+      "index": 10,
+      "stamp_sec": 10.0,
+      "wall_time": "synthetic-diagnostic-view-10",
+      "color_frame_id": "synthetic_color_optical_frame",
+      "depth_frame_id": "synthetic_depth_frame",
+      "pose_frame_id": "elfin_base_link -> synthetic_color_optical_frame",
+      "pose_parent_frame": "elfin_base_link",
+      "pose_child_frame": "synthetic_color_optical_frame",
+      "pose_matrix": [
+        [
+          0.8090169943749473,
+          0.5877852522924734,
+          0.0,
+          0.3640576474687263
+        ],
+        [
+          -0.5877852522924734,
+          0.8090169943749473,
+          0.0,
+          -0.264503363531613
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.55
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.3090169943749475,
+        -0.9510565162951535
+      ],
+      "joint_state": {
+        "names": [
+          "synthetic_joint"
+        ],
+        "positions_rad": [
+          5.654866776461628
+        ]
+      },
+      "camera_info": {
+        "width": 128,
+        "height": 96,
+        "K": [
+          120.0,
+          0.0,
+          64.0,
+          0.0,
+          120.0,
+          48.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "camera": {
+        "name": "synthetic-diagnostic-D455",
+        "serial": "synthetic-not-hardware",
+        "device_type": "D455-diagnostic",
+        "usb_type": "3.2-diagnostic"
+      },
+      "calibration": {
+        "camera_serial": "synthetic-not-hardware"
+      },
+      "model": {
+        "backend": "synthetic_diagnostic",
+        "paper_usable": false
+      },
+      "semantic_present": true,
+      "semantic_gap": "synthetic diagnostic; not a real detector output",
+      "depth_valid_ratio": 1.0,
+      "sync": {},
+      "detections_file": "views/view_010/detections.json",
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ],
+      "depth_shape": [
+        96,
+        128
+      ],
+      "depth_input_dtype": "float32",
+      "semantic_pixel_count": 2672,
+      "semantic_label_histogram": {
+        "0": 9616,
+        "1": 1600,
+        "2": 1072
+      },
+      "depth_unit": "metres_to_millimetres",
+      "files": {
+        "color": "views/view_010/color.png",
+        "depth_mm": "views/view_010/depth_mm.png",
+        "depth_raw": "views/view_010/depth_raw.npy",
+        "depth_raw_format": "npy",
+        "annotated": "",
+        "semantic_labels": "views/view_010/semantic_labels.png",
+        "semantic_labels_encoding": "mono8",
+        "semantic_confidence": "views/view_010/semantic_confidence.npy",
+        "instance_ids": "views/view_010/instance_ids.png",
+        "detections": "views/view_010/detections.json",
+        "pose": "views/view_010/pose.json"
+      }
+    }
+  ],
+  "input_contract": "RGB-D images plus base-frame camera 6D pose",
+  "calibration": {
+    "file": "calibration/camera_to_robot.yaml",
+    "sha256": "fce25369e0d5bea97e66a3371d709a0f49a8ba0c7cee098b1c7c0240e58c98bd",
+    "camera_serial": "synthetic-not-hardware",
+    "installed": false,
+    "installed_at": "",
+    "backup_path": "",
+    "source_candidate": "",
+    "previous_live_sha256": ""
+  },
+  "camera_info_file": "camera_info.json",
+  "semantic_classes_available": [
+    "citrus",
+    "tree"
+  ],
+  "semantic_ooi_gap": "synthetic diagnostic only",
+  "data_origin": "synthetic_diagnostic",
+  "paper_usable": false
+}

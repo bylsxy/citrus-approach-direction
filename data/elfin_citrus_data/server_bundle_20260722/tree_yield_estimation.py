@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+import argparse
+import csv
+from collections import defaultdict
+from pathlib import Path
+
+import yaml
+
+
+def load_yaml(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+def read_csv(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Estimate tree-level yield from fruit associations.")
+    parser.add_argument("--config", required=True)
+    parser.add_argument("--associations", required=True)
+    parser.add_argument("--fruit-size", required=True)
+    parser.add_argument("--output", required=True)
+    args = parser.parse_args()
+    cfg = load_yaml(args.config)
+    density = float(cfg["yield"]["density_kg_per_m3"])
+    factor = float(cfg["yield"]["calibration_factor"])
+    assoc = read_csv(Path(args.associations))
+    sizes = {r["fruit_id"]: r for r in read_csv(Path(args.fruit_size))}
+    grouped = defaultdict(list)
+    for row in assoc:
+        grouped[row["tree_id"]].append(row["fruit_id"])
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    with open(args.output, "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["tree_id", "fruit_count", "average_diameter_m", "total_volume_m3", "estimated_mass_kg"])
+        for tree_id, fruit_ids in sorted(grouped.items(), key=lambda kv: int(kv[0]) if str(kv[0]).lstrip("-").isdigit() else 999999):
+            diameters = []
+            total_volume = 0.0
+            for fid in fruit_ids:
+                if fid not in sizes:
+                    continue
+                s = sizes[fid]
+                diameter = float(s.get("diameter_ellipsoid_m", s.get("diameter_m", s.get("diameter", 0))) or 0)
+                volume = float(s.get("volume_ellipsoid_m3", s.get("volume_m3", s.get("volume", 0))) or 0)
+                diameters.append(diameter)
+                total_volume += volume
+            avg_d = sum(diameters) / len(diameters) if diameters else 0.0
+            mass = total_volume * density * factor
+            writer.writerow([tree_id, len(fruit_ids), f"{avg_d:.6f}", f"{total_volume:.9f}", f"{mass:.6f}"])
+    print(f"tree_yield={args.output}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "expected_camera_type": "d455",
+  "expected_camera_serial": "234222302617",
+  "sample_recommendation": {
+    "pilot_batches": 2,
+    "engineering_minimum_batches": 18,
+    "trend_minimum_batches": 24,
+    "formal_target_independent_scenes": "10-12"
+  },
+  "sections": [
+    {
+      "kind": "calibration",
+      "path": "/home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml",
+      "ok": true,
+      "formal_ready": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "camera_serial": "234222302617",
+      "parent_frame": "elfin_end_link",
+      "child_frame": "camera_link",
+      "configured": true,
+      "quality_passed": true,
+      "installed": true,
+      "sha256": "7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d"
+    },
+    {
+      "kind": "vision_config",
+      "path": "/home/catas/ros_ws/src/elfin_vision/config/vision.yaml",
+      "ok": true,
+      "formal_ready": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "class_names": {
+        "0": "citrus",
+        "1": "tree"
+      },
+      "model_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx",
+      "engine_path": "/home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg_fp16.engine",
+      "remote_url": "http://aiseon.local:8765",
+      "model_path_sha256_actual": "507821ee21f312497baf14c85ee04b10fe09be6a2bbaa71a3a420a49e3988341",
+      "engine_path_sha256_actual": "c876f0927ac1eb12ed8dc319f70d790796b5688e55b2cf99e3fa000c6ab16d15",
+      "missing_ooi_classes": []
+    },
+    {
+      "kind": "realsense",
+      "path": "",
+      "ok": true,
+      "formal_ready": true,
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "raw_excerpt": "Device info: \n    Name                          : \tIntel RealSense D455\n    Serial Number                 : \t234222302617\n    Firmware Version              : \t5.16.0.1\n    Recommended Firmware Version  : \t5.16.0.1\n    Physical Port                 : \t/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0\n    Debug Op Code                 : \t15\n    Advanced Mode                 : \tYES\n    Product Id                    : \t0B5C\n    Camera Locked                 : \tYES\n    Usb Type Descriptor           : \t3.2\n    Product Line                  : \tD400\n    Asic Serial Number            : \t226523132524\n    Firmware Update Id            : \t226523132524\n    Dfu Device Path               : \t\n\nStream Profiles supported by Stereo Module\n Supported modes:\n    STREAM      RESOLUTION     FORMAT      FPS\n    Infrared    1280x720       UYVY        @ 30/15/5 Hz\n    Infrared        |          BGRA8       @ 30/15/5 Hz\n    Infrared        |          RGBA8       @ 30/15/5 Hz\n    Infrared        |          BGR8        @ 30/15/5 Hz\n    Infrared        |          RGB8        @ 30/15/5 Hz\n    Infrared     848x480       UYVY        @ 90/60/30/15/5 Hz\n    Infrared        |          BGRA8       @ 90/60/30/15/5 Hz\n    Infrared        |          RGBA8       @ 90/60/30/15/5 Hz\n    Infrared        |          BGR8        @ 90/60/30/15/5 Hz\n    Infrared        |          RGB8        @ 90/60/30/15/5 Hz\n    Infrared     848x100       UYVY        @ 100 Hz\n    Infrared        |          BGRA8       @ 100 Hz\n    Infrared        |          RGBA8       @ 100 Hz\n    Infrared        |          BGR8        @ 100 Hz\n    Infrared        |          RGB8        @ 100 Hz\n    Infrared     640x480       UYVY        @ 90/60/30/15/5 Hz\n    Infrared        |          BGRA8       @ 90/60/30/15/5 Hz\n    Infrared        |          RGBA8       @ 90/60/30/15/5 Hz\n    Infrared        |          BGR8        @ 90/60/30/15/5 Hz\n    Infrared        |          RGB8        @ 90/60/30/15/5 Hz\n    Infrared     640x360       UYVY        @ 90/60/30/15/5 Hz\n    Infrared        |          BGRA8       @ 90/60/30/15/5 Hz\n    Infrared        |          RGBA8       @ 90/60/30/15/5 Hz\n    Infrared        |          BGR8        @ 90/60/30/15/5 Hz\n    Infrared        |          RGB8        @ 90/60/30/15/5 Hz\n    Infrared     480x270       UYVY        @ 90/60/30/15/5 Hz\n    Infrared        |          BGRA8       @ 90/60/30/15/5 Hz\n    Infrared        |          RGBA8       @ 90/60/30/15/5 Hz\n    Infrared        |          BGR8        @ 90/60/30/15/5 Hz\n    Infrared        |          RGB8        @ 90/60/30/15/5 Hz\n    Infrared     424x240       UYVY        @ 90/60/30/15/5 Hz\n    Infrared        |          BGRA8       @ 90/60/30/15/5 Hz\n    Infrared        |          RGBA8       @ 90/60/30/15/5 Hz\n    Infrared        |          BGR8        @ 90/60/30/15/5 Hz\n    Infrared        |          RGB8        @ 90/60/30/15/5 Hz\n    Infrared 1  1280x800       Y16         @ 25/15 Hz\n    Infrared 1      |          Y8          @ 30/15 Hz\n    Infrared 1  1280x720       Y8          @ 30/15/5 Hz\n    Infrared 1   848x480       Y8          @ 90/60/30/15/5 Hz\n    Infrared 1   848x100       Y8          @ 100 Hz\n    Infrared 1   640x480       Y8          @ 90/60/30/15/5 Hz\n    Infrared 1   640x400       Y16         @ 25/15 Hz\n    Infrared 1   640x360       Y8          @ 90/60/30/15/5 Hz\n    Infrared 1   480x270       Y8          @ 90/60/30/15/5 Hz\n    Infrared 1   424x240       Y8          @ 90/60/30/15/5 Hz\n    Infrared 2  1280x800       Y16         @ 25/15 Hz\n    Infrared 2      |          Y8          @ 30/15 Hz\n    Infrared 2  1280x720       Y8          @ 30/15/5 Hz\n    Infrared 2   848x480       Y8          @ 90/60/30/15/5 Hz\n    Infrared 2   848x100       Y8          @ 100 Hz\n    Infrared 2   640x480       Y8          @ 90/60/30/15/5 Hz\n    Infrared 2   640x400       Y16         @ 25/15 Hz\n    Infrared 2   640x360       Y8          @ 90/60/30/15/5 Hz\n    Infrared 2   480x270       Y8          @ 90/60/30/15",
+      "serials": [
+        "226523132524",
+        "234222302617"
+      ],
+      "models": [
+        "D400",
+        "D455"
+      ],
+      "usb3_detected": true,
+      "command": "rs-enumerate-devices",
+      "returncode": 0
+    }
+  ],
+  "ok": true,
+  "formal_ready": false,
+  "errors": [],
+  "warnings": []
+}

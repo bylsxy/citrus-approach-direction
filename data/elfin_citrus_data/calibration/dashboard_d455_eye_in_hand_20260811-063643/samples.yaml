@@ -1,0 +1,385 @@
+schema_version: 1
+mount: eye_in_hand
+camera_serial: '234222302617'
+camera_device_type: d455
+base_frame: elfin_base_link
+gripper_frame: elfin_end_link
+camera_frame: camera_link
+optical_frame: camera_color_optical_frame
+board:
+  dictionary: DICT_4X4_50
+  squares_x: 5
+  squares_y: 7
+  square_length_m: 0.03
+  marker_length_m: 0.022
+samples:
+- index: 1
+  stamp: 1786430263.532952
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.25062367515931916
+    - 0.17931618580492364
+    - 0.4426664605072772
+    quaternion_xyzw:
+    - -0.2336987514227441
+    - -0.926146107489318
+    - -0.17107846792280437
+    - 0.24159974954254648
+  camera_to_target:
+    translation_m:
+    - 0.4815044585779246
+    - -0.1193911322560876
+    - -0.09041253160812192
+    quaternion_xyzw:
+    - -0.029824583209772524
+    - -0.5222246535764226
+    - 0.2927296880252376
+    - 0.8004381520030114
+  charuco_corner_count: 24
+  depth_valid_corner_count: 24
+  depth_median_abs_error_m: 0.005701291119382862
+  joint_stability_span_rad: 9.492455370629926e-07
+  joint_positions_rad:
+  - -0.5258094102465173
+  - -0.541710222237775
+  - -2.0502256001007626
+  - -0.21530075337395546
+  - -1.0687023924234664
+  - 0.01762843886870312
+  color_file: samples/sample_01_color.png
+  depth_file: samples/sample_01_depth_mm.png
+  overlay_file: samples/sample_01_detected.jpg
+- index: 2
+  stamp: 1786430328.8543098
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.23031183730007893
+    - 0.5337378509265258
+    - 0.5162991602029613
+    quaternion_xyzw:
+    - 0.31336256071868634
+    - -0.9108104712367986
+    - -0.013376102110886587
+    - 0.26841995253249645
+  camera_to_target:
+    translation_m:
+    - 0.45735194410726143
+    - -0.009595282337848315
+    - -0.20555513015880184
+    quaternion_xyzw:
+    - 0.2641304386063542
+    - -0.47621081575136426
+    - -0.19042051991943504
+    - 0.8168221323866336
+  charuco_corner_count: 12
+  depth_valid_corner_count: 12
+  depth_median_abs_error_m: 0.0071287273443169374
+  joint_stability_span_rad: 3.7969821482519706e-06
+  joint_positions_rad:
+  - -1.3032614392532536
+  - 0.4526505820826929
+  - -0.905934785561372
+  - 0.555070378549097
+  - -1.759203530235695
+  - -1.8527236751694123
+  color_file: samples/sample_02_color.png
+  depth_file: samples/sample_02_depth_mm.png
+  overlay_file: samples/sample_02_detected.jpg
+- index: 3
+  stamp: 1786430352.342705
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.17418863642385832
+    - 0.41254327168413707
+    - 0.5467908604458407
+    quaternion_xyzw:
+    - -0.18143993380406567
+    - -0.9459781718246063
+    - -0.0417608018312936
+    - 0.265444691570503
+  camera_to_target:
+    translation_m:
+    - 0.5205646134637422
+    - -0.025158308991567957
+    - -0.15233301223170395
+    quaternion_xyzw:
+    - -0.07425707843332982
+    - -0.5078450740369405
+    - 0.17224573264153087
+    - 0.8407798015329241
+  charuco_corner_count: 16
+  depth_valid_corner_count: 16
+  depth_median_abs_error_m: 0.007091578497865569
+  joint_stability_span_rad: 3.7969821482519706e-06
+  joint_positions_rad:
+  - -1.3217109755115117
+  - -0.038828888693355296
+  - -1.4156074963006726
+  - 0.44659724329287437
+  - -1.4509142094287746
+  - -0.9256620063125102
+  color_file: samples/sample_03_color.png
+  depth_file: samples/sample_03_depth_mm.png
+  overlay_file: samples/sample_03_detected.jpg
+- index: 4
+  stamp: 1786430369.0883806
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.16155986444442438
+    - 0.304774324236788
+    - 0.5013965199588287
+    quaternion_xyzw:
+    - -0.19188419869158874
+    - -0.9439149839445008
+    - -0.04480391774176148
+    - 0.2649482333070542
+  camera_to_target:
+    translation_m:
+    - 0.5022035429977281
+    - -0.11789620483010596
+    - -0.0882003873591536
+    quaternion_xyzw:
+    - -0.08709926690840025
+    - -0.5086943431660562
+    - 0.17361585624500248
+    - 0.838749853886836
+  charuco_corner_count: 18
+  depth_valid_corner_count: 18
+  depth_median_abs_error_m: 0.008765204145315397
+  joint_stability_span_rad: 4.271604916783467e-06
+  joint_positions_rad:
+  - -1.2684597247508667
+  - -0.34175876919804654
+  - -1.7757640678752078
+  - 0.42700956163568365
+  - -1.3674484732235748
+  - -0.8819853206613999
+  color_file: samples/sample_04_color.png
+  depth_file: samples/sample_04_depth_mm.png
+  overlay_file: samples/sample_04_detected.jpg
+- index: 5
+  stamp: 1786430384.4346423
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.23965614740230437
+    - 0.12983460471086467
+    - 0.49437945643947945
+    quaternion_xyzw:
+    - -0.45850184702274355
+    - -0.8274385924924802
+    - -0.009200522478342571
+    - 0.3240937862979196
+  camera_to_target:
+    translation_m:
+    - 0.5171292687658843
+    - -0.2418770839188828
+    - -0.029045698852859292
+    quaternion_xyzw:
+    - -0.30736305366454597
+    - -0.3939426272791653
+    - 0.33254656466635524
+    - 0.7998436984705197
+  charuco_corner_count: 22
+  depth_valid_corner_count: 22
+  depth_median_abs_error_m: 0.005908383030061692
+  joint_stability_span_rad: 1.423868305594489e-06
+  joint_positions_rad:
+  - -0.4759360497294928
+  - -0.6566377525232232
+  - -1.9943838582694864
+  - -0.03936378855348745
+  - -1.1445836567875731
+  - 0.5400903347287856
+  color_file: samples/sample_05_color.png
+  depth_file: samples/sample_05_depth_mm.png
+  overlay_file: samples/sample_05_detected.jpg
+- index: 6
+  stamp: 1786430400.4505005
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.32314936870300626
+    - 0.040355249688064115
+    - 0.47211844083188514
+    quaternion_xyzw:
+    - -0.4581356155111861
+    - -0.8251568655749953
+    - -0.13800982111097782
+    - 0.30030183860834386
+  camera_to_target:
+    translation_m:
+    - 0.5527064512740244
+    - -0.21469778539486264
+    - -0.04692758692410443
+    quaternion_xyzw:
+    - -0.21538890133637636
+    - -0.40600825764273923
+    - 0.42717563243019524
+    - 0.7786436251359659
+  charuco_corner_count: 13
+  depth_valid_corner_count: 13
+  depth_median_abs_error_m: 0.006902321716057869
+  joint_stability_span_rad: 4.2716049166724446e-06
+  joint_positions_rad:
+  - 0.14349934632812386
+  - -0.4088580884760616
+  - -1.9183032523425976
+  - -0.6038739393458572
+  - -1.3233327615115753
+  - 1.2157405261137424
+  color_file: samples/sample_06_color.png
+  depth_file: samples/sample_06_depth_mm.png
+  overlay_file: samples/sample_06_detected.jpg
+- index: 7
+  stamp: 1786430425.73843
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.5387147882928186
+    - 0.07126150248944049
+    - 0.4714119696797242
+    quaternion_xyzw:
+    - -0.7227025482410873
+    - -0.6536606650958601
+    - -0.17846748657338588
+    - 0.13630156972117136
+  camera_to_target:
+    translation_m:
+    - 0.5181531004265525
+    - -0.08345507740197594
+    - 0.09221388634223832
+    quaternion_xyzw:
+    - -0.38987169537724425
+    - -0.4136261161868313
+    - 0.6293191002647819
+    - 0.5299726098524307
+  charuco_corner_count: 22
+  depth_valid_corner_count: 22
+  depth_median_abs_error_m: 0.004864912211790806
+  joint_stability_span_rad: 1.8984910741259853e-06
+  joint_positions_rad:
+  - -0.007114120677480779
+  - 0.35691015183779695
+  - -1.1278878516590294
+  - -0.4512181705672724
+  - -1.7250629652498688
+  - 1.6088995172751712
+  color_file: samples/sample_07_color.png
+  depth_file: samples/sample_07_depth_mm.png
+  overlay_file: samples/sample_07_detected.jpg
+- index: 8
+  stamp: 1786430436.4782245
+  source: keyboard_enter
+  base_to_gripper:
+    translation_m:
+    - -0.688787931553831
+    - 0.02821055600188758
+    - 0.43572004427008365
+    quaternion_xyzw:
+    - -0.7864083406831492
+    - -0.5260646933957567
+    - -0.2559304632245028
+    - 0.19828630325893917
+  camera_to_target:
+    translation_m:
+    - 0.5766389807518071
+    - -0.1184237834040809
+    - 0.06396668747355111
+    quaternion_xyzw:
+    - -0.3805645369718158
+    - -0.279769559841575
+    - 0.7361568070587352
+    - 0.4847399117120098
+  charuco_corner_count: 12
+  depth_valid_corner_count: 12
+  depth_median_abs_error_m: 0.00479777856303748
+  joint_stability_span_rad: 9.492455370629926e-07
+  joint_positions_rad:
+  - 0.08701591451379635
+  - 1.0511665049946266
+  - -0.15258789772268516
+  - -0.7127955931183398
+  - -2.107236337810926
+  - 1.7260938459031137
+  color_file: samples/sample_08_color.png
+  depth_file: samples/sample_08_depth_mm.png
+  overlay_file: samples/sample_08_detected.jpg
+- index: 9
+  stamp: 1786430495.4623494
+  source: physical_point_button
+  base_to_gripper:
+    translation_m:
+    - -0.6466430233026613
+    - 0.06821557406592174
+    - 0.5259932416679739
+    quaternion_xyzw:
+    - -0.7835798088117445
+    - -0.550672451403701
+    - -0.16187637690696938
+    - 0.23782046397873619
+  camera_to_target:
+    translation_m:
+    - 0.584499771123933
+    - -0.21569400428454544
+    - 0.043508452271456916
+    quaternion_xyzw:
+    - -0.4486759539054542
+    - -0.26848909533352316
+    - 0.6635599116263085
+    - 0.535062368099741
+  charuco_corner_count: 14
+  depth_valid_corner_count: 14
+  depth_median_abs_error_m: 0.003395322585910243
+  joint_stability_span_rad: 0.00018795061633747334
+  joint_positions_rad:
+  - 0.02789975020243863
+  - 0.736707562819598
+  - -0.4557764476362247
+  - -0.6193770174570876
+  - -1.8910974006277483
+  - 1.72608862505266
+  color_file: samples/sample_09_color.png
+  depth_file: samples/sample_09_depth_mm.png
+  overlay_file: samples/sample_09_detected.jpg
+- index: 10
+  stamp: 1786430519.6832335
+  source: physical_point_button
+  base_to_gripper:
+    translation_m:
+    - -0.46681971879618694
+    - 0.0742556338988916
+    - 0.7039185216766788
+    quaternion_xyzw:
+    - -0.7834757491407622
+    - -0.527724453909524
+    - -0.048330267023188836
+    - 0.3245563688231728
+  camera_to_target:
+    translation_m:
+    - 0.697039057600063
+    - -0.27403457461115843
+    - -0.03548785013709464
+    quaternion_xyzw:
+    - -0.5268151545118951
+    - -0.1764836081973628
+    - 0.5863198173926478
+    - 0.5895323576758955
+  charuco_corner_count: 15
+  depth_valid_corner_count: 15
+  depth_median_abs_error_m: 0.007704172957280098
+  joint_stability_span_rad: 7.1193415278614225e-06
+  joint_positions_rad:
+  - 0.031307541680476655
+  - 0.20373039952275615
+  - -0.7744742457569854
+  - -0.6230491738171963
+  - -1.8044739991435255
+  - 1.726090523543734
+  color_file: samples/sample_10_color.png
+  depth_file: samples/sample_10_depth_mm.png
+  overlay_file: samples/sample_10_detected.jpg

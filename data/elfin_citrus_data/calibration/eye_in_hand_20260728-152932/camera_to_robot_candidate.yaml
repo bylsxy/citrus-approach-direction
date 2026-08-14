@@ -1,0 +1,36 @@
+configured: true
+quality_passed: true
+mount: eye_in_hand
+parent_frame: elfin_end_link
+child_frame: camera_link
+translation_m:
+- 0.11700875965421813
+- -0.06395486081505536
+- 0.08699775682679903
+quaternion_xyzw:
+- 0.6808948216559386
+- -0.12695799062484844
+- 0.707234622514984
+- 0.1417148516377752
+calibration_method: opencv_park_charuco_rgbd
+calibration_date: '2026-07-28T15:52:59'
+camera_serial: '233522078111'
+sample_count: 15
+fit_sample_count: 12
+holdout_sample_count: 3
+motion_diversity:
+  translation_span_m: 0.8037379551231673
+  rotation_span_deg: 109.67880441911754
+  rotation_vector_rank: 3
+fit_error:
+  translation_rms_m: 0.002771859928126973
+  translation_max_m: 0.005266749946930041
+  rotation_rms_deg: 0.41291436643971896
+  rotation_max_deg: 0.6355955598199019
+holdout_error:
+  translation_rms_m: 0.005605496540171147
+  translation_max_m: 0.005925835904262186
+  rotation_rms_deg: 0.6208204451867081
+  rotation_max_deg: 0.8851960193616476
+source_samples_file: /home/catas/elfin_citrus_data/calibration/eye_in_hand_20260728-152932/samples.yaml
+note: Candidate only. Copy to the live config only after reviewing the holdout result.

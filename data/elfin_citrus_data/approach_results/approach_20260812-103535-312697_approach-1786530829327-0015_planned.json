@@ -1,0 +1,863 @@
+{
+  "actionable": true,
+  "best": {
+    "clearance_m": 0.45,
+    "display_label": "SELECTED: FASTEST",
+    "distance_m": 0.39335552892899894,
+    "distance_score": 0.6747887979954984,
+    "distance_score_exp_neg_d": 0.6747887979954984,
+    "endpoint_condition_number": 30.410050183064858,
+    "eta_available": true,
+    "insertion_direction": [
+      -0.48793000022722105,
+      0.8606693856410421,
+      0.1455078125
+    ],
+    "joint_delta_inf_rad": 1.8934250609338819,
+    "joint_delta_l2_rad": 3.232850236312903,
+    "joint_delta_weighted": 1.170552293397247,
+    "known_free_fraction": 0.2777777777777778,
+    "light_transmission": 1.0,
+    "local_light": 0.9831932773109244,
+    "max_speed_eta_s": 1.216003224,
+    "moveit_candidate_rank": 1,
+    "moveit_entry_pose": {
+      "frame_id": "world",
+      "orientation_xyzw": [
+        -0.5894511914616597,
+        -0.28247723206380687,
+        0.05206766645351498,
+        0.7550118306093524
+      ],
+      "position": [
+        -0.09066557937770041,
+        0.019947564549833013,
+        0.7176599784737913
+      ]
+    },
+    "moveit_feasible": true,
+    "moveit_final_pose": {
+      "frame_id": "world",
+      "orientation_xyzw": [
+        -0.5894511914616597,
+        -0.28247723206380687,
+        0.05206766645351498,
+        0.7550118306093524
+      ],
+      "position": [
+        -0.16385507941178357,
+        0.14904797239598933,
+        0.7394861503487913
+      ]
+    },
+    "moveit_message": "球面候选通过 MoveIt 只规划：球面方向滚转+60.0°；终点条件数 30.41；已缓存四段轨迹 plan_id=approach-1786530829327-0015，执行按钮不会重新规划",
+    "moveit_plan_id": "approach-1786530829327-0015",
+    "moveit_planning_duration_s": 0.9424241140004597,
+    "moveit_target_point": [
+      -0.2614410794572278,
+      0.32118184952419776,
+      0.7685877128487912
+    ],
+    "moveit_timings": {
+      "distance_score_exp_neg_d": 0.6747887979954984,
+      "entry_distance_m": 0.39335552892899894,
+      "entry_trajectory_duration_s": 1.226003224,
+      "joint_delta_inf_rad": 1.8934250609338819,
+      "joint_delta_l2_rad": 3.232850236312903,
+      "joint_delta_weighted": 1.170552293397247,
+      "max_speed_entry_eta_s": 1.216003224,
+      "roll_candidates": [
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.15217326900165062,
+          "entry_trajectory_duration_s": 1.041765903,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.006436315998143982,
+          "joint_delta_inf_rad": 1.6355724672054166,
+          "joint_delta_l2_rad": 2.2819742305370534,
+          "joint_delta_weighted": 0.7912764683257163,
+          "max_speed_entry_eta_s": 1.041765903,
+          "strategy": "球面方向滚转+0.0°",
+          "success": false,
+          "total_s": 0.19594419200439006
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.0342774009986897,
+          "entry_trajectory_duration_s": 1.041701185,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.0066036110001732595,
+          "joint_delta_inf_rad": 1.635470860505657,
+          "joint_delta_l2_rad": 2.2627802054567803,
+          "joint_delta_weighted": 0.7636859725214934,
+          "max_speed_entry_eta_s": 1.041701185,
+          "strategy": "球面方向滚转+30.0°",
+          "success": false,
+          "total_s": 0.06235525399824837
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.034080925994203426,
+          "entry_trajectory_duration_s": 1.041687955,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.006728340995323379,
+          "joint_delta_inf_rad": 1.6354500900169218,
+          "joint_delta_l2_rad": 2.4169841988457375,
+          "joint_delta_weighted": 0.8785356037548328,
+          "max_speed_entry_eta_s": 1.041687955,
+          "strategy": "球面方向滚转-30.0°",
+          "success": false,
+          "total_s": 0.08547461000125622
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.03230560300289653,
+          "entry_trajectory_duration_s": 1.226003224,
+          "insertion_plan_s": 0.006113182003900874,
+          "joint_delta_inf_rad": 1.8934250609338819,
+          "joint_delta_l2_rad": 3.232850236312903,
+          "joint_delta_weighted": 1.170552293397247,
+          "max_speed_entry_eta_s": 1.216003224,
+          "strategy": "球面方向滚转+60.0°",
+          "success": true,
+          "total_s": 0.5735752389955451
+        }
+      ],
+      "selected_strategy": "球面方向滚转+60.0°",
+      "total_s": 0.9423016039945651
+    },
+    "moveit_validated": true,
+    "moveit_validation_duration_s": 1.0567481010002666,
+    "observed_fraction": 0.2777777777777778,
+    "outward_direction": [
+      0.48793000022722105,
+      -0.8606693856410421,
+      -0.1455078125
+    ],
+    "patch_angular_radius_deg": 37.90201322125247,
+    "patch_index": 2,
+    "patch_solid_angle_sr": 1.325359400733194,
+    "patch_utility": 0.33710354602392983,
+    "preentry_point": [
+      -0.05430286919235744,
+      -0.04419333972104239,
+      0.7068160901841252
+    ],
+    "raw_score": 0.1888778838483739,
+    "sample_index": 586,
+    "screen_point": [
+      0.5068166310689468,
+      -1.0339631332082408,
+      0.5394821058091251
+    ],
+    "soft_clearance_m": 0.03367438737482356,
+    "soft_gap_score": 0.07483197194405236,
+    "unknown_fraction": 0.7222222222222222,
+    "utility": 0.1974066102318443
+  },
+  "candidates": [
+    {
+      "clearance_m": 0.45,
+      "display_label": "SELECTED: FASTEST",
+      "distance_m": 0.39335552892899894,
+      "distance_score": 0.6747887979954984,
+      "distance_score_exp_neg_d": 0.6747887979954984,
+      "endpoint_condition_number": 30.410050183064858,
+      "eta_available": true,
+      "insertion_direction": [
+        -0.48793000022722105,
+        0.8606693856410421,
+        0.1455078125
+      ],
+      "joint_delta_inf_rad": 1.8934250609338819,
+      "joint_delta_l2_rad": 3.232850236312903,
+      "joint_delta_weighted": 1.170552293397247,
+      "known_free_fraction": 0.2777777777777778,
+      "light_transmission": 1.0,
+      "local_light": 0.9831932773109244,
+      "max_speed_eta_s": 1.216003224,
+      "moveit_candidate_rank": 1,
+      "moveit_entry_pose": {
+        "frame_id": "world",
+        "orientation_xyzw": [
+          -0.5894511914616597,
+          -0.28247723206380687,
+          0.05206766645351498,
+          0.7550118306093524
+        ],
+        "position": [
+          -0.09066557937770041,
+          0.019947564549833013,
+          0.7176599784737913
+        ]
+      },
+      "moveit_feasible": true,
+      "moveit_final_pose": {
+        "frame_id": "world",
+        "orientation_xyzw": [
+          -0.5894511914616597,
+          -0.28247723206380687,
+          0.05206766645351498,
+          0.7550118306093524
+        ],
+        "position": [
+          -0.16385507941178357,
+          0.14904797239598933,
+          0.7394861503487913
+        ]
+      },
+      "moveit_message": "球面候选通过 MoveIt 只规划：球面方向滚转+60.0°；终点条件数 30.41；已缓存四段轨迹 plan_id=approach-1786530829327-0015，执行按钮不会重新规划",
+      "moveit_plan_id": "approach-1786530829327-0015",
+      "moveit_planning_duration_s": 0.9424241140004597,
+      "moveit_target_point": [
+        -0.2614410794572278,
+        0.32118184952419776,
+        0.7685877128487912
+      ],
+      "moveit_timings": {
+        "distance_score_exp_neg_d": 0.6747887979954984,
+        "entry_distance_m": 0.39335552892899894,
+        "entry_trajectory_duration_s": 1.226003224,
+        "joint_delta_inf_rad": 1.8934250609338819,
+        "joint_delta_l2_rad": 3.232850236312903,
+        "joint_delta_weighted": 1.170552293397247,
+        "max_speed_entry_eta_s": 1.216003224,
+        "roll_candidates": [
+          {
+            "distance_score_exp_neg_d": 0.6747887979954984,
+            "entry_distance_m": 0.39335552892899894,
+            "entry_plan_s": 0.15217326900165062,
+            "entry_trajectory_duration_s": 1.041765903,
+            "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+            "insertion_plan_s": 0.006436315998143982,
+            "joint_delta_inf_rad": 1.6355724672054166,
+            "joint_delta_l2_rad": 2.2819742305370534,
+            "joint_delta_weighted": 0.7912764683257163,
+            "max_speed_entry_eta_s": 1.041765903,
+            "strategy": "球面方向滚转+0.0°",
+            "success": false,
+            "total_s": 0.19594419200439006
+          },
+          {
+            "distance_score_exp_neg_d": 0.6747887979954984,
+            "entry_distance_m": 0.39335552892899894,
+            "entry_plan_s": 0.0342774009986897,
+            "entry_trajectory_duration_s": 1.041701185,
+            "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+            "insertion_plan_s": 0.0066036110001732595,
+            "joint_delta_inf_rad": 1.635470860505657,
+            "joint_delta_l2_rad": 2.2627802054567803,
+            "joint_delta_weighted": 0.7636859725214934,
+            "max_speed_entry_eta_s": 1.041701185,
+            "strategy": "球面方向滚转+30.0°",
+            "success": false,
+            "total_s": 0.06235525399824837
+          },
+          {
+            "distance_score_exp_neg_d": 0.6747887979954984,
+            "entry_distance_m": 0.39335552892899894,
+            "entry_plan_s": 0.034080925994203426,
+            "entry_trajectory_duration_s": 1.041687955,
+            "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+            "insertion_plan_s": 0.006728340995323379,
+            "joint_delta_inf_rad": 1.6354500900169218,
+            "joint_delta_l2_rad": 2.4169841988457375,
+            "joint_delta_weighted": 0.8785356037548328,
+            "max_speed_entry_eta_s": 1.041687955,
+            "strategy": "球面方向滚转-30.0°",
+            "success": false,
+            "total_s": 0.08547461000125622
+          },
+          {
+            "distance_score_exp_neg_d": 0.6747887979954984,
+            "entry_distance_m": 0.39335552892899894,
+            "entry_plan_s": 0.03230560300289653,
+            "entry_trajectory_duration_s": 1.226003224,
+            "insertion_plan_s": 0.006113182003900874,
+            "joint_delta_inf_rad": 1.8934250609338819,
+            "joint_delta_l2_rad": 3.232850236312903,
+            "joint_delta_weighted": 1.170552293397247,
+            "max_speed_entry_eta_s": 1.216003224,
+            "strategy": "球面方向滚转+60.0°",
+            "success": true,
+            "total_s": 0.5735752389955451
+          }
+        ],
+        "selected_strategy": "球面方向滚转+60.0°",
+        "total_s": 0.9423016039945651
+      },
+      "moveit_validated": true,
+      "moveit_validation_duration_s": 1.0567481010002666,
+      "observed_fraction": 0.2777777777777778,
+      "outward_direction": [
+        0.48793000022722105,
+        -0.8606693856410421,
+        -0.1455078125
+      ],
+      "patch_angular_radius_deg": 37.90201322125247,
+      "patch_index": 2,
+      "patch_solid_angle_sr": 1.325359400733194,
+      "patch_utility": 0.33710354602392983,
+      "preentry_point": [
+        -0.05430286919235744,
+        -0.04419333972104239,
+        0.7068160901841252
+      ],
+      "raw_score": 0.1888778838483739,
+      "sample_index": 586,
+      "screen_point": [
+        0.5068166310689468,
+        -1.0339631332082408,
+        0.5394821058091251
+      ],
+      "soft_clearance_m": 0.03367438737482356,
+      "soft_gap_score": 0.07483197194405236,
+      "unknown_fraction": 0.7222222222222222,
+      "utility": 0.1974066102318443
+    },
+    {
+      "clearance_m": 0.45,
+      "display_label": "INFEASIBLE: MOVEIT",
+      "distance_m": null,
+      "distance_score": null,
+      "distance_score_exp_neg_d": null,
+      "insertion_direction": [
+        -0.8050003941744905,
+        -0.1668261240031396,
+        -0.5693359375
+      ],
+      "known_free_fraction": 0.16666666666666666,
+      "light_transmission": 1.0,
+      "local_light": 1.0,
+      "max_speed_eta_s": null,
+      "moveit_feasible": false,
+      "moveit_message": "球面方向只规划失败：固定伸入方向的滚转候选全部失败：球面方向滚转+0.0°=预抓取段不可达；球面方向滚转+30.0°=预抓取段不可达；球面方向滚转-30.0°=预抓取段不可达；球面方向滚转+60.0°=预抓取段不可达；球面方向滚转-60.0°=预抓取段不可达；球面方向滚转+90.0°=预抓取段不可达",
+      "moveit_timings": {},
+      "moveit_validated": false,
+      "observed_fraction": 0.16666666666666663,
+      "outward_direction": [
+        0.8050003941744905,
+        0.1668261240031396,
+        0.5693359375
+      ],
+      "patch_angular_radius_deg": 6.205482613250946,
+      "patch_index": 1,
+      "patch_solid_angle_sr": 0.03681553890925539,
+      "patch_utility": 0.26220873626211316,
+      "preentry_point": [
+        0.08837880808391385,
+        0.4181796396188394,
+        1.028495777684125
+      ],
+      "raw_score": 0.10565359223225906,
+      "sample_index": 220,
+      "screen_point": [
+        1.014129261384578,
+        0.6100296822224499,
+        1.6832321058091253
+      ],
+      "soft_clearance_m": 0.030548589232015685,
+      "soft_gap_score": 0.06788575384892374,
+      "unknown_fraction": 0.8333333333333334,
+      "utility": 0.10379185229244421
+    },
+    {
+      "clearance_m": 0.45,
+      "display_label": "INFEASIBLE: MOVEIT",
+      "distance_m": null,
+      "distance_score": null,
+      "distance_score_exp_neg_d": null,
+      "insertion_direction": [
+        -0.4734189542375214,
+        -0.2805614489158706,
+        -0.8349609375
+      ],
+      "known_free_fraction": 0.19444444444444445,
+      "light_transmission": 1.0,
+      "local_light": 1.0,
+      "max_speed_eta_s": null,
+      "moveit_feasible": false,
+      "moveit_message": "球面方向只规划失败：固定伸入方向的滚转候选全部失败：球面方向滚转+0.0°=预抓取段不可达；球面方向滚转+30.0°=预抓取段不可达；球面方向滚转-30.0°=预抓取段不可达；球面方向滚转+60.0°=预抓取段不可达；球面方向滚转-60.0°=预抓取段不可达；球面方向滚转+90.0°=预抓取段不可达",
+      "moveit_timings": {},
+      "moveit_validated": false,
+      "observed_fraction": 0.19444444444444442,
+      "outward_direction": [
+        0.4734189542375214,
+        0.2805614489158706,
+        0.8349609375
+      ],
+      "patch_angular_radius_deg": 12.429257132522617,
+      "patch_index": 0,
+      "patch_solid_angle_sr": 0.14726215563702155,
+      "patch_utility": 0.255295592060336,
+      "preentry_point": [
+        -0.060832839887722284,
+        0.4693605358295684,
+        1.1480270276841251
+      ],
+      "raw_score": 0.12246113972736253,
+      "sample_index": 84,
+      "screen_point": [
+        0.4835989574854273,
+        0.7920062020828196,
+        2.108232105809125
+      ],
+      "soft_clearance_m": 0.02188607004274728,
+      "soft_gap_score": 0.04863571120610506,
+      "unknown_fraction": 0.8055555555555556,
+      "utility": 0.1062324130704303
+    }
+  ],
+  "config": {
+    "candidate_min_separation_deg": 10.0,
+    "contact_margin_m": 0.01,
+    "corridor_length_m": 0.45,
+    "direction_count": 1024,
+    "emitter_ring_fraction": 0.55,
+    "fruit_radius_max_m": 0.09,
+    "fruit_radius_min_m": 0.025,
+    "hard_clearance_radius_m": 0.07,
+    "known_free_weight": 0.25,
+    "light_weight": 0.6,
+    "local_average_angle_deg": 15.0,
+    "maximum_candidate_count": 8.0,
+    "minimum_local_light": 0.25,
+    "minimum_local_score": 0.1,
+    "minimum_occupied_voxels": 25.0,
+    "minimum_target_voxels": 12.0,
+    "minimum_visible_patch_angle_deg": 6.0,
+    "obstacle_downsample_m": 0.012,
+    "patch_connect_angle_deg": 10.0,
+    "preferred_direction_sigma_deg": 85.0,
+    "preferred_direction_weight": 0.1,
+    "robot_proximity_weight": 0.0,
+    "safety_margin_m": 0.01,
+    "screen_radius_m": 1.6,
+    "soft_gap_weight": 0.15,
+    "target_cluster_link_m": 0.0105,
+    "target_search_radius_m": 0.14,
+    "unknown_transmission": 0.0,
+    "visualization_include_unknown": 1.0,
+    "visualization_max_voxels": 12000.0
+  },
+  "direction_candidate_ready": true,
+  "eligible_direction_count": 125,
+  "executed": false,
+  "execution_attempted": false,
+  "execution_requested": false,
+  "flange_direction": [
+    0.8738154314659166,
+    -0.46357249315569027,
+    -0.14678942510089674
+  ],
+  "geometry_best": {
+    "clearance_m": 0.45,
+    "display_label": "GEOMETRY CANDIDATE",
+    "distance_m": null,
+    "distance_score": null,
+    "distance_score_exp_neg_d": null,
+    "insertion_direction": [
+      -0.48793000022722105,
+      0.8606693856410421,
+      0.1455078125
+    ],
+    "known_free_fraction": 0.2777777777777778,
+    "light_transmission": 1.0,
+    "local_light": 0.9831932773109244,
+    "max_speed_eta_s": null,
+    "moveit_feasible": false,
+    "observed_fraction": 0.2777777777777778,
+    "outward_direction": [
+      0.48793000022722105,
+      -0.8606693856410421,
+      -0.1455078125
+    ],
+    "patch_angular_radius_deg": 37.90201322125247,
+    "patch_index": 2,
+    "patch_solid_angle_sr": 1.325359400733194,
+    "patch_utility": 0.33710354602392983,
+    "preentry_point": [
+      -0.05430286919235744,
+      -0.04419333972104239,
+      0.7068160901841252
+    ],
+    "raw_score": 0.1888778838483739,
+    "sample_index": 586,
+    "screen_point": [
+      0.5068166310689468,
+      -1.0339631332082408,
+      0.5394821058091251
+    ],
+    "soft_clearance_m": 0.03367438737482356,
+    "soft_gap_score": 0.07483197194405236,
+    "unknown_fraction": 0.7222222222222222,
+    "utility": 0.1974066102318443
+  },
+  "geometry_best_sample_index": 586,
+  "geometry_candidate_ready": true,
+  "geometry_only": true,
+  "global_mean_outward_direction": [
+    0.7402525982612557,
+    -0.6070228054541804,
+    0.28904913842804675
+  ],
+  "hard_clearance_active": false,
+  "hard_obstacle_point_count": 0,
+  "hard_obstacle_semantics": "none_all_canopy_soft",
+  "map_summary": {
+    "inserted_views": 10,
+    "occupied_voxel_count": 58666,
+    "resolution_m": 0.006,
+    "semantic_voxel_count": 58907,
+    "truncated": true,
+    "voxel_count": 600000
+  },
+  "minimum_patch_angular_radius_deg": 6.000000000000001,
+  "minimum_patch_solid_angle_sr": 0.0344199465332577,
+  "minimum_required_clearance_m": 0.08,
+  "moveit_candidate_duration_s": 1.0567481010002666,
+  "moveit_candidate_rank": 1,
+  "moveit_endpoint_condition_number": 30.410050183064858,
+  "moveit_entry_pose": {
+    "frame_id": "world",
+    "orientation_xyzw": [
+      -0.5894511914616597,
+      -0.28247723206380687,
+      0.05206766645351498,
+      0.7550118306093524
+    ],
+    "position": [
+      -0.09066557937770041,
+      0.019947564549833013,
+      0.7176599784737913
+    ]
+  },
+  "moveit_failures": [
+    {
+      "candidate_rank": 2,
+      "duration_s": 52.40642298300372,
+      "message": "球面方向只规划失败：固定伸入方向的滚转候选全部失败：球面方向滚转+0.0°=预抓取段不可达；球面方向滚转+30.0°=预抓取段不可达；球面方向滚转-30.0°=预抓取段不可达；球面方向滚转+60.0°=预抓取段不可达；球面方向滚转-60.0°=预抓取段不可达；球面方向滚转+90.0°=预抓取段不可达"
+    },
+    {
+      "candidate_rank": 3,
+      "duration_s": 52.898548527002276,
+      "message": "球面方向只规划失败：固定伸入方向的滚转候选全部失败：球面方向滚转+0.0°=预抓取段不可达；球面方向滚转+30.0°=预抓取段不可达；球面方向滚转-30.0°=预抓取段不可达；球面方向滚转+60.0°=预抓取段不可达；球面方向滚转-60.0°=预抓取段不可达；球面方向滚转+90.0°=预抓取段不可达"
+    }
+  ],
+  "moveit_final_pose": {
+    "frame_id": "world",
+    "orientation_xyzw": [
+      -0.5894511914616597,
+      -0.28247723206380687,
+      0.05206766645351498,
+      0.7550118306093524
+    ],
+    "position": [
+      -0.16385507941178357,
+      0.14904797239598933,
+      0.7394861503487913
+    ]
+  },
+  "moveit_message": "MoveIt 可行候选 1/3；按最高速入口 ETA 选择 #1",
+  "moveit_plan_id": "approach-1786530829327-0015",
+  "moveit_planning_duration_s": 0.9424241140004597,
+  "moveit_selected_display_refreshed": true,
+  "moveit_selected_distance_m": 0.39335552892899894,
+  "moveit_selected_distance_score": 0.6747887979954984,
+  "moveit_selected_eta_s": 1.216003224,
+  "moveit_selection_metric": "max_speed_entry_eta_s",
+  "moveit_target_source": "fitted_entry_surface",
+  "moveit_timings": {
+    "distance_score_exp_neg_d": 0.6747887979954984,
+    "entry_distance_m": 0.39335552892899894,
+    "entry_trajectory_duration_s": 1.226003224,
+    "joint_delta_inf_rad": 1.8934250609338819,
+    "joint_delta_l2_rad": 3.232850236312903,
+    "joint_delta_weighted": 1.170552293397247,
+    "max_speed_entry_eta_s": 1.216003224,
+    "roll_candidates": [
+      {
+        "distance_score_exp_neg_d": 0.6747887979954984,
+        "entry_distance_m": 0.39335552892899894,
+        "entry_plan_s": 0.15217326900165062,
+        "entry_trajectory_duration_s": 1.041765903,
+        "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+        "insertion_plan_s": 0.006436315998143982,
+        "joint_delta_inf_rad": 1.6355724672054166,
+        "joint_delta_l2_rad": 2.2819742305370534,
+        "joint_delta_weighted": 0.7912764683257163,
+        "max_speed_entry_eta_s": 1.041765903,
+        "strategy": "球面方向滚转+0.0°",
+        "success": false,
+        "total_s": 0.19594419200439006
+      },
+      {
+        "distance_score_exp_neg_d": 0.6747887979954984,
+        "entry_distance_m": 0.39335552892899894,
+        "entry_plan_s": 0.0342774009986897,
+        "entry_trajectory_duration_s": 1.041701185,
+        "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+        "insertion_plan_s": 0.0066036110001732595,
+        "joint_delta_inf_rad": 1.635470860505657,
+        "joint_delta_l2_rad": 2.2627802054567803,
+        "joint_delta_weighted": 0.7636859725214934,
+        "max_speed_entry_eta_s": 1.041701185,
+        "strategy": "球面方向滚转+30.0°",
+        "success": false,
+        "total_s": 0.06235525399824837
+      },
+      {
+        "distance_score_exp_neg_d": 0.6747887979954984,
+        "entry_distance_m": 0.39335552892899894,
+        "entry_plan_s": 0.034080925994203426,
+        "entry_trajectory_duration_s": 1.041687955,
+        "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+        "insertion_plan_s": 0.006728340995323379,
+        "joint_delta_inf_rad": 1.6354500900169218,
+        "joint_delta_l2_rad": 2.4169841988457375,
+        "joint_delta_weighted": 0.8785356037548328,
+        "max_speed_entry_eta_s": 1.041687955,
+        "strategy": "球面方向滚转-30.0°",
+        "success": false,
+        "total_s": 0.08547461000125622
+      },
+      {
+        "distance_score_exp_neg_d": 0.6747887979954984,
+        "entry_distance_m": 0.39335552892899894,
+        "entry_plan_s": 0.03230560300289653,
+        "entry_trajectory_duration_s": 1.226003224,
+        "insertion_plan_s": 0.006113182003900874,
+        "joint_delta_inf_rad": 1.8934250609338819,
+        "joint_delta_l2_rad": 3.232850236312903,
+        "joint_delta_weighted": 1.170552293397247,
+        "max_speed_entry_eta_s": 1.216003224,
+        "strategy": "球面方向滚转+60.0°",
+        "success": true,
+        "total_s": 0.5735752389955451
+      }
+    ],
+    "selected_strategy": "球面方向滚转+60.0°",
+    "total_s": 0.9423016039945651
+  },
+  "moveit_validated": true,
+  "moveit_validation_attempted": true,
+  "moveit_validation_available": true,
+  "obstacle_point_count": 13535,
+  "patch_count": 4,
+  "probe_method": "M1",
+  "reason": "found a visible connected patch; soft canopy only ranks gaps",
+  "reconstruction_complete": true,
+  "reconstruction_view_count": 10,
+  "result_json_path": "/home/catas/elfin_citrus_data/approach_results/approach_20260812-103535-312697_approach-1786530829327-0015_planned.json",
+  "result_phase": "planned",
+  "robot_position": [
+    0.30001823745528605,
+    0.03865064237128087,
+    0.6758887489053697
+  ],
+  "robot_proximity_weight_used": 0.0,
+  "safe": true,
+  "saved_at": "2026-08-12T10:35:35.312",
+  "selected_candidate": {
+    "clearance_m": 0.45,
+    "display_label": "SELECTED: FASTEST",
+    "distance_m": 0.39335552892899894,
+    "distance_score": 0.6747887979954984,
+    "distance_score_exp_neg_d": 0.6747887979954984,
+    "endpoint_condition_number": 30.410050183064858,
+    "eta_available": true,
+    "insertion_direction": [
+      -0.48793000022722105,
+      0.8606693856410421,
+      0.1455078125
+    ],
+    "joint_delta_inf_rad": 1.8934250609338819,
+    "joint_delta_l2_rad": 3.232850236312903,
+    "joint_delta_weighted": 1.170552293397247,
+    "known_free_fraction": 0.2777777777777778,
+    "light_transmission": 1.0,
+    "local_light": 0.9831932773109244,
+    "max_speed_eta_s": 1.216003224,
+    "moveit_candidate_rank": 1,
+    "moveit_entry_pose": {
+      "frame_id": "world",
+      "orientation_xyzw": [
+        -0.5894511914616597,
+        -0.28247723206380687,
+        0.05206766645351498,
+        0.7550118306093524
+      ],
+      "position": [
+        -0.09066557937770041,
+        0.019947564549833013,
+        0.7176599784737913
+      ]
+    },
+    "moveit_feasible": true,
+    "moveit_final_pose": {
+      "frame_id": "world",
+      "orientation_xyzw": [
+        -0.5894511914616597,
+        -0.28247723206380687,
+        0.05206766645351498,
+        0.7550118306093524
+      ],
+      "position": [
+        -0.16385507941178357,
+        0.14904797239598933,
+        0.7394861503487913
+      ]
+    },
+    "moveit_message": "球面候选通过 MoveIt 只规划：球面方向滚转+60.0°；终点条件数 30.41；已缓存四段轨迹 plan_id=approach-1786530829327-0015，执行按钮不会重新规划",
+    "moveit_plan_id": "approach-1786530829327-0015",
+    "moveit_planning_duration_s": 0.9424241140004597,
+    "moveit_target_point": [
+      -0.2614410794572278,
+      0.32118184952419776,
+      0.7685877128487912
+    ],
+    "moveit_timings": {
+      "distance_score_exp_neg_d": 0.6747887979954984,
+      "entry_distance_m": 0.39335552892899894,
+      "entry_trajectory_duration_s": 1.226003224,
+      "joint_delta_inf_rad": 1.8934250609338819,
+      "joint_delta_l2_rad": 3.232850236312903,
+      "joint_delta_weighted": 1.170552293397247,
+      "max_speed_entry_eta_s": 1.216003224,
+      "roll_candidates": [
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.15217326900165062,
+          "entry_trajectory_duration_s": 1.041765903,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.006436315998143982,
+          "joint_delta_inf_rad": 1.6355724672054166,
+          "joint_delta_l2_rad": 2.2819742305370534,
+          "joint_delta_weighted": 0.7912764683257163,
+          "max_speed_entry_eta_s": 1.041765903,
+          "strategy": "球面方向滚转+0.0°",
+          "success": false,
+          "total_s": 0.19594419200439006
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.0342774009986897,
+          "entry_trajectory_duration_s": 1.041701185,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.0066036110001732595,
+          "joint_delta_inf_rad": 1.635470860505657,
+          "joint_delta_l2_rad": 2.2627802054567803,
+          "joint_delta_weighted": 0.7636859725214934,
+          "max_speed_entry_eta_s": 1.041701185,
+          "strategy": "球面方向滚转+30.0°",
+          "success": false,
+          "total_s": 0.06235525399824837
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.034080925994203426,
+          "entry_trajectory_duration_s": 1.041687955,
+          "failure": "直线伸入完成 86.7%，欠伸 20.0 mm",
+          "insertion_plan_s": 0.006728340995323379,
+          "joint_delta_inf_rad": 1.6354500900169218,
+          "joint_delta_l2_rad": 2.4169841988457375,
+          "joint_delta_weighted": 0.8785356037548328,
+          "max_speed_entry_eta_s": 1.041687955,
+          "strategy": "球面方向滚转-30.0°",
+          "success": false,
+          "total_s": 0.08547461000125622
+        },
+        {
+          "distance_score_exp_neg_d": 0.6747887979954984,
+          "entry_distance_m": 0.39335552892899894,
+          "entry_plan_s": 0.03230560300289653,
+          "entry_trajectory_duration_s": 1.226003224,
+          "insertion_plan_s": 0.006113182003900874,
+          "joint_delta_inf_rad": 1.8934250609338819,
+          "joint_delta_l2_rad": 3.232850236312903,
+          "joint_delta_weighted": 1.170552293397247,
+          "max_speed_entry_eta_s": 1.216003224,
+          "strategy": "球面方向滚转+60.0°",
+          "success": true,
+          "total_s": 0.5735752389955451
+        }
+      ],
+      "selected_strategy": "球面方向滚转+60.0°",
+      "total_s": 0.9423016039945651
+    },
+    "moveit_validated": true,
+    "moveit_validation_duration_s": 1.0567481010002666,
+    "observed_fraction": 0.2777777777777778,
+    "outward_direction": [
+      0.48793000022722105,
+      -0.8606693856410421,
+      -0.1455078125
+    ],
+    "patch_angular_radius_deg": 37.90201322125247,
+    "patch_index": 2,
+    "patch_solid_angle_sr": 1.325359400733194,
+    "patch_utility": 0.33710354602392983,
+    "preentry_point": [
+      -0.05430286919235744,
+      -0.04419333972104239,
+      0.7068160901841252
+    ],
+    "raw_score": 0.1888778838483739,
+    "sample_index": 586,
+    "screen_point": [
+      0.5068166310689468,
+      -1.0339631332082408,
+      0.5394821058091251
+    ],
+    "soft_clearance_m": 0.03367438737482356,
+    "soft_gap_score": 0.07483197194405236,
+    "unknown_fraction": 0.7222222222222222,
+    "utility": 0.1974066102318443
+  },
+  "soft_obstacle_point_count": 13535,
+  "soft_obstacles_penetrable": true,
+  "success": true,
+  "target_center": [
+    -0.2738713692946069,
+    0.3431078838174266,
+    0.7722946058091251
+  ],
+  "target_center_method": "semantic_voxel_mean",
+  "target_fit_residual_m": 0.004270210240622463,
+  "target_frame": "elfin_base_link",
+  "target_index": -1,
+  "target_input_point": [
+    -0.2738713692946069,
+    0.3431078838174266,
+    0.7722946058091251
+  ],
+  "target_label": "reconstructed_citrus_1",
+  "target_pair_split": true,
+  "target_pair_split_state": "split_touching_pair",
+  "target_radius_m": 0.025475559673704313,
+  "target_source": "reconstructed_semantic_cluster",
+  "target_sphere_fitted": true,
+  "target_voxel_count": 241,
+  "timings_s": {
+    "candidate_serialization_s": 0.00015100899327080697,
+    "control_handoff_s": 0.08604119300434832,
+    "dashboard_geometry_call_s": 6.503579679003451,
+    "heatmap_render_s": 0.05807959500089055,
+    "local_patch_selection_s": 0.010641307999321725,
+    "moveit_candidate_search_s": 106.49008818600123,
+    "obstacle_preparation_s": 0.3732236189971445,
+    "rviz_marker_publish_s": 0.5393181209947215,
+    "spherical_direction_scoring_s": 5.2110772779997205,
+    "target_cluster_fit_s": 0.6614190069958568,
+    "total_geometry_s": 6.256514720000268,
+    "total_plan_pipeline_s": 114.31831322799553
+  },
+  "valid_patch_count": 3
+}

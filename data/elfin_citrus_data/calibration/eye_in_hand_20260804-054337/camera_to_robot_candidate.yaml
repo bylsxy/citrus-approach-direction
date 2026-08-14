@@ -1,0 +1,46 @@
+configured: true
+quality_passed: true
+mount: eye_in_hand
+parent_frame: elfin_end_link
+child_frame: camera_link
+translation_m:
+- 0.10620872988627693
+- -0.0961066037314882
+- 0.09262228030860398
+quaternion_xyzw:
+- 0.6750692435565208
+- -0.14280896264868062
+- 0.7064406594593543
+- 0.157571289433917
+calibration_method: opencv_park_charuco_rgbd
+calibration_date: '2026-08-04T05:51:10'
+camera_serial: '234222302617'
+sample_count: 16
+fit_sample_count: 13
+holdout_sample_count: 3
+motion_diversity:
+  translation_span_m: 0.5280306312851523
+  rotation_span_deg: 110.29269934563851
+  rotation_vector_rank: 3
+fit_error:
+  translation_rms_m: 0.0015394696989129088
+  translation_max_m: 0.0030900394432278886
+  rotation_rms_deg: 0.3612047450686702
+  rotation_max_deg: 0.5829802943852123
+holdout_error:
+  translation_rms_m: 0.0030790558230778965
+  translation_max_m: 0.0036158089179089514
+  rotation_rms_deg: 0.3320778228311795
+  rotation_max_deg: 0.426893984248932
+source_samples_file: /home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/samples.yaml
+note: Quality-passed candidate was installed atomically after camera serial validation;
+  see live_install.
+live_install:
+  installed: true
+  live_path: /home/catas/ros_ws/src/elfin_vision/config/camera_to_robot.yaml
+  candidate_path: /home/catas/elfin_citrus_data/calibration/eye_in_hand_20260804-054337/camera_to_robot_candidate.yaml
+  backup_path: /home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260804-055110.8dcec80986be.yaml
+  previous_live_sha256: 8dcec80986beab952ec6695369950c3cf8ba84f445c43fe2d71303a12f6581db
+  installed_sha256: 7c760f70d1ebb27fda6c86e4c22e4e9f99e93f7943587406ba7f4c77e1a2827d
+  camera_serial: '234222302617'
+  installed_at: '2026-08-04T05:51:10'

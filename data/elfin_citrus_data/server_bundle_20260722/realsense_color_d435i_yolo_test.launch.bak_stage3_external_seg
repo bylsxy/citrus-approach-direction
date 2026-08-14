@@ -1,0 +1,23 @@
+<launch>
+    <arg name="backend" default="dummy" />
+    <arg name="model_path" default="" />
+    <arg name="class_yaml" default="" />
+    <arg name="confidence_threshold" default="0.25" />
+    <arg name="device" default="cuda:0" />
+    <arg name="input_size" default="640" />
+
+    <node name="segmentation_backend_node" pkg="pose_graph" type="segmentation_backend_node.py" output="screen">
+        <remap from="/segmentation/input/image" to="/camera/color/image_raw" />
+        <param name="segmentation_backend" value="$(arg backend)" />
+        <param name="model_path" value="$(arg model_path)" />
+        <param name="class_yaml" value="$(arg class_yaml)" />
+        <param name="confidence_threshold" value="$(arg confidence_threshold)" />
+        <param name="device" value="$(arg device)" />
+        <param name="input_size" value="$(arg input_size)" />
+    </node>
+
+    <include file="$(find vins_estimator)/launch/realsense_color_d435i.launch">
+        <arg name="segmentation_backend" value="external_mask_topic" />
+        <arg name="external_mask_topic" value="/segmentation/output/color_mask" />
+    </include>
+</launch>

@@ -1,0 +1,27 @@
+<launch>
+    <arg name="foundation_server_url" default="http://127.0.0.1:5055/segment" />
+    <arg name="foundation_backend" default="yolo_sam2" />
+    <arg name="prompt_text" default="citrus,tree" />
+    <arg name="debug_save_dir" default="/home/aiseon/zzhslam/outputs/stage6_foundation_seg/masks/yolo_sam2" />
+    <arg name="class_yaml" default="$(find pose_graph)/config/orchard_classes.yaml" />
+    <arg name="class_color_yaml" default="$(find pose_graph)/config/segmentation_colors.yaml" />
+    <arg name="device" default="cuda:0" />
+
+    <node name="segmentation_backend_node" pkg="pose_graph" type="segmentation_backend_node.py" output="screen">
+        <remap from="/segmentation/input/image" to="/camera/color/image_raw" />
+        <param name="segmentation_backend" value="yolo_sam2" />
+        <param name="foundation_backend" value="$(arg foundation_backend)" />
+        <param name="foundation_server_url" value="$(arg foundation_server_url)" />
+        <param name="prompt_text" value="$(arg prompt_text)" />
+        <param name="class_yaml" value="$(arg class_yaml)" />
+        <param name="class_color_yaml" value="$(arg class_color_yaml)" />
+        <param name="device" value="$(arg device)" />
+        <param name="save_debug_masks" value="true" />
+        <param name="debug_save_dir" value="$(arg debug_save_dir)" />
+    </node>
+
+    <include file="$(find vins_estimator)/launch/realsense_color_d435i.launch">
+        <arg name="segmentation_backend" value="external_mask_topic" />
+        <arg name="external_mask_topic" value="/segmentation/output/color_mask" />
+    </include>
+</launch>

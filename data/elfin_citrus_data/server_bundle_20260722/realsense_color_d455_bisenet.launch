@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find vins_estimator)/launch/realsense_color_d435i.launch">
+        <arg name="config_path" value="$(find feature_tracker)/../config/realsense/d455_config.yaml" />
+        <arg name="segmentation_backend" value="bisenet" />
+    </include>
+</launch>

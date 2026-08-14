@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-08-12",
+  "purpose": "Commissioning replay used to select the semantic-fusion maximum camera range before restarting formal probe collection.",
+  "fixed_parameters": {
+    "voxel_resolution_m": 0.006,
+    "maximum_voxels": 600000,
+    "sample_stride": 4,
+    "maximum_points_per_view": 24000,
+    "planning_thresholds_changed": false
+  },
+  "archives": ["g0018", "g0019", "g0020", "g0021", "g0022"],
+  "results": {
+    "4.0_m": {
+      "first_truncated_view": 5,
+      "safe_groups": ["g0018"],
+      "failed_groups": ["g0019", "g0020", "g0021", "g0022"],
+      "voxel_count_all_groups": 600000
+    },
+    "2.0_m": {
+      "first_truncated_view": 8,
+      "safe_groups": ["g0018", "g0019", "g0020", "g0021"],
+      "failed_groups": ["g0022"],
+      "voxel_count_all_groups": 600000,
+      "eligible_direction_counts": [88, 28, 14, 11, 0]
+    },
+    "1.5_m": {
+      "truncated_groups": [],
+      "safe_groups": ["g0018", "g0019", "g0020", "g0021", "g0022"],
+      "voxel_counts": [430193, 431760, 433164, 436190, 438263],
+      "eligible_direction_counts": [147, 72, 66, 76, 54],
+      "valid_patch_count_each": 1,
+      "best_observed_fractions": [0.6, 0.6, 0.5714285714, 0.4, 0.6857142857]
+    }
+  },
+  "decision": "Use 1.50 m as the live semantic-fusion maximum camera range. Preserve uncropped raw depth images in every batch archive.",
+  "replay_script": "/home/catas/.cache/omp/replay_range_cutoff.py"
+}

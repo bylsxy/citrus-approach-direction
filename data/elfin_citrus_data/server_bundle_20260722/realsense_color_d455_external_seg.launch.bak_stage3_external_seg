@@ -1,0 +1,8 @@
+<launch>
+    <arg name="external_mask_topic" default="/segmentation/output/color_mask" />
+    <include file="$(find vins_estimator)/launch/realsense_color_d435i.launch">
+        <arg name="config_path" value="$(find feature_tracker)/../config/realsense/d455_config.yaml" />
+        <arg name="segmentation_backend" value="external_mask_topic" />
+        <arg name="external_mask_topic" value="$(arg external_mask_topic)" />
+    </include>
+</launch>

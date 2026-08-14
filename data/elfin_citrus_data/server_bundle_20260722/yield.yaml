@@ -1,0 +1,53 @@
+paths:
+  rosbag: /home/aiseon/zzhslam/data/baiwan_dataset_2_5_1_6.bag
+  yolo_model: /home/aiseon/zzhslam/outputs/stage5_training/yolo_runs/yolov8n_seg/weights/best.pt
+  output_root: /home/aiseon/zzhslam/outputs/stage7_yield_estimation
+
+topics:
+  rgb: /camera/color/image_raw
+  depth: /camera/aligned_depth_to_color/image_raw
+  imu: /camera/imu
+  camera_info: /camera/color/camera_info
+  vins_odometry: /vins_estimator/odometry
+
+camera:
+  source: /home/aiseon/zzhslam/VINS-RGBD_1019/config/realsense/realsense_color_config_d435i.yaml
+  width: 640
+  height: 480
+  fx: 617.1465454101562
+  fy: 617.3543701171875
+  cx: 318.7991638183594
+  cy: 242.19847106933594
+  depth_scale: 0.001
+  min_depth_m: 0.3
+  max_depth_m: 2.5
+
+classes:
+  citrus:
+    id: 0
+    bgr: [0, 0, 180]
+  tree:
+    id: 1
+    bgr: [0, 150, 0]
+
+reconstruction:
+  max_frames: 3
+  frame_stride: 30
+  sync_tolerance_sec: 0.05
+  segmentation_conf: 0.25
+  mask_dilate_px: 1
+  max_points_per_frame: 120000
+
+clustering:
+  eps_m: 0.055
+  min_points: 80
+
+fusion:
+  distance_threshold_m: 0.12
+  diameter_threshold_m: 0.08
+
+yield:
+  # Citrus density varies by variety and maturity. This default is a placeholder
+  # until cultivar-specific calibration is measured.
+  density_kg_per_m3: 950.0
+  calibration_factor: 1.0

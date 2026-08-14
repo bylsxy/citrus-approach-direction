@@ -1,0 +1,301 @@
+#!/usr/bin/python3
+import os
+import importlib.util
+
+import cv2
+import numpy as np
+import rospy
+import yaml
+from cv_bridge import CvBridge
+from sensor_msgs.msg import Image
+
+
+DEFAULT_COLOR_YAML = "/home/aiseon/zzhslam/VINS-RGBD_1019/pose_graph/config/segmentation_colors.yaml"
+DEFAULT_CLASS_YAML = "/home/aiseon/zzhslam/VINS-RGBD_1019/pose_graph/config/orchard_classes.yaml"
+DEFAULT_DEBUG_DIR = "/home/aiseon/zzhslam/outputs/stage3_external_segmentation/masks"
+
+
+class SegmentationBackendNode:
+    def __init__(self):
+        self.bridge = CvBridge()
+        self.backend = rospy.get_param("~segmentation_backend", "dummy").lower()
+        self.model_path = rospy.get_param("~model_path", "")
+        self.class_yaml = rospy.get_param("~class_yaml", DEFAULT_CLASS_YAML)
+        self.confidence_threshold = float(rospy.get_param("~confidence_threshold", 0.25))
+        self.iou_threshold = float(rospy.get_param("~iou_threshold", 0.5))
+        self.device = rospy.get_param("~device", "cuda:0")
+        self.input_size = int(rospy.get_param("~input_size", 640))
+        self.save_debug_masks = bool(rospy.get_param("~save_debug_masks", True))
+        self.debug_save_dir = rospy.get_param("~debug_save_dir", DEFAULT_DEBUG_DIR)
+        self.class_color_yaml = rospy.get_param("~class_color_yaml", DEFAULT_COLOR_YAML)
+
+        self.frame_count = 0
+        self.model = None
+        self.ultralytics_available = importlib.util.find_spec("ultralytics") is not None
+
+        os.makedirs(self.debug_save_dir, exist_ok=True)
+        self.class_names, self.class_priority = self.load_class_config(self.class_yaml)
+        self.color_by_name, self.color_by_id = self.load_color_config(self.class_color_yaml)
+        self.background_color = self.color_by_name.get("background", np.array([0, 0, 0], dtype=np.uint8))
+        self.other_color = self.color_by_name.get("other", np.array([255, 255, 255], dtype=np.uint8))
+
+        self.pub = rospy.Publisher("/segmentation/output/color_mask", Image, queue_size=1)
+        self.sub = rospy.Subscriber("/segmentation/input/image", Image, self.image_callback, queue_size=1)
+
+        rospy.logwarn(
+            "segmentation_backend_node backend=%s model_path=%s class_yaml=%s color_yaml=%s device=%s input_size=%d",
+            self.backend,
+            self.model_path,
+            self.class_yaml,
+            self.class_color_yaml,
+            self.device,
+            self.input_size,
+        )
+
+        if self.backend in {"yolo8", "yolo11", "yolo26"}:
+            self.try_load_ultralytics_model()
+
+    def load_class_config(self, path):
+        names = {
+            0: "background",
+            1: "fruit",
+            2: "canopy",
+            3: "trunk_branch",
+            4: "ground",
+            5: "other",
+        }
+        priority = {
+            "fruit": 5,
+            "trunk_branch": 4,
+            "canopy": 3,
+            "ground": 2,
+            "other": 1,
+            "background": 0,
+        }
+        if not path or not os.path.exists(path):
+            rospy.logwarn("class_yaml missing (%s); using default orchard classes", path)
+            return names, priority
+
+        try:
+            with open(path, "r") as f:
+                cfg = yaml.safe_load(f) or {}
+            raw_names = cfg.get("names", {})
+            names = {int(k): str(v) for k, v in raw_names.items()} if isinstance(raw_names, dict) else names
+            priority.update({str(k): int(v) for k, v in (cfg.get("class_priority", {}) or {}).items()})
+        except Exception as exc:
+            rospy.logwarn("Failed to read class_yaml=%s: %s; using defaults", path, exc)
+        return names, priority
+
+    def load_color_config(self, path):
+        default = {
+            "background": {"id": 0, "bgr": [0, 0, 0]},
+            "fruit": {"id": 1, "bgr": [0, 165, 255]},
+            "canopy": {"id": 2, "bgr": [0, 255, 0]},
+            "trunk_branch": {"id": 3, "bgr": [42, 42, 165]},
+            "ground": {"id": 4, "bgr": [128, 128, 128]},
+            "other": {"id": 5, "bgr": [255, 255, 255]},
+        }
+        cfg = default
+        if path and os.path.exists(path):
+            try:
+                with open(path, "r") as f:
+                    cfg = yaml.safe_load(f) or default
+            except Exception as exc:
+                rospy.logwarn("Failed to read class_color_yaml=%s: %s; using defaults", path, exc)
+        else:
+            rospy.logwarn("class_color_yaml missing (%s); using default BGR colors", path)
+
+        by_name = {}
+        by_id = {}
+        for name, item in cfg.items():
+            color = np.array(item.get("bgr", [255, 255, 255]), dtype=np.uint8)
+            class_id = int(item.get("id", -1))
+            by_name[str(name)] = color
+            if class_id >= 0:
+                by_id[class_id] = color
+        return by_name, by_id
+
+    def try_load_ultralytics_model(self):
+        if not self.model_path:
+            rospy.logwarn("%s model_path missing; publishing background masks", self.backend)
+            return
+        if not os.path.exists(self.model_path):
+            rospy.logwarn("%s model_path does not exist: %s; publishing background masks", self.backend, self.model_path)
+            return
+        if not self.ultralytics_available:
+            rospy.logwarn("ultralytics is not installed; %s publishing background masks", self.backend)
+            return
+
+        try:
+            from ultralytics import YOLO
+
+            self.model = YOLO(self.model_path)
+            rospy.logwarn("%s ultralytics model loaded from %s", self.backend, self.model_path)
+        except Exception as exc:
+            self.model = None
+            rospy.logwarn("Failed to load %s model from %s: %s; publishing background masks", self.backend, self.model_path, exc)
+
+    def image_callback(self, msg):
+        try:
+            image_bgr = self.bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
+        except Exception as exc:
+            rospy.logwarn_throttle(2.0, "Failed to convert input image: %s", exc)
+            return
+
+        mask = self.run_backend(image_bgr)
+        if mask is None:
+            return
+
+        mask = self.ensure_mask_contract(mask, image_bgr.shape[:2])
+        self.frame_count += 1
+        self.save_debug_mask(mask)
+
+        out = self.bridge.cv2_to_imgmsg(mask, encoding="bgr8")
+        out.header = msg.header
+        self.pub.publish(out)
+
+    def ensure_mask_contract(self, mask, image_shape):
+        h, w = image_shape
+        if mask is None:
+            return self.make_background_mask((h, w))
+        if mask.dtype != np.uint8:
+            mask = mask.astype(np.uint8)
+        if mask.ndim == 2:
+            mask = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
+        if mask.shape[:2] != (h, w):
+            mask = cv2.resize(mask, (w, h), interpolation=cv2.INTER_NEAREST)
+        if mask.shape[2] != 3:
+            rospy.logwarn_throttle(2.0, "Mask has invalid channel count; using background mask")
+            mask = self.make_background_mask((h, w))
+        return np.ascontiguousarray(mask)
+
+    def run_backend(self, image_bgr):
+        if self.backend == "bisenet":
+            rospy.logwarn_throttle(
+                5.0,
+                "backend=bisenet is handled by the C++ baseline node; Python bridge is not publishing masks",
+            )
+            return None
+
+        if self.backend == "dummy":
+            return self.make_dummy_mask(image_bgr)
+
+        if self.backend in {"yolo8", "yolo11", "yolo26"}:
+            return self.run_ultralytics_yolo(image_bgr)
+
+        if self.backend in {"yolo7", "yolo9", "yolo10"}:
+            rospy.logwarn_throttle(
+                5.0,
+                "%s adapter is a stub; provide a compatible repo/ONNX/TensorRT export later. Publishing background mask.",
+                self.backend,
+            )
+            return self.make_background_mask(image_bgr.shape[:2])
+
+        if self.backend in {"fastsam", "sam2", "segformer", "mask2former", "custom"}:
+            rospy.logwarn_throttle(
+                5.0,
+                "%s adapter is a stub in stage 3; publishing background mask.",
+                self.backend,
+            )
+            return self.make_background_mask(image_bgr.shape[:2])
+
+        rospy.logwarn_throttle(5.0, "Unknown backend=%s; publishing background mask", self.backend)
+        return self.make_background_mask(image_bgr.shape[:2])
+
+    def run_ultralytics_yolo(self, image_bgr):
+        if self.model is None:
+            rospy.logwarn_throttle(5.0, "%s model is unavailable; publishing background mask", self.backend)
+            return self.make_background_mask(image_bgr.shape[:2])
+
+        try:
+            results = self.model.predict(
+                source=image_bgr,
+                imgsz=self.input_size,
+                conf=self.confidence_threshold,
+                iou=self.iou_threshold,
+                device=self.device,
+                verbose=False,
+            )
+            return self.convert_yolo_results_to_color_mask(results, image_bgr.shape[:2])
+        except Exception as exc:
+            rospy.logwarn_throttle(2.0, "%s inference failed: %s; publishing background mask", self.backend, exc)
+            return self.make_background_mask(image_bgr.shape[:2])
+
+    def convert_yolo_results_to_color_mask(self, results, image_shape):
+        h, w = image_shape
+        color_mask = self.make_background_mask((h, w))
+        priority_map = np.full((h, w), -1.0, dtype=np.float32)
+
+        if not results:
+            return color_mask
+
+        result = results[0]
+        if getattr(result, "masks", None) is None or result.masks is None:
+            rospy.logwarn_throttle(5.0, "%s result has no segmentation masks; publishing background mask", self.backend)
+            return color_mask
+        if getattr(result, "boxes", None) is None or result.boxes is None:
+            rospy.logwarn_throttle(5.0, "%s result has masks but no boxes/classes; publishing background mask", self.backend)
+            return color_mask
+
+        try:
+            masks = result.masks.data.cpu().numpy()
+            classes = result.boxes.cls.cpu().numpy().astype(int)
+            confs = result.boxes.conf.cpu().numpy()
+        except Exception as exc:
+            rospy.logwarn_throttle(2.0, "Failed to parse YOLO result tensors: %s", exc)
+            return color_mask
+
+        for idx, mask in enumerate(masks):
+            class_id = int(classes[idx]) if idx < len(classes) else -1
+            conf = float(confs[idx]) if idx < len(confs) else 0.0
+            if conf < self.confidence_threshold:
+                continue
+
+            class_name = self.class_names.get(class_id, "other")
+            color = self.color_by_name.get(class_name, self.color_by_id.get(class_id, self.other_color))
+            class_priority = float(self.class_priority.get(class_name, self.class_priority.get("other", 1)))
+            score = class_priority * 100.0 + conf
+
+            if mask.shape[:2] != (h, w):
+                mask = cv2.resize(mask, (w, h), interpolation=cv2.INTER_NEAREST)
+            instance = mask > 0.5
+            update = instance & (score >= priority_map)
+            color_mask[update] = color
+            priority_map[update] = score
+
+        return color_mask
+
+    def make_background_mask(self, image_shape):
+        h, w = image_shape
+        mask = np.zeros((h, w, 3), dtype=np.uint8)
+        mask[:, :] = self.background_color
+        return mask
+
+    def make_dummy_mask(self, image_bgr):
+        h, w = image_bgr.shape[:2]
+        mask = self.make_background_mask((h, w))
+        canopy = self.color_by_name.get("canopy", np.array([0, 255, 0], dtype=np.uint8))
+        fruit = self.color_by_name.get("fruit", np.array([0, 165, 255], dtype=np.uint8))
+        ground = self.color_by_name.get("ground", np.array([128, 128, 128], dtype=np.uint8))
+
+        mask[:, : w // 2] = canopy
+        mask[0 : h // 3, w // 2 :] = fruit
+        mask[2 * h // 3 :, w // 2 :] = ground
+        return mask
+
+    def save_debug_mask(self, mask):
+        if not self.save_debug_masks:
+            return
+        if self.frame_count % 30 != 0:
+            return
+        path = os.path.join(self.debug_save_dir, "external_mask_%06d.png" % self.frame_count)
+        try:
+            cv2.imwrite(path, mask)
+        except Exception as exc:
+            rospy.logwarn_throttle(2.0, "Failed to save debug mask %s: %s", path, exc)
+
+
+if __name__ == "__main__":
+    rospy.init_node("segmentation_backend_node")
+    SegmentationBackendNode()
+    rospy.spin()

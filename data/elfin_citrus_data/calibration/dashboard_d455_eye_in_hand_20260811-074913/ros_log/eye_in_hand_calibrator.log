@@ -1,0 +1,110 @@
+[rospy.client][INFO] 2026-08-11 07:49:19,227: init_node, name[/eye_in_hand_calibrator], pid[22684]
+[xmlrpc][INFO] 2026-08-11 07:49:19,228: XML-RPC server binding to 127.0.0.1:0
+[xmlrpc][INFO] 2026-08-11 07:49:19,228: Started XML-RPC server [http://127.0.0.1:39391/]
+[rospy.init][INFO] 2026-08-11 07:49:19,228: ROS Slave URI: [http://127.0.0.1:39391/]
+[rospy.impl.masterslave][INFO] 2026-08-11 07:49:19,228: _ready: http://127.0.0.1:39391/
+[rospy.registration][INFO] 2026-08-11 07:49:19,228: Registering with master node http://127.0.0.1:11311
+[xmlrpc][INFO] 2026-08-11 07:49:19,228: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-08-11 07:49:19,328: registered with master
+[rospy.rosout][INFO] 2026-08-11 07:49:19,329: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-08-11 07:49:19,331: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-08-11 07:49:19,332: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-08-11 07:49:19,342: topic[/tf] adding connection to [http://127.0.0.1:42721/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,344: topic[/tf] adding connection to [http://127.0.0.1:45855/], count 1
+[rospy.internal][INFO] 2026-08-11 07:49:19,345: topic[/tf] adding connection to [http://127.0.0.1:45841/], count 2
+[rospy.internal][INFO] 2026-08-11 07:49:19,346: topic[/camera/color/camera_info] adding connection to [http://127.0.0.1:45841/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,347: topic[/joint_states] adding connection to [http://127.0.0.1:36801/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,349: topic[/elfin_freedrive_manager/point_count] adding connection to [http://127.0.0.1:41403/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,350: topic[/camera/color/image_raw] adding connection to [http://127.0.0.1:45841/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,350: topic[/camera/aligned_depth_to_color/image_raw] adding connection to [http://127.0.0.1:45841/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,351: topic[/tf_static] adding connection to [http://127.0.0.1:42721/], count 0
+[rospy.internal][INFO] 2026-08-11 07:49:19,352: topic[/tf_static] adding connection to [http://127.0.0.1:41909/], count 1
+[rospy.internal][INFO] 2026-08-11 07:49:19,353: topic[/tf_static] adding connection to [http://127.0.0.1:45841/], count 2
+[rospy.internal][INFO] 2026-08-11 07:49:19,353: topic[/tf_static] adding connection to [http://127.0.0.1:37065/], count 3
+[rospy.internal][INFO] 2026-08-11 07:49:19,353: topic[/tf_static] adding connection to [http://127.0.0.1:45855/], count 4
+[rospy.internal][INFO] 2026-08-11 07:49:19,543: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2026-08-11 07:50:51,096: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:50:51,136: 已采集第 1 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:51:00,198: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:51:04,198: 实体 POINT 本次未形成有效样本：未采集：机械臂尚未静止（近 0.45 s 位置跨度 0.0889 rad）
+[rosout][INFO] 2026-08-11 07:51:20,498: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:51:20,541: 已采集第 2 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:51:24,998: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:51:26,899: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:51:28,498: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:51:32,502: 实体 POINT 本次未形成有效样本：未采集：与上一姿态太接近（0.2 mm / 0.0 deg），请换视角
+[rosout][INFO] 2026-08-11 07:51:51,499: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:51:52,996: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:51:54,197: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:51:58,209: 实体 POINT 本次未形成有效样本：未采集：与上一姿态太接近（0.2 mm / 0.0 deg），请换视角
+[rosout][INFO] 2026-08-11 07:52:03,797: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:52:05,999: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:52:10,022: 实体 POINT 本次未形成有效样本：未采集：与上一姿态太接近（0.2 mm / 0.0 deg），请换视角
+[rosout][INFO] 2026-08-11 07:52:29,396: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:52:33,413: 实体 POINT 本次未形成有效样本：未采集：与上一姿态太接近（0.2 mm / 0.0 deg），请换视角
+[rosout][INFO] 2026-08-11 07:52:39,098: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:52:39,156: 已采集第 3 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:52:45,698: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:52:45,762: 已采集第 4 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:52:55,898: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:52:57,297: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:53:00,899: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:53:00,962: 已采集第 5 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:53:47,396: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:53:47,506: 已采集第 6 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:53:56,999: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:54:01,005: 实体 POINT 本次未形成有效样本：未采集：Charuco 角点只有 10 个，至少需要 12 个
+[rosout][INFO] 2026-08-11 07:54:05,699: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][WARNING] 2026-08-11 07:54:09,700: 实体 POINT 本次未形成有效样本：未采集：机械臂尚未静止（近 0.45 s 位置跨度 0.1031 rad）
+[rosout][INFO] 2026-08-11 07:54:09,799: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:54:10,868: 已采集第 7 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:54:18,396: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:54:18,456: 已采集第 8 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:54:43,197: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:54:43,280: 已采集第 9 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:55:00,298: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:55:00,364: 已采集第 10 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:55:05,597: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:55:05,652: 已采集第 11 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:55:20,897: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:55:20,970: 已采集第 12 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:55:32,999: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:55:33,144: 已采集第 13 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:56:25,399: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:26,996: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:27,898: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:28,597: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:28,798: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:29,099: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:29,599: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:29,799: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:30,099: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:30,298: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:30,797: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:31,298: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:34,598: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:34,999: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:35,399: 检测到实体 POINT：等待机械臂静止后采集相机标定样本
+[rosout][INFO] 2026-08-11 07:56:35,719: 已采集第 14 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:58:17,581: 已采集第 15 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 07:58:17,609: 候选已生成：质量通过；留出误差最大 4.6 mm / 2.08 deg；已备份旧配置并安装到 live
+[rosout][INFO] 2026-08-11 08:00:13,761: 已采集第 16 组；请改变距离和腕部俯仰/偏航后继续
+[rosout][INFO] 2026-08-11 08:00:13,802: 候选已生成：质量通过；留出误差最大 3.3 mm / 1.69 deg；已备份旧配置并安装到 live
+[rospy.internal][INFO] 2026-08-11 08:04:08,638: topic[/tf_static] removing connection to http://127.0.0.1:37065/
+[rospy.internal][INFO] 2026-08-11 08:04:08,639: topic[/tf_static] removing connection to http://127.0.0.1:41909/
+[rospy.internal][INFO] 2026-08-11 08:04:08,879: topic[/tf_static] removing connection to http://127.0.0.1:45855/
+[rospy.internal][INFO] 2026-08-11 08:04:08,879: topic[/tf] removing connection to http://127.0.0.1:45855/
+[rospy.internal][INFO] 2026-08-11 08:04:08,896: topic[/tf_static] removing connection to http://127.0.0.1:45841/
+[rospy.internal][INFO] 2026-08-11 08:04:08,896: topic[/tf] removing connection to http://127.0.0.1:45841/
+[rospy.internal][INFO] 2026-08-11 08:04:08,908: topic[/camera/color/image_raw] removing connection to http://127.0.0.1:45841/
+[rospy.internal][INFO] 2026-08-11 08:04:08,910: topic[/camera/color/camera_info] removing connection to http://127.0.0.1:45841/
+[rospy.internal][INFO] 2026-08-11 08:04:08,912: topic[/camera/aligned_depth_to_color/image_raw] removing connection to http://127.0.0.1:45841/
+[rospy.internal][INFO] 2026-08-11 08:04:09,965: topic[/elfin_freedrive_manager/point_count] removing connection to http://127.0.0.1:41403/
+[rospy.internal][INFO] 2026-08-11 08:04:09,967: topic[/joint_states] removing connection to http://127.0.0.1:36801/
+[rospy.internal][INFO] 2026-08-11 08:04:10,108: topic[/tf] removing connection to http://127.0.0.1:42721/
+[rospy.internal][INFO] 2026-08-11 08:04:10,108: topic[/tf_static] removing connection to http://127.0.0.1:42721/
+[rospy.internal][INFO] 2026-08-11 08:04:10,431: topic[/rosout] removing connection to /rosout
+[rospy.core][INFO] 2026-08-11 08:04:10,497: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2026-08-11 08:04:10,500: signal-2
+[rospy.core][INFO] 2026-08-11 08:04:10,783: signal_shutdown [signal-2]
+[rospy.core][INFO] 2026-08-11 08:04:11,105: signal_shutdown [atexit]

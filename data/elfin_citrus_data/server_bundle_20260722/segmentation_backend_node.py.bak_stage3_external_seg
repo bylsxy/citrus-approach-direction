@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+import rospy
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
+import numpy as np
+
+
+class SegmentationBackendNode:
+    def __init__(self):
+        self.bridge = CvBridge()
+        self.backend = rospy.get_param("~segmentation_backend", "dummy")
+        self.model_path = rospy.get_param("~model_path", "")
+        self.class_yaml = rospy.get_param("~class_yaml", "")
+        self.confidence_threshold = float(rospy.get_param("~confidence_threshold", 0.25))
+        self.device = rospy.get_param("~device", "cuda:0")
+        self.input_size = int(rospy.get_param("~input_size", 640))
+
+        self.pub = rospy.Publisher("/segmentation/output/color_mask", Image, queue_size=1)
+        self.sub = rospy.Subscriber("/segmentation/input/image", Image, self.image_callback, queue_size=1)
+
+        rospy.logwarn(
+            "segmentation_backend_node started with backend=%s, model_path=%s, class_yaml=%s, device=%s",
+            self.backend,
+            self.model_path,
+            self.class_yaml,
+            self.device,
+        )
+
+    def image_callback(self, msg):
+        try:
+            image = self.bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
+        except Exception as exc:
+            rospy.logwarn_throttle(2.0, "Failed to convert input image: %s", exc)
+            return
+
+        mask = self.run_backend(image)
+        if mask is None:
+            return
+
+        out = self.bridge.cv2_to_imgmsg(mask, encoding="bgr8")
+        out.header = msg.header
+        self.pub.publish(out)
+
+    def run_backend(self, image):
+        if self.backend == "bisenet":
+            rospy.logwarn_throttle(
+                5.0,
+                "backend=bisenet is handled by the C++ baseline node; Python bridge is not publishing masks",
+            )
+            return None
+
+        if self.backend == "dummy":
+            return self.make_dummy_mask(image)
+
+        if self.backend in {"yolo7", "yolo8", "yolo9", "yolo10", "yolo11", "yolo26"}:
+            rospy.logwarn_throttle(5.0, "%s segmentation backend is TODO; publishing dummy mask", self.backend)
+            return self.make_dummy_mask(image)
+
+        if self.backend in {"sam2", "fastsam", "segformer", "mask2former", "custom"}:
+            rospy.logwarn_throttle(5.0, "%s segmentation backend is TODO; publishing dummy mask", self.backend)
+            return self.make_dummy_mask(image)
+
+        rospy.logwarn_throttle(5.0, "Unknown backend=%s; publishing dummy mask", self.backend)
+        return self.make_dummy_mask(image)
+
+    def make_dummy_mask(self, image):
+        h, w = image.shape[:2]
+        mask = np.zeros((h, w, 3), dtype=np.uint8)
+        mask[:, : w // 3] = (0, 165, 255)      # fruit-like test region, BGR
+        mask[:, w // 3 : 2 * w // 3] = (0, 255, 0)  # canopy-like test region, BGR
+        mask[:, 2 * w // 3 :] = (128, 128, 128)      # ground-like test region, BGR
+        return mask
+
+
+if __name__ == "__main__":
+    rospy.init_node("segmentation_backend_node")
+    SegmentationBackendNode()
+    rospy.spin()

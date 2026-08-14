@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+import argparse
+import csv
+from pathlib import Path
+
+import numpy as np
+
+
+def read_csv(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Associate fruit instances to tree instances.")
+    parser.add_argument("--fruit-instances", required=True)
+    parser.add_argument("--tree-instances", required=True)
+    parser.add_argument("--output", required=True)
+    args = parser.parse_args()
+    fruits = read_csv(Path(args.fruit_instances))
+    trees = read_csv(Path(args.tree_instances))
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    with open(args.output, "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["tree_id", "fruit_id", "method", "distance_to_tree_center_m"])
+        for fr in fruits:
+            fp = np.array([float(fr["center_x"]), float(fr["center_y"]), float(fr["center_z"])])
+            inside = []
+            for tr in trees:
+                in_x = float(tr["min_x"]) <= fp[0] <= float(tr["max_x"])
+                in_y = float(tr["min_y"]) <= fp[1] <= float(tr["max_y"])
+                in_z = float(tr["min_z"]) - 0.5 <= fp[2] <= float(tr["max_z"]) + 0.5
+                tc = np.array([float(tr["center_x"]), float(tr["center_y"]), float(tr["center_z"])])
+                dist = float(np.linalg.norm(fp - tc))
+                if in_x and in_y and in_z:
+                    inside.append((dist, tr))
+            if inside:
+                dist, tr = sorted(inside, key=lambda x: x[0])[0]
+                writer.writerow([tr["tree_id"], fr["fruit_id"], "inside_tree_crown_bbox", f"{dist:.6f}"])
+            elif trees:
+                candidates = []
+                for tr in trees:
+                    tc = np.array([float(tr["center_x"]), float(tr["center_y"]), float(tr["center_z"])])
+                    candidates.append((float(np.linalg.norm(fp - tc)), tr))
+                dist, tr = sorted(candidates, key=lambda x: x[0])[0]
+                writer.writerow([tr["tree_id"], fr["fruit_id"], "nearest_tree_center", f"{dist:.6f}"])
+            else:
+                writer.writerow([-1, fr["fruit_id"], "no_tree_instance", "nan"])
+    print(f"associations={len(fruits)}")
+
+
+if __name__ == "__main__":
+    main()

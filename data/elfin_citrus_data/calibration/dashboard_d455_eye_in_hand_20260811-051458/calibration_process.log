@@ -1,0 +1,32 @@
+复用当前已运行的 RealSense ROS 节点。
+已核验标定相机：model=d455 name=Intel RealSense D455 serial=234222302617 USB=3.2
+等待 RGB、对齐深度和机器人关节状态...
+已收到 RGB 相机内参：/camera/color/camera_info（第 1 次探测）
+已收到 对齐深度：/camera/aligned_depth_to_color/image_raw（第 1 次探测）
+已收到 机器人关节状态：/joint_states（第 1 次探测）
+连接完成。此工具只读相机与机器人状态，不会发送运动命令。
+本终端按 Ctrl+C 将关闭标定、视觉、Panel，并请求机械臂 Servo Off。
+Traceback (most recent call last):
+  File "/home/catas/ros_ws/src/elfin_vision/scripts/eye_in_hand_calibrator.py", line 863, in <module>
+    raise SystemExit(main())
+  File "/home/catas/ros_ws/src/elfin_vision/scripts/eye_in_hand_calibrator.py", line 857, in main
+    rospy.init_node('eye_in_hand_calibrator')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/client.py", line 309, in init_node
+    rospy.core.configure_logging(resolved_node_name)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 432, in configure_logging
+    _log_filename = rosgraph.roslogging.configure_logging('rospy', level, filename=filename)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/roslogging.py", line 198, in configure_logging
+    logging.config.fileConfig(config_file, disable_existing_loggers=False)
+  File "/usr/lib/python3.8/logging/config.py", line 79, in fileConfig
+    handlers = _install_handlers(cp, formatters)
+  File "/usr/lib/python3.8/logging/config.py", line 145, in _install_handlers
+    h = klass(*args, **kwargs)
+  File "/usr/lib/python3.8/logging/handlers.py", line 148, in __init__
+    BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/lib/python3.8/logging/handlers.py", line 55, in __init__
+    logging.FileHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1147, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python3.8/logging/__init__.py", line 1176, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+PermissionError: [Errno 13] Permission denied: '/home/catas/.ros/log/eye_in_hand_calibrator.log'

@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find vins_estimator)/launch/realsense_color_d435i.launch">
+        <arg name="segmentation_backend" value="bisenet" />
+    </include>
+</launch>
