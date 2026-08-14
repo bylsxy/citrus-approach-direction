@@ -1,0 +1,929 @@
+Starting isolated D455 motion stream without reset.
+[0m[INFO] [1786518105.300242664]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786518105.355770443]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786518105.355785023]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786518105.355789811]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786518105.374923076]:  [0m
+[0m[INFO] [1786518105.385725030]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786518105.385754184]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786518105.385767713]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786518105.386006588]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786518105.386038916]: Device USB type: 3.2[0m
+[0m[INFO] [1786518105.387268793]: getParameters...[0m
+[0m[INFO] [1786518105.426530459]: setupDevice...[0m
+[0m[INFO] [1786518105.426553359]: JSON file is not provided[0m
+[0m[INFO] [1786518105.426562033]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786518105.426571962]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786518105.426579233]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786518105.426597314]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786518105.426604768]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786518105.426611779]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786518105.426618669]: Enable PointCloud: Off[0m
+[0m[INFO] [1786518105.426628990]: Align Depth: Off[0m
+[0m[INFO] [1786518105.426635376]: Sync Mode: Off[0m
+[0m[INFO] [1786518105.426659797]: Device Sensors: [0m
+[0m[INFO] [1786518105.433483975]: Stereo Module was found.[0m
+[0m[INFO] [1786518105.438542738]: RGB Camera was found.[0m
+[0m[INFO] [1786518105.438706718]: Motion Module was found.[0m
+[0m[INFO] [1786518105.438732589]: num_filters: 0[0m
+[0m[INFO] [1786518105.438744007]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786518105.458756676]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786518105.458814402]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1786518105.458819473]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1786518105.458824535]: setupPublishers...[0m
+[0m[INFO] [1786518105.459775247]: setupStreams...[0m
+ 12/08 07:01:45,460 WARNING [139855260440320] (ds-calib-parsers.cpp:35) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+[0m[INFO] [1786518105.460935133]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786518105.461899538]: RealSense Node Is Up![0m
+[33m[WARN] [1786518105.571073029]: [0m
+D455 motion stream ready: /camera_imu/gyro/sample + /camera_imu/accel/sample
+... logging to /home/catas/.ros/log/ffe8beaa-95f7-11f1-bce8-c4c6e661f1ab/roslaunch-catas-14292.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:34001/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 100
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 5
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 200
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: onnxruntime
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_arc_deg: 80.0
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_inlier_ratio: 0.3
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_residual_px: 2.5
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_depth_tolerance_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_gap_radius_ratio: 0.45
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_max_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_max_m: 0.033
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_age_s: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_delta_s: 0.04
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: 
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: 
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/inference_queue_size: 12
+ * /elfin_vision/citrus_rgbd_node/inference_request_match_slop_s: 0.002
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 371c56e82f2452cc9...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: False
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: False
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/rgbd_history_size: 18
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[0m[INFO] [1786518108.702959866]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786518108.761975038]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786518108.762000346]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786518108.762024710]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786518108.781465769]:  [0m
+[0m[INFO] [1786518108.799043532]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786518108.799072848]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786518108.799093357]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786518108.799271126]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786518108.799294671]: Device USB type: 3.2[0m
+[0m[INFO] [1786518108.800135263]: getParameters...[0m
+[0m[INFO] [1786518108.824889003]: setupDevice...[0m
+[0m[INFO] [1786518108.824910703]: JSON file is not provided[0m
+[0m[INFO] [1786518108.824919675]: ROS Node Namespace: camera[0m
+[0m[INFO] [1786518108.824929472]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786518108.824936989]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786518108.824949357]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786518108.824957151]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786518108.825054100]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786518108.825069080]: Enable PointCloud: On[0m
+[0m[INFO] [1786518108.825079132]: Align Depth: On[0m
+[0m[INFO] [1786518108.825088481]: Sync Mode: On[0m
+[0m[INFO] [1786518108.825120765]: Device Sensors: [0m
+[0m[INFO] [1786518108.829827779]: Stereo Module was found.[0m
+[0m[INFO] [1786518108.833001580]: RGB Camera was found.[0m
+[0m[INFO] [1786518108.833117726]: Motion Module was found.[0m
+[0m[INFO] [1786518108.833157923]: Add Filter: pointcloud[0m
+[0m[INFO] [1786518108.833212708]: num_filters: 2[0m
+[0m[INFO] [1786518108.833225280]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786518108.881567397]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786518108.882081784]: depth stream is enabled - width: 640, height: 480, fps: 5, Format: Z16[0m
+[0m[INFO] [1786518108.882513668]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1786518108.883516827]: setupPublishers...[0m
+[0m[INFO] [1786518108.885400491]: Expected frequency for depth = 5.00000[0m
+[0m[INFO] [1786518108.919143391]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1786518108.933818623]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1786518108.944318979]: setupStreams...[0m
+[0m[INFO] [1786518108.975389325]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786518108.981481016]: RealSense Node Is Up![0m
+[33m[WARN] [1786518109.558467016]: [0m
+[0m[INFO] [1786518109.564242272]: publishing unordered pointcloud.[0m
+[INFO] [1786518108.957292]: RGB-D vision status: starting:model_loading
+[INFO] [1786518109.039427]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/models/yolo26n_seg_converged_20260806/yolo26n_citrus_tree_best.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1786518109.040563]: Citrus model loading finished in 0.08 s: model_ready:onnxruntime
+[INFO] [1786518109.636172]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518109.746914]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518109.873698]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518109.990460]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.122453]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.257114]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.426395]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.448694]: CITRUS_CENTER ok pixel=(385,270) depth=0.813 m radius=29.4 mm arc=354 deg error=0.45 px fragments=1
+[INFO] [1786518110.449435]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=23.1
+[INFO] [1786518110.619312]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.640941]: 极速日志 · 多边形确认成功 · centers=3 · rejected=0 · merged=0 · elapsed_ms=21.7
+[INFO] [1786518110.813227]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518110.850566]: 极速日志 · 多边形确认成功 · centers=3 · rejected=0 · merged=0 · elapsed_ms=37.4
+[INFO] [1786518111.024275]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518111.070304]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=46.1
+[INFO] [1786518111.633660]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518111.683398]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=49.8
+[INFO] [1786518111.846259]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518111.899293]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=53.1
+[INFO] [1786518112.024346]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518112.072104]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.8
+[INFO] [1786518112.213106]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518112.223451]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=10.4
+[INFO] [1786518112.416104]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518112.464524]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.0 mm arc=349 deg error=0.58 px fragments=1
+[INFO] [1786518112.465835]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=49.8
+[INFO] [1786518112.628013]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518112.672002]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=44.0
+[INFO] [1786518112.823621]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518112.888726]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=65.2
+[INFO] [1786518113.014411]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518113.035146]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=20.8
+[INFO] [1786518113.223727]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518113.269024]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.3
+[INFO] [1786518113.423024]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518113.471633]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=48.6
+[INFO] [1786518113.621944]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518113.642882]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.0
+[INFO] [1786518113.823518]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518113.845682]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=22.2
+[INFO] [1786518114.033118]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518114.056804]: 极速日志 · 多边形确认成功 · centers=1 · rejected=1 · merged=0 · elapsed_ms=23.7
+[INFO] [1786518114.058138]: RGB-D vision status: model_ready:onnxruntime targets:2 centers:1 tf:1 rejected:1 merged:0 semantic_masks:3
+[INFO] [1786518114.243664]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518114.295470]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=51.8
+[INFO] [1786518114.428492]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518114.474069]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=28.5 mm arc=354 deg error=0.52 px fragments=1
+[INFO] [1786518114.475741]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.3
+[INFO] [1786518114.632479]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518114.656414]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=24.0
+[INFO] [1786518114.818036]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518114.838058]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.0
+[INFO] [1786518115.037619]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518115.087523]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=49.9
+[INFO] [1786518115.241278]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518115.264871]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=23.7
+[INFO] [1786518115.432203]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518115.477319]: 极速日志 · 多边形确认成功 · centers=3 · rejected=0 · merged=0 · elapsed_ms=45.2
+[INFO] [1786518115.624691]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518115.644282]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.7
+[INFO] [1786518115.821758]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518115.854968]: 极速日志 · 多边形确认成功 · centers=3 · rejected=3 · merged=0 · elapsed_ms=33.2
+[INFO] [1786518116.021992]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518116.050100]: 极速日志 · 多边形确认成功 · centers=3 · rejected=2 · merged=0 · elapsed_ms=28.1
+[INFO] [1786518116.226393]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518116.245619]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.2
+[INFO] [1786518116.427301]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518116.449630]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=22.4
+[INFO] [1786518116.635662]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518116.671628]: CITRUS_CENTER ok pixel=(385,270) depth=0.816 m radius=29.8 mm arc=354 deg error=0.48 px fragments=1
+[INFO] [1786518116.672754]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=37.1
+[INFO] [1786518116.832465]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518116.854262]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.8
+[INFO] [1786518117.028895]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518117.048890]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.0
+[INFO] [1786518117.230384]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518117.249138]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=18.8
+[INFO] [1786518117.418210]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518117.427806]: 极速日志 · 多边形确认成功 · centers=1 · rejected=1 · merged=0 · elapsed_ms=9.6
+[INFO] [1786518117.637113]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518117.658648]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=21.6
+[INFO] [1786518117.856173]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518117.926060]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=70.0
+[INFO] [1786518118.057851]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518118.105430]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.6
+[INFO] [1786518118.249567]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518118.272692]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=23.2
+[INFO] [1786518118.462409]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518118.509455]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.1
+[INFO] [1786518118.663862]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518118.706320]: CITRUS_CENTER ok pixel=(385,270) depth=0.818 m radius=29.3 mm arc=354 deg error=0.53 px fragments=1
+[INFO] [1786518118.707141]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=43.4
+[INFO] [1786518118.849363]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518118.872820]: 极速日志 · 多边形确认成功 · centers=1 · rejected=1 · merged=0 · elapsed_ms=23.5
+[INFO] [1786518119.068851]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518119.094532]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=25.7
+[INFO] [1786518119.095739]: RGB-D vision status: model_ready:onnxruntime targets:3 centers:1 tf:1 rejected:2 merged:0 semantic_masks:4
+[INFO] [1786518119.233481]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518119.279143]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=45.7
+[INFO] [1786518119.448117]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518119.475663]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=27.6
+[INFO] [1786518119.639175]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518119.661860]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=22.7
+[INFO] [1786518119.848334]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518119.893759]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.5
+[INFO] [1786518120.044453]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518120.083646]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=39.2
+[INFO] [1786518120.238309]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518120.261028]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=22.8
+[INFO] [1786518120.433310]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518120.482807]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.5
+[INFO] [1786518120.637530]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518120.656451]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.9
+[INFO] [1786518120.837518]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518120.860607]: CITRUS_CENTER ok pixel=(386,271) depth=0.818 m radius=28.6 mm arc=350 deg error=0.52 px fragments=1
+[INFO] [1786518120.861972]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=24.5
+[INFO] [1786518121.030724]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518121.049942]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.2
+[INFO] [1786518121.225051]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518121.242481]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=17.5
+[INFO] [1786518121.433958]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518121.470408]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=36.5
+[INFO] [1786518121.626201]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518121.654443]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=28.3
+[INFO] [1786518121.825332]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518121.848542]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=23.2
+[INFO] [1786518122.032820]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518122.042627]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=9.8
+[INFO] [1786518122.234488]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518122.254723]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=20.3
+[INFO] [1786518122.440372]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518122.461935]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.6
+[INFO] [1786518122.651435]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518122.667864]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=16.5
+[INFO] [1786518122.817970]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518122.836307]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=18.3
+[INFO] [1786518123.020884]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518123.063704]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=28.1 mm arc=353 deg error=0.57 px fragments=1
+[INFO] [1786518123.064905]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=44.1
+[INFO] [1786518123.234431]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518123.245757]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=11.4
+[INFO] [1786518123.440081]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518123.482598]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=42.6
+[INFO] [1786518123.625820]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518123.644667]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.9
+[INFO] [1786518123.835752]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518123.880260]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.6
+[INFO] [1786518124.019915]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518124.037859]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.0
+[INFO] [1786518124.240208]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518124.288451]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=48.3
+[INFO] [1786518124.289339]: RGB-D vision status: model_ready:onnxruntime targets:3 centers:2 tf:2 rejected:1 merged:0 semantic_masks:4
+[INFO] [1786518124.453588]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518124.497525]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.0
+[INFO] [1786518124.650186]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518124.693327]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=43.2
+[INFO] [1786518124.859258]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518124.907603]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.4
+[INFO] [1786518125.063969]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518125.116307]: CITRUS_CENTER ok pixel=(385,270) depth=0.818 m radius=28.8 mm arc=354 deg error=0.52 px fragments=1
+[INFO] [1786518125.119010]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=55.1
+[INFO] [1786518125.245414]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518125.301582]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=56.2
+[INFO] [1786518125.449270]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518125.492505]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=43.3
+[INFO] [1786518125.631685]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518125.650858]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.2
+[INFO] [1786518125.843242]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518125.868821]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=25.6
+[INFO] [1786518126.032662]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518126.052391]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.7
+[INFO] [1786518126.249388]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518126.282906]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=33.5
+[INFO] [1786518126.431761]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518126.450778]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=19.1
+[INFO] [1786518126.637968]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518126.650295]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=12.4
+[INFO] [1786518126.835424]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518126.860939]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=25.5
+[INFO] [1786518127.037715]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518127.060965]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=23.3
+[INFO] [1786518127.243395]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518127.254497]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.3 mm arc=354 deg error=0.59 px fragments=1
+[INFO] [1786518127.255378]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=12.1
+[INFO] [1786518127.441239]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518127.458424]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=17.2
+[INFO] [1786518127.644775]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518127.689324]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=44.6
+[INFO] [1786518127.848225]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518127.899061]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=50.8
+[INFO] [1786518128.051018]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518128.115291]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=64.3
+[INFO] [1786518128.246992]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518128.269520]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=22.6
+[INFO] [1786518128.440931]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518128.467121]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=26.3
+[INFO] [1786518128.648782]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518128.684967]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=36.2
+[INFO] [1786518128.847465]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518128.894050]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=46.6
+[INFO] [1786518129.059061]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518129.104866]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=45.9
+[INFO] [1786518129.264927]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518129.311662]: CITRUS_CENTER ok pixel=(385,270) depth=0.819 m radius=28.6 mm arc=349 deg error=0.54 px fragments=1
+[INFO] [1786518129.312926]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.1
+[INFO] [1786518129.314092]: RGB-D vision status: model_ready:onnxruntime targets:5 centers:2 tf:2 rejected:3 merged:0 semantic_masks:6
+[INFO] [1786518129.463095]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518129.499824]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=36.8
+[INFO] [1786518129.642335]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518129.661838]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.5
+[INFO] [1786518129.846053]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518129.868662]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=22.7
+[INFO] [1786518130.042986]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518130.092351]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.4
+[INFO] [1786518130.243677]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518130.290299]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=46.7
+[INFO] [1786518130.456953]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518130.501969]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.1
+[INFO] [1786518130.650213]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518130.692749]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=42.6
+[INFO] [1786518130.864789]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518130.912511]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=47.8
+[INFO] [1786518131.057969]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518131.111447]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=53.5
+[INFO] [1786518131.204031]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518131.213654]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=9.7
+[INFO] [1786518131.407236]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518131.427028]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.7 mm arc=350 deg error=0.58 px fragments=1
+[INFO] [1786518131.428190]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.0
+[INFO] [1786518131.596007]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518131.614475]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.5
+[INFO] [1786518131.793942]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518131.813690]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=19.8
+[INFO] [1786518131.995044]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518132.013070]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.1
+[INFO] [1786518132.223080]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518132.272841]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=49.8
+[INFO] [1786518132.432073]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518132.477602]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=45.6
+[INFO] [1786518132.606995]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518132.627350]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.4
+[INFO] [1786518132.802394]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518132.820851]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.5
+[INFO] [1786518133.002313]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518133.021954]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.7
+[INFO] [1786518133.205662]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518133.225500]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.9
+[INFO] [1786518133.433107]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518133.470083]: CITRUS_CENTER ok pixel=(385,270) depth=0.817 m radius=28.7 mm arc=354 deg error=0.60 px fragments=1
+[INFO] [1786518133.471627]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=38.6
+[INFO] [1786518133.602348]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518133.626466]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=24.1
+[INFO] [1786518133.802332]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518133.821682]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.4
+[INFO] [1786518134.002311]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518134.011541]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=9.3
+[INFO] [1786518134.205184]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518134.225328]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=20.2
+[INFO] [1786518134.400334]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518134.424770]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=24.5
+[INFO] [1786518134.631111]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518134.685589]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=54.5
+[INFO] [1786518134.686666]: RGB-D vision status: model_ready:onnxruntime targets:6 centers:2 tf:2 rejected:4 merged:0 semantic_masks:7
+[INFO] [1786518134.828593]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518134.851521]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=22.9
+[INFO] [1786518135.028702]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518135.090206]: 极速日志 · 多边形确认成功 · centers=3 · rejected=2 · merged=0 · elapsed_ms=61.5
+[INFO] [1786518135.231629]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518135.258529]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=26.9
+[INFO] [1786518135.357627]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518135.387456]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=29.9
+[INFO] [1786518135.481671]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518135.537697]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=27.4 mm arc=353 deg error=0.61 px fragments=1
+[INFO] [1786518135.538755]: 极速日志 · 多边形确认成功 · centers=3 · rejected=1 · merged=0 · elapsed_ms=57.2
+[INFO] [1786518135.602171]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518135.624294]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=22.2
+[INFO] [1786518135.817115]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518135.851722]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=34.6
+[INFO] [1786518136.029868]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518136.079200]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.4
+[INFO] [1786518136.209924]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518136.230184]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=20.3
+[INFO] [1786518136.411127]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518136.428221]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=17.1
+[INFO] [1786518136.610260]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518136.636484]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=26.3
+[INFO] [1786518136.810238]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518136.831865]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.7
+[INFO] [1786518137.015564]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518137.037666]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=22.1
+[INFO] [1786518137.219675]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518137.269037]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.4
+[INFO] [1786518137.420731]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518137.469936]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=49.2
+[INFO] [1786518137.616698]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518137.665113]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.2 mm arc=353 deg error=0.55 px fragments=1
+[INFO] [1786518137.666316]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=49.7
+[INFO] [1786518137.806878]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518137.826648]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.8
+[INFO] [1786518138.016861]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518138.034544]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=17.7
+[INFO] [1786518138.236075]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518138.274394]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=38.3
+[INFO] [1786518138.419647]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518138.464221]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.6
+[INFO] [1786518138.625428]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518138.675538]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=50.2
+[INFO] [1786518138.803291]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518138.812946]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=9.7
+[INFO] [1786518139.002063]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518139.022998]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=21.0
+[INFO] [1786518139.207990]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518139.230512]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=22.6
+[INFO] [1786518139.422413]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518139.470640]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=48.3
+[INFO] [1786518139.607207]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518139.652424]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.2
+[INFO] [1786518139.811574]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518139.855094]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=27.7 mm arc=353 deg error=0.62 px fragments=1
+[INFO] [1786518139.856385]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.9
+[INFO] [1786518139.857346]: RGB-D vision status: model_ready:onnxruntime targets:5 centers:2 tf:2 rejected:3 merged:0 semantic_masks:6
+[INFO] [1786518140.015033]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.058379]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=43.4
+[INFO] [1786518140.219010]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.261937]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=43.0
+[INFO] [1786518140.343635]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.390546]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.0
+[INFO] [1786518140.461243]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518140.505496]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=44.3
+[INFO] [1786518140.619501]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.650124]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=30.7
+[INFO] [1786518140.744051]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.772945]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=28.9
+[INFO] [1786518140.878532]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518140.924845]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=46.3
+[INFO] [1786518141.028438]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518141.052894]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=24.5
+[INFO] [1786518141.231764]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518141.249626]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=17.9
+[INFO] [1786518141.402408]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518141.421241]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.8
+[INFO] [1786518141.615991]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518141.646526]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=30.6
+[INFO] [1786518141.823486]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518141.860216]: CITRUS_CENTER ok pixel=(385,270) depth=0.817 m radius=29.2 mm arc=354 deg error=0.57 px fragments=1
+[INFO] [1786518141.861402]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=38.0
+[INFO] [1786518142.006451]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518142.026026]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=19.6
+[INFO] [1786518142.229536]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518142.278410]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.9
+[INFO] [1786518142.423312]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518142.443141]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.9
+[INFO] [1786518142.604460]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518142.629818]: 极速日志 · 多边形确认成功 · centers=3 · rejected=1 · merged=0 · elapsed_ms=25.4
+[INFO] [1786518142.806164]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518142.826667]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=20.6
+[INFO] [1786518143.026279]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518143.082167]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=56.0
+[INFO] [1786518143.217539]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518143.264614]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.1
+[INFO] [1786518143.420121]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518143.468429]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.4
+[INFO] [1786518143.616962]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518143.658033]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=41.1
+[INFO] [1786518143.817963]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518143.861787]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=28.1 mm arc=353 deg error=0.56 px fragments=1
+[INFO] [1786518143.863421]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.5
+[INFO] [1786518144.011950]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518144.058685]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=46.7
+[INFO] [1786518144.225541]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518144.274392]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=48.9
+[INFO] [1786518144.403114]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518144.427932]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=24.8
+[INFO] [1786518144.612638]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518144.635804]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=23.2
+[INFO] [1786518144.821671]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518144.870294]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=48.7
+[INFO] [1786518144.871709]: RGB-D vision status: model_ready:onnxruntime targets:6 centers:2 tf:2 rejected:4 merged:0 semantic_masks:7
+[INFO] [1786518145.019171]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518145.066022]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=46.9
+[INFO] [1786518145.227814]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518145.245757]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.0
+[INFO] [1786518145.422743]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518145.457960]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=35.3
+[INFO] [1786518145.610534]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518145.620369]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=9.9
+[INFO] [1786518145.814441]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518145.835513]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=21.1
+[INFO] [1786518146.011783]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518146.029393]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.3 mm arc=354 deg error=0.56 px fragments=1
+[INFO] [1786518146.030260]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.5
+[INFO] [1786518146.206301]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518146.224849]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.6
+[INFO] [1786518146.418736]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518146.465896]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.2
+[INFO] [1786518146.627168]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518146.677692]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=50.6
+[INFO] [1786518146.801054]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518146.821552]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=20.5
+[INFO] [1786518147.001275]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518147.012226]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=11.0
+[INFO] [1786518147.205453]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518147.224055]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=18.6
+[INFO] [1786518147.416798]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518147.461772]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=45.1
+[INFO] [1786518147.616385]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518147.661145]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.8
+[INFO] [1786518147.823887]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518147.872743]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.9
+[INFO] [1786518148.016855]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518148.077820]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.3 mm arc=354 deg error=0.50 px fragments=1
+[INFO] [1786518148.079403]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=62.6
+[INFO] [1786518148.224215]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518148.272767]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=48.6
+[INFO] [1786518148.418626]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518148.486637]: 极速日志 · 多边形确认成功 · centers=3 · rejected=1 · merged=0 · elapsed_ms=68.0
+[INFO] [1786518148.617724]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518148.666655]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.0
+[INFO] [1786518148.818441]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518148.862094]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=43.7
+[INFO] [1786518149.026054]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518149.075603]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=49.6
+[INFO] [1786518149.199960]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518149.221279]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.3
+[INFO] [1786518149.399918]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518149.421816]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.9
+[INFO] [1786518149.599464]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518149.619426]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.0
+[INFO] [1786518149.820605]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518149.864615]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.0
+[INFO] [1786518150.016559]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518150.059847]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=43.3
+[INFO] [1786518150.240185]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518150.289478]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=27.4 mm arc=353 deg error=0.65 px fragments=1
+[INFO] [1786518150.290734]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=50.6
+[INFO] [1786518150.292202]: RGB-D vision status: model_ready:onnxruntime targets:4 centers:2 tf:2 rejected:2 merged:0 semantic_masks:5
+[INFO] [1786518150.418009]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518150.467130]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.2
+[INFO] [1786518150.617099]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518150.664507]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=47.4
+[INFO] [1786518150.818668]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518150.862308]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=43.7
+[INFO] [1786518151.020543]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518151.076129]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=55.6
+[INFO] [1786518151.220299]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518151.243945]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=23.7
+[INFO] [1786518151.423142]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518151.486608]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=63.5
+[INFO] [1786518151.628947]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518151.676008]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.1
+[INFO] [1786518151.826828]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518151.873235]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=46.4
+[INFO] [1786518152.024886]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518152.044038]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.2
+[INFO] [1786518152.211409]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518152.220695]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=9.3
+[INFO] [1786518152.412658]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518152.435198]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=27.4 mm arc=353 deg error=0.64 px fragments=1
+[INFO] [1786518152.436469]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=23.9
+[INFO] [1786518152.623174]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518152.655919]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=32.8
+[INFO] [1786518152.827811]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518152.872082]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=44.3
+[INFO] [1786518153.010987]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518153.029975]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.0
+[INFO] [1786518153.212183]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518153.237928]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=25.8
+[INFO] [1786518153.412641]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518153.434613]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=22.0
+[INFO] [1786518153.607409]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518153.627662]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=20.3
+[INFO] [1786518153.803086]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518153.853457]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=50.4
+[INFO] [1786518154.012448]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518154.059723]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=47.3
+[INFO] [1786518154.217827]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518154.261827]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.0
+[INFO] [1786518154.412767]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518154.430237]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=17.5
+[INFO] [1786518154.599273]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518154.620616]: CITRUS_CENTER ok pixel=(386,271) depth=0.818 m radius=28.4 mm arc=354 deg error=0.52 px fragments=1
+[INFO] [1786518154.621527]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=22.3
+[INFO] [1786518154.797927]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518154.809283]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=11.4
+[INFO] [1786518155.027755]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518155.082016]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=54.3
+[INFO] [1786518155.208546]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518155.253810]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=45.3
+[INFO] [1786518155.409590]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518155.453996]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=44.4
+[INFO] [1786518155.455318]: RGB-D vision status: model_ready:onnxruntime targets:3 centers:2 tf:2 rejected:1 merged:0 semantic_masks:4
+[INFO] [1786518155.604123]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518155.665842]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=61.7
+[INFO] [1786518155.809860]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518155.836375]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=26.6
+[INFO] [1786518156.007849]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518156.057620]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=49.8
+[INFO] [1786518156.235388]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518156.286673]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=51.3
+[INFO] [1786518156.398777]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518156.421584]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=22.8
+[INFO] [1786518156.594424]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518156.614851]: 极速日志 · 多边形确认成功 · centers=2 · rejected=0 · merged=0 · elapsed_ms=20.5
+[INFO] [1786518156.797129]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518156.824564]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.1 mm arc=353 deg error=0.59 px fragments=1
+[INFO] [1786518156.825625]: 极速日志 · 多边形确认成功 · centers=3 · rejected=2 · merged=0 · elapsed_ms=28.6
+[INFO] [1786518157.019591]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518157.067571]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=48.0
+[INFO] [1786518157.218061]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518157.263868]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=45.9
+[INFO] [1786518157.435165]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518157.491825]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=56.7
+[INFO] [1786518157.619676]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518157.666249]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=46.6
+[INFO] [1786518157.818239]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518157.865964]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.7
+[INFO] [1786518158.017221]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518158.044579]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=27.4
+[INFO] [1786518158.199001]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518158.221489]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=22.6
+[INFO] [1786518158.399356]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518158.421846]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=22.5
+[INFO] [1786518158.601887]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518158.638094]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=36.2
+[INFO] [1786518158.793162]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518158.814351]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=21.2
+[INFO] [1786518158.997751]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518159.031234]: CITRUS_CENTER ok pixel=(385,270) depth=0.817 m radius=28.7 mm arc=352 deg error=0.53 px fragments=1
+[INFO] [1786518159.032277]: 极速日志 · 多边形确认成功 · centers=3 · rejected=2 · merged=0 · elapsed_ms=34.6
+[INFO] [1786518159.193775]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518159.218656]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=24.9
+[INFO] [1786518159.395541]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518159.416260]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.8
+[INFO] [1786518159.592850]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518159.616043]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=23.2
+[INFO] [1786518159.816166]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518159.863955]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.8
+[INFO] [1786518159.998837]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518160.022186]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=23.4
+[INFO] [1786518160.217505]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518160.265051]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.6
+[INFO] [1786518160.409836]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518160.455629]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.8
+[INFO] [1786518160.457927]: RGB-D vision status: model_ready:onnxruntime targets:4 centers:2 tf:2 rejected:2 merged:0 semantic_masks:5
+[INFO] [1786518160.621594]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518160.669101]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=47.5
+[INFO] [1786518160.805266]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518160.823980]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=18.7
+[INFO] [1786518161.032609]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518161.085365]: CITRUS_CENTER ok pixel=(385,270) depth=0.816 m radius=28.9 mm arc=354 deg error=0.55 px fragments=1
+[INFO] [1786518161.086681]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=54.1
+[INFO] [1786518161.211049]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518161.236475]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=25.5
+[INFO] [1786518161.405784]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518161.416190]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=10.4
+[INFO] [1786518161.596707]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518161.616636]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=20.0
+[INFO] [1786518161.796405]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518161.805723]: 极速日志 · 多边形确认成功 · centers=1 · rejected=2 · merged=0 · elapsed_ms=9.4
+[INFO] [1786518162.002702]: 极速日志 · 开始进行多边形确认 · detections=3
+[INFO] [1786518162.012591]: 极速日志 · 多边形确认成功 · centers=1 · rejected=1 · merged=0 · elapsed_ms=10.0
+[INFO] [1786518162.201232]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518162.235132]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=33.9
+[INFO] [1786518162.410192]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518162.434119]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=24.0
+[INFO] [1786518162.597689]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518162.609354]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=11.7
+[INFO] [1786518162.795505]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518162.812747]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=17.3
+[INFO] [1786518162.994384]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518163.015279]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.9
+[INFO] [1786518163.129429]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518163.147193]: CITRUS_CENTER ok pixel=(386,270) depth=0.818 m radius=28.4 mm arc=354 deg error=0.62 px fragments=1
+[INFO] [1786518163.148319]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.9
+[INFO] [1786518163.251634]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518163.295580]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=43.9
+[INFO] [1786518163.415622]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518163.475473]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=59.9
+[INFO] [1786518163.596508]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518163.620182]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=23.7
+[INFO] [1786518163.795260]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518163.813550]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=18.4
+[INFO] [1786518164.004937]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518164.026321]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.4
+[INFO] [1786518164.217629]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518164.268773]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=51.2
+[INFO] [1786518164.404212]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518164.423965]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=19.8
+[INFO] [1786518164.623567]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518164.663121]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=39.6
+[INFO] [1786518164.813022]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518164.860544]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=47.5
+[INFO] [1786518165.021539]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518165.067862]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=46.4
+[INFO] [1786518165.202391]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518165.237272]: CITRUS_CENTER ok pixel=(386,270) depth=0.819 m radius=28.5 mm arc=350 deg error=0.55 px fragments=1
+[INFO] [1786518165.238356]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=36.0
+[INFO] [1786518165.412711]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518165.446344]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=33.7
+[INFO] [1786518165.604393]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518165.625342]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=21.0
+[INFO] [1786518165.803600]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518165.849790]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=46.2
+[INFO] [1786518165.851424]: RGB-D vision status: model_ready:onnxruntime targets:5 centers:2 tf:2 rejected:3 merged:0 semantic_masks:6
+[INFO] [1786518166.018680]: 极速日志 · 开始进行多边形确认 · detections=6
+[WARN] [1786518109.637374]: CITRUS_CENTER reject instances=0 reason=aligned depth unavailable
+[WARN] [1786518109.639050]: 极速日志 · 多边形确认失败 · rejected=3 · elapsed_ms=3.0
+[WARN] [1786518109.748125]: 极速日志 · 多边形确认失败 · rejected=3 · elapsed_ms=1.3
+[WARN] [1786518109.874804]: 极速日志 · 多边形确认失败 · rejected=4 · elapsed_ms=1.2
+[WARN] [1786518109.992541]: 极速日志 · 多边形确认失败 · rejected=3 · elapsed_ms=2.1
+[WARN] [1786518110.124194]: 极速日志 · 多边形确认失败 · rejected=3 · elapsed_ms=1.8
+[WARN] [1786518110.259721]: 极速日志 · 多边形确认失败 · rejected=3 · elapsed_ms=2.6
+[WARN] [1786518111.681822]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518113.844369]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518115.853689]: CITRUS_CENTER reject instances=3 reason=polygon has only 0 valid depth samples
+[WARN] [1786518117.924863]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518120.082851]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518122.253602]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518124.287142]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518126.449698]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518128.466122]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518130.500670]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518132.626065]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518134.684150]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518136.830786]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518139.022165]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518141.051693]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518143.081057]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518145.244982]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518147.460616]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518149.618499]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518151.674828]: CITRUS_CENTER reject instances=2 reason=polygon has only 12 valid depth samples
+[WARN] [1786518153.852407]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518156.056169]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518158.220219]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518160.263934]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518162.432932]: CITRUS_CENTER reject instances=2 reason=polygon has only 2 valid depth samples
+[WARN] [1786518164.661747]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518166.809879]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518168.832159]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[WARN] [1786518170.854805]: CITRUS_CENTER reject instances=2 reason=polygon has only 0 valid depth samples
+[INFO] [1786518166.065997]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=47.3
+[INFO] [1786518166.217736]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518166.241843]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=24.2
+[INFO] [1786518166.409978]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518166.422925]: 极速日志 · 多边形确认成功 · centers=1 · rejected=4 · merged=0 · elapsed_ms=13.0
+[INFO] [1786518166.602615]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518166.623214]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=20.6
+[INFO] [1786518166.800095]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518166.810757]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=10.7
+[INFO] [1786518167.021871]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518167.071920]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=50.1
+[INFO] [1786518167.217681]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518167.270147]: CITRUS_CENTER ok pixel=(387,270) depth=0.819 m radius=26.9 mm arc=353 deg error=0.62 px fragments=1
+[INFO] [1786518167.271370]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=53.8
+[INFO] [1786518167.415872]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518167.460996]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.1
+[INFO] [1786518167.615950]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518167.661869]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=46.0
+[INFO] [1786518167.819119]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518167.863995]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.9
+[INFO] [1786518168.021498]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518168.041975]: 极速日志 · 多边形确认成功 · centers=1 · rejected=3 · merged=0 · elapsed_ms=20.5
+[INFO] [1786518168.201291]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518168.241861]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=40.6
+[INFO] [1786518168.401488]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518168.428337]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=26.9
+[INFO] [1786518168.600014]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518168.619467]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=19.5
+[INFO] [1786518168.808622]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518168.833200]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=24.6
+[INFO] [1786518169.007959]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518169.029532]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=21.6
+[INFO] [1786518169.201444]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518169.230662]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=29.2
+[INFO] [1786518169.398089]: 极速日志 · 开始进行多边形确认 · detections=4
+[INFO] [1786518169.426778]: CITRUS_CENTER ok pixel=(386,270) depth=0.817 m radius=27.6 mm arc=349 deg error=0.71 px fragments=1
+[INFO] [1786518169.427820]: 极速日志 · 多边形确认成功 · centers=2 · rejected=1 · merged=0 · elapsed_ms=29.8
+[INFO] [1786518169.604143]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518169.652290]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=48.2
+[INFO] [1786518169.806479]: 极速日志 · 开始进行多边形确认 · detections=6
+[INFO] [1786518169.850679]: 极速日志 · 多边形确认成功 · centers=2 · rejected=3 · merged=0 · elapsed_ms=44.2
+[INFO] [1786518170.006977]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518170.051440]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=44.5
+[INFO] [1786518170.209460]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518170.258403]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=49.0
+[INFO] [1786518170.406369]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518170.451511]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=45.2
+[INFO] [1786518170.607296]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518170.662935]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=55.7
+[INFO] [1786518170.807863]: 极速日志 · 开始进行多边形确认 · detections=5
+[INFO] [1786518170.855987]: 极速日志 · 多边形确认成功 · centers=2 · rejected=2 · merged=0 · elapsed_ms=48.2
+[INFO] [1786518171.021013]: 极速日志 · 开始进行多边形确认 · detections=7
+[INFO] [1786518171.074167]: 极速日志 · 多边形确认成功 · centers=2 · rejected=4 · merged=0 · elapsed_ms=53.2

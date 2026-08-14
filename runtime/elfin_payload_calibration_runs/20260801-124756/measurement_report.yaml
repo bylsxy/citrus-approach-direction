@@ -1,0 +1,43 @@
+# Read-only measurement result. This file does not enable FREE control.
+schema_version: 1
+status: measurement_valid_control_rejected
+measurement_valid: true
+eligible_for_control_hold_test: false
+profile_name: auto-payload-20260801-124756
+mass_kg: 0.6126278719950133
+weight_newton: 6.009879424271081
+center_of_mass_m:
+- 0.04119045497474656
+- -0.03677048708214662
+- 0.612252883226164
+center_of_mass_radius_m: 0.6147375987525375
+linear_parameters_m_mx_my_mz:
+- 0.6126278719950133
+- 0.025234420777685396
+- -0.022526625253355612
+- 0.3750831809736563
+unconstrained_mass_kg: 0.6126278719950133
+fit_rmse_nm: 0.6658333591798141
+fit_max_error_nm: 1.6483322306896708
+held_out_rmse_nm: 0.9158911706362036
+held_out_max_error_nm: 1.5422817066848395
+regressor_condition: 6.581881929373505
+sample_pair_count: 8
+raw_samples: /home/catas/.ros/elfin_payload_calibration_runs/20260801-124756/static_pairs.csv
+leave_one_fit_pose_out_sensitivity:
+  mass_min_kg: 0.4845699182054255
+  mass_max_kg: 0.6882799542842972
+  center_radius_min_m: 0.5251944343252426
+  center_radius_max_m: 0.8497331157963341
+  successful_refits: 6
+measurement_quality_rejections: []
+control_assessment:
+  maximum_payload_mass_kg: 5.0
+  maximum_center_of_mass_radius_m: 0.6
+  path_includes_original_start: true
+  path_worst_joint: 3
+  path_worst_effort_nm: 24.59735065754422
+  path_worst_capacity_fraction: 0.6832597404873394
+  path_allowed_capacity_fraction: 0.88
+  rejections:
+  - 辨识重心距法兰 0.615 m，超过当前可验证范围 0.60 m

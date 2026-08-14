@@ -1,0 +1,99 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded: [/Semantic octree and approach direction1, /Transparent end-effector collision boxes1]
+    Splitter Ratio: 0.62
+    Tree Height: 520
+  - Class: rviz/Views
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style: {Line Width: 0.03, Value: Lines}
+      Name: Grid
+      Normal Cell Count: 0
+      Offset: {X: 0, Y: 0, Z: 0}
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Name: Elfin E05 visual model
+      Robot Description: /robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Visual Enabled: true
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /fig8/m2/markers
+      Name: Semantic octree and approach direction
+      Namespaces:
+        approach_direction: true
+        semantic_octree_citrus: true
+        semantic_octree_scene: true
+        semantic_octree_target: true
+        semantic_octree_unknown: true
+        target_sphere: true
+      Queue Size: 1
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /fig8/tool/visual_marker
+      Name: Exact end-effector assembly
+      Queue Size: 1
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /fig8/tool/collision_markers
+      Name: Transparent end-effector collision boxes
+      Namespaces: {harvester_collision_proxy: true}
+      Queue Size: 1
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: elfin_base_link
+    Frame Rate: 10
+  Name: root
+  Tools:
+    - {Class: rviz/Interact, Hide Inactive Objects: true}
+    - {Class: rviz/MoveCamera}
+    - {Class: rviz/Select}
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 1.55
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point: {X: -0.20, Y: 0.10, Z: 0.55}
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.45
+      Target Frame: elfin_base_link
+      Value: XYOrbit (rviz)
+      Yaw: 5.45
+    Saved: ~
+Window Geometry:
+  Displays: {collapsed: false}
+  Height: 900
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Views: {collapsed: true}
+  Width: 1200
+  X: 0
+  Y: 0

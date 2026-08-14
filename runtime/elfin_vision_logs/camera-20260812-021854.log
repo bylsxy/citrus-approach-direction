@@ -1,0 +1,877 @@
+Starting isolated D455 motion stream without reset.
+[0m[INFO] [1786501134.452616327]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786501134.509944268]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786501134.509969065]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786501134.509973828]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786501134.530392246]:  [0m
+[0m[INFO] [1786501134.541482808]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786501134.541522363]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786501134.541538371]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786501134.541789730]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786501134.541822386]: Device USB type: 3.2[0m
+[0m[INFO] [1786501134.542971462]: getParameters...[0m
+[0m[INFO] [1786501134.576881198]: setupDevice...[0m
+[0m[INFO] [1786501134.576902879]: JSON file is not provided[0m
+[0m[INFO] [1786501134.576911806]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786501134.576921926]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786501134.576929128]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786501134.576949459]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786501134.576957348]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786501134.576964905]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786501134.576979038]: Enable PointCloud: Off[0m
+[0m[INFO] [1786501134.576994833]: Align Depth: Off[0m
+[0m[INFO] [1786501134.577004359]: Sync Mode: Off[0m
+[0m[INFO] [1786501134.577028951]: Device Sensors: [0m
+[0m[INFO] [1786501134.582145690]: Stereo Module was found.[0m
+[0m[INFO] [1786501134.585335958]: RGB Camera was found.[0m
+[0m[INFO] [1786501134.585445755]: Motion Module was found.[0m
+[0m[INFO] [1786501134.585467190]: num_filters: 0[0m
+[0m[INFO] [1786501134.585483040]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786501134.639643348]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786501134.639705631]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1786501134.639712175]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1786501134.639726284]: setupPublishers...[0m
+[0m[INFO] [1786501134.640939950]: setupStreams...[0m
+ 12/08 02:18:54,641 WARNING [139782181062400] (ds-calib-parsers.cpp:35) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+[0m[INFO] [1786501134.642474359]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786501134.643461644]: RealSense Node Is Up![0m
+[33m[WARN] [1786501134.734290269]: [0m
+D455 motion stream ready: /camera_imu/gyro/sample + /camera_imu/accel/sample
+[0m[INFO] [1786501137.926204995]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786501137.976495235]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786501137.976512116]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786501137.976517036]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786501137.996757592]:  [0m
+[0m[INFO] [1786501138.003368779]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786501138.003391117]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786501138.003400233]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786501138.003574051]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786501138.003597474]: Device USB type: 3.2[0m
+[0m[INFO] [1786501138.004716557]: getParameters...[0m
+[0m[INFO] [1786501138.031898871]: setupDevice...[0m
+[0m[INFO] [1786501138.031919361]: JSON file is not provided[0m
+[0m[INFO] [1786501138.031929145]: ROS Node Namespace: camera[0m
+[0m[INFO] [1786501138.031940228]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786501138.031949877]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786501138.031962612]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786501138.031972580]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786501138.031983565]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786501138.031992401]: Enable PointCloud: On[0m
+[0m[INFO] [1786501138.032001453]: Align Depth: On[0m
+[0m[INFO] [1786501138.032010124]: Sync Mode: On[0m
+[0m[INFO] [1786501138.032040790]: Device Sensors: [0m
+[0m[INFO] [1786501138.036775935]: Stereo Module was found.[0m
+[0m[INFO] [1786501138.039868613]: RGB Camera was found.[0m
+[0m[INFO] [1786501138.039977607]: Motion Module was found.[0m
+[0m[INFO] [1786501138.040014714]: Add Filter: pointcloud[0m
+[0m[INFO] [1786501138.040064855]: num_filters: 2[0m
+[0m[INFO] [1786501138.040077586]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786501138.063195264]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786501138.063549766]: depth stream is enabled - width: 640, height: 480, fps: 5, Format: Z16[0m
+[0m[INFO] [1786501138.063876936]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1786501138.064667182]: setupPublishers...[0m
+[0m[INFO] [1786501138.065865893]: Expected frequency for depth = 5.00000[0m
+[0m[INFO] [1786501138.084187919]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1786501138.096329707]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1786501138.107937114]: setupStreams...[0m
+[0m[INFO] [1786501138.122139996]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786501138.132935566]: RealSense Node Is Up![0m
+[33m[WARN] [1786501138.685588533]: [0m
+[0m[INFO] [1786501138.688848640]: publishing unordered pointcloud.[0m
+[INFO] [1786501138.190548]: RGB-D vision status: starting:model_loading
+[INFO] [1786501138.296076]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/models/yolo26n_seg_converged_20260806/yolo26n_citrus_tree_best.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1786501138.297018]: Citrus model loading finished in 0.10 s: model_ready:onnxruntime
+[INFO] [1786501143.562672]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501149.412828]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501154.548966]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:0 tf:0 semantic_masks:3
+[INFO] [1786501160.368562]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501165.537690]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501170.957021]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:0 tf:0 semantic_masks:2
+[INFO] [1786501176.143469]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501185.383548]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:2
+[INFO] [1786501191.334670]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501196.531172]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501202.333035]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501208.759390]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501217.971443]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501223.151123]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501228.165103]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501233.167414]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:2
+[INFO] [1786501238.537414]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:6
+[INFO] [1786501244.539876]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:7
+[INFO] [1786501250.146620]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:6 tf:6 semantic_masks:9
+[INFO] [1786501256.328775]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501261.527823]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501266.737673]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:0 tf:0 semantic_masks:3
+[INFO] [1786501271.931167]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501276.945663]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501282.148776]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:4
+[INFO] [1786501287.159998]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501292.161888]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786501297.347211]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:6
+[INFO] [1786501302.349421]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:7
+[INFO] [1786501307.368892]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:6 tf:6 semantic_masks:8
+[INFO] [1786501312.744591]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:6 tf:6 semantic_masks:8
+[INFO] [1786501317.921066]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:2
+[INFO] [1786501322.924284]: RGB-D vision status: model_ready:onnxruntime targets:8 depth:8 tf:8 semantic_masks:9
+[INFO] [1786501328.929318]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786501333.930085]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:7
+[INFO] [1786501339.336559]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501344.541895]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:6
+[INFO] [1786501349.724528]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:6
+[INFO] [1786501354.930264]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:6
+[INFO] [1786501360.564996]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:6
+[INFO] [1786501365.738361]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:5
+[INFO] [1786501370.940228]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501375.948560]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786501380.951520]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786501387.133621]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786501392.313245]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:7
+[INFO] [1786501397.329581]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:7
+[INFO] [1786501403.342034]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:7
+[INFO] [1786501409.531235]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:6 tf:6 semantic_masks:9
+[INFO] [1786501415.320904]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:6 tf:6 semantic_masks:7
+[INFO] [1786501420.703080]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:6
+[INFO] [1786501425.710120]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1786501430.914382]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786501436.526639]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:8
+[INFO] [1786501441.722580]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:6
+[INFO] [1786501447.128492]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:0 tf:0 semantic_masks:1
+[INFO] [1786501452.738128]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501458.139411]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501463.329722]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501468.523318]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501474.315361]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501479.342547]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501484.704998]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501490.513037]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501495.712442]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501500.716308]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501505.727973]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:2
+[INFO] [1786501510.921461]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501516.123688]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+ 12/08 02:29:40,782 ERROR [140440523237120] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 12/08 02:29:41,785 ERROR [140440523237120] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 12/08 02:29:42,210 ERROR [140440946333440] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 12/08 02:29:42,788 ERROR [140440523237120] (ds-options.cpp:93) Asic Temperature value is not valid!
+[INFO] [1786501521.342402]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501526.344625]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501531.729919]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501536.945530]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501542.081203]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501547.104565]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501552.105442]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501557.310310]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501562.316804]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501567.502228]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501572.696006]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501577.731439]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501582.914654]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501587.932024]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501593.150049]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501598.521310]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501603.925243]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501608.935454]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501614.504587]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501619.703934]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:5
+[INFO] [1786501625.078084]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501630.106648]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501635.310809]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501640.488152]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501645.889443]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501651.690491]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501656.691379]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501661.729315]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501667.520113]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501673.102012]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501678.513044]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786501683.523031]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501688.691689]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501693.877902]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501698.950995]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501704.508639]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501709.731180]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501716.089495]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501721.502415]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501727.094334]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501732.503635]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501737.701296]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501743.104514]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501748.305530]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501753.503963]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501760.918389]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501766.675245]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:5
+[INFO] [1786501771.680492]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501778.893551]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501784.292516]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786501789.686320]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501794.718689]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501800.494859]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501806.283692]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501811.312127]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501816.316981]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501821.500403]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501826.504531]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501831.516249]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501837.329626]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501842.493585]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501848.281138]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501854.254050]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:5
+[INFO] [1786501859.276092]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501864.277494]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501869.473993]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501874.684509]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501879.877316]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501884.899125]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501889.902970]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501895.705808]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501901.520795]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501906.704585]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501913.273822]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501919.676458]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501925.860924]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501931.088897]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786501938.068733]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501943.269268]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501949.287488]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501954.663829]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501962.678287]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501968.091451]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501973.495525]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501979.082276]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501984.094068]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786501989.675783]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786501994.882632]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502000.674188]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502008.062387]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502014.471564]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502020.486377]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502027.682388]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502032.875179]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502038.072610]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502045.483801]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502053.492963]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502059.085297]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502064.665649]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502070.270987]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502075.461038]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502080.493256]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502085.663144]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502091.057021]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502097.671380]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502102.863872]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502108.083131]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502113.252239]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502118.272792]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502123.861570]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502129.081995]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502134.282914]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502139.650748]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502145.247810]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502150.654134]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502156.247959]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502161.447892]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502166.457121]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502171.659400]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502177.845491]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502183.068991]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502188.081973]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502195.675275]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502201.279535]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502206.286446]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502211.470720]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502216.654766]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502221.662274]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502227.072964]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502232.078007]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502238.444816]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502243.455823]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502248.632046]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502253.660647]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502258.852355]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502264.871111]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502270.071846]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502275.245905]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502280.274245]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502285.277639]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502290.845804]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502296.631232]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502303.069436]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502308.682052]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502314.445314]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502320.846788]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502326.037754]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502331.444302]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502336.648258]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502341.662663]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502347.833391]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502353.860274]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502359.058950]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502364.060524]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502370.219160]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502375.236532]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502380.242298]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502386.246282]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502392.036162]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502398.637786]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502403.830122]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502409.829323]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502414.850271]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502420.250331]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502425.459268]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502430.462605]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502436.052976]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502441.056422]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502446.227002]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502452.443204]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502458.833235]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502464.038599]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502469.813822]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502474.822812]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502480.050924]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502485.435339]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502492.447261]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502498.038898]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502503.043279]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502508.059409]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502513.066797]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502518.226554]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502523.817282]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502529.030997]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502534.040001]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502540.422518]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502545.823454]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502551.014232]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502556.025969]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502561.841214]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502567.241763]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502572.243122]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502577.256719]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502582.860438]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502589.262874]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786502594.810774]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502600.023793]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502605.623919]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502612.047269]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502618.027128]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502624.395726]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502630.020134]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502637.834646]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502643.249968]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502649.434829]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502654.448264]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502660.444179]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502665.677630]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:6
+[INFO] [1786502672.029869]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502678.415790]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502683.793190]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502690.002930]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502695.010508]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502700.031792]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502705.402603]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786502711.430613]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:0
+[33m[WARN] [1786502759.991711995]: Couldn't find service realsense2_camera_imu_manager/unload_nodelet, perhaps the manager is already shut down[0m
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+[33m[WARN] [1786502760.059462684]: Couldn't find service realsense2_camera_manager/unload_nodelet, perhaps the manager is already shut down[0m
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+... logging to /home/catas/.ros/log/28eebb68-95e6-11f1-bce8-c4c6e661f1ab/roslaunch-catas-22963.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch
+[1mstarted roslaunch server http://127.0.0.1:41319/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera_imu/realsense2_camera/accel_fps: 100
+ * /camera_imu/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera_imu/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera_imu/realsense2_camera/align_depth: False
+ * /camera_imu/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/allow_no_texture_points: False
+ * /camera_imu/realsense2_camera/base_frame_id: camera_link
+ * /camera_imu/realsense2_camera/calib_odom_file: 
+ * /camera_imu/realsense2_camera/clip_distance: -2.0
+ * /camera_imu/realsense2_camera/color_fps: -1
+ * /camera_imu/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera_imu/realsense2_camera/color_height: -1
+ * /camera_imu/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera_imu/realsense2_camera/color_width: -1
+ * /camera_imu/realsense2_camera/confidence_fps: -1
+ * /camera_imu/realsense2_camera/confidence_height: -1
+ * /camera_imu/realsense2_camera/confidence_width: -1
+ * /camera_imu/realsense2_camera/depth_fps: -1
+ * /camera_imu/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera_imu/realsense2_camera/depth_height: -1
+ * /camera_imu/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera_imu/realsense2_camera/depth_width: -1
+ * /camera_imu/realsense2_camera/device_type: d455
+ * /camera_imu/realsense2_camera/enable_accel: True
+ * /camera_imu/realsense2_camera/enable_color: False
+ * /camera_imu/realsense2_camera/enable_confidence: False
+ * /camera_imu/realsense2_camera/enable_depth: False
+ * /camera_imu/realsense2_camera/enable_fisheye1: False
+ * /camera_imu/realsense2_camera/enable_fisheye2: False
+ * /camera_imu/realsense2_camera/enable_fisheye: False
+ * /camera_imu/realsense2_camera/enable_gyro: True
+ * /camera_imu/realsense2_camera/enable_infra1: False
+ * /camera_imu/realsense2_camera/enable_infra2: False
+ * /camera_imu/realsense2_camera/enable_infra: False
+ * /camera_imu/realsense2_camera/enable_pointcloud: False
+ * /camera_imu/realsense2_camera/enable_pose: False
+ * /camera_imu/realsense2_camera/enable_sync: False
+ * /camera_imu/realsense2_camera/filters: 
+ * /camera_imu/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera_imu/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera_imu/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera_imu/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera_imu/realsense2_camera/fisheye_fps: -1
+ * /camera_imu/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera_imu/realsense2_camera/fisheye_height: -1
+ * /camera_imu/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera_imu/realsense2_camera/fisheye_width: -1
+ * /camera_imu/realsense2_camera/gyro_fps: 200
+ * /camera_imu/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera_imu/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera_imu/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera_imu/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera_imu/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera_imu/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera_imu/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera_imu/realsense2_camera/infra_fps: 30
+ * /camera_imu/realsense2_camera/infra_height: 480
+ * /camera_imu/realsense2_camera/infra_rgb: False
+ * /camera_imu/realsense2_camera/infra_width: 848
+ * /camera_imu/realsense2_camera/initial_reset: False
+ * /camera_imu/realsense2_camera/json_file_path: 
+ * /camera_imu/realsense2_camera/linear_accel_cov: 0.01
+ * /camera_imu/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera_imu/realsense2_camera/ordered_pc: False
+ * /camera_imu/realsense2_camera/pointcloud_texture_index: 0
+ * /camera_imu/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_COLOR
+ * /camera_imu/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera_imu/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera_imu/realsense2_camera/publish_odom_tf: True
+ * /camera_imu/realsense2_camera/publish_tf: False
+ * /camera_imu/realsense2_camera/reconnect_timeout: 10.0
+ * /camera_imu/realsense2_camera/rosbag_filename: 
+ * /camera_imu/realsense2_camera/serial_no: 234222302617
+ * /camera_imu/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera_imu/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera_imu/realsense2_camera/stereo_module/gain/1: 16
+ * /camera_imu/realsense2_camera/stereo_module/gain/2: 16
+ * /camera_imu/realsense2_camera/tf_publish_rate: 0.0
+ * /camera_imu/realsense2_camera/topic_odom_in: odom_in
+ * /camera_imu/realsense2_camera/unite_imu_method: none
+ * /camera_imu/realsense2_camera/usb_port_id: 2-3
+ * /camera_imu/realsense2_camera/wait_for_device_timeout: 15.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera_imu/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_imu_manager (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch http://127.0.0.1:11311
+[1mprocess[camera_imu/realsense2_camera_imu_manager-1]: started with pid [23100][0m
+[1mprocess[camera_imu/realsense2_camera-2]: started with pid [23101][0m
+[camera_imu/realsense2_camera-2] killing on exit
+[camera_imu/realsense2_camera_imu_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[INFO] [1786502717.017774]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:0
+[INFO] [1786502722.028080]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786502727.046982]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1786502732.069877]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502737.241178]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:5
+[INFO] [1786502742.454607]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502747.680289]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786502752.796188]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786502758.032960]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+... logging to /home/catas/.ros/log/28eebb68-95e6-11f1-bce8-c4c6e661f1ab/roslaunch-catas-23596.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:40179/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 100
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 5
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 200
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: onnxruntime
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_age_s: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_delta_s: 0.04
+ * /elfin_vision/citrus_rgbd_node/depth_roi_scale: 0.35
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: 
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: 
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 371c56e82f2452cc9...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: False
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: False
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/rgbd_history_size: 18
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [23651][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [23652][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [23653][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

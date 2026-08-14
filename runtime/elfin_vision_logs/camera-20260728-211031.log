@@ -1,0 +1,311 @@
+[ INFO] [1785244234.712287080]: Initializing nodelet with 8 worker threads.
+[ INFO] [1785244235.152942769]: RealSense ROS v2.3.2
+[ INFO] [1785244235.153270431]: Built with LibRealSense v2.55.1
+[ INFO] [1785244235.153620429]: Running with LibRealSense v2.55.1
+[ INFO] [1785244235.212216990]:  
+[ INFO] [1785244235.261843752]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785244235.262212887]: Device with physical ID /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0 was found.
+[ INFO] [1785244235.262336699]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785244235.263553196]: Device with port number 2-1.4 was found.
+[ INFO] [1785244235.263929051]: Device USB type: 3.2
+[ INFO] [1785244235.266907987]: getParameters...
+[ INFO] [1785244235.361797975]: setupDevice...
+[ INFO] [1785244235.361862457]: JSON file is not provided
+[ INFO] [1785244235.361881082]: ROS Node Namespace: camera
+[ INFO] [1785244235.361898971]: Device Name: Intel RealSense D435
+[ INFO] [1785244235.361909147]: Device Serial No: 233522078111
+[ INFO] [1785244235.361920923]: Device physical port: /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0
+[ INFO] [1785244235.361932156]: Device FW version: 5.13.0.55
+[ INFO] [1785244235.361942140]: Device Product ID: 0x0B07
+[ INFO] [1785244235.361951549]: Enable PointCloud: On
+[ INFO] [1785244235.361961565]: Align Depth: On
+[ INFO] [1785244235.361970621]: Sync Mode: On
+[ INFO] [1785244235.362037792]: Device Sensors: 
+[ INFO] [1785244235.367137485]: Stereo Module was found.
+[ INFO] [1785244235.373646482]: RGB Camera was found.
+[ INFO] [1785244235.374403633]: Add Filter: pointcloud
+[ INFO] [1785244235.375669764]: num_filters: 2
+[ INFO] [1785244235.375998769]: Setting Dynamic reconfig parameters.
+[ WARN] [1785244235.519667580]: Param '/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1785244235.535230093]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785244235.536130865]: depth stream is enabled - width: 640, height: 480, fps: 30, Format: Z16
+[ INFO] [1785244235.536864206]: color stream is enabled - width: 640, height: 480, fps: 30, Format: RGB8
+[ INFO] [1785244235.538021981]: setupPublishers...
+[ INFO] [1785244235.542657719]: Expected frequency for depth = 30.00000
+[ INFO] [1785244235.618957712]: Expected frequency for color = 30.00000
+[ INFO] [1785244235.654434337]: Expected frequency for aligned_depth_to_color = 30.00000
+[ INFO] [1785244235.698403335]: setupStreams...
+[ INFO] [1785244235.734122818]: SELECTED BASE:Depth, 0
+[ INFO] [1785244235.750123812]: RealSense Node Is Up!
+[ WARN] [1785244235.853031402]: 
+[ INFO] [1785244236.037209327]: publishing unordered pointcloud.
+[INFO] [1785244236.407566]: RGB-D vision status: starting:model_loading
+[INFO] [1785244237.048680]: Connected to remote citrus inference http://aiseon.local:8765; providers=['CUDAExecutionProvider', 'CPUExecutionProvider']
+[INFO] [1785244237.055087]: Citrus model loading finished in 0.39 s: model_ready:remote
+[INFO] [1785244241.492971]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244246.878557]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244248.959176]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244253.064331]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244258.166398]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244261.079068]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244263.459459]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244270.295336]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244270.486896]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244272.194046]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244279.240538]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244284.708253]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244292.158587]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244297.073074]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244301.963802]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244311.665832]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244320.583119]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244325.784559]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244332.488385]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244342.535989]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244352.932766]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244354.165794]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244358.700593]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244363.804153]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244369.149578]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244377.131521]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244382.369349]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244384.293386]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244388.197838]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244393.287879]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244398.694997]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244403.812922]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244408.893481]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244413.938698]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244419.575784]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244424.687552]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244430.245354]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244435.513672]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244441.021064]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244447.424529]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244456.932159]: RGB-D vision status: model_ready:remote targets:3 depth:3 tf:3
+[INFO] [1785244463.617156]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244469.005877]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244469.452842]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244474.043264]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244479.467736]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244484.626351]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244492.240115]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244497.327205]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244502.531550]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244507.962712]: RGB-D vision status: model_ready:remote targets:3 depth:3 tf:3
+[INFO] [1785244513.062103]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244522.679696]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244529.860561]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244534.923701]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244535.531311]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244540.375339]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244545.801587]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244555.328021]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244558.528943]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244562.103824]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244568.862660]: Remote inference recovered after 2 transient failure(s)
+[INFO] [1785244568.881119]: RGB-D vision status: model_ready:remote targets:2 depth:2 tf:2
+[INFO] [1785244577.549756]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244577.561142]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244583.014844]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244583.482287]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244588.082040]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244595.457566]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244600.494433]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244615.857121]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244622.639021]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244631.869349]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244637.098961]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244637.528860]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244642.484873]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244649.596211]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244649.659567]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244660.892205]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244677.667491]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244686.176968]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244686.832949]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244693.275405]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244699.819909]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244706.093125]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244711.174816]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244711.648290]: Remote inference recovered after 1 transient failure(s)
+[WARN] [1785244248.644207]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244260.767888]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244264.796142]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244271.727878]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244286.878474]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244296.762881]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244353.842882]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244383.858017]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244468.998760]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244534.919181]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244558.046860]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244562.092871]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244568.350917]: Remote inference transient failure 2/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244572.063683]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244583.007102]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244637.094865]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244644.111557]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244686.170822]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244711.168661]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244737.288776]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[WARN] [1785244743.154953]: Remote inference transient failure 1/3; dropping this frame and retaining the remote backend: timed out
+[INFO] [1785244716.248787]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244726.156162]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244731.427712]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244737.295809]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244737.786106]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244743.159370]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244743.615895]: Remote inference recovered after 1 transient failure(s)
+[INFO] [1785244751.094959]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244760.952082]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244766.071353]: RGB-D vision status: model_ready:remote targets:1 depth:1 tf:1
+[INFO] [1785244774.041338]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+[INFO] [1785244780.426497]: RGB-D vision status: model_ready:remote targets:0 depth:0 tf:0
+... logging to /home/jetson/.ros/log/9efb6fac-8a85-11f1-8a36-d0c637ebfba4/roslaunch-ubuntu-263283.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/jetson/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://ubuntu:41675/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: -1
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 30
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 30
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d435
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: True
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: -1
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 233522078111
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: 
+ * /camera/realsense2_camera/usb_port_id: 2-1.4
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: auto
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_roi_scale: 0.35
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: /home/jetson/elfi...
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: c876f0927ac1eb12e...
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/jetson/elfi...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 507821ee21f312497...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: True
+ * /elfin_vision/citrus_rgbd_node/remote_failure_limit: 3
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: True
+ * /elfin_vision/citrus_rgbd_node/remote_retry_interval_s: 5.0
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/jetson/.con...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/jetson/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://localhost:11311
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [263563][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [263564][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [263567][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,42 @@
+[ INFO] [1785246533.837209187]: Initializing nodelet with 8 worker threads.
+[ INFO] [1785246534.177040742]: RealSense ROS v2.3.2
+[ INFO] [1785246534.177150727]: Built with LibRealSense v2.55.1
+[ INFO] [1785246534.177583882]: Running with LibRealSense v2.55.1
+[ INFO] [1785246534.224990517]:  
+[ INFO] [1785246534.273932876]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785246534.275000723]: Device with physical ID /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0 was found.
+[ INFO] [1785246534.275207893]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785246534.276374461]: Device with port number 2-1.4 was found.
+[ INFO] [1785246534.276647199]: Device USB type: 3.2
+[ INFO] [1785246534.282087909]: getParameters...
+[ INFO] [1785246534.363167516]: setupDevice...
+[ INFO] [1785246534.363231708]: JSON file is not provided
+[ INFO] [1785246534.363267517]: ROS Node Namespace: camera
+[ INFO] [1785246534.363288381]: Device Name: Intel RealSense D435
+[ INFO] [1785246534.363298845]: Device Serial No: 233522078111
+[ INFO] [1785246534.363311421]: Device physical port: /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0
+[ INFO] [1785246534.363321757]: Device FW version: 5.13.0.55
+[ INFO] [1785246534.363334653]: Device Product ID: 0x0B07
+[ INFO] [1785246534.363344573]: Enable PointCloud: On
+[ INFO] [1785246534.363353981]: Align Depth: On
+[ INFO] [1785246534.363530718]: Sync Mode: On
+[ INFO] [1785246534.363651423]: Device Sensors: 
+[ INFO] [1785246534.369916363]: Stereo Module was found.
+[ INFO] [1785246534.375879541]: RGB Camera was found.
+[ INFO] [1785246534.376374040]: Add Filter: pointcloud
+[ INFO] [1785246534.376801723]: num_filters: 2
+[ INFO] [1785246534.376918524]: Setting Dynamic reconfig parameters.
+[ WARN] [1785246534.529140197]: Param '/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1785246534.544129325]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785246534.544930355]: depth stream is enabled - width: 640, height: 480, fps: 15, Format: Z16
+[ INFO] [1785246534.545503831]: color stream is enabled - width: 640, height: 480, fps: 30, Format: RGB8
+[ INFO] [1785246534.546620287]: setupPublishers...
+[ INFO] [1785246534.551140062]: Expected frequency for depth = 15.00000
+[ INFO] [1785246534.620064673]: Expected frequency for color = 30.00000
+[ INFO] [1785246534.657759848]: Expected frequency for aligned_depth_to_color = 30.00000
+[ INFO] [1785246534.695925363]: setupStreams...
+[ INFO] [1785246534.727251150]: SELECTED BASE:Depth, 0
+[ INFO] [1785246534.742240375]: RealSense Node Is Up!
+[ WARN] [1785246534.911719192]: 
+[ INFO] [1785246535.149662045]: publishing unordered pointcloud.

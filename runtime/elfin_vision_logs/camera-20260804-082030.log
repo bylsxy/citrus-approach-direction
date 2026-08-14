@@ -1,0 +1,159 @@
+[0m[INFO] [1785831630.652379615]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1785831630.748552088]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1785831630.748569221]: Built with LibRealSense v2.50.0[0m
+[0m[INFO] [1785831630.748574829]: Running with LibRealSense v2.50.0[0m
+[0m[INFO] [1785831630.783312121]:  [0m
+[0m[INFO] [1785831630.899590263]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1785831630.899615899]: Device with physical ID 2-3-13 was found.[0m
+[0m[INFO] [1785831630.899625083]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1785831630.899868864]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1785831630.899892221]: Device USB type: 3.2[0m
+[0m[INFO] [1785831630.900939567]: getParameters...[0m
+[0m[INFO] [1785831630.937607820]: setupDevice...[0m
+[0m[INFO] [1785831630.937631354]: JSON file is not provided[0m
+[0m[INFO] [1785831630.937642532]: ROS Node Namespace: camera[0m
+[0m[INFO] [1785831630.937655777]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1785831630.937670867]: Device Serial No: 234222302617[0m
+[0m[INFO] [1785831630.937682727]: Device physical port: 2-3-13[0m
+[0m[INFO] [1785831630.937692702]: Device FW version: 05.17.03.10[0m
+[0m[INFO] [1785831630.937702536]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1785831630.937714791]: Enable PointCloud: Off[0m
+[0m[INFO] [1785831630.937727148]: Align Depth: Off[0m
+[0m[INFO] [1785831630.937737526]: Sync Mode: On[0m
+[0m[INFO] [1785831630.937785361]: Device Sensors: [0m
+[0m[INFO] [1785831631.028749130]: Stereo Module was found.[0m
+[0m[INFO] [1785831631.041649522]: RGB Camera was found.[0m
+[0m[INFO] [1785831631.041798418]: Motion Module was found.[0m
+[0m[INFO] [1785831631.041829722]: num_filters: 0[0m
+[0m[INFO] [1785831631.041844738]: Setting Dynamic reconfig parameters.[0m
+ 04/08 08:20:33,361 WARNING [140581183416064] (messenger-libusb.cpp:42) control_transfer returned error, index: 300, error: Resource temporarily unavailable, number: b
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+[0m[INFO] [1785831634.035448065]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1785831634.036138000]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1785831634.036165069]: setupPublishers...[0m
+[0m[INFO] [1785831634.038367521]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1785831634.061641319]: setupStreams...[0m
+[0m[INFO] [1785831634.153306648]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1785831634.156841607]: RealSense Node Is Up![0m
+[33m[WARN] [1785831634.633676066]: [0m
+ 04/08 08:20:34,694 WARNING [140581183416064] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:34,744 WARNING [140581183416064] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+... logging to /home/catas/.ros/log/29b15f06-8fdd-11f1-beee-c4c6e661f1ab/roslaunch-catas-21507.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:45141/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 0
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: False
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 15
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: False
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: False
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: True
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 0
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [21566][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [21567][0m
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

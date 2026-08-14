@@ -1,0 +1,508 @@
+[0m[INFO] [1785895617.647758224]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1785895617.723226474]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1785895617.723255377]: Built with LibRealSense v2.50.0[0m
+[0m[INFO] [1785895617.723269533]: Running with LibRealSense v2.50.0[0m
+[0m[INFO] [1785895617.745350576]:  [0m
+[0m[INFO] [1785895617.886390878]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1785895617.886431132]: Device with physical ID 2-3-3 was found.[0m
+[0m[INFO] [1785895617.886440466]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1785895617.886694139]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1785895617.886719202]: Device USB type: 3.2[0m
+[0m[INFO] [1785895617.888082192]: getParameters...[0m
+[0m[INFO] [1785895617.921865085]: setupDevice...[0m
+[0m[INFO] [1785895617.921898070]: JSON file is not provided[0m
+[0m[INFO] [1785895617.921909625]: ROS Node Namespace: camera[0m
+[0m[INFO] [1785895617.921940742]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1785895617.921951128]: Device Serial No: 234222302617[0m
+[0m[INFO] [1785895617.921961563]: Device physical port: 2-3-3[0m
+[0m[INFO] [1785895617.921971456]: Device FW version: 05.17.03.10[0m
+[0m[INFO] [1785895617.921981591]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1785895617.921994743]: Enable PointCloud: On[0m
+[0m[INFO] [1785895617.922007092]: Align Depth: On[0m
+[0m[INFO] [1785895617.922017709]: Sync Mode: On[0m
+[0m[INFO] [1785895617.922067295]: Device Sensors: [0m
+[0m[INFO] [1785895618.032865785]: Stereo Module was found.[0m
+[0m[INFO] [1785895618.041354324]: RGB Camera was found.[0m
+[0m[INFO] [1785895618.041478823]: Motion Module was found.[0m
+[0m[INFO] [1785895618.041704541]: Add Filter: pointcloud[0m
+[0m[INFO] [1785895618.042043537]: num_filters: 2[0m
+[0m[INFO] [1785895618.042058726]: Setting Dynamic reconfig parameters.[0m
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+[0m[INFO] [1785895621.027596083]: Done Setting Dynamic reconfig parameters.[0m
+[33m[WARN] [1785895621.027780660]: Given stream configuration is not supported by the device!  Stream: Depth, Stream Index: 0, Width: 640, Height: 480, FPS: 10, Format: Z16[0m
+[33m[WARN] [1785895621.027795038]: Using default profile instead.[0m
+[0m[INFO] [1785895621.028134979]: depth stream is enabled - width: 848, height: 480, fps: 30, Format: Z16[0m
+[0m[INFO] [1785895621.028499333]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1785895621.029584648]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1785895621.029602208]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1785895621.029617393]: setupPublishers...[0m
+[0m[INFO] [1785895621.031018399]: Expected frequency for depth = 30.00000[0m
+[0m[INFO] [1785895621.067051585]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1785895621.073509916]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1785895621.082911698]: setupStreams...[0m
+ 05/08 02:07:01,359 WARNING [140087894738688] (ds5-motion.cpp:473) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+ 05/08 02:07:03,632 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:03,682 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:03,732 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1785895623.783539701]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1785895623.798348876]: RealSense Node Is Up![0m
+[33m[WARN] [1785895623.823688605]: [0m
+ 05/08 02:07:03,824 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1785895623.829877977]: publishing unordered pointcloud.[0m
+ 05/08 02:07:03,874 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:03,995 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:04,046 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:04,096 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:04,146 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:04,297 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:07:05,050 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:08:19,345 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:08:35,405 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:10:27,518 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:10:31,570 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:10:45,628 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:10:51,682 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:10:54,734 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[WARN] [1785895617.986432]: Remote inference unavailable, loading local fallback: [Errno -2] Name or service not known
+[WARN] [1785895617.994898]: TensorRT unavailable, falling back to ONNX Runtime: No module named 'pycuda'
+[WARN] [1785895624.074527]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895629.143162]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895634.349545]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895639.549682]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895644.624408]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895649.684442]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895654.748595]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895659.839666]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895664.908873]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895670.022031]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895675.106277]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895680.265931]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895685.459486]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895690.531400]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895695.576004]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895700.726700]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895705.812695]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895710.888626]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895716.100399]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895721.295844]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895726.482106]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895731.550910]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895736.625358]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895741.695231]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895746.855646]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895752.003947]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895757.141786]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895762.344488]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895767.535082]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895772.717904]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895777.798109]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895782.871302]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895787.933465]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895793.017718]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895798.059819]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895803.175508]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895808.243478]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895813.297964]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895818.351892]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895823.459739]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895828.656387]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895833.837834]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895838.919493]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895843.998223]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895849.140904]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895854.200991]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895859.289858]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+ 05/08 02:11:47,810 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:12:09,871 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[INFO] [1785895617.949965]: RGB-D vision status: starting:model_loading
+[INFO] [1785895618.057070]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1785895618.057872]: Citrus model loading finished in 0.10 s: model_ready:onnxruntime
+[INFO] [1785895624.087442]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:0 tf:0 semantic_masks:9
+[INFO] [1785895629.155874]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:3 tf:3 semantic_masks:8
+[INFO] [1785895634.208066]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895639.307692]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895644.385762]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895649.427370]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895654.501074]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:3 tf:3 semantic_masks:8
+[INFO] [1785895659.695926]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895664.786649]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895670.435426]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895675.520405]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895680.538178]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895685.599681]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895690.804143]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895695.856799]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895700.863505]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895705.964689]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895711.026753]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895716.255616]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895721.307464]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895726.771126]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895731.834563]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895736.903400]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895741.974106]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:2 tf:2 semantic_masks:8
+[INFO] [1785895746.988624]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895752.017320]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895757.152116]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895762.203424]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895767.706721]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895772.728629]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895777.807097]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895782.883116]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895787.944930]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:10
+[INFO] [1785895793.031354]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785895798.070758]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895803.185958]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895808.253934]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895813.307544]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895818.506141]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895823.619752]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895828.666765]: RGB-D vision status: model_ready:onnxruntime targets:6 depth:1 tf:1 semantic_masks:8
+[INFO] [1785895833.715916]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895839.059301]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895844.155241]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895849.155868]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895854.622332]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895859.706237]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895864.774826]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895869.832473]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895875.046388]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785895880.289166]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895885.360543]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895890.708347]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895895.807367]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895900.851251]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895906.048570]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785895911.135736]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895916.242929]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785895921.347770]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895926.419653]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785895931.491217]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895936.537663]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895941.766830]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785895947.030037]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895952.216794]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895957.307503]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895962.492495]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895967.567125]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895972.927823]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+ 05/08 02:12:59,950 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:13:59,028 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:14:39,101 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:14:40,152 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:14:58,212 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[WARN] [1785895864.357369]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895869.416989]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895874.516954]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895879.682287]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895884.840619]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895890.022583]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895895.094414]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895900.206893]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895905.400481]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895910.574929]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895915.676761]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895920.818223]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895926.021979]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895931.218018]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895936.391807]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895941.469407]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895946.601345]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895951.670796]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895956.781541]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895961.952905]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895967.065813]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895972.241282]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895977.340544]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895982.504158]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895987.594430]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895992.667527]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785895997.870707]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896003.057902]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896008.144531]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896013.209853]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896018.346985]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896023.427831]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896028.566180]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896033.622726]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896038.720759]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896043.909359]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896048.981934]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896054.180150]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896059.252092]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896064.326428]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896069.399120]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896074.545608]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896079.616078]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896084.681109]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896089.728971]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896094.823950]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896099.996240]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896105.076376]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+ 05/08 02:16:46,320 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:17:21,392 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:17:35,451 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:17:46,506 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:18:03,565 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:18:15,621 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 05/08 02:18:37,682 WARNING [140087664830208] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[WARN] [1785896110.174458]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896115.370206]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896120.430510]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896125.509409]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896130.592555]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896135.671276]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896140.857837]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896146.008922]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896151.117172]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896156.198644]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896161.269282]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896166.338828]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896171.413345]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896176.480822]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896181.606086]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896186.725412]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896191.907346]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896196.984234]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896202.183216]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896207.239871]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896212.320292]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896217.402630]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896222.577350]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896227.674858]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896232.865967]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896237.956733]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896243.169641]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896248.349978]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896253.516457]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896258.698565]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896263.881114]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896268.978104]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896274.198089]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896279.382210]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896284.584451]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896289.670648]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896294.861138]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896299.925597]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896304.997036]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896310.092868]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785896315.254997]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[INFO] [1785895978.006359]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895983.193685]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785895988.414713]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895993.464380]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785895998.818573]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896003.872056]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896009.103243]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896014.109157]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896019.170486]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896024.366983]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896029.399255]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785896034.457648]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896039.656143]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896045.251942]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896050.330919]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896055.385012]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896060.447857]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896065.804369]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785896070.884082]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896075.999908]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785896081.099058]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896086.169798]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896091.229675]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896096.299133]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896101.364482]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896106.433466]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896111.627237]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896116.863535]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896122.059647]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896127.117728]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896132.198048]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896137.270810]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896142.273684]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896147.532303]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896152.623674]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896157.690248]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785896162.758465]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896167.830451]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896172.873703]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:4 tf:4 semantic_masks:9
+[INFO] [1785896178.021385]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896183.094868]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896188.442215]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896193.532884]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896198.568243]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896203.652291]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896208.706997]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896213.806541]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896218.888219]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896223.918354]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896229.015540]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896234.095639]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896239.303319]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896244.487561]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896249.588714]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896254.693150]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896259.919742]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896264.980020]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896270.049464]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896275.116991]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896280.210429]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896285.695649]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896290.720907]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:1 tf:1 semantic_masks:9
+[INFO] [1785896295.834189]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896300.895802]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896305.953133]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:3 tf:3 semantic_masks:9
+[INFO] [1785896311.012669]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+[INFO] [1785896316.222498]: RGB-D vision status: model_ready:onnxruntime targets:7 depth:2 tf:2 semantic_masks:9
+... logging to /home/catas/.ros/log/578f1618-9067-11f1-b9d1-c4c6e661f1ab/roslaunch-catas-32203.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:33141/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 100
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 10
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: True
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: True
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 200
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: auto
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_roi_scale: 0.35
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: c876f0927ac1eb12e...
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 507821ee21f312497...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: True
+ * /elfin_vision/citrus_rgbd_node/remote_failure_limit: 3
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: True
+ * /elfin_vision/citrus_rgbd_node/remote_retry_interval_s: 5.0
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [32258][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [32259][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [32260][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

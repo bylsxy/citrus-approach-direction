@@ -1,0 +1,267 @@
+[0m[INFO] [1785831647.507202762]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1785831647.567328930]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1785831647.567353689]: Built with LibRealSense v2.50.0[0m
+[0m[INFO] [1785831647.567364907]: Running with LibRealSense v2.50.0[0m
+[0m[INFO] [1785831647.586005981]:  [0m
+ 04/08 08:20:47,654 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 300, error: Success, number: 0
+[0m[INFO] [1785831647.739887676]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1785831647.739917369]: Device with physical ID 2-3-13 was found.[0m
+[0m[INFO] [1785831647.739929675]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1785831647.740256341]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1785831647.740285549]: Device USB type: 3.2[0m
+[0m[INFO] [1785831647.741681118]: getParameters...[0m
+[0m[INFO] [1785831647.821145082]: setupDevice...[0m
+[0m[INFO] [1785831647.821189580]: JSON file is not provided[0m
+[0m[INFO] [1785831647.821210602]: ROS Node Namespace: camera[0m
+[0m[INFO] [1785831647.821244568]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1785831647.821283438]: Device Serial No: 234222302617[0m
+[0m[INFO] [1785831647.821310917]: Device physical port: 2-3-13[0m
+[0m[INFO] [1785831647.821332968]: Device FW version: 05.17.03.10[0m
+[0m[INFO] [1785831647.821351610]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1785831647.821368076]: Enable PointCloud: On[0m
+[0m[INFO] [1785831647.821384485]: Align Depth: On[0m
+[0m[INFO] [1785831647.821400414]: Sync Mode: On[0m
+[0m[INFO] [1785831647.821478139]: Device Sensors: [0m
+[0m[INFO] [1785831647.918774621]: Stereo Module was found.[0m
+[0m[INFO] [1785831647.933383728]: RGB Camera was found.[0m
+[0m[INFO] [1785831647.933540092]: Motion Module was found.[0m
+[0m[INFO] [1785831647.933836662]: Add Filter: pointcloud[0m
+[0m[INFO] [1785831647.934302811]: num_filters: 2[0m
+[0m[INFO] [1785831647.934322452]: Setting Dynamic reconfig parameters.[0m
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+[0m[INFO] [1785831651.064637963]: Done Setting Dynamic reconfig parameters.[0m
+[33m[WARN] [1785831651.064802697]: Given stream configuration is not supported by the device!  Stream: Depth, Stream Index: 0, Width: 640, Height: 480, FPS: 10, Format: Z16[0m
+[33m[WARN] [1785831651.064817226]: Using default profile instead.[0m
+[0m[INFO] [1785831651.065144170]: depth stream is enabled - width: 848, height: 480, fps: 30, Format: Z16[0m
+[0m[INFO] [1785831651.065497646]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1785831651.066593914]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1785831651.066609325]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1785831651.066623218]: setupPublishers...[0m
+[0m[INFO] [1785831651.067879991]: Expected frequency for depth = 30.00000[0m
+[0m[INFO] [1785831651.084641902]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1785831651.095101793]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1785831651.108747855]: setupStreams...[0m
+ 04/08 08:20:51,347 WARNING [140078464087808] (ds5-motion.cpp:473) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+ 04/08 08:20:53,580 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:53,631 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:53,681 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1785831653.731943275]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1785831653.747833593]: RealSense Node Is Up![0m
+[33m[WARN] [1785831653.774674223]: [0m
+ 04/08 08:20:53,775 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1785831653.786251800]: publishing unordered pointcloud.[0m
+ 04/08 08:20:53,826 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:53,977 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:54,027 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:54,078 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:54,129 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:54,280 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 04/08 08:20:54,747 ERROR [140077149353728] (ds5-options.cpp:88) Asic Temperature value is not valid!
+ 04/08 08:20:55,732 ERROR [140078059869952] (ds5-options.cpp:88) Asic Temperature value is not valid!
+ 04/08 08:20:55,750 ERROR [140077149353728] (ds5-options.cpp:88) Asic Temperature value is not valid!
+ 04/08 08:20:56,753 ERROR [140077149353728] (ds5-options.cpp:88) Asic Temperature value is not valid!
+ 04/08 08:22:46,312 WARNING [140078438909696] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[WARN] [1785831647.791706]: Remote inference unavailable, loading local fallback: [Errno -2] Name or service not known
+[WARN] [1785831647.806798]: TensorRT unavailable, falling back to ONNX Runtime: No module named 'pycuda'
+[WARN] [1785831654.062901]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831659.197148]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831664.374227]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831669.522715]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831674.585212]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831679.712729]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831684.799735]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831689.872726]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831694.945358]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831699.998349]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831705.083706]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831710.224829]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831715.285075]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831720.366831]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831725.434301]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831730.500045]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831735.587130]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831740.704826]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831745.791337]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831750.906912]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831755.995178]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831761.057510]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831766.222593]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831771.399665]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[WARN] [1785831776.551529]: Remote inference recovery probe failed; local inference continues and another probe will run in 5.0 s: [Errno -2] Name or service not known
+[INFO] [1785831647.759267]: RGB-D vision status: starting:model_loading
+[INFO] [1785831647.876985]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/server_bundle_20260722/best_citrus_seg.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1785831647.877901]: Citrus model loading finished in 0.09 s: model_ready:onnxruntime
+[INFO] [1785831654.065988]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:0 tf:0 semantic_masks:1
+[INFO] [1785831659.301015]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1785831664.782002]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1785831670.643777]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1785831675.867197]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1785831680.957021]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1785831686.027647]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831691.729307]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831701.228469]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1785831706.341894]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1785831711.411171]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831719.039563]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1785831724.096108]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831730.060148]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1785831735.446621]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831740.460718]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831747.012675]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:1 tf:1 semantic_masks:3
+[INFO] [1785831752.116826]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831757.591422]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:4
+[INFO] [1785831762.713480]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1785831767.880507]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1785831774.007895]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+... logging to /home/catas/.ros/log/29b15f06-8fdd-11f1-beee-c4c6e661f1ab/roslaunch-catas-25143.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:38335/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 100
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 10
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: True
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: True
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: True
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 200
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: auto
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_roi_scale: 0.35
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: c876f0927ac1eb12e...
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 507821ee21f312497...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: True
+ * /elfin_vision/citrus_rgbd_node/remote_failure_limit: 3
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: True
+ * /elfin_vision/citrus_rgbd_node/remote_retry_interval_s: 5.0
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [25196][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [25197][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [25198][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

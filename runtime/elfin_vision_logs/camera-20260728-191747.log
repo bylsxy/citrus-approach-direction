@@ -1,0 +1,323 @@
+... logging to /home/jetson/.ros/log/61c84c2c-8a71-11f1-bd43-d0c637ebfba4/roslaunch-ubuntu-52187.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/jetson/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://ubuntu:45953/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /elfin_vision/camera/realsense2_camera/accel_fps: -1
+ * /elfin_vision/camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /elfin_vision/camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /elfin_vision/camera/realsense2_camera/align_depth: True
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /elfin_vision/camera/realsense2_camera/allow_no_texture_points: False
+ * /elfin_vision/camera/realsense2_camera/base_frame_id: camera_link
+ * /elfin_vision/camera/realsense2_camera/calib_odom_file: 
+ * /elfin_vision/camera/realsense2_camera/clip_distance: -2.0
+ * /elfin_vision/camera/realsense2_camera/color_fps: 15
+ * /elfin_vision/camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /elfin_vision/camera/realsense2_camera/color_height: 480
+ * /elfin_vision/camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /elfin_vision/camera/realsense2_camera/color_width: 640
+ * /elfin_vision/camera/realsense2_camera/confidence_fps: -1
+ * /elfin_vision/camera/realsense2_camera/confidence_height: -1
+ * /elfin_vision/camera/realsense2_camera/confidence_width: -1
+ * /elfin_vision/camera/realsense2_camera/depth_fps: 15
+ * /elfin_vision/camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /elfin_vision/camera/realsense2_camera/depth_height: 480
+ * /elfin_vision/camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /elfin_vision/camera/realsense2_camera/depth_width: 640
+ * /elfin_vision/camera/realsense2_camera/device_type: d435
+ * /elfin_vision/camera/realsense2_camera/enable_accel: False
+ * /elfin_vision/camera/realsense2_camera/enable_color: True
+ * /elfin_vision/camera/realsense2_camera/enable_confidence: False
+ * /elfin_vision/camera/realsense2_camera/enable_depth: True
+ * /elfin_vision/camera/realsense2_camera/enable_fisheye1: False
+ * /elfin_vision/camera/realsense2_camera/enable_fisheye2: False
+ * /elfin_vision/camera/realsense2_camera/enable_fisheye: False
+ * /elfin_vision/camera/realsense2_camera/enable_gyro: False
+ * /elfin_vision/camera/realsense2_camera/enable_infra1: False
+ * /elfin_vision/camera/realsense2_camera/enable_infra2: False
+ * /elfin_vision/camera/realsense2_camera/enable_infra: False
+ * /elfin_vision/camera/realsense2_camera/enable_pointcloud: True
+ * /elfin_vision/camera/realsense2_camera/enable_pose: False
+ * /elfin_vision/camera/realsense2_camera/enable_sync: True
+ * /elfin_vision/camera/realsense2_camera/filters: 
+ * /elfin_vision/camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /elfin_vision/camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /elfin_vision/camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /elfin_vision/camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /elfin_vision/camera/realsense2_camera/fisheye_fps: -1
+ * /elfin_vision/camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /elfin_vision/camera/realsense2_camera/fisheye_height: -1
+ * /elfin_vision/camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /elfin_vision/camera/realsense2_camera/fisheye_width: -1
+ * /elfin_vision/camera/realsense2_camera/gyro_fps: -1
+ * /elfin_vision/camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /elfin_vision/camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /elfin_vision/camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /elfin_vision/camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /elfin_vision/camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /elfin_vision/camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /elfin_vision/camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /elfin_vision/camera/realsense2_camera/infra_fps: 30
+ * /elfin_vision/camera/realsense2_camera/infra_height: 480
+ * /elfin_vision/camera/realsense2_camera/infra_rgb: False
+ * /elfin_vision/camera/realsense2_camera/infra_width: 848
+ * /elfin_vision/camera/realsense2_camera/initial_reset: False
+ * /elfin_vision/camera/realsense2_camera/json_file_path: 
+ * /elfin_vision/camera/realsense2_camera/linear_accel_cov: 0.01
+ * /elfin_vision/camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /elfin_vision/camera/realsense2_camera/ordered_pc: False
+ * /elfin_vision/camera/realsense2_camera/pointcloud_texture_index: 0
+ * /elfin_vision/camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_COLOR
+ * /elfin_vision/camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /elfin_vision/camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /elfin_vision/camera/realsense2_camera/publish_odom_tf: True
+ * /elfin_vision/camera/realsense2_camera/publish_tf: True
+ * /elfin_vision/camera/realsense2_camera/reconnect_timeout: 6.0
+ * /elfin_vision/camera/realsense2_camera/rosbag_filename: 
+ * /elfin_vision/camera/realsense2_camera/serial_no: 233522078111
+ * /elfin_vision/camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /elfin_vision/camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /elfin_vision/camera/realsense2_camera/stereo_module/gain/1: 16
+ * /elfin_vision/camera/realsense2_camera/stereo_module/gain/2: 16
+ * /elfin_vision/camera/realsense2_camera/tf_publish_rate: 0.0
+ * /elfin_vision/camera/realsense2_camera/topic_odom_in: odom_in
+ * /elfin_vision/camera/realsense2_camera/unite_imu_method: 
+ * /elfin_vision/camera/realsense2_camera/usb_port_id: 1-2.4
+ * /elfin_vision/camera/realsense2_camera/wait_for_device_timeout: -1.0
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/backend: auto
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/depth_roi_scale: 0.35
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/engine_path: /home/jetson/elfi...
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/engine_sha256: c876f0927ac1eb12e...
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/max_inference_hz: 15.0
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/model_path: /home/jetson/elfi...
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/model_sha256: 507821ee21f312497...
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/publish_annotated_image: True
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+
+NODES
+  /elfin_vision/camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/jetson/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://localhost:11311
+[1mprocess[elfin_vision/camera/realsense2_camera_manager-1]: started with pid [52232][0m
+[1mprocess[elfin_vision/camera/realsense2_camera-2]: started with pid [52233][0m
+[ WARN] [1785237471.324410263]: Device 233522078111 is connected using a 2.1 port. Reduced performance is expected.
+[ WARN] [1785237471.719686001]: Param '/elfin_vision/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ WARN] [1785237472.379617684]: 
+[ WARN] [1785237473.802233201]: Hardware Notification:Depth stream start failure,1.78524e+12,Error,Hardware Error
+[07/28/2026-19:17:54] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[ INFO] [1785237470.945105076]: Initializing nodelet with 8 worker threads.
+[ INFO] [1785237471.224150846]: RealSense ROS v2.3.2
+[ INFO] [1785237471.224200669]: Built with LibRealSense v2.55.1
+[ INFO] [1785237471.224218876]: Running with LibRealSense v2.55.1
+[ INFO] [1785237471.274907706]:  
+[ INFO] [1785237471.320106345]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785237471.320179015]: Device with physical ID /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0 was found.
+[ INFO] [1785237471.320192487]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785237471.324281850]: Device with port number 1-2.4 was found.
+[ INFO] [1785237471.324381239]: Device USB type: 2.1
+[ INFO] [1785237471.327936345]: getParameters...
+[ INFO] [1785237471.454954506]: setupDevice...
+[ INFO] [1785237471.455524667]: JSON file is not provided
+[ INFO] [1785237471.455923089]: ROS Node Namespace: elfin_visioncamera
+[ INFO] [1785237471.456297223]: Device Name: Intel RealSense D435
+[ INFO] [1785237471.456496705]: Device Serial No: 233522078111
+[ INFO] [1785237471.456615806]: Device physical port: /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0
+[ INFO] [1785237471.456711484]: Device FW version: 5.13.0.55
+[ INFO] [1785237471.456791866]: Device Product ID: 0x0B07
+[ INFO] [1785237471.456869591]: Enable PointCloud: On
+[ INFO] [1785237471.456968885]: Align Depth: On
+[ INFO] [1785237471.457053203]: Sync Mode: On
+[ INFO] [1785237471.457199407]: Device Sensors: 
+[ INFO] [1785237471.459220953]: Stereo Module was found.
+[ INFO] [1785237471.463365419]: RGB Camera was found.
+[ INFO] [1785237471.464403759]: Add Filter: pointcloud
+[ INFO] [1785237471.464727527]: num_filters: 2
+[ INFO] [1785237471.464888834]: Setting Dynamic reconfig parameters.
+[ INFO] [1785237471.773687702]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785237471.778025859]: depth stream is enabled - width: 640, height: 480, fps: 15, Format: Z16
+[ INFO] [1785237471.778511542]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8
+[ INFO] [1785237471.779526427]: setupPublishers...
+[ INFO] [1785237471.790556278]: Expected frequency for depth = 15.00000
+[ INFO] [1785237472.038335295]: Expected frequency for color = 15.00000
+[ INFO] [1785237472.072717742]: Expected frequency for aligned_depth_to_color = 15.00000
+[ INFO] [1785237472.112275315]: setupStreams...
+[ INFO] [1785237472.143432023]: SELECTED BASE:Depth, 0
+[ INFO] [1785237472.158493095]: RealSense Node Is Up!
+ 28/07 19:18:14,471 ERROR [281472302563696] (librealsense-exception.h:52) acquire: Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:14,471 ERROR [281472302563696] (global_timestamp_reader.cpp:239) Error during time_diff_keeper polling: acquire: Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:14,619 ERROR [281471940022640] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:14,619 ERROR [281471940022640] (rs.cpp:237) [rs2_get_option( options:0xffff4c021e40, option_id:Asic Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:14,620 ERROR [281471940022640] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:14,620 ERROR [281471940022640] (rs.cpp:237) [rs2_get_option( options:0xffff4c021e40, option_id:Projector Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+[ERROR] [1785237494.793483608]: The device has been disconnected!
+ 28/07 19:18:14,794 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:14,794 ERROR [281472336134512] (uvc-sensor.cpp:436) release_power failed: xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:14,794 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:14,872 ERROR [281472074240368] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:14,873 ERROR [281472074240368] (error-handling.cpp:99) Error during polling error handler: get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:15,517 ERROR [281472336134512] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:15,517 ERROR [281472336134512] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:15,517 ERROR [281472336134512] (rs.cpp:237) [rs2_hardware_reset( device:0xffff4c0219b0 ) Backend] map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+[ERROR] [1785237495.517756717]: Exception: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:15,873 ERROR [281472074240368] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:15,874 ERROR [281472074240368] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:15,874 ERROR [281472074240368] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:16,874 ERROR [281472074240368] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:16,874 ERROR [281472074240368] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:18:16,874 ERROR [281472074240368] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+[ WARN] [1785237496.932255329]: Device 233522078111 is connected using a 2.1 port. Reduced performance is expected.
+[ WARN] [1785237497.247699813]: Param '/elfin_vision/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ WARN] [1785237499.271790709]: Hardware Notification:Depth stream start failure,1.78524e+12,Error,Hardware Error
+[ INFO] [1785237496.890877261]:  
+[ INFO] [1785237496.931599667]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785237496.931657201]: Device with physical ID /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video6 was found.
+[ INFO] [1785237496.931668113]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785237496.932197827]: Device with port number 1-2.4 was found.
+[ INFO] [1785237496.932241570]: Device USB type: 2.1
+[ INFO] [1785237496.934363145]: getParameters...
+[ INFO] [1785237497.022965687]: setupDevice...
+[ INFO] [1785237497.023043541]: JSON file is not provided
+[ INFO] [1785237497.023062613]: ROS Node Namespace: elfin_visioncamera
+[ INFO] [1785237497.023087604]: Device Name: Intel RealSense D435
+[ INFO] [1785237497.023120563]: Device Serial No: 233522078111
+[ INFO] [1785237497.023140019]: Device physical port: /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video6
+[ INFO] [1785237497.023173650]: Device FW version: 5.13.0.55
+[ INFO] [1785237497.023465610]: Device Product ID: 0x0B07
+[ INFO] [1785237497.023488650]: Enable PointCloud: On
+[ INFO] [1785237497.023509001]: Align Depth: On
+[ INFO] [1785237497.023524905]: Sync Mode: On
+[ INFO] [1785237497.023653989]: Device Sensors: 
+[ INFO] [1785237497.026506617]: Stereo Module was found.
+[ INFO] [1785237497.028362728]: RGB Camera was found.
+[ INFO] [1785237497.028434086]: Add Filter: pointcloud
+[ INFO] [1785237497.028494181]: num_filters: 2
+[ INFO] [1785237497.028511684]: Setting Dynamic reconfig parameters.
+[ INFO] [1785237497.261303835]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785237497.263436579]: depth stream is enabled - width: 640, height: 480, fps: 15, Format: Z16
+[ INFO] [1785237497.264085681]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8
+[ INFO] [1785237497.265113686]: setupPublishers...
+[ INFO] [1785237497.269485314]: Expected frequency for depth = 15.00000
+[ INFO] [1785237497.314774383]: Expected frequency for color = 15.00000
+[ INFO] [1785237497.343563154]: Expected frequency for aligned_depth_to_color = 15.00000
+[ INFO] [1785237497.378501394]: setupStreams...
+[ INFO] [1785237497.408394263]: SELECTED BASE:Depth, 0
+[ INFO] [1785237497.419923973]: RealSense Node Is Up!
+ 28/07 19:18:53,140 ERROR [281472065847664] (librealsense-exception.h:52) acquire: Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:53,141 ERROR [281472065847664] (global_timestamp_reader.cpp:239) Error during time_diff_keeper polling: acquire: Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:53,171 ERROR [281471948415344] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:53,172 ERROR [281471948415344] (rs.cpp:237) [rs2_get_option( options:0xffff4000bcd0, option_id:Asic Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:53,172 ERROR [281471948415344] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:53,172 ERROR [281471948415344] (rs.cpp:237) [rs2_get_option( options:0xffff4000bcd0, option_id:Projector Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+[ERROR] [1785237533.505249109]: The device has been disconnected!
+ 28/07 19:18:53,506 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:53,506 ERROR [281472336134512] (uvc-sensor.cpp:436) release_power failed: xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:53,507 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:18:53,598 ERROR [281472310956400] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:53,599 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:18:54,192 ERROR [281472336134512] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:54,192 ERROR [281472336134512] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:54,192 ERROR [281472336134512] (rs.cpp:237) [rs2_hardware_reset( device:0xffff40021700 ) Backend] map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+[ERROR] [1785237534.192785275]: Exception: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:54,600 ERROR [281472310956400] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:54,600 ERROR [281472310956400] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:54,600 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:55,600 ERROR [281472310956400] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:55,600 ERROR [281472310956400] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+ 28/07 19:18:55,600 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video6 Last Error: No such file or directory
+[ WARN] [1785237535.667747977]: Device 233522078111 is connected using a 2.1 port. Reduced performance is expected.
+[ WARN] [1785237535.975873359]: Param '/elfin_vision/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1785237535.621054305]:  
+[ INFO] [1785237535.666937150]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785237535.667001885]: Device with physical ID /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0 was found.
+[ INFO] [1785237535.667012508]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785237535.667618028]: Device with port number 1-2.4 was found.
+[ INFO] [1785237535.667722410]: Device USB type: 2.1
+[ INFO] [1785237535.670396739]: getParameters...
+[ INFO] [1785237535.745308060]: setupDevice...
+[ INFO] [1785237535.745356859]: JSON file is not provided
+[ INFO] [1785237535.745371675]: ROS Node Namespace: elfin_visioncamera
+[ INFO] [1785237535.745389242]: Device Name: Intel RealSense D435
+[ INFO] [1785237535.745397978]: Device Serial No: 233522078111
+[ INFO] [1785237535.745428345]: Device physical port: /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0
+[ INFO] [1785237535.745438393]: Device FW version: 5.13.0.55
+[ INFO] [1785237535.745447257]: Device Product ID: 0x0B07
+[ INFO] [1785237535.745454552]: Enable PointCloud: On
+[ INFO] [1785237535.745461528]: Align Depth: On
+[ INFO] [1785237535.745468600]: Sync Mode: On
+[ INFO] [1785237535.745496311]: Device Sensors: 
+[ INFO] [1785237535.748016500]: Stereo Module was found.
+[ INFO] [1785237535.749259123]: RGB Camera was found.
+[ INFO] [1785237535.749349809]: Add Filter: pointcloud
+[ INFO] [1785237535.749420111]: num_filters: 2
+[ INFO] [1785237535.749440110]: Setting Dynamic reconfig parameters.
+[ INFO] [1785237535.995535588]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785237535.996581769]: depth stream is enabled - width: 640, height: 480, fps: 15, Format: Z16
+[ INFO] [1785237535.997352084]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8
+[ INFO] [1785237535.998602707]: setupPublishers...
+[ INFO] [1785237536.002563242]: Expected frequency for depth = 15.00000
+[ INFO] [1785237536.058298209]: Expected frequency for color = 15.00000
+[ INFO] [1785237536.096539433]: Expected frequency for aligned_depth_to_color = 15.00000
+[ INFO] [1785237536.126308626]: setupStreams...
+[ INFO] [1785237536.161085462]: SELECTED BASE:Depth, 0
+[ INFO] [1785237536.174471314]: RealSense Node Is Up!
+ 28/07 19:21:41,619 ERROR [281472310956400] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,619 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,671 ERROR [281471948415344] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,671 ERROR [281471948415344] (rs.cpp:237) [rs2_get_option( options:0xffff140122b0, option_id:Asic Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,671 ERROR [281471948415344] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,671 ERROR [281471948415344] (rs.cpp:237) [rs2_get_option( options:0xffff140122b0, option_id:Projector Temperature ) Backend] get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:41,932 ERROR [281472302563696] (librealsense-exception.h:52) acquire: Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:41,932 ERROR [281472302563696] (global_timestamp_reader.cpp:239) Error during time_diff_keeper polling: acquire: Cannot open '/dev/video0 Last Error: No such file or directory
+[ERROR] [1785237701.975405503]: The device has been disconnected!
+ 28/07 19:21:41,975 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:21:41,976 ERROR [281472336134512] (uvc-sensor.cpp:436) release_power failed: xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:21:41,976 ERROR [281472336134512] (librealsense-exception.h:52) xioctl(VIDIOC_STREAMOFF) failed for buf_type=13 Last Error: No such device
+ 28/07 19:21:42,619 ERROR [281472310956400] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:42,620 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: No such device
+ 28/07 19:21:42,978 ERROR [281472336134512] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:42,979 ERROR [281472336134512] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:42,979 ERROR [281472336134512] (rs.cpp:237) [rs2_hardware_reset( device:0xffff14021d70 ) Backend] map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+[ERROR] [1785237702.979202770]: Exception: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:43,620 ERROR [281472310956400] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:43,620 ERROR [281472310956400] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:43,620 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:44,620 ERROR [281472310956400] (librealsense-exception.h:52) map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:44,620 ERROR [281472310956400] (uvc-sensor.cpp:412) acquire_power failed: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+ 28/07 19:21:44,620 ERROR [281472310956400] (error-handling.cpp:99) Error during polling error handler: map_device_descriptor Cannot open '/dev/video0 Last Error: No such file or directory
+[ WARN] [1785237704.691760536]: Device 233522078111 is connected using a 2.1 port. Reduced performance is expected.
+[ WARN] [1785237705.006193430]: Param '/elfin_vision/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ WARN] [1785237707.023926479]: Hardware Notification:Depth stream start failure,1.78524e+12,Error,Hardware Error

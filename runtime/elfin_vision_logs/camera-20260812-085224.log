@@ -1,0 +1,700 @@
+Starting isolated D455 motion stream without reset.
+[0m[INFO] [1786524744.791527925]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786524744.835519424]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786524744.835542353]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786524744.835549596]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786524744.858761638]:  [0m
+[0m[INFO] [1786524744.868846761]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786524744.868869471]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786524744.868880701]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786524744.869067082]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786524744.869091857]: Device USB type: 3.2[0m
+[0m[INFO] [1786524744.870469333]: getParameters...[0m
+[0m[INFO] [1786524744.910850590]: setupDevice...[0m
+[0m[INFO] [1786524744.910877390]: JSON file is not provided[0m
+[0m[INFO] [1786524744.910887537]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786524744.910898274]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786524744.910907402]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786524744.910930067]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786524744.910940871]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786524744.910952144]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786524744.910961726]: Enable PointCloud: Off[0m
+[0m[INFO] [1786524744.910970397]: Align Depth: Off[0m
+[0m[INFO] [1786524744.910978872]: Sync Mode: Off[0m
+[0m[INFO] [1786524744.911006645]: Device Sensors: [0m
+[0m[INFO] [1786524744.916408187]: Stereo Module was found.[0m
+[0m[INFO] [1786524744.924439899]: RGB Camera was found.[0m
+[0m[INFO] [1786524744.924602745]: Motion Module was found.[0m
+[0m[INFO] [1786524744.924633856]: num_filters: 0[0m
+[0m[INFO] [1786524744.924646268]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786524744.970430299]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786524744.970568531]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1786524744.970588550]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1786524744.970607528]: setupPublishers...[0m
+[0m[INFO] [1786524744.973463629]: setupStreams...[0m
+ 12/08 08:52:24,974 WARNING [139935032813312] (ds-calib-parsers.cpp:35) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+[0m[INFO] [1786524744.976820392]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786524744.980319491]: RealSense Node Is Up![0m
+[33m[WARN] [1786524745.084825421]: [0m
+D455 motion stream ready: /camera_imu/gyro/sample + /camera_imu/accel/sample
+... logging to /home/catas/.ros/log/d297ef9a-9622-11f1-bce8-c4c6e661f1ab/roslaunch-catas-29491.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:33661/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 100
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 5
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d455
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 200
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 234222302617
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: onnxruntime
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_arc_deg: 80.0
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_inlier_ratio: 0.3
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_residual_px: 2.5
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_depth_tolerance_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_gap_radius_ratio: 0.45
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_max_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_max_m: 0.033
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_age_s: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_delta_s: 0.04
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: 
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: 
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/inference_queue_size: 12
+ * /elfin_vision/citrus_rgbd_node/inference_request_match_slop_s: 0.002
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 371c56e82f2452cc9...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: False
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: False
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/rgbd_history_size: 18
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[0m[INFO] [1786524748.267002864]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786524748.323172330]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786524748.323188285]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786524748.323193875]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786524748.342632823]:  [0m
+[0m[INFO] [1786524748.349576613]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786524748.349595222]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786524748.349604240]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786524748.349773189]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786524748.349795323]: Device USB type: 3.2[0m
+[0m[INFO] [1786524748.350554162]: getParameters...[0m
+[0m[INFO] [1786524748.374560731]: setupDevice...[0m
+[0m[INFO] [1786524748.374583553]: JSON file is not provided[0m
+[0m[INFO] [1786524748.374595350]: ROS Node Namespace: camera[0m
+[0m[INFO] [1786524748.374607935]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786524748.374618051]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786524748.374629266]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786524748.374639826]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786524748.374650550]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786524748.374660398]: Enable PointCloud: On[0m
+[0m[INFO] [1786524748.374670065]: Align Depth: On[0m
+[0m[INFO] [1786524748.374679197]: Sync Mode: On[0m
+[0m[INFO] [1786524748.374716630]: Device Sensors: [0m
+[0m[INFO] [1786524748.379844547]: Stereo Module was found.[0m
+[0m[INFO] [1786524748.383277311]: RGB Camera was found.[0m
+[0m[INFO] [1786524748.383404619]: Motion Module was found.[0m
+[0m[INFO] [1786524748.383449081]: Add Filter: pointcloud[0m
+[0m[INFO] [1786524748.383500065]: num_filters: 2[0m
+[0m[INFO] [1786524748.383513515]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786524748.430286511]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786524748.430683704]: depth stream is enabled - width: 640, height: 480, fps: 5, Format: Z16[0m
+[0m[INFO] [1786524748.431061268]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1786524748.431918186]: setupPublishers...[0m
+[0m[INFO] [1786524748.433343195]: Expected frequency for depth = 5.00000[0m
+[0m[INFO] [1786524748.451742929]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1786524748.463170353]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1786524748.483691173]: setupStreams...[0m
+[0m[INFO] [1786524748.515522542]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786524748.527484753]: RealSense Node Is Up![0m
+[33m[WARN] [1786524749.099582719]: [0m
+[0m[INFO] [1786524749.108621214]: publishing unordered pointcloud.[0m
+[WARN] [1786524749.184027]: CITRUS_CENTER reject instances=0 reason=aligned depth unavailable
+[WARN] [1786524749.184901]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=2.5
+[WARN] [1786524749.305408]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=1.8
+[WARN] [1786524749.424742]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=1.6
+[WARN] [1786524749.558178]: 开始进行多边形确认 · 多边形确认失败 · rejected=4 · elapsed_ms=1.5
+[WARN] [1786524749.663676]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=5.9
+[WARN] [1786524749.832366]: 开始进行多边形确认 · 多边形确认失败 · rejected=4 · elapsed_ms=24.9
+[WARN] [1786524749.983177]: 开始进行多边形确认 · 多边形确认失败 · rejected=4 · elapsed_ms=10.7
+[WARN] [1786524750.172738]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=12.5
+[WARN] [1786524750.384957]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=8.7
+[WARN] [1786524750.565328]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=6.5
+[WARN] [1786524750.972066]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.5
+[WARN] [1786524751.174767]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524751.359203]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.5
+[WARN] [1786524751.557477]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524751.755329]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524751.959007]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524752.174642]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=19.5
+[WARN] [1786524752.369752]: CITRUS_CENTER reject instances=1 reason=polygon has only 1 valid depth samples
+[WARN] [1786524752.370567]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.0
+[WARN] [1786524752.510739]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.5
+[WARN] [1786524752.615099]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524752.762386]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.2
+[WARN] [1786524752.963060]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.6
+[WARN] [1786524753.181450]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.8
+[WARN] [1786524753.360870]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524753.560735]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524753.747589]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.2
+[WARN] [1786524753.966178]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.0
+[WARN] [1786524754.154707]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524754.360661]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524754.761039]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524754.761542]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524754.960590]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.5
+[WARN] [1786524755.165935]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=1.7
+[WARN] [1786524755.352721]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.7
+[WARN] [1786524755.578982]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524755.779767]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524755.979800]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524756.163516]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524756.554953]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524756.777438]: CITRUS_CENTER reject instances=1 reason=polygon has only 0 valid depth samples
+[WARN] [1786524756.778529]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.8
+[WARN] [1786524757.164722]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.8
+[WARN] [1786524757.375381]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524757.581475]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=2.7
+[WARN] [1786524757.981670]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.4
+[WARN] [1786524758.966298]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524758.967236]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.9
+[WARN] [1786524759.572847]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524759.761808]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524760.382849]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.4
+[WARN] [1786524760.562742]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524760.960190]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.4
+[WARN] [1786524761.175491]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524761.176325]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.7
+[WARN] [1786524761.577599]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524762.163729]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524762.378463]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.0
+[WARN] [1786524762.576741]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524762.803728]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524762.996059]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524763.203697]: CITRUS_CENTER reject instances=1 reason=polygon has only 0 valid depth samples
+[WARN] [1786524763.204499]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.6
+[WARN] [1786524763.398601]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524763.589094]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524764.393224]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524764.605338]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524764.787071]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.4
+[WARN] [1786524765.001663]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524765.212661]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524765.389470]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524767.170292]: CITRUS_CENTER reject instances=1 reason=polygon has only 9 valid depth samples
+[INFO] [1786524748.591630]: RGB-D vision status: starting:model_loading
+[INFO] [1786524748.707113]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/models/yolo26n_seg_converged_20260806/yolo26n_citrus_tree_best.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1786524748.709943]: Citrus model loading finished in 0.09 s: model_ready:onnxruntime
+[INFO] [1786524749.182561]: 开始进行多边形确认 · detections=4
+[INFO] [1786524749.303687]: 开始进行多边形确认 · detections=4
+[INFO] [1786524749.423160]: 开始进行多边形确认 · detections=4
+[INFO] [1786524749.556735]: 开始进行多边形确认 · detections=5
+[INFO] [1786524749.657855]: 开始进行多边形确认 · detections=3
+[INFO] [1786524749.807550]: 开始进行多边形确认 · detections=5
+[INFO] [1786524749.972507]: 开始进行多边形确认 · detections=6
+[INFO] [1786524750.160274]: 开始进行多边形确认 · detections=4
+[INFO] [1786524750.376314]: 开始进行多边形确认 · detections=2
+[INFO] [1786524750.558902]: 开始进行多边形确认 · detections=3
+[INFO] [1786524750.970676]: 开始进行多边形确认 · detections=3
+[INFO] [1786524751.173605]: 开始进行多边形确认 · detections=1
+[INFO] [1786524751.357751]: 开始进行多边形确认 · detections=2
+[INFO] [1786524751.556434]: 开始进行多边形确认 · detections=1
+[INFO] [1786524751.754348]: 开始进行多边形确认 · detections=1
+[INFO] [1786524751.958081]: 开始进行多边形确认 · detections=2
+[INFO] [1786524752.155148]: 开始进行多边形确认 · detections=1
+[INFO] [1786524752.367598]: 开始进行多边形确认 · detections=2
+[INFO] [1786524752.507346]: 开始进行多边形确认 · detections=2
+[INFO] [1786524752.613931]: 开始进行多边形确认 · detections=2
+[INFO] [1786524752.760291]: 开始进行多边形确认 · detections=3
+[INFO] [1786524752.961506]: 开始进行多边形确认 · detections=2
+[INFO] [1786524753.179713]: 开始进行多边形确认 · detections=2
+[INFO] [1786524753.359680]: 开始进行多边形确认 · detections=2
+[INFO] [1786524753.559103]: 开始进行多边形确认 · detections=2
+[INFO] [1786524753.745447]: 开始进行多边形确认 · detections=4
+[INFO] [1786524753.748801]: RGB-D vision status: model_ready:onnxruntime targets:2 centers:0 tf:0 rejected:2 merged:0 semantic_masks:4
+[INFO] [1786524753.964291]: 开始进行多边形确认 · detections=2
+[INFO] [1786524754.153499]: 开始进行多边形确认 · detections=1
+[INFO] [1786524754.358994]: 开始进行多边形确认 · detections=2
+[INFO] [1786524754.759741]: 开始进行多边形确认 · detections=1
+[INFO] [1786524754.959133]: 开始进行多边形确认 · detections=1
+[INFO] [1786524755.164335]: 开始进行多边形确认 · detections=2
+[INFO] [1786524755.350039]: 开始进行多边形确认 · detections=2
+[INFO] [1786524755.577188]: 开始进行多边形确认 · detections=1
+[INFO] [1786524755.777928]: 开始进行多边形确认 · detections=1
+[INFO] [1786524755.978219]: 开始进行多边形确认 · detections=1
+[INFO] [1786524756.161724]: 开始进行多边形确认 · detections=1
+[INFO] [1786524756.552841]: 开始进行多边形确认 · detections=1
+[INFO] [1786524756.774762]: 开始进行多边形确认 · detections=2
+[INFO] [1786524757.161963]: 开始进行多边形确认 · detections=1
+[INFO] [1786524757.373375]: 开始进行多边形确认 · detections=1
+[INFO] [1786524757.578861]: 开始进行多边形确认 · detections=3
+[INFO] [1786524757.979290]: 开始进行多边形确认 · detections=2
+[INFO] [1786524758.964427]: 开始进行多边形确认 · detections=1
+[INFO] [1786524758.968469]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:1
+[INFO] [1786524759.571246]: 开始进行多边形确认 · detections=1
+[INFO] [1786524759.760205]: 开始进行多边形确认 · detections=1
+[INFO] [1786524760.381479]: 开始进行多边形确认 · detections=1
+[INFO] [1786524760.561051]: 开始进行多边形确认 · detections=1
+[INFO] [1786524760.958807]: 开始进行多边形确认 · detections=1
+[INFO] [1786524761.173719]: 开始进行多边形确认 · detections=1
+[INFO] [1786524761.576093]: 开始进行多边形确认 · detections=1
+[INFO] [1786524762.162080]: 开始进行多边形确认 · detections=1
+[INFO] [1786524762.376530]: 开始进行多边形确认 · detections=1
+[INFO] [1786524762.575225]: 开始进行多边形确认 · detections=1
+[INFO] [1786524762.801722]: 开始进行多边形确认 · detections=1
+[INFO] [1786524762.994052]: 开始进行多边形确认 · detections=1
+[INFO] [1786524763.201982]: 开始进行多边形确认 · detections=2
+[INFO] [1786524763.397393]: 开始进行多边形确认 · detections=1
+[INFO] [1786524763.587855]: 开始进行多边形确认 · detections=1
+[INFO] [1786524764.392024]: 开始进行多边形确认 · detections=1
+[INFO] [1786524764.394366]: RGB-D vision status: model_ready:onnxruntime targets:0 centers:0 tf:0 rejected:0 merged:0 semantic_masks:1
+[INFO] [1786524764.604093]: 开始进行多边形确认 · detections=1
+[INFO] [1786524764.785718]: 开始进行多边形确认 · detections=1
+[INFO] [1786524765.000664]: 开始进行多边形确认 · detections=1
+[INFO] [1786524765.211635]: 开始进行多边形确认 · detections=1
+[INFO] [1786524765.388314]: 开始进行多边形确认 · detections=1
+[INFO] [1786524767.167753]: 开始进行多边形确认 · detections=2
+[INFO] [1786524767.379543]: 开始进行多边形确认 · detections=1
+[INFO] [1786524767.588632]: 开始进行多边形确认 · detections=1
+[INFO] [1786524767.790389]: 开始进行多边形确认 · detections=2
+[INFO] [1786524767.984264]: 开始进行多边形确认 · detections=1
+[INFO] [1786524768.180743]: 开始进行多边形确认 · detections=1
+[INFO] [1786524768.969424]: 开始进行多边形确认 · detections=1
+[INFO] [1786524768.975901]: CITRUS_CENTER ok pixel=(382,13) depth=0.327 m radius=21.6 mm arc=242 deg error=1.24 px fragments=1
+[INFO] [1786524768.976837]: 开始进行多边形确认 · centers=1 · rejected=0 · merged=0 · elapsed_ms=7.5
+[INFO] [1786524769.169392]: 开始进行多边形确认 · detections=1
+[INFO] [1786524769.374428]: 开始进行多边形确认 · detections=1
+[INFO] [1786524769.616153]: 开始进行多边形确认 · detections=3
+[INFO] [1786524769.646163]: RGB-D vision status: model_ready:onnxruntime targets:2 centers:0 tf:0 rejected:2 merged:0 semantic_masks:3
+[INFO] [1786524769.813093]: 开始进行多边形确认 · detections=2
+[INFO] [1786524769.979464]: 开始进行多边形确认 · detections=2
+[INFO] [1786524770.169647]: 开始进行多边形确认 · detections=2
+[INFO] [1786524770.374377]: 开始进行多边形确认 · detections=3
+[INFO] [1786524770.576403]: 开始进行多边形确认 · detections=3
+[INFO] [1786524770.779406]: 开始进行多边形确认 · detections=1
+[INFO] [1786524770.985689]: 开始进行多边形确认 · detections=1
+[INFO] [1786524771.177288]: 开始进行多边形确认 · detections=3
+[INFO] [1786524771.393505]: 开始进行多边形确认 · detections=3
+[INFO] [1786524771.777072]: 开始进行多边形确认 · detections=1
+[INFO] [1786524771.975309]: 开始进行多边形确认 · detections=1
+[INFO] [1786524772.175363]: 开始进行多边形确认 · detections=1
+[INFO] [1786524772.384620]: 开始进行多边形确认 · detections=1
+[INFO] [1786524772.592833]: 开始进行多边形确认 · detections=1
+[INFO] [1786524772.787655]: 开始进行多边形确认 · detections=1
+[INFO] [1786524772.991754]: 开始进行多边形确认 · detections=1
+[INFO] [1786524773.180374]: 开始进行多边形确认 · detections=1
+[INFO] [1786524773.384017]: 开始进行多边形确认 · detections=2
+[INFO] [1786524773.584210]: 开始进行多边形确认 · detections=1
+[INFO] [1786524773.782516]: 开始进行多边形确认 · detections=4
+[INFO] [1786524773.995054]: 开始进行多边形确认 · detections=4
+[INFO] [1786524774.182727]: 开始进行多边形确认 · detections=2
+[WARN] [1786524767.171078]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.4
+[WARN] [1786524767.380666]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524767.597185]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.6
+[WARN] [1786524767.798195]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=7.9
+[WARN] [1786524767.985826]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524768.182817]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524769.170858]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524769.171430]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524769.375427]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524769.644440]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=28.3
+[WARN] [1786524769.814773]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.8
+[WARN] [1786524769.981048]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524770.171502]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524770.376288]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.0
+[WARN] [1786524770.578334]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.0
+[WARN] [1786524770.780475]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524770.986808]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524771.179658]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524771.180358]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=3.2
+[WARN] [1786524771.395812]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.4
+[WARN] [1786524771.778270]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524771.977182]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524772.177750]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=2.4
+[WARN] [1786524772.386004]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.4
+[WARN] [1786524772.594821]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524772.789061]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.4
+[WARN] [1786524772.993107]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.4
+[WARN] [1786524773.181519]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524773.385959]: CITRUS_CENTER reject instances=1 reason=polygon has only 0 valid depth samples
+[WARN] [1786524773.386867]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.9
+[WARN] [1786524773.585637]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.5
+[WARN] [1786524773.784951]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.5
+[WARN] [1786524774.001462]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=6.5
+[WARN] [1786524774.188877]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=6.2
+[WARN] [1786524774.312137]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=6.2
+[WARN] [1786524774.423228]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524774.583194]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524774.811661]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524774.985914]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.3
+[WARN] [1786524775.180536]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524775.388282]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524775.390715]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=5.1
+[WARN] [1786524775.586102]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524775.767689]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524776.006370]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.3
+[WARN] [1786524776.188207]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524776.393748]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.8
+[WARN] [1786524778.179602]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524778.372177]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=0.9
+[WARN] [1786524779.387245]: CITRUS_CENTER reject instances=0 reason=polygon has only 1 valid depth samples
+[WARN] [1786524779.388090]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.4
+[WARN] [1786524779.593290]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.5
+[WARN] [1786524779.798306]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=1.8
+[WARN] [1786524779.987499]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=2.0
+[WARN] [1786524780.195228]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=11.7
+[WARN] [1786524780.394269]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=6.9
+[WARN] [1786524780.600055]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.5
+[WARN] [1786524780.799488]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.5
+[WARN] [1786524780.992975]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=1.8
+[WARN] [1786524781.186746]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.1
+[WARN] [1786524781.386907]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.8
+[WARN] [1786524781.605442]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524781.606449]: 开始进行多边形确认 · 多边形确认失败 · rejected=3 · elapsed_ms=6.8
+[WARN] [1786524781.783209]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=1.7
+[WARN] [1786524781.986926]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=5.4
+[WARN] [1786524782.142345]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.8
+[WARN] [1786524782.553034]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.6
+[WARN] [1786524782.754002]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.5
+[WARN] [1786524782.971523]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.5
+[WARN] [1786524783.164960]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=7.2
+[WARN] [1786524783.367664]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.0
+[WARN] [1786524783.559416]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.1
+[WARN] [1786524783.753947]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524783.754775]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=3.4
+[WARN] [1786524783.957577]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=2.1
+[WARN] [1786524784.147095]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.8
+[WARN] [1786524784.358401]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.5
+[WARN] [1786524784.556514]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524784.763443]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524784.965486]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524785.157402]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.1
+[WARN] [1786524785.358884]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524785.569819]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524785.757231]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=0.8
+[WARN] [1786524785.974066]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524786.171298]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.2
+[WARN] [1786524786.376436]: 开始进行多边形确认 · 多边形确认失败 · rejected=0 · elapsed_ms=1.0
+[WARN] [1786524786.960009]: CITRUS_CENTER reject instances=0 reason=polygon has only 0 valid depth samples
+[WARN] [1786524786.960872]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=3.1
+[WARN] [1786524787.164661]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.7
+[WARN] [1786524787.399531]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.5
+[WARN] [1786524788.152456]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=2.0
+[WARN] [1786524788.358343]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.9
+[WARN] [1786524788.625743]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.2
+[WARN] [1786524789.783939]: CITRUS_CENTER reject instances=0 reason=visible citrus arc 41.9 deg is below 80.0 deg
+[WARN] [1786524789.785030]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.0
+[WARN] [1786524789.970656]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.0
+[WARN] [1786524790.161294]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.0
+[WARN] [1786524791.378332]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.7
+[INFO] [1786524774.305945]: 开始进行多边形确认 · detections=2
+[INFO] [1786524774.421977]: 开始进行多边形确认 · detections=1
+[INFO] [1786524774.581994]: 开始进行多边形确认 · detections=1
+[INFO] [1786524774.809832]: 开始进行多边形确认 · detections=2
+[INFO] [1786524774.812798]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:2
+[INFO] [1786524774.984739]: 开始进行多边形确认 · detections=1
+[INFO] [1786524775.178733]: 开始进行多边形确认 · detections=2
+[INFO] [1786524775.385675]: 开始进行多边形确认 · detections=3
+[INFO] [1786524775.584468]: 开始进行多边形确认 · detections=2
+[INFO] [1786524775.766076]: 开始进行多边形确认 · detections=2
+[INFO] [1786524776.004190]: 开始进行多边形确认 · detections=2
+[INFO] [1786524776.186182]: 开始进行多边形确认 · detections=2
+[INFO] [1786524776.390963]: 开始进行多边形确认 · detections=1
+[INFO] [1786524778.178520]: 开始进行多边形确认 · detections=1
+[INFO] [1786524778.371284]: 开始进行多边形确认 · detections=1
+[INFO] [1786524778.986535]: 开始进行多边形确认 · detections=1
+[INFO] [1786524779.001924]: CITRUS_CENTER ok pixel=(419,468) depth=0.379 m radius=29.6 mm arc=201 deg error=0.86 px fragments=1
+[INFO] [1786524779.003006]: 开始进行多边形确认 · centers=1 · rejected=0 · merged=0 · elapsed_ms=16.5
+[INFO] [1786524779.384770]: 开始进行多边形确认 · detections=1
+[INFO] [1786524779.591847]: 开始进行多边形确认 · detections=1
+[INFO] [1786524779.796610]: 开始进行多边形确认 · detections=2
+[INFO] [1786524779.985553]: 开始进行多边形确认 · detections=4
+[INFO] [1786524779.988168]: RGB-D vision status: model_ready:onnxruntime targets:3 centers:0 tf:0 rejected:3 merged:0 semantic_masks:4
+[INFO] [1786524780.183606]: 开始进行多边形确认 · detections=2
+[INFO] [1786524780.387444]: 开始进行多边形确认 · detections=2
+[INFO] [1786524780.598593]: 开始进行多边形确认 · detections=1
+[INFO] [1786524780.798011]: 开始进行多边形确认 · detections=1
+[INFO] [1786524780.991210]: 开始进行多边形确认 · detections=2
+[INFO] [1786524781.184645]: 开始进行多边形确认 · detections=2
+[INFO] [1786524781.385140]: 开始进行多边形确认 · detections=1
+[INFO] [1786524781.599741]: 开始进行多边形确认 · detections=3
+[INFO] [1786524781.781528]: 开始进行多边形确认 · detections=2
+[INFO] [1786524781.981540]: 开始进行多边形确认 · detections=2
+[INFO] [1786524782.140595]: 开始进行多边形确认 · detections=1
+[INFO] [1786524782.551477]: 开始进行多边形确认 · detections=1
+[INFO] [1786524782.751595]: 开始进行多边形确认 · detections=2
+[INFO] [1786524782.969089]: 开始进行多边形确认 · detections=2
+[INFO] [1786524783.157771]: 开始进行多边形确认 · detections=2
+[INFO] [1786524783.364771]: 开始进行多边形确认 · detections=1
+[INFO] [1786524783.557385]: 开始进行多边形确认 · detections=1
+[INFO] [1786524783.751559]: 开始进行多边形确认 · detections=1
+[INFO] [1786524783.955514]: 开始进行多边形确认 · detections=2
+[INFO] [1786524784.145329]: 开始进行多边形确认 · detections=1
+[INFO] [1786524784.356910]: 开始进行多边形确认 · detections=1
+[INFO] [1786524784.555610]: 开始进行多边形确认 · detections=1
+[INFO] [1786524784.761797]: 开始进行多边形确认 · detections=2
+[INFO] [1786524784.964331]: 开始进行多边形确认 · detections=1
+[INFO] [1786524785.156399]: 开始进行多边形确认 · detections=1
+[INFO] [1786524785.357966]: 开始进行多边形确认 · detections=1
+[INFO] [1786524785.568854]: 开始进行多边形确认 · detections=1
+[INFO] [1786524785.756480]: 开始进行多边形确认 · detections=1
+[INFO] [1786524785.973134]: 开始进行多边形确认 · detections=1
+[INFO] [1786524786.170172]: 开始进行多边形确认 · detections=1
+[INFO] [1786524786.375488]: 开始进行多边形确认 · detections=1
+[INFO] [1786524786.545457]: RGB-D vision status: model_ready:onnxruntime targets:0 centers:0 tf:0 rejected:0 merged:0 semantic_masks:0
+[INFO] [1786524786.957834]: 开始进行多边形确认 · detections=2
+[INFO] [1786524787.163084]: 开始进行多边形确认 · detections=1
+[INFO] [1786524787.386016]: 开始进行多边形确认 · detections=1
+[INFO] [1786524788.150489]: 开始进行多边形确认 · detections=1
+[INFO] [1786524788.356474]: 开始进行多边形确认 · detections=1
+[INFO] [1786524788.605621]: 开始进行多边形确认 · detections=1
+[INFO] [1786524789.777097]: 开始进行多边形确认 · detections=1
+[INFO] [1786524789.962673]: 开始进行多边形确认 · detections=1
+[INFO] [1786524790.153307]: 开始进行多边形确认 · detections=1
+[INFO] [1786524791.369670]: 开始进行多边形确认 · detections=1
+[INFO] [1786524791.567234]: RGB-D vision status: model_ready:onnxruntime targets:0 centers:0 tf:0 rejected:0 merged:0 semantic_masks:0
+... logging to /home/catas/.ros/log/d297ef9a-9622-11f1-bce8-c4c6e661f1ab/roslaunch-catas-29122.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch
+[1mstarted roslaunch server http://127.0.0.1:32977/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera_imu/realsense2_camera/accel_fps: 100
+ * /camera_imu/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera_imu/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera_imu/realsense2_camera/align_depth: False
+ * /camera_imu/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/allow_no_texture_points: False
+ * /camera_imu/realsense2_camera/base_frame_id: camera_link
+ * /camera_imu/realsense2_camera/calib_odom_file: 
+ * /camera_imu/realsense2_camera/clip_distance: -2.0
+ * /camera_imu/realsense2_camera/color_fps: -1
+ * /camera_imu/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera_imu/realsense2_camera/color_height: -1
+ * /camera_imu/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera_imu/realsense2_camera/color_width: -1
+ * /camera_imu/realsense2_camera/confidence_fps: -1
+ * /camera_imu/realsense2_camera/confidence_height: -1
+ * /camera_imu/realsense2_camera/confidence_width: -1
+ * /camera_imu/realsense2_camera/depth_fps: -1
+ * /camera_imu/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera_imu/realsense2_camera/depth_height: -1
+ * /camera_imu/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera_imu/realsense2_camera/depth_width: -1
+ * /camera_imu/realsense2_camera/device_type: d455
+ * /camera_imu/realsense2_camera/enable_accel: True
+ * /camera_imu/realsense2_camera/enable_color: False
+ * /camera_imu/realsense2_camera/enable_confidence: False
+ * /camera_imu/realsense2_camera/enable_depth: False
+ * /camera_imu/realsense2_camera/enable_fisheye1: False
+ * /camera_imu/realsense2_camera/enable_fisheye2: False
+ * /camera_imu/realsense2_camera/enable_fisheye: False
+ * /camera_imu/realsense2_camera/enable_gyro: True
+ * /camera_imu/realsense2_camera/enable_infra1: False
+ * /camera_imu/realsense2_camera/enable_infra2: False
+ * /camera_imu/realsense2_camera/enable_infra: False
+ * /camera_imu/realsense2_camera/enable_pointcloud: False
+ * /camera_imu/realsense2_camera/enable_pose: False
+ * /camera_imu/realsense2_camera/enable_sync: False
+ * /camera_imu/realsense2_camera/filters: 
+ * /camera_imu/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera_imu/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera_imu/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera_imu/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera_imu/realsense2_camera/fisheye_fps: -1
+ * /camera_imu/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera_imu/realsense2_camera/fisheye_height: -1
+ * /camera_imu/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera_imu/realsense2_camera/fisheye_width: -1
+ * /camera_imu/realsense2_camera/gyro_fps: 200
+ * /camera_imu/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera_imu/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera_imu/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera_imu/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera_imu/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera_imu/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera_imu/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera_imu/realsense2_camera/infra_fps: 30
+ * /camera_imu/realsense2_camera/infra_height: 480
+ * /camera_imu/realsense2_camera/infra_rgb: False
+ * /camera_imu/realsense2_camera/infra_width: 848
+ * /camera_imu/realsense2_camera/initial_reset: False
+ * /camera_imu/realsense2_camera/json_file_path: 
+ * /camera_imu/realsense2_camera/linear_accel_cov: 0.01
+ * /camera_imu/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera_imu/realsense2_camera/ordered_pc: False
+ * /camera_imu/realsense2_camera/pointcloud_texture_index: 0
+ * /camera_imu/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_COLOR
+ * /camera_imu/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera_imu/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera_imu/realsense2_camera/publish_odom_tf: True
+ * /camera_imu/realsense2_camera/publish_tf: False
+ * /camera_imu/realsense2_camera/reconnect_timeout: 10.0
+ * /camera_imu/realsense2_camera/rosbag_filename: 
+ * /camera_imu/realsense2_camera/serial_no: 234222302617
+ * /camera_imu/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera_imu/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera_imu/realsense2_camera/stereo_module/gain/1: 16
+ * /camera_imu/realsense2_camera/stereo_module/gain/2: 16
+ * /camera_imu/realsense2_camera/tf_publish_rate: 0.0
+ * /camera_imu/realsense2_camera/topic_odom_in: odom_in
+ * /camera_imu/realsense2_camera/unite_imu_method: none
+ * /camera_imu/realsense2_camera/usb_port_id: 2-3
+ * /camera_imu/realsense2_camera/wait_for_device_timeout: 15.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera_imu/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_imu_manager (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch http://127.0.0.1:11311
+[1mprocess[camera_imu/realsense2_camera_imu_manager-1]: started with pid [29226][0m
+[1mprocess[camera_imu/realsense2_camera-2]: started with pid [29227][0m
+[camera_imu/realsense2_camera-2] killing on exit
+[camera_imu/realsense2_camera_imu_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [29546][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [29547][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [29548][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+[camera/realsense2_camera-2] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

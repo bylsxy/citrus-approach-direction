@@ -1,0 +1,121 @@
+[ INFO] [1785242326.694447517]: Initializing nodelet with 8 worker threads.
+[ INFO] [1785242327.197693822]: RealSense ROS v2.3.2
+[ INFO] [1785242327.197777062]: Built with LibRealSense v2.55.1
+[ INFO] [1785242327.197800200]: Running with LibRealSense v2.55.1
+[ INFO] [1785242327.253340082]:  
+[ INFO] [1785242327.289117720]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785242327.289197855]: Device with physical ID /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0 was found.
+[ INFO] [1785242327.289417938]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785242327.290449994]: Device with port number 2-1.4 was found.
+[ INFO] [1785242327.290664477]: Device USB type: 3.2
+[ INFO] [1785242327.293135857]: getParameters...
+[ INFO] [1785242327.375801209]: setupDevice...
+[ INFO] [1785242327.375875040]: JSON file is not provided
+[ INFO] [1785242327.375894657]: ROS Node Namespace: camera
+[ INFO] [1785242327.375934245]: Device Name: Intel RealSense D435
+[ INFO] [1785242327.375946886]: Device Serial No: 233522078111
+[ INFO] [1785242327.375958951]: Device physical port: /sys/devices/platform/3610000.xhci/usb2/2-1/2-1.4/2-1.4:1.0/video4linux/video0
+[ INFO] [1785242327.375969672]: Device FW version: 5.13.0.55
+[ INFO] [1785242327.375979529]: Device Product ID: 0x0B07
+[ INFO] [1785242327.375988649]: Enable PointCloud: On
+[ INFO] [1785242327.375997994]: Align Depth: On
+[ INFO] [1785242327.376007787]: Sync Mode: On
+[ INFO] [1785242327.376075345]: Device Sensors: 
+[ INFO] [1785242327.379721995]: Stereo Module was found.
+[ INFO] [1785242327.385467481]: RGB Camera was found.
+[ INFO] [1785242327.386015528]: Add Filter: pointcloud
+[ INFO] [1785242327.386345733]: num_filters: 2
+[ INFO] [1785242327.386467631]: Setting Dynamic reconfig parameters.
+[ WARN] [1785242327.589118505]: Param '/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1785242327.605357022]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1785242327.609528517]: depth stream is enabled - width: 640, height: 480, fps: 30, Format: Z16
+[ INFO] [1785242327.610067028]: color stream is enabled - width: 640, height: 480, fps: 30, Format: RGB8
+[ INFO] [1785242327.611030087]: setupPublishers...
+[ INFO] [1785242327.616500637]: Expected frequency for depth = 30.00000
+[ INFO] [1785242327.726858611]: Expected frequency for color = 30.00000
+[ INFO] [1785242327.779415773]: Expected frequency for aligned_depth_to_color = 30.00000
+[ INFO] [1785242327.828930657]: setupStreams...
+[ INFO] [1785242327.859998770]: SELECTED BASE:Depth, 0
+[ INFO] [1785242327.874521299]: RealSense Node Is Up!
+[ WARN] [1785242327.979883356]: 
+[ INFO] [1785242328.259578429]: publishing unordered pointcloud.
+[ WARN] [1785242328.334436349]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242328.846723245]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242338.141421032]: No stream match for pointcloud chosen texture Process - Color
+[07/28/2026-20:38:59] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[ WARN] [1785242341.768472737]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242362.089488192]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242367.365479969]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242368.400977727]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242406.780340784]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242421.240669764]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242423.417904598]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242424.530009078]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242425.421871998]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242426.699212050]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242429.916289271]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242431.722411993]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242435.650395916]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242443.054000162]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242449.776233620]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242465.908135989]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242483.875047261]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242485.539677857]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242487.667642137]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242489.896127208]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242492.582225723]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242494.664252153]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242497.389723361]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242499.748093508]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242501.513282804]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242504.627752766]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242507.801784756]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242510.062325871]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242512.244726780]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242524.064905764]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242530.813808542]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242534.859403273]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242538.566774275]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242569.271752331]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242572.132306353]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242575.562553535]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242588.976331227]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242619.389704562]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785242635.508498725]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785243248.333438097]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785243859.562390515]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785243868.048359706]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785243897.380735665]: No stream match for pointcloud chosen texture Process - Color
+[ WARN] [1785243964.985560738]: Couldn't find service realsense2_camera_manager/unload_nodelet, perhaps the manager is already shut down
+[ERROR] [1785242336.803055]: remote inference failed: timed out; loading local TensorRT fallback in background
+[INFO] [1785242328.125965]: RGB-D vision status: starting:model_loading
+[INFO] [1785242328.481874]: Connected to remote citrus inference http://aiseon.local:8765; providers=['CUDAExecutionProvider', 'CPUExecutionProvider']
+[INFO] [1785242328.487164]: Citrus model loading finished in 0.28 s: model_ready:remote
+[INFO] [1785242336.809460]: RGB-D vision status: model_loading targets:0 depth:0 tf:0
+[INFO] [1785242349.093857]: Loaded TensorRT citrus engine /home/jetson/elfin_citrus_data/server_bundle_20260722/best_citrus_seg_fp16.engine; classes={0: 'citrus', 1: 'tree'}; providers=['TensorRT-native-FP16']
+[INFO] [1785242349.098056]: Local inference fallback finished in 12.29 s: model_ready:tensorrt
+[INFO] [1785242349.174876]: RGB-D vision status: model_ready:tensorrt targets:3 depth:3 tf:3
+[INFO] [1785242367.469196]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242373.260605]: RGB-D vision status: model_ready:tensorrt targets:2 depth:2 tf:2
+[INFO] [1785242421.561390]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242426.809004]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242432.216089]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242477.222359]: RGB-D vision status: model_ready:tensorrt targets:2 depth:2 tf:2
+[INFO] [1785242486.133967]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242493.203080]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242498.270236]: RGB-D vision status: model_ready:tensorrt targets:1 depth:1 tf:1
+[INFO] [1785242504.993193]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242510.553598]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242524.240246]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242534.938111]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242569.789511]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242576.192600]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242635.689846]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785242717.424905]: RGB-D vision status: model_ready:tensorrt targets:1 depth:1 tf:0
+[INFO] [1785243226.970518]: RGB-D vision status: model_ready:tensorrt targets:3 depth:3 tf:0
+[INFO] [1785243248.566247]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785243435.869519]: RGB-D vision status: model_ready:tensorrt targets:0 depth:0 tf:0
+[INFO] [1785243859.950232]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785243868.758833]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0
+[INFO] [1785243898.746560]: RGB-D vision status: model_ready:tensorrt targets:1 depth:0 tf:0

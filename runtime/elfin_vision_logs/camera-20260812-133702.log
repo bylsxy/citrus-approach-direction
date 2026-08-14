@@ -1,0 +1,656 @@
+... logging to /home/catas/.ros/log/06546cc4-964f-11f1-bce8-c4c6e661f1ab/roslaunch-catas-7551.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch
+[1mstarted roslaunch server http://127.0.0.1:35501/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/realsense2_camera/accel_fps: 0
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: 15
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: 480
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: 640
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: 5
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: 480
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: 640
+ * /camera/realsense2_camera/device_type: d435
+ * /camera/realsense2_camera/enable_accel: False
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: False
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: False
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: True
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: 0
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 0.01
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_ANY
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/reconnect_timeout: 6.0
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 233522078111
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: none
+ * /camera/realsense2_camera/usb_port_id: 2-3
+ * /camera/realsense2_camera/wait_for_device_timeout: 8.0
+ * /elfin_vision/citrus_rgbd_node/backend: onnxruntime
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_arc_deg: 80.0
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_minimum_inlier_ratio: 0.3
+ * /elfin_vision/citrus_rgbd_node/citrus_circle_residual_px: 2.5
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_depth_tolerance_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_merge_gap_radius_ratio: 0.45
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_max_m: 0.025
+ * /elfin_vision/citrus_rgbd_node/citrus_polar_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_max_m: 0.033
+ * /elfin_vision/citrus_rgbd_node/citrus_radius_min_m: 0.022
+ * /elfin_vision/citrus_rgbd_node/class_names/0: citrus
+ * /elfin_vision/citrus_rgbd_node/class_names/1: tree
+ * /elfin_vision/citrus_rgbd_node/confidence: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_max_m: 4.0
+ * /elfin_vision/citrus_rgbd_node/depth_min_m: 0.2
+ * /elfin_vision/citrus_rgbd_node/depth_min_samples: 20
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_age_s: 0.35
+ * /elfin_vision/citrus_rgbd_node/depth_pair_maximum_delta_s: 0.04
+ * /elfin_vision/citrus_rgbd_node/device: auto
+ * /elfin_vision/citrus_rgbd_node/engine_path: 
+ * /elfin_vision/citrus_rgbd_node/engine_sha256: 
+ * /elfin_vision/citrus_rgbd_node/image_size: 640
+ * /elfin_vision/citrus_rgbd_node/inference_queue_size: 12
+ * /elfin_vision/citrus_rgbd_node/inference_request_match_slop_s: 0.002
+ * /elfin_vision/citrus_rgbd_node/iou: 0.45
+ * /elfin_vision/citrus_rgbd_node/max_inference_hz: 8.0
+ * /elfin_vision/citrus_rgbd_node/model_path: /home/catas/elfin...
+ * /elfin_vision/citrus_rgbd_node/model_repo: 
+ * /elfin_vision/citrus_rgbd_node/model_sha256: 371c56e82f2452cc9...
+ * /elfin_vision/citrus_rgbd_node/publish_annotated_image: False
+ * /elfin_vision/citrus_rgbd_node/remote_preferred: False
+ * /elfin_vision/citrus_rgbd_node/remote_timeout_s: 0.8
+ * /elfin_vision/citrus_rgbd_node/remote_token_file: /home/catas/.conf...
+ * /elfin_vision/citrus_rgbd_node/remote_url: http://aiseon.loc...
+ * /elfin_vision/citrus_rgbd_node/rgbd_history_size: 18
+ * /elfin_vision/citrus_rgbd_node/semantic_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/semantic_labels: ['citrus', 'tree']
+ * /elfin_vision/citrus_rgbd_node/target_class_ids: []
+ * /elfin_vision/citrus_rgbd_node/target_frame: elfin_base_link
+ * /elfin_vision/citrus_rgbd_node/target_labels: ['citrus', 'orang...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /elfin_vision/
+    citrus_rgbd_node (elfin_vision/citrus_rgbd_node.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_sensor_runtime.launch http://127.0.0.1:11311
+[0m[INFO] [1786541823.316318208]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786541823.384776014]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786541823.384804397]: Built with LibRealSense v2.50.0[0m
+[0m[INFO] [1786541823.384818005]: Running with LibRealSense v2.50.0[0m
+[0m[INFO] [1786541823.405648867]:  [0m
+[0m[INFO] [1786541823.503281824]: Device with serial number 233522078111 was found.
+[0m
+[0m[INFO] [1786541823.503324383]: Device with physical ID 2-3-9 was found.[0m
+[0m[INFO] [1786541823.503338758]: Device with name Intel RealSense D435 was found.[0m
+[0m[INFO] [1786541823.503644249]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786541823.503673091]: Device USB type: 3.2[0m
+[0m[INFO] [1786541823.505235644]: getParameters...[0m
+[0m[INFO] [1786541823.538236491]: setupDevice...[0m
+[0m[INFO] [1786541823.538262066]: JSON file is not provided[0m
+[0m[INFO] [1786541823.538276106]: ROS Node Namespace: camera[0m
+[0m[INFO] [1786541823.538290140]: Device Name: Intel RealSense D435[0m
+[0m[INFO] [1786541823.538301165]: Device Serial No: 233522078111[0m
+[0m[INFO] [1786541823.538312537]: Device physical port: 2-3-9[0m
+[0m[INFO] [1786541823.538323314]: Device FW version: 05.17.03.10[0m
+[0m[INFO] [1786541823.538334086]: Device Product ID: 0x0B07[0m
+[0m[INFO] [1786541823.538344821]: Enable PointCloud: On[0m
+[0m[INFO] [1786541823.538355977]: Align Depth: On[0m
+[0m[INFO] [1786541823.538366042]: Sync Mode: On[0m
+[0m[INFO] [1786541823.538409249]: Device Sensors: [0m
+[0m[INFO] [1786541823.643792611]: Stereo Module was found.[0m
+[0m[INFO] [1786541823.656345556]: RGB Camera was found.[0m
+[0m[INFO] [1786541823.656616228]: Add Filter: pointcloud[0m
+[0m[INFO] [1786541823.656988697]: num_filters: 2[0m
+[0m[INFO] [1786541823.657000280]: Setting Dynamic reconfig parameters.[0m
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+hwmon command 0x80( 5 0 0 0 ) failed (response -7= HW not ready)
+[0m[INFO] [1786541826.632936093]: Done Setting Dynamic reconfig parameters.[0m
+[33m[WARN] [1786541826.633092224]: Given stream configuration is not supported by the device!  Stream: Depth, Stream Index: 0, Width: 640, Height: 480, FPS: 5, Format: Z16[0m
+[33m[WARN] [1786541826.633112373]: Using default profile instead.[0m
+[0m[INFO] [1786541826.633528806]: depth stream is enabled - width: 848, height: 480, fps: 30, Format: Z16[0m
+[0m[INFO] [1786541826.634032847]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1786541826.635472957]: setupPublishers...[0m
+[0m[INFO] [1786541826.637041641]: Expected frequency for depth = 30.00000[0m
+[0m[INFO] [1786541826.655743706]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1786541826.663351514]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1786541826.672598248]: setupStreams...[0m
+ 12/08 13:37:06,893 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1786541826.944333473]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786541826.949160973]: RealSense Node Is Up![0m
+[33m[WARN] [1786541827.013018680]: [0m
+ 12/08 13:37:07,013 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[0m[INFO] [1786541827.019226284]: publishing unordered pointcloud.[0m
+ 12/08 13:37:07,063 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 12/08 13:37:07,117 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 12/08 13:37:07,362 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 12/08 13:37:07,413 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+ 12/08 13:37:07,464 WARNING [140497740408576] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[WARN] [1786541827.420839]: CITRUS_CENTER reject instances=0 reason=aligned depth unavailable
+[WARN] [1786541827.421349]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.8
+[WARN] [1786541827.556504]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=1.3
+[WARN] [1786541827.675410]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.1
+[WARN] [1786541827.803866]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541827.941213]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=27.5
+[WARN] [1786541828.072645]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.7
+[WARN] [1786541828.176533]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=15.0
+[WARN] [1786541828.326268]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.9
+[WARN] [1786541828.452848]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=24.2
+[WARN] [1786541828.574734]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.3
+[WARN] [1786541828.701518]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.6
+[WARN] [1786541828.825744]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.1
+[WARN] [1786541828.958923]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.0
+[WARN] [1786541829.075125]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541829.205721]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.6
+[WARN] [1786541829.384198]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.0
+[WARN] [1786541829.476651]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.3 mm is outside 22.0..33.0 mm
+[WARN] [1786541829.477824]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.7
+[WARN] [1786541829.585947]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=15.8
+[WARN] [1786541829.702805]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.6
+[WARN] [1786541829.837528]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.1
+[WARN] [1786541829.959464]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.6
+[WARN] [1786541830.100804]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.9
+[WARN] [1786541830.226442]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.0
+[WARN] [1786541830.351702]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=25.5
+[WARN] [1786541830.466967]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.1
+[WARN] [1786541830.572801]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.2
+[WARN] [1786541830.734913]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.4
+[WARN] [1786541830.849227]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.0
+[WARN] [1786541830.988678]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=26.6
+[WARN] [1786541831.106158]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=23.6
+[WARN] [1786541831.234726]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=24.3
+[WARN] [1786541831.354690]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=26.6
+[WARN] [1786541831.497409]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.8 mm is outside 22.0..33.0 mm
+[WARN] [1786541831.498566]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=24.7
+[WARN] [1786541831.604926]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=25.0
+[WARN] [1786541831.738184]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=27.6
+[WARN] [1786541831.826757]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=14.0
+[WARN] [1786541831.951396]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=13.2
+[WARN] [1786541832.083214]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=12.4
+[WARN] [1786541832.212488]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=24.3
+[WARN] [1786541832.355852]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=11.9
+[WARN] [1786541832.500900]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=39.5
+[WARN] [1786541832.582921]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.8
+[WARN] [1786541832.729008]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=26.0
+[WARN] [1786541832.856785]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=24.5
+[WARN] [1786541833.001123]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=42.9
+[WARN] [1786541833.106892]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=22.9
+[WARN] [1786541833.234385]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=24.8
+[WARN] [1786541833.349519]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.0
+[WARN] [1786541833.492707]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=24.0
+[WARN] [1786541833.593333]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.9 mm is outside 22.0..33.0 mm
+[WARN] [1786541833.594123]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.5
+[WARN] [1786541833.704737]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.0
+[WARN] [1786541833.822097]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.5
+[WARN] [1786541833.962122]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.2
+[WARN] [1786541834.116061]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.2
+[WARN] [1786541834.210383]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541834.347272]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.7
+[WARN] [1786541834.484521]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.0
+[WARN] [1786541834.620320]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.5
+[WARN] [1786541834.710958]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.7
+[WARN] [1786541834.833648]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.3
+[WARN] [1786541834.962353]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.4
+[WARN] [1786541835.086365]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.1
+[WARN] [1786541835.213128]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.1
+[WARN] [1786541835.335876]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.7
+[WARN] [1786541835.471061]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.1
+[WARN] [1786541835.671939]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.9 mm is outside 22.0..33.0 mm
+[WARN] [1786541835.673135]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.7
+[INFO] [1786541823.662685]: RGB-D vision status: starting:model_loading
+[INFO] [1786541823.757309]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/models/yolo26n_seg_converged_20260806/yolo26n_citrus_tree_best.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1786541823.758613]: Citrus model loading finished in 0.09 s: model_ready:onnxruntime
+[INFO] [1786541827.419668]: 开始进行多边形确认 · detections=3
+[INFO] [1786541827.555258]: 开始进行多边形确认 · detections=2
+[INFO] [1786541827.664334]: 开始进行多边形确认 · detections=2
+[INFO] [1786541827.793696]: 开始进行多边形确认 · detections=3
+[INFO] [1786541827.913724]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.054018]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.161579]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.303397]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.428743]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.554432]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.679005]: 开始进行多边形确认 · detections=3
+[INFO] [1786541828.702873]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:3
+[INFO] [1786541828.805694]: 开始进行多边形确认 · detections=4
+[INFO] [1786541828.936982]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.055128]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.184180]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.362214]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.456220]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.570190]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.689197]: 开始进行多边形确认 · detections=3
+[INFO] [1786541829.824515]: 开始进行多边形确认 · detections=4
+[INFO] [1786541829.938887]: 开始进行多边形确认 · detections=3
+[INFO] [1786541830.080934]: 开始进行多边形确认 · detections=3
+[INFO] [1786541830.205463]: 开始进行多边形确认 · detections=3
+[INFO] [1786541830.326247]: 开始进行多边形确认 · detections=3
+[INFO] [1786541830.453996]: 开始进行多边形确认 · detections=4
+[INFO] [1786541830.561599]: 开始进行多边形确认 · detections=4
+[INFO] [1786541830.711576]: 开始进行多边形确认 · detections=4
+[INFO] [1786541830.828264]: 开始进行多边形确认 · detections=4
+[INFO] [1786541830.962111]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.082643]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.210450]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.328153]: 开始进行多边形确认 · detections=4
+[INFO] [1786541831.473995]: 开始进行多边形确认 · detections=6
+[INFO] [1786541831.580049]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.710620]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.812757]: 开始进行多边形确认 · detections=5
+[INFO] [1786541831.938232]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.070832]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.188211]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.343986]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.461467]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.571130]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.703090]: 开始进行多边形确认 · detections=5
+[INFO] [1786541832.832290]: 开始进行多边形确认 · detections=6
+[INFO] [1786541832.958322]: 开始进行多边形确认 · detections=5
+[INFO] [1786541833.084016]: 开始进行多边形确认 · detections=5
+[INFO] [1786541833.209609]: 开始进行多边形确认 · detections=6
+[INFO] [1786541833.331552]: 开始进行多边形确认 · detections=5
+[INFO] [1786541833.468749]: 开始进行多边形确认 · detections=4
+[INFO] [1786541833.583655]: 开始进行多边形确认 · detections=4
+[INFO] [1786541833.693723]: 开始进行多边形确认 · detections=5
+[INFO] [1786541833.706015]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:5
+[INFO] [1786541833.811606]: 开始进行多边形确认 · detections=4
+[INFO] [1786541833.939966]: 开始进行多边形确认 · detections=4
+[INFO] [1786541834.096877]: 开始进行多边形确认 · detections=4
+[INFO] [1786541834.190371]: 开始进行多边形确认 · detections=5
+[INFO] [1786541834.328599]: 开始进行多边形确认 · detections=4
+[INFO] [1786541834.461520]: 开始进行多边形确认 · detections=5
+[INFO] [1786541834.600868]: 开始进行多边形确认 · detections=5
+[INFO] [1786541834.700251]: 开始进行多边形确认 · detections=4
+[INFO] [1786541834.823374]: 开始进行多边形确认 · detections=5
+[INFO] [1786541834.951049]: 开始进行多边形确认 · detections=4
+[INFO] [1786541835.076327]: 开始进行多边形确认 · detections=5
+[INFO] [1786541835.203060]: 开始进行多边形确认 · detections=4
+[INFO] [1786541835.326180]: 开始进行多边形确认 · detections=5
+[INFO] [1786541835.460016]: 开始进行多边形确认 · detections=5
+[INFO] [1786541835.653501]: 开始进行多边形确认 · detections=6
+[INFO] [1786541835.740504]: 开始进行多边形确认 · detections=5
+[INFO] [1786541835.860442]: 开始进行多边形确认 · detections=5
+[INFO] [1786541835.990117]: 开始进行多边形确认 · detections=5
+[INFO] [1786541836.111406]: 开始进行多边形确认 · detections=5
+[INFO] [1786541836.236135]: 开始进行多边形确认 · detections=5
+[INFO] [1786541836.351126]: 开始进行多边形确认 · detections=5
+[INFO] [1786541836.489578]: 开始进行多边形确认 · detections=4
+[INFO] [1786541836.605771]: 开始进行多边形确认 · detections=6
+[INFO] [1786541836.748147]: 开始进行多边形确认 · detections=4
+[INFO] [1786541836.852024]: 开始进行多边形确认 · detections=5
+[INFO] [1786541836.983720]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.121330]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.240191]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.358082]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.488687]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.611646]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.802635]: 开始进行多边形确认 · detections=5
+[INFO] [1786541837.877525]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.012049]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.141250]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.274584]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.392308]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.520792]: 开始进行多边形确认 · detections=4
+[INFO] [1786541838.644338]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.748885]: 开始进行多边形确认 · detections=5
+[INFO] [1786541838.898279]: 开始进行多边形确认 · detections=6
+[INFO] [1786541838.911657]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:6
+[INFO] [1786541838.998757]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.123102]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.274266]: 开始进行多边形确认 · detections=6
+[INFO] [1786541839.396353]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.513230]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.629837]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.750924]: 开始进行多边形确认 · detections=5
+[INFO] [1786541839.908427]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.000127]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.112827]: 开始进行多边形确认 · detections=5
+[WARN] [1786541835.761667]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.2
+[WARN] [1786541835.880507]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.1
+[WARN] [1786541836.010036]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541836.131648]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.3
+[WARN] [1786541836.254119]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.1
+[WARN] [1786541836.360326]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.2
+[WARN] [1786541836.498629]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.1
+[WARN] [1786541836.626641]: 开始进行多边形确认 · 多边形确认失败 · rejected=2 · elapsed_ms=20.9
+[WARN] [1786541836.758300]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541836.861118]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.1
+[WARN] [1786541836.993177]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.5
+[WARN] [1786541837.131444]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541837.251400]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.2
+[WARN] [1786541837.367444]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.4
+[WARN] [1786541837.497849]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.2
+[WARN] [1786541837.621283]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.7
+[WARN] [1786541837.813612]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.8 mm is outside 22.0..33.0 mm
+[WARN] [1786541837.814744]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=12.2
+[WARN] [1786541837.891315]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.8
+[WARN] [1786541838.039765]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=27.8
+[WARN] [1786541838.160978]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.8
+[WARN] [1786541838.293203]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.7
+[WARN] [1786541838.413469]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.2
+[WARN] [1786541838.538641]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=17.9
+[WARN] [1786541838.664751]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.4
+[WARN] [1786541838.759049]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541838.909987]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.8
+[WARN] [1786541839.009055]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.4
+[WARN] [1786541839.143272]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.2
+[WARN] [1786541839.295375]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.2
+[WARN] [1786541839.415640]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.3
+[WARN] [1786541839.533817]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.6
+[WARN] [1786541839.639394]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.6
+[WARN] [1786541839.761713]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.8
+[WARN] [1786541839.926018]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.8 mm is outside 22.0..33.0 mm
+[WARN] [1786541839.927037]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.7
+[WARN] [1786541840.011076]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.0
+[WARN] [1786541840.125976]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.2
+[WARN] [1786541840.246074]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.6
+[WARN] [1786541840.369437]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.7
+[WARN] [1786541840.499726]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.9
+[WARN] [1786541840.628327]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.7
+[WARN] [1786541840.760865]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.4
+[WARN] [1786541840.892972]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.4
+[WARN] [1786541841.025316]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.8
+[WARN] [1786541841.129543]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.9
+[WARN] [1786541841.260687]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.0
+[WARN] [1786541841.389495]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=12.9
+[WARN] [1786541841.514593]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.2
+[WARN] [1786541841.635052]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.7
+[WARN] [1786541841.759836]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.0
+[WARN] [1786541841.918414]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=31.4
+[WARN] [1786541842.062999]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.9 mm is outside 22.0..33.0 mm
+[WARN] [1786541842.064281]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.6
+[WARN] [1786541842.165875]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.5
+[WARN] [1786541842.299492]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.5
+[WARN] [1786541842.412419]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.5
+[WARN] [1786541842.545877]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541842.686855]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.2
+[WARN] [1786541842.811951]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.5
+[WARN] [1786541842.926975]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.2
+[WARN] [1786541843.069873]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=31.3
+[WARN] [1786541843.163831]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541843.268559]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.1
+[WARN] [1786541843.385633]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.4
+[WARN] [1786541843.515617]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.8
+[WARN] [1786541843.637827]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.4
+[WARN] [1786541843.774539]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541843.895857]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.7
+[WARN] [1786541844.038813]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.3
+[WARN] [1786541844.161180]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.9 mm is outside 22.0..33.0 mm
+[WARN] [1786541844.162084]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.2
+[WARN] [1786541844.283216]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.3
+[WARN] [1786541844.405121]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.9
+[WARN] [1786541844.536404]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541844.671506]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.1
+[WARN] [1786541844.814933]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.9
+[WARN] [1786541844.930645]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.3
+[WARN] [1786541845.056379]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.1
+[WARN] [1786541845.195449]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=27.6
+[WARN] [1786541845.326614]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.0
+[WARN] [1786541845.434731]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.5
+[WARN] [1786541845.559984]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.9
+[WARN] [1786541845.681240]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.6
+[WARN] [1786541845.817368]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.7
+[WARN] [1786541845.937885]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.5
+[WARN] [1786541846.062661]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.8
+[WARN] [1786541846.186913]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.8 mm is outside 22.0..33.0 mm
+[WARN] [1786541846.189477]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.7
+[WARN] [1786541846.344286]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.2
+[WARN] [1786541846.430653]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.9
+[WARN] [1786541846.560630]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.4
+[WARN] [1786541846.670177]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.9
+[WARN] [1786541846.803384]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.4
+[WARN] [1786541846.917374]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.9
+[WARN] [1786541847.041102]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541847.165191]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.0
+[WARN] [1786541847.294686]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=17.4
+[WARN] [1786541847.418277]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.2
+[WARN] [1786541847.546547]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.3
+[WARN] [1786541847.687324]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.4
+[WARN] [1786541847.816274]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.6
+[WARN] [1786541847.927600]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=12.5
+[WARN] [1786541848.063394]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.4
+[WARN] [1786541848.185376]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541848.325710]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.8 mm is outside 22.0..33.0 mm
+[WARN] [1786541848.326786]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.1
+[WARN] [1786541848.454019]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.5
+[WARN] [1786541848.588415]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.5
+[WARN] [1786541848.701257]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=18.9
+[WARN] [1786541848.810889]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.1
+[WARN] [1786541848.926817]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=12.6
+[WARN] [1786541849.055617]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=12.9
+[WARN] [1786541849.173800]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.6
+[WARN] [1786541849.298639]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.8
+[WARN] [1786541849.420179]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=8.9
+[WARN] [1786541849.597115]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.1
+[WARN] [1786541849.673036]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.6
+[WARN] [1786541849.802002]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.9
+[WARN] [1786541849.918119]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.2
+[WARN] [1786541850.048681]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.1
+[WARN] [1786541850.169328]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=10.4
+[WARN] [1786541850.317665]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.7
+[WARN] [1786541850.426347]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 35.9 mm is outside 22.0..33.0 mm
+[WARN] [1786541850.427446]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.9
+[WARN] [1786541850.610579]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.6
+[WARN] [1786541850.699487]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.5
+[WARN] [1786541850.823529]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.2
+[WARN] [1786541850.957012]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.1
+[WARN] [1786541851.086598]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.5
+[WARN] [1786541851.209150]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.6
+[WARN] [1786541851.332319]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.4
+[WARN] [1786541851.458170]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=20.0
+[WARN] [1786541851.588629]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=23.9
+[WARN] [1786541851.685125]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.9
+[WARN] [1786541851.811503]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.8
+[WARN] [1786541851.940762]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=17.8
+[WARN] [1786541852.064070]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=13.2
+[WARN] [1786541852.204847]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.9
+[WARN] [1786541852.339160]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.3
+[WARN] [1786541852.452432]: CITRUS_CENTER reject instances=0 reason=reconstructed citrus radius 36.0 mm is outside 22.0..33.0 mm
+[WARN] [1786541852.453541]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.6
+[WARN] [1786541852.586740]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=19.6
+[WARN] [1786541852.748127]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=22.8
+[WARN] [1786541852.817110]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=9.5
+[WARN] [1786541852.938064]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=11.7
+[WARN] [1786541853.073379]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.4
+[WARN] [1786541853.223382]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=25.1
+[WARN] [1786541853.337220]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.0
+[WARN] [1786541853.459221]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.3
+[WARN] [1786541853.601573]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=25.0
+[WARN] [1786541853.719218]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=21.1
+[WARN] [1786541853.988239]: 开始进行多边形确认 · 多边形确认失败 · rejected=1 · elapsed_ms=166.2
+[INFO] [1786541840.234532]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.359744]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.490890]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.617722]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.749526]: 开始进行多边形确认 · detections=5
+[INFO] [1786541840.873569]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.015562]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.118668]: 开始进行多边形确认 · detections=6
+[INFO] [1786541841.247738]: 开始进行多边形确认 · detections=6
+[INFO] [1786541841.376649]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.503424]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.624406]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.749926]: 开始进行多边形确认 · detections=5
+[INFO] [1786541841.886996]: 开始进行多边形确认 · detections=5
+[INFO] [1786541842.041766]: 开始进行多边形确认 · detections=5
+[INFO] [1786541842.146438]: 开始进行多边形确认 · detections=5
+[INFO] [1786541842.280078]: 开始进行多边形确认 · detections=6
+[INFO] [1786541842.393988]: 开始进行多边形确认 · detections=6
+[INFO] [1786541842.525965]: 开始进行多边形确认 · detections=5
+[INFO] [1786541842.665740]: 开始进行多边形确认 · detections=5
+[INFO] [1786541842.792495]: 开始进行多边形确认 · detections=6
+[INFO] [1786541842.904825]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.038579]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.153719]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.258493]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.375266]: 开始进行多边形确认 · detections=6
+[INFO] [1786541843.505808]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.627511]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.764326]: 开始进行多边形确认 · detections=5
+[INFO] [1786541843.886244]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.016528]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.150994]: 开始进行多边形确认 · detections=6
+[INFO] [1786541844.163219]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:6
+[INFO] [1786541844.272967]: 开始进行多边形确认 · detections=4
+[INFO] [1786541844.395259]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.526247]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.661464]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.795069]: 开始进行多边形确认 · detections=5
+[INFO] [1786541844.909464]: 开始进行多边形确认 · detections=5
+[INFO] [1786541845.035323]: 开始进行多边形确认 · detections=5
+[INFO] [1786541845.167870]: 开始进行多边形确认 · detections=6
+[INFO] [1786541845.303679]: 开始进行多边形确认 · detections=5
+[INFO] [1786541845.414331]: 开始进行多边形确认 · detections=4
+[INFO] [1786541845.540085]: 开始进行多边形确认 · detections=5
+[INFO] [1786541845.661747]: 开始进行多边形确认 · detections=5
+[INFO] [1786541845.796700]: 开始进行多边形确认 · detections=4
+[INFO] [1786541845.915430]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.040953]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.166764]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.326167]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.411781]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.547348]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.659291]: 开始进行多边形确认 · detections=5
+[INFO] [1786541846.793063]: 开始进行多边形确认 · detections=6
+[INFO] [1786541846.906467]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.030969]: 开始进行多边形确认 · detections=6
+[INFO] [1786541847.155209]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.277285]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.407165]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.526257]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.666020]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.795716]: 开始进行多边形确认 · detections=5
+[INFO] [1786541847.915118]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.041975]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.165414]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.304739]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.430532]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.567939]: 开始进行多边形确认 · detections=6
+[INFO] [1786541848.682388]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.799801]: 开始进行多边形确认 · detections=5
+[INFO] [1786541848.914307]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.042668]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.163225]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.287860]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.411343]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.584105]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.662478]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.792176]: 开始进行多边形确认 · detections=5
+[INFO] [1786541849.907951]: 开始进行多边形确认 · detections=6
+[INFO] [1786541849.919380]: RGB-D vision status: model_ready:onnxruntime targets:1 centers:0 tf:0 rejected:1 merged:0 semantic_masks:6
+[INFO] [1786541850.037641]: 开始进行多边形确认 · detections=6
+[INFO] [1786541850.158984]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.298065]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.415557]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.588033]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.679046]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.803448]: 开始进行多边形确认 · detections=5
+[INFO] [1786541850.935980]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.064144]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.186606]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.308987]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.438233]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.564808]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.675289]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.801766]: 开始进行多边形确认 · detections=5
+[INFO] [1786541851.922987]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.050885]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.181959]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.316878]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.432050]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.567184]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.725401]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.807633]: 开始进行多边形确认 · detections=5
+[INFO] [1786541852.926407]: 开始进行多边形确认 · detections=4
+[INFO] [1786541853.051965]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.198300]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.316239]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.437946]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.576628]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.698184]: 开始进行多边形确认 · detections=5
+[INFO] [1786541853.822050]: 开始进行多边形确认 · detections=5
+[1mprocess[camera/realsense2_camera_manager-1]: started with pid [7607][0m
+[1mprocess[camera/realsense2_camera-2]: started with pid [7608][0m
+[1mprocess[elfin_vision/citrus_rgbd_node-3]: started with pid [7609][0m
+[elfin_vision/citrus_rgbd_node-3] killing on exit
+[camera/realsense2_camera-2] killing on exit
+[camera/realsense2_camera_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

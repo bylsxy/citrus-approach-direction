@@ -1,0 +1,196 @@
+Starting isolated D455 motion stream without reset.
+[0m[INFO] [1786540634.090938582]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786540634.146105972]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786540634.146118738]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786540634.146123022]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786540634.165459660]:  [0m
+[0m[INFO] [1786540634.175308936]: Device with serial number 233522078111 was found.
+[0m
+[0m[INFO] [1786540634.175350648]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786540634.175364653]: Device with name Intel RealSense D435 was found.[0m
+[0m[INFO] [1786540634.175643138]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786540634.175679212]: Device USB type: 3.2[0m
+[0m[INFO] [1786540634.177333724]: getParameters...[0m
+[0m[INFO] [1786540634.206211574]: setupDevice...[0m
+[0m[INFO] [1786540634.206227926]: JSON file is not provided[0m
+[0m[INFO] [1786540634.206233318]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786540634.206240016]: Device Name: Intel RealSense D435[0m
+[0m[INFO] [1786540634.206245403]: Device Serial No: 233522078111[0m
+[0m[INFO] [1786540634.206250490]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786540634.206257749]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786540634.206262522]: Device Product ID: 0x0B07[0m
+[0m[INFO] [1786540634.206266790]: Enable PointCloud: Off[0m
+[0m[INFO] [1786540634.206271550]: Align Depth: Off[0m
+[0m[INFO] [1786540634.206275695]: Sync Mode: Off[0m
+[0m[INFO] [1786540634.206291422]: Device Sensors: [0m
+[0m[INFO] [1786540634.207734164]: Stereo Module was found.[0m
+[0m[INFO] [1786540634.210055931]: RGB Camera was found.[0m
+[0m[INFO] [1786540634.210066240]: (Gyro, 0) sensor isn't supported by current device! -- Skipping...[0m
+[0m[INFO] [1786540634.210072170]: (Accel, 0) sensor isn't supported by current device! -- Skipping...[0m
+[0m[INFO] [1786540634.210082771]: num_filters: 0[0m
+[0m[INFO] [1786540634.210088866]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786540634.230875111]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786540634.230922348]: setupPublishers...[0m
+[0m[INFO] [1786540634.231526340]: setupStreams...[0m
+[0m[INFO] [1786540634.231542315]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786540634.232344372]: RealSense Node Is Up![0m
+D455 motion stream is silent; performing one bounded initial_reset.
+... logging to /home/catas/.ros/log/06546cc4-964f-11f1-bce8-c4c6e661f1ab/roslaunch-catas-32525.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch
+[1mstarted roslaunch server http://127.0.0.1:33355/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera_imu/realsense2_camera/accel_fps: 100
+ * /camera_imu/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera_imu/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera_imu/realsense2_camera/align_depth: False
+ * /camera_imu/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera_imu/realsense2_camera/allow_no_texture_points: False
+ * /camera_imu/realsense2_camera/base_frame_id: camera_link
+ * /camera_imu/realsense2_camera/calib_odom_file: 
+ * /camera_imu/realsense2_camera/clip_distance: -2.0
+ * /camera_imu/realsense2_camera/color_fps: -1
+ * /camera_imu/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera_imu/realsense2_camera/color_height: -1
+ * /camera_imu/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera_imu/realsense2_camera/color_width: -1
+ * /camera_imu/realsense2_camera/confidence_fps: -1
+ * /camera_imu/realsense2_camera/confidence_height: -1
+ * /camera_imu/realsense2_camera/confidence_width: -1
+ * /camera_imu/realsense2_camera/depth_fps: -1
+ * /camera_imu/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera_imu/realsense2_camera/depth_height: -1
+ * /camera_imu/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera_imu/realsense2_camera/depth_width: -1
+ * /camera_imu/realsense2_camera/device_type: d435
+ * /camera_imu/realsense2_camera/enable_accel: True
+ * /camera_imu/realsense2_camera/enable_color: False
+ * /camera_imu/realsense2_camera/enable_confidence: False
+ * /camera_imu/realsense2_camera/enable_depth: False
+ * /camera_imu/realsense2_camera/enable_fisheye1: False
+ * /camera_imu/realsense2_camera/enable_fisheye2: False
+ * /camera_imu/realsense2_camera/enable_fisheye: False
+ * /camera_imu/realsense2_camera/enable_gyro: True
+ * /camera_imu/realsense2_camera/enable_infra1: False
+ * /camera_imu/realsense2_camera/enable_infra2: False
+ * /camera_imu/realsense2_camera/enable_infra: False
+ * /camera_imu/realsense2_camera/enable_pointcloud: False
+ * /camera_imu/realsense2_camera/enable_pose: False
+ * /camera_imu/realsense2_camera/enable_sync: False
+ * /camera_imu/realsense2_camera/filters: 
+ * /camera_imu/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera_imu/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera_imu/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera_imu/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera_imu/realsense2_camera/fisheye_fps: -1
+ * /camera_imu/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera_imu/realsense2_camera/fisheye_height: -1
+ * /camera_imu/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera_imu/realsense2_camera/fisheye_width: -1
+ * /camera_imu/realsense2_camera/gyro_fps: 200
+ * /camera_imu/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera_imu/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera_imu/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera_imu/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera_imu/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera_imu/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera_imu/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera_imu/realsense2_camera/infra_fps: 30
+ * /camera_imu/realsense2_camera/infra_height: 480
+ * /camera_imu/realsense2_camera/infra_rgb: False
+ * /camera_imu/realsense2_camera/infra_width: 848
+ * /camera_imu/realsense2_camera/initial_reset: False
+ * /camera_imu/realsense2_camera/json_file_path: 
+ * /camera_imu/realsense2_camera/linear_accel_cov: 0.01
+ * /camera_imu/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera_imu/realsense2_camera/ordered_pc: False
+ * /camera_imu/realsense2_camera/pointcloud_texture_index: 0
+ * /camera_imu/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_COLOR
+ * /camera_imu/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera_imu/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera_imu/realsense2_camera/publish_odom_tf: True
+ * /camera_imu/realsense2_camera/publish_tf: False
+ * /camera_imu/realsense2_camera/reconnect_timeout: 10.0
+ * /camera_imu/realsense2_camera/rosbag_filename: 
+ * /camera_imu/realsense2_camera/serial_no: 233522078111
+ * /camera_imu/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera_imu/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera_imu/realsense2_camera/stereo_module/gain/1: 16
+ * /camera_imu/realsense2_camera/stereo_module/gain/2: 16
+ * /camera_imu/realsense2_camera/tf_publish_rate: 0.0
+ * /camera_imu/realsense2_camera/topic_odom_in: odom_in
+ * /camera_imu/realsense2_camera/unite_imu_method: none
+ * /camera_imu/realsense2_camera/usb_port_id: 2-3
+ * /camera_imu/realsense2_camera/wait_for_device_timeout: 15.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /camera_imu/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_imu_manager (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_vision/launch/citrus_imu.launch http://127.0.0.1:11311
+[1mprocess[camera_imu/realsense2_camera_imu_manager-1]: started with pid [32630][0m
+[1mprocess[camera_imu/realsense2_camera-2]: started with pid [32631][0m
+[camera_imu/realsense2_camera-2] killing on exit
+[camera_imu/realsense2_camera_imu_manager-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[0m[INFO] [1786540642.793523403]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786540642.851077675]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786540642.851100998]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786540642.851111419]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786540642.870058091]:  [0m
+[0m[INFO] [1786540642.879140006]: Device with serial number 233522078111 was found.
+[0m
+[0m[INFO] [1786540642.879188852]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786540642.879209961]: Device with name Intel RealSense D435 was found.[0m
+[0m[INFO] [1786540642.879626002]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786540642.879678949]: Device USB type: 3.2[0m
+[0m[INFO] [1786540642.879715890]: Resetting device...[0m
+[0m[INFO] [1786540652.885074923]:  [0m
+[0m[INFO] [1786540652.891804412]: Device with serial number 233522078111 was found.
+[0m
+[0m[INFO] [1786540652.891822458]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786540652.891831546]: Device with name Intel RealSense D435 was found.[0m
+[0m[INFO] [1786540652.891975324]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786540652.892002863]: Device USB type: 3.2[0m
+[0m[INFO] [1786540652.892899341]: getParameters...[0m
+[0m[INFO] [1786540652.914567007]: setupDevice...[0m
+[0m[INFO] [1786540652.914595476]: JSON file is not provided[0m
+[0m[INFO] [1786540652.914602264]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786540652.914610382]: Device Name: Intel RealSense D435[0m
+[0m[INFO] [1786540652.914617460]: Device Serial No: 233522078111[0m
+[0m[INFO] [1786540652.914624273]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786540652.914631425]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786540652.914640079]: Device Product ID: 0x0B07[0m
+[0m[INFO] [1786540652.914648432]: Enable PointCloud: Off[0m
+[0m[INFO] [1786540652.914661423]: Align Depth: Off[0m
+[0m[INFO] [1786540652.914680836]: Sync Mode: Off[0m
+[0m[INFO] [1786540652.914712541]: Device Sensors: [0m
+[0m[INFO] [1786540652.916222439]: Stereo Module was found.[0m
+[0m[INFO] [1786540652.918138441]: RGB Camera was found.[0m
+[0m[INFO] [1786540652.918149700]: (Gyro, 0) sensor isn't supported by current device! -- Skipping...[0m
+[0m[INFO] [1786540652.918156059]: (Accel, 0) sensor isn't supported by current device! -- Skipping...[0m
+[0m[INFO] [1786540652.918170452]: num_filters: 0[0m
+[0m[INFO] [1786540652.918177057]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786540652.952266999]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786540652.952320046]: setupPublishers...[0m
+[0m[INFO] [1786540652.952973160]: setupStreams...[0m
+[0m[INFO] [1786540652.952993935]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786540652.953798197]: RealSense Node Is Up![0m
+ELFIN_SPLIT_IMU_START_FAILED: gyro/accel stayed silent after one reset

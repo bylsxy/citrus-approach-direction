@@ -1,0 +1,45 @@
+[ INFO] [1785240738.137183476]: Initializing nodelet with 8 worker threads.
+[ INFO] [1785240738.415919188]: RealSense ROS v2.3.2
+[ INFO] [1785240738.416197496]: Built with LibRealSense v2.55.1
+[ INFO] [1785240738.416358266]: Running with LibRealSense v2.55.1
+[ INFO] [1785240738.471846819]:  
+[ INFO] [1785240738.552189758]: Device with serial number 233522078111 was found.
+
+[ INFO] [1785240738.552275295]: Device with physical ID /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0 was found.
+[ INFO] [1785240738.552291232]: Device with name Intel RealSense D435 was found.
+[ INFO] [1785240738.553707601]: Device with port number 1-2.4 was found.
+[ INFO] [1785240738.553788786]: Device USB type: 2.1
+[ WARN] [1785240738.553808914]: Device 233522078111 is connected using a 2.1 port. Reduced performance is expected.
+[ INFO] [1785240738.557965477]: getParameters...
+[ INFO] [1785240738.629283153]: setupDevice...
+[ INFO] [1785240738.629339698]: JSON file is not provided
+[ INFO] [1785240738.629355506]: ROS Node Namespace: camera
+[ INFO] [1785240738.629373234]: Device Name: Intel RealSense D435
+[ INFO] [1785240738.629383155]: Device Serial No: 233522078111
+[ INFO] [1785240738.629405875]: Device physical port: /sys/devices/platform/3610000.xhci/usb1/1-2/1-2.4/1-2.4:1.0/video4linux/video0
+[ INFO] [1785240738.629416691]: Device FW version: 5.13.0.55
+[ INFO] [1785240738.629426675]: Device Product ID: 0x0B07
+[ INFO] [1785240738.629435859]: Enable PointCloud: Off
+[ INFO] [1785240738.629445267]: Align Depth: On
+[ INFO] [1785240738.629454003]: Sync Mode: On
+[ INFO] [1785240738.629517556]: Device Sensors: 
+[ INFO] [1785240738.631503277]: Stereo Module was found.
+[ INFO] [1785240738.635131097]: RGB Camera was found.
+[ INFO] [1785240738.635270491]: num_filters: 1
+[ INFO] [1785240738.635303099]: Setting Dynamic reconfig parameters.
+[ WARN] [1785240739.044663104]: Param '/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1785240739.055722728]: Done Setting Dynamic reconfig parameters.
+[ WARN] [1785240739.055972267]: Given stream configuration is not supported by the device!  Stream: Depth, Stream Index: 0, Width: 424, Height: 240, FPS: 6, Format: Z16
+[ WARN] [1785240739.056004619]: Using default profile instead.
+[ INFO] [1785240739.058422825]: depth stream is enabled - width: 640, height: 480, fps: 15, Format: Z16
+[ INFO] [1785240739.058671628]: color stream is enabled - width: 424, height: 240, fps: 6, Format: RGB8
+[ INFO] [1785240739.059580471]: setupPublishers...
+[ INFO] [1785240739.068763400]: Expected frequency for depth = 15.00000
+[ INFO] [1785240739.169612383]: Expected frequency for color = 6.00000
+[ INFO] [1785240739.229365341]: Expected frequency for aligned_depth_to_color = 6.00000
+[ INFO] [1785240739.326973676]: setupStreams...
+[ INFO] [1785240739.394682060]: SELECTED BASE:Depth, 0
+[ INFO] [1785240739.455224051]: RealSense Node Is Up!
+ 28/07 20:12:19,641 ERROR [281472627896688] (librealsense-exception.h:52) get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: Broken pipe
+ 28/07 20:12:19,662 ERROR [281472627896688] (global_timestamp_reader.cpp:239) Error during time_diff_keeper polling: get_xu(...). xioctl(UVCIOC_CTRL_QUERY) failed Last Error: Broken pipe
+[ WARN] [1785240741.065413431]: Hardware Notification:Depth stream start failure,1.78524e+12,Error,Hardware Error

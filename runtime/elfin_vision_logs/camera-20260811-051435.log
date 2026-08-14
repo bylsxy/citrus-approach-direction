@@ -1,0 +1,329 @@
+Starting isolated D455 motion stream without reset.
+[0m[INFO] [1786425276.098957201]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786425276.162277200]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786425276.162296898]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786425276.162302353]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786425276.183119362]:  [0m
+[0m[INFO] [1786425276.187435433]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786425276.187450685]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786425276.187455746]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786425276.187572471]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786425276.187583216]: Device USB type: 3.2[0m
+[0m[INFO] [1786425276.188589164]: getParameters...[0m
+[0m[INFO] [1786425276.210654110]: setupDevice...[0m
+[0m[INFO] [1786425276.210677265]: JSON file is not provided[0m
+[0m[INFO] [1786425276.210681271]: ROS Node Namespace: camera_imu[0m
+[0m[INFO] [1786425276.210686337]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786425276.210689488]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786425276.210701238]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786425276.210704886]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786425276.210708228]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786425276.210711204]: Enable PointCloud: Off[0m
+[0m[INFO] [1786425276.210714340]: Align Depth: Off[0m
+[0m[INFO] [1786425276.210717154]: Sync Mode: Off[0m
+[0m[INFO] [1786425276.210733995]: Device Sensors: [0m
+[0m[INFO] [1786425276.213814306]: Stereo Module was found.[0m
+[0m[INFO] [1786425276.216005709]: RGB Camera was found.[0m
+[0m[INFO] [1786425276.216081007]: Motion Module was found.[0m
+[0m[INFO] [1786425276.216096956]: num_filters: 0[0m
+[0m[INFO] [1786425276.216114495]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786425276.248964449]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786425276.249145628]: gyro stream is enabled - fps: 200[0m
+[0m[INFO] [1786425276.249170657]: accel stream is enabled - fps: 100[0m
+[0m[INFO] [1786425276.249194913]: setupPublishers...[0m
+[0m[INFO] [1786425276.252825289]: setupStreams...[0m
+ 11/08 05:14:36,253 WARNING [140697908733696] (ds-calib-parsers.cpp:35) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+[0m[INFO] [1786425276.255614129]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786425276.258535704]: RealSense Node Is Up![0m
+[33m[WARN] [1786425276.358551972]: [0m
+D455 motion stream ready: /camera_imu/gyro/sample + /camera_imu/accel/sample
+[0m[INFO] [1786425279.523029082]: Initializing nodelet with 32 worker threads.[0m
+[0m[INFO] [1786425279.574477676]: RealSense ROS v2.3.2[0m
+[0m[INFO] [1786425279.574492511]: Built with LibRealSense v2.55.1[0m
+[0m[INFO] [1786425279.574498160]: Running with LibRealSense v2.55.1[0m
+[0m[INFO] [1786425279.593505784]:  [0m
+[0m[INFO] [1786425279.600014166]: Device with serial number 234222302617 was found.
+[0m
+[0m[INFO] [1786425279.600034214]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0 was found.[0m
+[0m[INFO] [1786425279.600045986]: Device with name Intel RealSense D455 was found.[0m
+[0m[INFO] [1786425279.600212603]: Device with port number 2-3 was found.[0m
+[0m[INFO] [1786425279.600234715]: Device USB type: 3.2[0m
+[0m[INFO] [1786425279.601094987]: getParameters...[0m
+[0m[INFO] [1786425279.622898901]: setupDevice...[0m
+[0m[INFO] [1786425279.622922441]: JSON file is not provided[0m
+[0m[INFO] [1786425279.622931361]: ROS Node Namespace: camera[0m
+[0m[INFO] [1786425279.622941739]: Device Name: Intel RealSense D455[0m
+[0m[INFO] [1786425279.622949217]: Device Serial No: 234222302617[0m
+[0m[INFO] [1786425279.622961135]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/video4linux/video0[0m
+[0m[INFO] [1786425279.622969838]: Device FW version: 5.17.3.10[0m
+[0m[INFO] [1786425279.622978240]: Device Product ID: 0x0B5C[0m
+[0m[INFO] [1786425279.622985626]: Enable PointCloud: On[0m
+[0m[INFO] [1786425279.622993651]: Align Depth: On[0m
+[0m[INFO] [1786425279.623001517]: Sync Mode: On[0m
+[0m[INFO] [1786425279.623048311]: Device Sensors: [0m
+[0m[INFO] [1786425279.627796306]: Stereo Module was found.[0m
+[0m[INFO] [1786425279.630944535]: RGB Camera was found.[0m
+[0m[INFO] [1786425279.631062691]: Motion Module was found.[0m
+[0m[INFO] [1786425279.631102592]: Add Filter: pointcloud[0m
+[0m[INFO] [1786425279.631152760]: num_filters: 2[0m
+[0m[INFO] [1786425279.631166234]: Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786425279.679598636]: Done Setting Dynamic reconfig parameters.[0m
+[0m[INFO] [1786425279.680021143]: depth stream is enabled - width: 640, height: 480, fps: 5, Format: Z16[0m
+[0m[INFO] [1786425279.680363110]: color stream is enabled - width: 640, height: 480, fps: 15, Format: RGB8[0m
+[0m[INFO] [1786425279.681138299]: setupPublishers...[0m
+[0m[INFO] [1786425279.682768364]: Expected frequency for depth = 5.00000[0m
+[0m[INFO] [1786425279.699388321]: Expected frequency for color = 15.00000[0m
+[0m[INFO] [1786425279.710515961]: Expected frequency for aligned_depth_to_color = 15.00000[0m
+[0m[INFO] [1786425279.724342363]: setupStreams...[0m
+[0m[INFO] [1786425279.755434251]: SELECTED BASE:Depth, 0[0m
+[0m[INFO] [1786425279.760884627]: RealSense Node Is Up![0m
+[33m[WARN] [1786425280.339538691]: [0m
+[0m[INFO] [1786425280.350234223]: publishing unordered pointcloud.[0m
+ 11/08 05:16:07,988 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:08,990 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:09,767 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:09,993 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:26,036 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:27,038 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:27,769 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:28,041 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:47,090 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:47,771 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:48,092 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:49,095 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:16:49,771 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+[INFO] [1786425279.844347]: RGB-D vision status: starting:model_loading
+[INFO] [1786425279.927402]: Loaded ONNX citrus model /home/catas/elfin_citrus_data/models/yolo26n_seg_converged_20260806/yolo26n_citrus_tree_best.onnx; classes={0: 'citrus', 1: 'tree'}; providers=['CPUExecutionProvider']
+[INFO] [1786425279.928450]: Citrus model loading finished in 0.06 s: model_ready:onnxruntime
+[INFO] [1786425284.921880]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425290.420108]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:2 tf:2 semantic_masks:5
+[INFO] [1786425295.563457]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425300.652721]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425305.825584]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:2 tf:2 semantic_masks:5
+[INFO] [1786425311.014916]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:2 tf:2 semantic_masks:5
+[INFO] [1786425316.203286]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425321.401472]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425327.206812]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425332.382559]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425337.609657]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425342.807581]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425348.323010]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425353.427774]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425359.145100]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425364.157610]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425369.267013]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425374.355969]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786425379.406521]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:5 tf:5 semantic_masks:6
+[INFO] [1786425384.415723]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425389.425413]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425395.006393]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425400.235170]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425405.801922]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425410.811076]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425415.835486]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425421.068805]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425426.216639]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425431.221036]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425436.305566]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425441.551564]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425446.564204]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425451.707656]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425457.205170]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425462.629971]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425467.810854]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425473.209764]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425478.230239]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425483.401294]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425491.216206]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425496.541185]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425501.893868]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425508.827377]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425513.971888]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425519.229829]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425524.364109]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425529.624118]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425535.612740]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425540.793752]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425546.402083]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425551.429759]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425556.620997]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425562.014782]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425567.334758]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425572.403710]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425577.459977]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425582.464018]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425587.486481]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425592.609990]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425597.679910]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425602.953394]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425608.197073]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425613.407852]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425618.421558]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425623.801759]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425629.010086]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425634.229688]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425639.403617]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425644.529748]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+ 11/08 05:26:05,525 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:26:05,840 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:26:06,528 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:26:07,530 ERROR [140361122584320] (ds-options.cpp:93) Asic Temperature value is not valid!
+ 11/08 05:26:07,840 ERROR [140361267668736] (ds-options.cpp:93) Asic Temperature value is not valid!
+[INFO] [1786425649.616863]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425654.627988]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425659.747090]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425664.822133]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425670.337629]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425675.367220]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425680.606641]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425685.617670]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425690.805541]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425695.996029]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425701.812380]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425707.017606]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425712.232879]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425717.326136]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425722.388222]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425727.610813]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425732.628114]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425737.685414]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425742.688345]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425747.741901]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425752.770082]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425757.831777]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425763.009845]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425768.199576]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425773.211664]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425778.236773]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425783.417525]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425788.607857]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425793.801405]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425798.850749]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425803.943548]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425809.015801]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425814.249440]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425819.427774]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425824.481853]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425829.825557]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425835.000953]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425840.217307]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425845.590977]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425850.624302]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425855.828413]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425861.041870]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425866.521982]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425871.605257]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425876.821618]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425881.895822]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425887.278461]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425892.337080]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425897.409348]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425902.424277]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425907.605717]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425912.804458]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425917.819033]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425922.984683]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425928.009835]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425933.581986]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425938.785037]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425943.905358]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425949.008538]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425954.062659]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786425959.139739]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786425964.141520]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425969.358399]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786425974.380278]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425979.426136]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786425984.625313]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786425989.809125]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786425995.188885]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786426000.216583]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426005.388236]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426010.414420]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426015.445128]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426020.513452]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426025.598132]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426030.677533]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426035.733594]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426040.792459]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426045.915355]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426051.145817]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426056.224535]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426061.446051]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426066.799484]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426071.972321]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426077.011105]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426082.786633]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426088.001635]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426093.056105]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426098.130497]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426103.196176]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426108.264153]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426113.529939]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426118.878130]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426123.912451]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426128.942476]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426133.994454]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426139.189010]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426144.405765]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426149.589782]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426155.020348]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426160.588487]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426165.782308]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426170.839454]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426175.901493]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426181.001564]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426186.204809]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426191.259641]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426196.387803]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426201.404341]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426206.464063]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426211.586763]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426216.784371]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426221.789931]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426227.007909]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426232.196601]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786426237.389475]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426242.711526]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426247.787473]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426252.913826]: RGB-D vision status: model_ready:onnxruntime targets:5 depth:4 tf:4 semantic_masks:6
+[INFO] [1786426257.996191]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426263.089895]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426268.118749]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426273.268878]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426278.274412]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426283.387124]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426288.793377]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:3 tf:3 semantic_masks:5
+[INFO] [1786426293.795156]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426300.363842]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426305.780428]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426311.182814]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426316.239466]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426321.442456]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426326.919677]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426332.034935]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426337.711803]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426342.795975]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426347.820172]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426353.244710]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:2 tf:2 semantic_masks:4
+[INFO] [1786426358.602497]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426364.172534]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426369.364699]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426374.376595]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786426379.559332]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426384.576982]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426389.769455]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786426394.898551]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786426400.098340]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:2
+[INFO] [1786426405.375920]: RGB-D vision status: model_ready:onnxruntime targets:0 depth:0 tf:0 semantic_masks:1
+[INFO] [1786426410.516034]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426415.637744]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426420.657791]: RGB-D vision status: model_ready:onnxruntime targets:2 depth:2 tf:2 semantic_masks:3
+[INFO] [1786426426.581726]: RGB-D vision status: model_ready:onnxruntime targets:3 depth:3 tf:3 semantic_masks:4
+[INFO] [1786426431.597603]: RGB-D vision status: model_ready:onnxruntime targets:4 depth:4 tf:4 semantic_masks:5
+[INFO] [1786426436.768792]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1786426451.156970]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1786426458.567102]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1
+[INFO] [1786426468.690059]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:3
+[INFO] [1786426476.706744]: RGB-D vision status: model_ready:onnxruntime targets:1 depth:1 tf:1 semantic_masks:1

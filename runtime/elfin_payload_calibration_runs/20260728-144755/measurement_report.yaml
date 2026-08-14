@@ -1,0 +1,42 @@
+# Read-only measurement result. This file does not enable FREE control.
+schema_version: 1
+status: measurement_valid_control_candidate
+measurement_valid: true
+eligible_for_control_hold_test: true
+profile_name: auto-payload-20260728-144755
+mass_kg: 1.357516384709165
+weight_newton: 13.317235733996908
+center_of_mass_m:
+- 0.10822674509144603
+- -0.0502227488482246
+- 0.4434466419390236
+center_of_mass_radius_m: 0.45921702614554405
+linear_parameters_m_mx_my_mz:
+- 1.357516384709165
+- 0.14691957972538017
+- -0.06817820444659824
+- 0.6019860821764829
+unconstrained_mass_kg: 1.357516384709165
+fit_rmse_nm: 1.203995562621237
+fit_max_error_nm: 3.2238813760900555
+held_out_rmse_nm: 1.1056821792630718
+held_out_max_error_nm: 2.3048571560614945
+regressor_condition: 7.054456254930937
+sample_pair_count: 8
+raw_samples: /home/jetson/.ros/elfin_payload_calibration_runs/20260728-144755/static_pairs.csv
+leave_one_fit_pose_out_sensitivity:
+  mass_min_kg: 1.2629776773971737
+  mass_max_kg: 1.4046643996458612
+  center_radius_min_m: 0.42684676751028106
+  center_radius_max_m: 0.5040422400017286
+  successful_refits: 6
+measurement_quality_rejections: []
+control_assessment:
+  maximum_payload_mass_kg: 5.0
+  maximum_center_of_mass_radius_m: 0.6
+  path_includes_original_start: true
+  path_worst_joint: 3
+  path_worst_effort_nm: 30.86682151934312
+  path_worst_capacity_fraction: 0.8574117088706422
+  path_allowed_capacity_fraction: 0.88
+  rejections: []
