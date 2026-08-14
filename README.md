@@ -4,7 +4,7 @@ Private working archive for the CEA citrus approach-direction paper and related 
 
 ## Contents
 
-- `data/elfin_citrus_data/`: complete CEA/Elfin data root, including sealed NBV batches, formal probe records, invalidated-run audit trails, calibration assets, models, paper results, and historical backups.
+- `data/elfin_citrus_data/`: complete readable CEA/Elfin data snapshot, including sealed NBV batches, formal probe records, invalidated-run audit trails, calibration assets, models, paper results, and historical backups.
 - `media/original_images/`: original photographs and screenshots used to build manuscript figures.
 - `runtime/`: vision logs, freedrive trials, payload calibration runs, and current runtime parameter snapshots.
 - `evidence/`: additional RGB-D and migration evidence.
@@ -33,3 +33,5 @@ The repository is private. Authenticate with the GitHub account that owns or has
 ## Safety boundary
 
 This repository contains research data and reproducibility material. It intentionally excludes SSH keys, API tokens, account databases, browser profiles, caches, third-party installations, and rebuildable Catkin build/devel directories.
+
+Three legacy calibration result files are owned by `root:root` with mode `0600` and could not be read without an interactive administrator password. Their exact source paths and metadata are recorded in `manifests/UNREADABLE_SOURCE_FILES.tsv`; the source files were not modified.
