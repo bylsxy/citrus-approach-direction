@@ -1,0 +1,72 @@
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros2_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros2_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - realsense2_description
+-- ~~  - realsense2_camera
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'realsense2_description'
+-- ==> add_subdirectory(realsense-ros/realsense2_description)
+-- +++ processing catkin package: 'realsense2_camera'
+-- ==> add_subdirectory(realsense-ros/realsense2_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Create Release Build.
+-- realsense2_camera: 3 messages, 1 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros2_ws/build
+Scanning dependencies of target tests
+Scanning dependencies of target clean_test_results_realsense2_description
+Built target tests
+Removing test result files from '/home/catas/ros2_ws/build/test_results/realsense2_description'
+Built target clean_test_results_realsense2_description
+Scanning dependencies of target _run_tests_realsense2_description_nosetests_tests
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+.xacro: in-order processing became default in ROS Melodic. You can drop the option.
+.xacro: in-order processing became default in ROS Melodic. You can drop the option.
+.xacro: in-order processing became default in ROS Melodic. You can drop the option.
+.xacro: in-order processing became default in ROS Melodic. You can drop the option.
+.
+----------------------------------------------------------------------
+Ran 5 tests in 2.414s
+
+OK
+-- run_tests.py: execute commands
+  "/usr/bin/cmake" -E make_directory /home/catas/ros2_ws/build/test_results/realsense2_description
+  /usr/bin/nosetests3 -P --process-timeout=60 --where=/home/catas/ros2_ws/src/realsense-ros/realsense2_description/tests --with-xunit --xunit-file=/home/catas/ros2_ws/build/test_results/realsense2_description/nosetests-tests.xml
+-- run_tests.py: verify result "/home/catas/ros2_ws/build/test_results/realsense2_description/nosetests-tests.xml"
+Built target _run_tests_realsense2_description_nosetests_tests
+Scanning dependencies of target _run_tests_realsense2_description_nosetests
+Built target _run_tests_realsense2_description_nosetests
+Scanning dependencies of target _run_tests_realsense2_description
+Built target _run_tests_realsense2_description
+Scanning dependencies of target run_tests
+Built target run_tests
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+####
+#### Running command: "cmake /home/catas/ros2_ws/src -DCATKIN_DEVEL_PREFIX=/home/catas/ros2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros2_ws/install -G Unix Makefiles" in "/home/catas/ros2_ws/build"
+####
+####
+#### Running command: "make run_tests -j32 -l32" in "/home/catas/ros2_ws/build"
+####
+Summary: 5 tests, 0 errors, 0 failures, 0 skipped

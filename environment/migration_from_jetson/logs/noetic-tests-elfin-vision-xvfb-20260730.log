@@ -1,0 +1,25 @@
+Scanning dependencies of target run_tests_elfin_vision_nosetests_test
+.EEEE.....EEEEEEE.....................................................E....................Segmentation fault (core dumped)
+Cannot find results, writing failure results to '/home/catas/ros_ws/build/test_results/elfin_vision/MISSING-nosetests-test.xml'
+-- run_tests.py: execute commands
+  "/usr/bin/cmake" -E make_directory /home/catas/ros_ws/build/test_results/elfin_vision
+  /usr/bin/nosetests3 -P --process-timeout=60 --where=/home/catas/ros_ws/src/elfin_vision/test --with-xunit --xunit-file=/home/catas/ros_ws/build/test_results/elfin_vision/nosetests-test.xml
+-- run_tests.py: verify result "/home/catas/ros_ws/build/test_results/elfin_vision/nosetests-test.xml"
+Built target run_tests_elfin_vision_nosetests_test
+Scanning dependencies of target run_tests_elfin_vision_nosetests
+Built target run_tests_elfin_vision_nosetests
+Scanning dependencies of target run_tests_elfin_vision
+Built target run_tests_elfin_vision
+Base path: /home/catas/ros_ws
+Source space: /home/catas/ros_ws/src
+Build space: /home/catas/ros_ws/build
+Devel space: /home/catas/ros_ws/devel
+Install space: /home/catas/ros_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/catas/ros_ws/build"
+####
+####
+#### Running command: "make run_tests_elfin_vision -j32 -l32" in "/home/catas/ros_ws/build"
+####
+MISSING-nosetests-test.xml: 1 tests, 0 errors, 1 failures, 0 skipped
+Summary: 1 tests, 0 errors, 1 failures, 0 skipped

@@ -1,0 +1,693 @@
+[1/6] Checking shell scripts...
+[2/6] Building all catkin packages...
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/catas/ros_ws/devel;/home/catas/ros2_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /home/catas/ros_ws/devel;/home/catas/ros2_ws/devel;/opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 24 packages in topological order:
+-- ~~  - elfin10_l_moveit_config
+-- ~~  - elfin15_moveit_config
+-- ~~  - elfin5_l_moveit_config
+-- ~~  - elfin_robot (metapackage)
+-- ~~  - elfin_robot_bringup
+-- ~~  - elfin_robot_msgs
+-- ~~  - elfin_kinematic_solver
+-- ~~  - elfin_hardware_interface
+-- ~~  - elfin_description
+-- ~~  - elfin10_moveit_config
+-- ~~  - elfin3_moveit_config
+-- ~~  - elfin5_moveit_config
+-- ~~  - elfin_ethercat_driver
+-- ~~  - elfin_ros_control
+-- ~~  - elfin_gazebo
+-- ~~  - elfin_freedrive_controller
+-- ~~  - elfin10_ikfast_plugin
+-- ~~  - elfin15_ikfast_plugin
+-- ~~  - elfin3_ikfast_plugin
+-- ~~  - elfin5_ikfast_plugin
+-- ~~  - elfin_vision
+-- ~~  - elfin_basic_api
+-- ~~  - elfin_postrq_joint_trajectory_controller
+-- ~~  - elfin_posvel_joint_trajectory_controller
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'elfin10_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_l_moveit_config)
+-- +++ processing catkin package: 'elfin15_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin15_moveit_config)
+-- +++ processing catkin package: 'elfin5_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_l_moveit_config)
+-- +++ processing catkin metapackage: 'elfin_robot'
+-- ==> add_subdirectory(elfin_robot/elfin_robot)
+-- +++ processing catkin package: 'elfin_robot_bringup'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_bringup)
+-- +++ processing catkin package: 'elfin_robot_msgs'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_robot_msgs: 0 messages, 6 services
+-- +++ processing catkin package: 'elfin_kinematic_solver'
+-- ==> add_subdirectory(elfin_robot/elfin_kinematic_solver)
+-- +++ processing catkin package: 'elfin_hardware_interface'
+-- ==> add_subdirectory(elfin_robot/elfin_hardware_interface)
+-- +++ processing catkin package: 'elfin_description'
+-- ==> add_subdirectory(elfin_robot/elfin_description)
+-- +++ processing catkin package: 'elfin10_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_moveit_config)
+-- +++ processing catkin package: 'elfin3_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin3_moveit_config)
+-- +++ processing catkin package: 'elfin5_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_moveit_config)
+-- +++ processing catkin package: 'elfin_ethercat_driver'
+-- ==> add_subdirectory(elfin_robot/elfin_ethercat_driver)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_ethercat_driver/CMakeLists.txt:111 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_ros_control'
+-- ==> add_subdirectory(elfin_robot/elfin_ros_control)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_gazebo'
+-- ==> add_subdirectory(elfin_robot/elfin_gazebo)
+WARNING: package 'gazebo_ros' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+WARNING: package 'gazebo_msgs' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+WARNING: package 'gazebo_ros_control' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- +++ processing catkin package: 'elfin_freedrive_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_freedrive_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_freedrive_controller: 1 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/calibrate_elfin_payload.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/collect_elfin_gravity_calibration.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- +++ processing catkin package: 'elfin10_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin10_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin15_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin15_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin3_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin5_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin5_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin_vision'
+-- ==> add_subdirectory(elfin_vision)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_vision: 5 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/capture_rgbd_sample.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_rgbd_node.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_moveit_planner.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/cockpit_controller.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/demo_cradle_watchdog.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/detect_realsense.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/elfin_vision_dashboard.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/environment_cloud_filter.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/eye_in_hand_calibrator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/harvest_coordinator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/publish_camera_tf.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/solve_eye_to_hand_points.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- +++ processing catkin package: 'elfin_basic_api'
+-- ==> add_subdirectory(elfin_robot/elfin_basic_api)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_basic_api/CMakeLists.txt:118 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_postrq_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_postrq_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_posvel_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_posvel_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros_ws/build
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_CockpitJog
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODRead
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetFloat64
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetString
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODWrite
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetInt16
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target controller_manager_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target controller_manager_msgs_generate_messages_py
+[  0%] Built target controller_manager_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target controller_manager_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target controller_manager_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target _catkin_empty_exported_target
+[  0%] Built target control_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target control_toolbox_gencfg
+[  0%] Built target control_msgs_generate_messages_eus
+[  0%] Built target control_msgs_generate_messages_py
+[  0%] Built target control_msgs_generate_messages_nodejs
+[  0%] Built target control_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target control_toolbox_generate_messages_cpp
+[  0%] Built target control_toolbox_generate_messages_eus
+[  0%] Built target control_toolbox_generate_messages_nodejs
+[  0%] Built target control_toolbox_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target control_toolbox_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_SetPayloadModel
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_DeleteRecordedPoint
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_GetPayloadModel
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_SetDampingScales
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_FreedriveTelemetry
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_EvaluatePayloadModel
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_ListRecordedPoints
+[  1%] Built target elfin10_elfin_arm_moveit_ikfast_plugin
+[  1%] Built target std_srvs_generate_messages_py
+[  2%] Built target elfin3_elfin_arm_moveit_ikfast_plugin
+[  3%] Built target elfin5_elfin_arm_moveit_ikfast_plugin
+[  3%] Built target moveit_msgs_generate_messages_eus
+[  4%] Built target elfin15_elfin_arm_moveit_ikfast_plugin
+[  4%] Built target _elfin_vision_generate_messages_check_deps_HarvestStatus
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CockpitStatus
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CockpitInput
+[  4%] Built target _elfin_vision_generate_messages_check_deps_HarvestCommand
+[  4%] Built target _elfin_vision_generate_messages_check_deps_PlanHarvestStage
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CitrusTargetArray
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CockpitRecover
+[  4%] Built target _elfin_vision_generate_messages_check_deps_PlanCitrus
+[  4%] Built target moveit_msgs_generate_messages_nodejs
+[  4%] Built target moveit_msgs_generate_messages_lisp
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CobraScan
+[  4%] Built target moveit_msgs_generate_messages_py
+[  4%] Built target moveit_msgs_generate_messages_cpp
+[  4%] Built target visualization_msgs_generate_messages_nodejs
+[  4%] Built target moveit_ros_planning_gencfg
+[  4%] Built target octomap_msgs_generate_messages_py
+[  4%] Built target octomap_msgs_generate_messages_cpp
+[  4%] Built target _elfin_vision_generate_messages_check_deps_CitrusTarget
+[  4%] Built target octomap_msgs_generate_messages_eus
+[  4%] Built target shape_msgs_generate_messages_py
+[  4%] Built target object_recognition_msgs_generate_messages_py
+[  4%] Built target shape_msgs_generate_messages_lisp
+[  4%] Built target shape_msgs_generate_messages_nodejs
+[  4%] Built target visualization_msgs_generate_messages_cpp
+[  4%] Built target visualization_msgs_generate_messages_lisp
+[  4%] Built target shape_msgs_generate_messages_eus
+[  4%] Built target shape_msgs_generate_messages_cpp
+[  4%] Built target visualization_msgs_generate_messages_py
+[  4%] Built target object_recognition_msgs_generate_messages_lisp
+[  4%] Built target _elfin_vision_generate_messages_check_deps_RuntimeConfig
+[  4%] Built target object_recognition_msgs_generate_messages_cpp
+[  4%] Built target object_recognition_msgs_generate_messages_nodejs
+[  4%] Built target octomap_msgs_generate_messages_lisp
+[  4%] Built target moveit_planners_ompl_gencfg
+[  4%] Built target visualization_msgs_generate_messages_eus
+[  4%] Built target octomap_msgs_generate_messages_nodejs
+[  4%] Built target moveit_ros_manipulation_gencfg
+[  5%] Built target elfin_basic_api_gencfg
+[  5%] Built target object_recognition_msgs_generate_messages_eus
+[  6%] Built target elfin_posvel_joint_trajectory_controller
+[  9%] Built target elfin_robot_msgs_generate_messages_cpp
+[ 13%] Built target elfin_robot_msgs_generate_messages_nodejs
+[ 17%] Built target elfin_robot_msgs_generate_messages_py
+[ 18%] Built target elfin_postrq_joint_trajectory_controller
+[ 23%] Built target elfin_freedrive_controller_generate_messages_py
+[ 27%] Built target elfin_kinematic_solver
+[ 31%] Built target elfin_freedrive_controller_generate_messages_lisp
+[ 35%] Built target elfin_freedrive_controller_generate_messages_nodejs
+[ 40%] Built target elfin_robot_msgs_generate_messages_eus
+[ 44%] Built target elfin_robot_msgs_generate_messages_lisp
+[ 47%] Built target elfin_freedrive_controller_generate_messages_cpp
+[ 55%] Built target elfin_vision_generate_messages_eus
+[ 61%] Built target elfin_vision_generate_messages_nodejs
+[ 67%] Built target elfin_freedrive_controller_generate_messages_eus
+[ 73%] Built target elfin_vision_generate_messages_cpp
+[ 80%] Built target elfin_vision_generate_messages_lisp
+[ 88%] Built target elfin_vision_generate_messages_py
+[ 90%] Built target elfin_ethercat_driver
+[ 90%] Built target elfin_robot_msgs_generate_messages
+[ 91%] Built target elfin_freedrive_controller
+[ 92%] Built target elfin_freedrive_manager
+[ 92%] Built target elfin_vision_generate_messages
+[ 92%] Built target elfin_freedrive_controller_generate_messages
+[ 93%] Built target elfin_safe_move_group
+[ 94%] Built target elfin_hardware_interface
+[ 97%] Built target elfin_basic_api_node
+[100%] Built target elfin_basic_api
+Base path: /home/catas/ros_ws
+Source space: /home/catas/ros_ws/src
+Build space: /home/catas/ros_ws/build
+Devel space: /home/catas/ros_ws/devel
+Install space: /home/catas/ros_ws/install
+####
+#### Running command: "cmake /home/catas/ros_ws/src -DCATKIN_WHITELIST_PACKAGES= -DCATKIN_DEVEL_PREFIX=/home/catas/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros_ws/install -G Unix Makefiles" in "/home/catas/ros_ws/build"
+####
+####
+#### Running command: "make -j32 -l32" in "/home/catas/ros_ws/build"
+####
+[3/6] Running the freedrive unit tests...
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/catas/ros_ws/devel;/home/catas/ros2_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /home/catas/ros_ws/devel;/home/catas/ros2_ws/devel;/opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 24 packages in topological order:
+-- ~~  - elfin10_l_moveit_config
+-- ~~  - elfin15_moveit_config
+-- ~~  - elfin5_l_moveit_config
+-- ~~  - elfin_robot (metapackage)
+-- ~~  - elfin_robot_bringup
+-- ~~  - elfin_robot_msgs
+-- ~~  - elfin_kinematic_solver
+-- ~~  - elfin_hardware_interface
+-- ~~  - elfin_description
+-- ~~  - elfin10_moveit_config
+-- ~~  - elfin3_moveit_config
+-- ~~  - elfin5_moveit_config
+-- ~~  - elfin_ethercat_driver
+-- ~~  - elfin_ros_control
+-- ~~  - elfin_gazebo
+-- ~~  - elfin_freedrive_controller
+-- ~~  - elfin10_ikfast_plugin
+-- ~~  - elfin15_ikfast_plugin
+-- ~~  - elfin3_ikfast_plugin
+-- ~~  - elfin5_ikfast_plugin
+-- ~~  - elfin_vision
+-- ~~  - elfin_basic_api
+-- ~~  - elfin_postrq_joint_trajectory_controller
+-- ~~  - elfin_posvel_joint_trajectory_controller
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'elfin10_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_l_moveit_config)
+-- +++ processing catkin package: 'elfin15_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin15_moveit_config)
+-- +++ processing catkin package: 'elfin5_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_l_moveit_config)
+-- +++ processing catkin metapackage: 'elfin_robot'
+-- ==> add_subdirectory(elfin_robot/elfin_robot)
+-- +++ processing catkin package: 'elfin_robot_bringup'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_bringup)
+-- +++ processing catkin package: 'elfin_robot_msgs'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_robot_msgs: 0 messages, 6 services
+-- +++ processing catkin package: 'elfin_kinematic_solver'
+-- ==> add_subdirectory(elfin_robot/elfin_kinematic_solver)
+-- +++ processing catkin package: 'elfin_hardware_interface'
+-- ==> add_subdirectory(elfin_robot/elfin_hardware_interface)
+-- +++ processing catkin package: 'elfin_description'
+-- ==> add_subdirectory(elfin_robot/elfin_description)
+-- +++ processing catkin package: 'elfin10_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_moveit_config)
+-- +++ processing catkin package: 'elfin3_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin3_moveit_config)
+-- +++ processing catkin package: 'elfin5_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_moveit_config)
+-- +++ processing catkin package: 'elfin_ethercat_driver'
+-- ==> add_subdirectory(elfin_robot/elfin_ethercat_driver)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_ethercat_driver/CMakeLists.txt:111 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_ros_control'
+-- ==> add_subdirectory(elfin_robot/elfin_ros_control)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_gazebo'
+-- ==> add_subdirectory(elfin_robot/elfin_gazebo)
+WARNING: package 'gazebo_ros' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+WARNING: package 'gazebo_msgs' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+WARNING: package 'gazebo_ros_control' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- +++ processing catkin package: 'elfin_freedrive_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_freedrive_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_freedrive_controller: 1 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/calibrate_elfin_payload.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/collect_elfin_gravity_calibration.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- +++ processing catkin package: 'elfin10_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin10_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin15_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin15_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin3_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin5_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin5_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin_vision'
+-- ==> add_subdirectory(elfin_vision)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_vision: 5 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/capture_rgbd_sample.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_rgbd_node.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_moveit_planner.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/cockpit_controller.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/demo_cradle_watchdog.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/detect_realsense.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/elfin_vision_dashboard.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/environment_cloud_filter.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/eye_in_hand_calibrator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/harvest_coordinator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/publish_camera_tf.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/solve_eye_to_hand_points.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- +++ processing catkin package: 'elfin_basic_api'
+-- ==> add_subdirectory(elfin_robot/elfin_basic_api)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_basic_api/CMakeLists.txt:118 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_postrq_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_postrq_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_posvel_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_posvel_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros_ws/build
+Scanning dependencies of target run_tests_elfin_freedrive_controller_nosetests_test.test_payload_calibration.py
+[ 25%] Built target gtest
+[ 75%] Built target elfin_freedrive_controller_button_test
+[100%] Built target elfin_freedrive_controller_math_test
+Scanning dependencies of target run_tests_elfin_freedrive_controller_gtest_elfin_freedrive_controller_button_test
+Scanning dependencies of target run_tests_elfin_freedrive_controller_gtest_elfin_freedrive_controller_math_test
+[==========] Running 26 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 24 tests from ElfinFreedriveMath
+[ RUN      ] ElfinFreedriveMath.TorqueClampIsSymmetric
+[       OK ] ElfinFreedriveMath.TorqueClampIsSymmetric (0 ms)
+[ RUN      ] ElfinFreedriveMath.FrictionSmoothsAtZeroVelocity
+[       OK ] ElfinFreedriveMath.FrictionSmoothsAtZeroVelocity (0 ms)
+[ RUN      ] ElfinFreedriveMath.RateLimitIsIndependentOfLoopFrequency
+[       OK ] ElfinFreedriveMath.RateLimitIsIndependentOfLoopFrequency (0 ms)
+[ RUN      ] ElfinFreedriveMath.SmoothStepHasBoundedEndpoints
+[       OK ] ElfinFreedriveMath.SmoothStepHasBoundedEndpoints (0 ms)
+[ RUN      ] ElfinFreedriveMath.SettlingHandoffStartsAtPreviousCommand
+[       OK ] ElfinFreedriveMath.SettlingHandoffStartsAtPreviousCommand (0 ms)
+[ RUN      ] ElfinFreedriveMath.UserScaleCannotRelaxTransitionProtection
+[       OK ] ElfinFreedriveMath.UserScaleCannotRelaxTransitionProtection (0 ms)
+[ RUN      ] ElfinFreedriveMath.VelocityScaleHasExplicitSafeBounds
+[       OK ] ElfinFreedriveMath.VelocityScaleHasExplicitSafeBounds (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityEffortCapacityHasReservedHeadroom
+[       OK ] ElfinFreedriveMath.GravityEffortCapacityHasReservedHeadroom (0 ms)
+[ RUN      ] ElfinFreedriveMath.HardLimitBandAllowsMotionAwayFromEntryPose
+[       OK ] ElfinFreedriveMath.HardLimitBandAllowsMotionAwayFromEntryPose (0 ms)
+[ RUN      ] ElfinFreedriveMath.HardLimitBandStopsMotionTowardOrBeyondLimit
+[       OK ] ElfinFreedriveMath.HardLimitBandStopsMotionTowardOrBeyondLimit (0 ms)
+[ RUN      ] ElfinFreedriveMath.E05HighLoadJ2PoseFitsTwentyPercentEnvelope
+[       OK ] ElfinFreedriveMath.E05HighLoadJ2PoseFitsTwentyPercentEnvelope (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityValidationDetectsOppositeTorque
+[       OK ] ElfinFreedriveMath.GravityValidationDetectsOppositeTorque (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityValidationRequiresExcitation
+[       OK ] ElfinFreedriveMath.GravityValidationRequiresExcitation (0 ms)
+[ RUN      ] ElfinFreedriveMath.AbsoluteErrorIncludesUnexcitedPayloadAxes
+[       OK ] ElfinFreedriveMath.AbsoluteErrorIncludesUnexcitedPayloadAxes (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityValidationRejectsOneReversedLoadedJoint
+[       OK ] ElfinFreedriveMath.GravityValidationRejectsOneReversedLoadedJoint (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityValidationRejectsNonUniformScale
+[       OK ] ElfinFreedriveMath.GravityValidationRejectsNonUniformScale (0 ms)
+[ RUN      ] ElfinFreedriveMath.GravityValidationRejectsNonFiniteInput
+[       OK ] ElfinFreedriveMath.GravityValidationRejectsNonFiniteInput (0 ms)
+[ RUN      ] ElfinFreedriveMath.CalibratedWarningStillRejectsDirectionAndScale
+[       OK ] ElfinFreedriveMath.CalibratedWarningStillRejectsDirectionAndScale (0 ms)
+[ RUN      ] ElfinFreedriveMath.AffineGravityFitRecoversScaleAndBias
+[       OK ] ElfinFreedriveMath.AffineGravityFitRecoversScaleAndBias (0 ms)
+[ RUN      ] ElfinFreedriveMath.AffineGravityFitRejectsRepeatedPose
+[       OK ] ElfinFreedriveMath.AffineGravityFitRejectsRepeatedPose (0 ms)
+[ RUN      ] ElfinFreedriveMath.AffineGravityFitRejectsLargeOutlier
+[       OK ] ElfinFreedriveMath.AffineGravityFitRejectsLargeOutlier (0 ms)
+[ RUN      ] ElfinFreedriveMath.AffineGravityFitRejectsNonFiniteInput
+[       OK ] ElfinFreedriveMath.AffineGravityFitRejectsNonFiniteInput (0 ms)
+[ RUN      ] ElfinFreedriveMath.OppositeApproachesCancelDirectionalFriction
+[       OK ] ElfinFreedriveMath.OppositeApproachesCancelDirectionalFriction (0 ms)
+[ RUN      ] ElfinFreedriveMath.OppositeApproachesIgnoreOneWayAndInvalidInput
+[       OK ] ElfinFreedriveMath.OppositeApproachesIgnoreOneWayAndInvalidInput (0 ms)
+[----------] 24 tests from ElfinFreedriveMath (0 ms total)
+
+[----------] 2 tests from ElfinPayloadModel
+[ RUN      ] ElfinPayloadModel.RegressorMatchesKdlRigidPayloadGravity
+[       OK ] ElfinPayloadModel.RegressorMatchesKdlRigidPayloadGravity (0 ms)
+[ RUN      ] ElfinPayloadModel.RejectsImpossibleMassAndCenterOfMass
+[       OK ] ElfinPayloadModel.RejectsImpossibleMassAndCenterOfMass (0 ms)
+[----------] 2 tests from ElfinPayloadModel (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from ToolButtonLogicTest
+[ RUN      ] ToolButtonLogicTest.StartupWhileFreeHeldDoesNotTrigger
+[       OK ] ToolButtonLogicTest.StartupWhileFreeHeldDoesNotTrigger (0 ms)
+[ RUN      ] ToolButtonLogicTest.IncidentLengthPulseNeverRequestsTorqueMode
+[       OK ] ToolButtonLogicTest.IncidentLengthPulseNeverRequestsTorqueMode (0 ms)
+[ RUN      ] ToolButtonLogicTest.CallbackCatchupCannotShortenHoldTime
+[       OK ] ToolButtonLogicTest.CallbackCatchupCannotShortenHoldTime (0 ms)
+[ RUN      ] ToolButtonLogicTest.OneLowSampleDoesNotBreakARealLongPress
+[       OK ] ToolButtonLogicTest.OneLowSampleDoesNotBreakARealLongPress (0 ms)
+[ RUN      ] ToolButtonLogicTest.SustainedLowResetsAnInterruptedPress
+[       OK ] ToolButtonLogicTest.SustainedLowResetsAnInterruptedPress (0 ms)
+[ RUN      ] ToolButtonLogicTest.ConfirmedFreePressAndReleaseRequestOneTransitionEach
+[       OK ] ToolButtonLogicTest.ConfirmedFreePressAndReleaseRequestOneTransitionEach (0 ms)
+[ RUN      ] ToolButtonLogicTest.InputLossExitsConfirmedFreeAndRequiresLowRearm
+[       OK ] ToolButtonLogicTest.InputLossExitsConfirmedFreeAndRequiresLowRearm (0 ms)
+[ RUN      ] ToolButtonLogicTest.PointUsesRisingEdgeOnly
+[       OK ] ToolButtonLogicTest.PointUsesRisingEdgeOnly (0 ms)
+[----------] 8 tests from ToolButtonLogicTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+[==========] 26 tests from 2 test suites ran. (1 ms total)
+[  PASSED  ] 26 tests.
+-- run_tests.py: execute commands
+  /home/catas/ros_ws/devel/lib/elfin_freedrive_controller/elfin_freedrive_controller_button_test --gtest_output=xml:/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/gtest-elfin_freedrive_controller_button_test.xml
+-- run_tests.py: verify result "/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/gtest-elfin_freedrive_controller_button_test.xml"
+-- run_tests.py: execute commands
+  /home/catas/ros_ws/devel/lib/elfin_freedrive_controller/elfin_freedrive_controller_math_test --gtest_output=xml:/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/gtest-elfin_freedrive_controller_math_test.xml
+-- run_tests.py: verify result "/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/gtest-elfin_freedrive_controller_math_test.xml"
+[100%] Built target run_tests_elfin_freedrive_controller_gtest_elfin_freedrive_controller_math_test
+[100%] Built target run_tests_elfin_freedrive_controller_gtest_elfin_freedrive_controller_button_test
+Scanning dependencies of target run_tests_elfin_freedrive_controller_gtest
+[100%] Built target run_tests_elfin_freedrive_controller_gtest
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.008s
+
+OK
+-- run_tests.py: execute commands
+  "/usr/bin/cmake" -E make_directory /home/catas/ros_ws/build/test_results/elfin_freedrive_controller
+  /usr/bin/nosetests3 -P --process-timeout=60 /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/test/test_payload_calibration.py --with-xunit --xunit-file=/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/nosetests-test.test_payload_calibration.py.xml
+-- run_tests.py: verify result "/home/catas/ros_ws/build/test_results/elfin_freedrive_controller/nosetests-test.test_payload_calibration.py.xml"
+[100%] Built target run_tests_elfin_freedrive_controller_nosetests_test.test_payload_calibration.py
+Scanning dependencies of target run_tests_elfin_freedrive_controller_nosetests
+[100%] Built target run_tests_elfin_freedrive_controller_nosetests
+Scanning dependencies of target run_tests_elfin_freedrive_controller
+[100%] Built target run_tests_elfin_freedrive_controller
+Base path: /home/catas/ros_ws
+Source space: /home/catas/ros_ws/src
+Build space: /home/catas/ros_ws/build
+Devel space: /home/catas/ros_ws/devel
+Install space: /home/catas/ros_ws/install
+####
+#### Running command: "cmake /home/catas/ros_ws/src -DCATKIN_DEVEL_PREFIX=/home/catas/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros_ws/install -G Unix Makefiles" in "/home/catas/ros_ws/build"
+####
+####
+#### Running command: "make run_tests_elfin_freedrive_controller -j32 -l32" in "/home/catas/ros_ws/build"
+####
+Summary: 83 tests, 0 errors, 0 failures, 0 skipped
+[4/6] Expanding and parsing the Elfin5 URDF...
+
+robot name is: elfin5
+---------- Successfully Parsed XML ---------------
+root Link: world has 1 child(ren)
+    child(1):  elfin_base_link
+        child(1):  elfin_base
+            child(1):  elfin_link1
+                child(1):  elfin_link2
+                    child(1):  elfin_link3
+                        child(1):  elfin_link4
+                            child(1):  elfin_link5
+                                child(1):  elfin_link6
+                                    child(1):  elfin_dummy_gripper
+                                    child(2):  elfin_end_link
+[5/6] Checking Python syntax...
+[6/6] Resolving key launch files without starting nodes...
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/robot_state_publisher
+/elfin_ros_control
+/elfin_joint_controller_spawner
+/elfin_arm_controller_spawner
+/elfin_freedrive_controller_loader
+/elfin_freedrive_manager
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/robot_state_publisher
+/elfin_ros_control
+/elfin_joint_controller_spawner
+/elfin_arm_controller_spawner
+/elfin_freedrive_controller_loader
+/elfin_freedrive_manager
+/move_group
+/elfin_basic_api
+/elfin_gui
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/gazebo
+/urdf_spawner
+/fake_joint_calibration
+/robot_state_publisher
+/joint_state_controller_spawner
+/elfin_arm_controller_spawner
+/move_group
+/rviz_catas_29792_7046389585552120926
+/rviz_catas_29812_3622307478160673171
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/joint_state_publisher
+/robot_state_publisher
+/move_group
+/rviz_catas_29832_5484348253607619648
+/elfin_basic_api
+/elfin_gui
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/gazebo
+/urdf_spawner
+/robot_state_publisher
+/joint_state_controller_spawner
+/elfin_arm_controller_spawner
+/elfin_freedrive_controller_loader
+/elfin_freedrive_manager
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/gazebo
+/urdf_spawner
+/robot_state_publisher
+/joint_state_controller_spawner
+/elfin_arm_controller_spawner
+/elfin_freedrive_controller_loader
+/elfin_freedrive_manager
+/move_group
+/elfin_basic_api
+/elfin_gui
+PASS: offline Elfin build, URDF, Python, and launch checks completed.
+This result does not test EtherCAT, motors, end I/O, or real motion.

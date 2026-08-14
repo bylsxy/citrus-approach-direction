@@ -1,0 +1,1850 @@
+[1/5] rosdep: RealSense workspace
+ERROR: the following packages/stacks could not have their rosdep keys resolved
+to system dependencies:
+realsense2_camera: Cannot locate rosdep definition for [librealsense2]
+Continuing to install resolvable dependencies...
+#All required rosdeps installed successfully
+[2/5] build: RealSense workspace
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros2_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /home/catas/.local/lib/python3.8/site-packages/em.py  
+-- Using empy: /home/catas/.local/lib/python3.8/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros2_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - realsense2_description
+-- ~~  - realsense2_camera
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'realsense2_description'
+-- ==> add_subdirectory(realsense-ros/realsense2_description)
+-- +++ processing catkin package: 'realsense2_camera'
+-- ==> add_subdirectory(realsense-ros/realsense2_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Error at realsense-ros/realsense2_camera/CMakeLists.txt:26 (find_package):
+  Could not find a configuration file for package "OpenCV" that is compatible
+  with requested version "4.5.4".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+    /lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/catas/ros2_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/home/catas/ros2_ws/build/CMakeFiles/CMakeError.log".
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+Creating symlink "/home/catas/ros2_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/catas/ros2_ws/src -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/catas/ros2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros2_ws/install -G Unix Makefiles" in "/home/catas/ros2_ws/build"
+####
+Invoking "cmake" failed
+[1/5] rosdep: RealSense workspace
+#All required rosdeps installed successfully
+[2/5] build: RealSense workspace
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros2_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /home/catas/.local/lib/python3.8/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros2_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - realsense2_description
+-- ~~  - realsense2_camera
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'realsense2_description'
+-- ==> add_subdirectory(realsense-ros/realsense2_description)
+-- +++ processing catkin package: 'realsense2_camera'
+-- ==> add_subdirectory(realsense-ros/realsense2_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
+-- Create Release Build.
+-- realsense2_camera: 3 messages, 1 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros2_ws/build
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_Metadata
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_Extrinsics
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_DeviceInfo
+Scanning dependencies of target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_lisp
+Scanning dependencies of target sensor_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_IMUInfo
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_DeviceInfo
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target sensor_msgs_generate_messages_cpp
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Metadata
+Scanning dependencies of target tf_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_py
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Extrinsics
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+Scanning dependencies of target _catkin_empty_exported_target
+Scanning dependencies of target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_IMUInfo
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target _catkin_empty_exported_target
+Scanning dependencies of target dynamic_reconfigure_gencfg
+Scanning dependencies of target diagnostic_msgs_generate_messages_cpp
+Scanning dependencies of target diagnostic_msgs_generate_messages_eus
+Scanning dependencies of target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_gencfg
+Scanning dependencies of target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+Scanning dependencies of target actionlib_generate_messages_py
+Scanning dependencies of target rosgraph_msgs_generate_messages_nodejs
+Scanning dependencies of target diagnostic_msgs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+Scanning dependencies of target actionlib_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_cpp
+Scanning dependencies of target roscpp_generate_messages_py
+Scanning dependencies of target nav_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target dynamic_reconfigure_generate_messages_py
+Scanning dependencies of target roscpp_generate_messages_eus
+Scanning dependencies of target roscpp_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target nav_msgs_generate_messages_lisp
+Scanning dependencies of target nav_msgs_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+Scanning dependencies of target roscpp_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_eus
+Scanning dependencies of target tf2_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target rosgraph_msgs_generate_messages_lisp
+Scanning dependencies of target std_srvs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+Scanning dependencies of target actionlib_generate_messages_lisp
+Scanning dependencies of target tf_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_cpp
+Scanning dependencies of target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+Scanning dependencies of target roscpp_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+Scanning dependencies of target std_srvs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_py
+Scanning dependencies of target tf_generate_messages_py
+Scanning dependencies of target tf_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+Scanning dependencies of target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_cpp
+Scanning dependencies of target actionlib_generate_messages_eus
+Scanning dependencies of target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target diagnostic_msgs_generate_messages_py
+Scanning dependencies of target bond_generate_messages_lisp
+Scanning dependencies of target nav_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_py
+Scanning dependencies of target bond_generate_messages_cpp
+Scanning dependencies of target bond_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target bond_generate_messages_eus
+Scanning dependencies of target std_srvs_generate_messages_eus
+Scanning dependencies of target std_srvs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_py
+Scanning dependencies of target nodelet_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+Scanning dependencies of target actionlib_generate_messages_nodejs
+Scanning dependencies of target nodelet_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_nodejs
+Scanning dependencies of target nodelet_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_cpp
+Scanning dependencies of target nodelet_generate_messages_py
+Scanning dependencies of target std_srvs_generate_messages_nodejs
+Scanning dependencies of target nodelet_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_lisp
+Scanning dependencies of target bond_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_py
+Scanning dependencies of target bond_generate_messages_nodejs
+Scanning dependencies of target nav_msgs_generate_messages_py
+Scanning dependencies of target tf_generate_messages_lisp
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_nodejs
+Scanning dependencies of target realsense2_camera_generate_messages_nodejs
+[  7%] Generating Javascript code from realsense2_camera/Extrinsics.msg
+[  7%] Generating Javascript code from realsense2_camera/IMUInfo.msg
+Scanning dependencies of target realsense2_camera_generate_messages_cpp
+Scanning dependencies of target realsense2_camera_generate_messages_lisp
+[ 11%] Generating C++ code from realsense2_camera/Extrinsics.msg
+[ 14%] Generating C++ code from realsense2_camera/Metadata.msg
+[ 18%] Generating C++ code from realsense2_camera/IMUInfo.msg
+[ 22%] Generating C++ code from realsense2_camera/DeviceInfo.srv
+Scanning dependencies of target realsense2_camera_generate_messages_py
+[ 25%] Generating Javascript code from realsense2_camera/DeviceInfo.srv
+[ 29%] Generating Javascript code from realsense2_camera/Metadata.msg
+Scanning dependencies of target realsense2_camera_generate_messages_eus
+[ 29%] Built target tf_generate_messages_lisp
+[ 33%] Generating Lisp code from realsense2_camera/Extrinsics.msg
+[ 37%] Generating Lisp code from realsense2_camera/Metadata.msg
+[ 40%] Generating Lisp code from realsense2_camera/DeviceInfo.srv
+[ 44%] Generating Lisp code from realsense2_camera/IMUInfo.msg
+[ 48%] Generating EusLisp code from realsense2_camera/DeviceInfo.srv
+[ 51%] Generating EusLisp code from realsense2_camera/Extrinsics.msg
+[ 55%] Generating EusLisp code from realsense2_camera/Metadata.msg
+[ 59%] Generating EusLisp manifest code for realsense2_camera
+[ 62%] Generating Python from MSG realsense2_camera/Metadata
+[ 66%] Generating Python code from SRV realsense2_camera/DeviceInfo
+[ 70%] Generating Python from MSG realsense2_camera/Extrinsics
+[ 77%] Generating Python from MSG realsense2_camera/IMUInfo
+[ 74%] Generating EusLisp code from realsense2_camera/IMUInfo.msg
+[ 77%] Built target nav_msgs_generate_messages_py
+[ 77%] Built target realsense2_camera_generate_messages_lisp
+[ 77%] Built target realsense2_camera_generate_messages_cpp
+[ 77%] Built target realsense2_camera_generate_messages_nodejs
+[ 81%] Generating Python msg __init__.py for realsense2_camera
+[ 85%] Generating Python srv __init__.py for realsense2_camera
+Scanning dependencies of target realsense2_camera
+[ 88%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o
+[ 92%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o
+[ 92%] Built target realsense2_camera_generate_messages_py
+[ 96%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o
+[ 96%] Built target realsense2_camera_generate_messages_eus
+Scanning dependencies of target realsense2_camera_generate_messages
+[ 96%] Built target realsense2_camera_generate_messages
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp:4:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/base_realsense_node.h:6,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp:1:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/include/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h:6,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/t265_realsense_node.h:3,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp:1:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[100%] Linking CXX shared library /home/catas/ros2_ws/devel/lib/librealsense2_camera.so
+[100%] Built target realsense2_camera
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+####
+#### Running command: "cmake /home/catas/ros2_ws/src -DCMAKE_BUILD_TYPE=Release -DOpenCV_DIR=/usr/lib/x86_64-linux-gnu/cmake/opencv4 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/catas/ros2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros2_ws/install -G Unix Makefiles" in "/home/catas/ros2_ws/build"
+####
+####
+#### Running command: "make -j32 -l32" in "/home/catas/ros2_ws/build"
+####
+[3/5] rosdep: Elfin and vision workspace
+ERROR: the following packages/stacks could not have their rosdep keys resolved
+to system dependencies:
+elfin_postrq_joint_trajectory_controller: Cannot locate rosdep definition for [joint_trajectory_controller]
+elfin_robot_bringup: Cannot locate rosdep definition for [joint_trajectory_controller]
+elfin_posvel_joint_trajectory_controller: Cannot locate rosdep definition for [joint_trajectory_controller]
+elfin_gazebo: Cannot locate rosdep definition for [joint_trajectory_controller]
+elfin_robot: Cannot locate rosdep definition for [elfin_ros_controllers]
+elfin_ros_control: Cannot locate rosdep definition for [elfin_ethercat_driver_v3]
+elfin_freedrive_controller: Cannot locate rosdep definition for [effort_controllers]
+Continuing to install resolvable dependencies...
+#All required rosdeps installed successfully
+[4/5] build: Elfin and vision workspace
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/catas/ros2_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /home/catas/ros2_ws/devel;/opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 24 packages in topological order:
+-- ~~  - elfin10_l_moveit_config
+-- ~~  - elfin15_moveit_config
+-- ~~  - elfin5_l_moveit_config
+-- ~~  - elfin_robot (metapackage)
+-- ~~  - elfin_robot_bringup
+-- ~~  - elfin_robot_msgs
+-- ~~  - elfin_kinematic_solver
+-- ~~  - elfin_hardware_interface
+-- ~~  - elfin_postrq_joint_trajectory_controller
+-- ~~  - elfin_posvel_joint_trajectory_controller
+-- ~~  - elfin_description
+-- ~~  - elfin10_moveit_config
+-- ~~  - elfin3_moveit_config
+-- ~~  - elfin5_moveit_config
+-- ~~  - elfin_ethercat_driver
+-- ~~  - elfin_ros_control
+-- ~~  - elfin_gazebo
+-- ~~  - elfin_freedrive_controller
+-- ~~  - elfin10_ikfast_plugin
+-- ~~  - elfin15_ikfast_plugin
+-- ~~  - elfin3_ikfast_plugin
+-- ~~  - elfin5_ikfast_plugin
+-- ~~  - elfin_vision
+-- ~~  - elfin_basic_api
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'elfin10_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_l_moveit_config)
+-- +++ processing catkin package: 'elfin15_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin15_moveit_config)
+-- +++ processing catkin package: 'elfin5_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_l_moveit_config)
+-- +++ processing catkin metapackage: 'elfin_robot'
+-- ==> add_subdirectory(elfin_robot/elfin_robot)
+-- +++ processing catkin package: 'elfin_robot_bringup'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_bringup)
+-- +++ processing catkin package: 'elfin_robot_msgs'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_robot_msgs: 0 messages, 6 services
+-- +++ processing catkin package: 'elfin_kinematic_solver'
+-- ==> add_subdirectory(elfin_robot/elfin_kinematic_solver)
+-- +++ processing catkin package: 'elfin_hardware_interface'
+-- ==> add_subdirectory(elfin_robot/elfin_hardware_interface)
+-- +++ processing catkin package: 'elfin_postrq_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_postrq_joint_trajectory_controller)
+-- Could NOT find joint_trajectory_controller (missing: joint_trajectory_controller_DIR)
+-- Could not find the required component 'joint_trajectory_controller'. The following CMake error indicates that you either need to install the package with the same name or change your environment so that it can be found.
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by
+  "joint_trajectory_controller" with any of the following names:
+
+    joint_trajectory_controllerConfig.cmake
+    joint_trajectory_controller-config.cmake
+
+  Add the installation prefix of "joint_trajectory_controller" to
+  CMAKE_PREFIX_PATH or set "joint_trajectory_controller_DIR" to a directory
+  containing one of the above files.  If "joint_trajectory_controller"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  elfin_robot/elfin_postrq_joint_trajectory_controller/CMakeLists.txt:10 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/catas/ros_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/home/catas/ros_ws/build/CMakeFiles/CMakeError.log".
+Base path: /home/catas/ros_ws
+Source space: /home/catas/ros_ws/src
+Build space: /home/catas/ros_ws/build
+Devel space: /home/catas/ros_ws/devel
+Install space: /home/catas/ros_ws/install
+####
+#### Running command: "cmake /home/catas/ros_ws/src -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_WHITELIST_PACKAGES= -DCATKIN_DEVEL_PREFIX=/home/catas/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros_ws/install -G Unix Makefiles" in "/home/catas/ros_ws/build"
+####
+Invoking "cmake" failed
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/catas/ros2_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /home/catas/ros2_ws/devel;/opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 24 packages in topological order:
+-- ~~  - elfin10_l_moveit_config
+-- ~~  - elfin15_moveit_config
+-- ~~  - elfin5_l_moveit_config
+-- ~~  - elfin_robot (metapackage)
+-- ~~  - elfin_robot_bringup
+-- ~~  - elfin_robot_msgs
+-- ~~  - elfin_kinematic_solver
+-- ~~  - elfin_hardware_interface
+-- ~~  - elfin_description
+-- ~~  - elfin10_moveit_config
+-- ~~  - elfin3_moveit_config
+-- ~~  - elfin5_moveit_config
+-- ~~  - elfin_ethercat_driver
+-- ~~  - elfin_ros_control
+-- ~~  - elfin_gazebo
+-- ~~  - elfin_freedrive_controller
+-- ~~  - elfin10_ikfast_plugin
+-- ~~  - elfin15_ikfast_plugin
+-- ~~  - elfin3_ikfast_plugin
+-- ~~  - elfin5_ikfast_plugin
+-- ~~  - elfin_vision
+-- ~~  - elfin_basic_api
+-- ~~  - elfin_postrq_joint_trajectory_controller
+-- ~~  - elfin_posvel_joint_trajectory_controller
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'elfin10_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_l_moveit_config)
+-- +++ processing catkin package: 'elfin15_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin15_moveit_config)
+-- +++ processing catkin package: 'elfin5_l_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_l_moveit_config)
+-- +++ processing catkin metapackage: 'elfin_robot'
+-- ==> add_subdirectory(elfin_robot/elfin_robot)
+-- +++ processing catkin package: 'elfin_robot_bringup'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_bringup)
+-- +++ processing catkin package: 'elfin_robot_msgs'
+-- ==> add_subdirectory(elfin_robot/elfin_robot_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_robot_msgs: 0 messages, 6 services
+-- +++ processing catkin package: 'elfin_kinematic_solver'
+-- ==> add_subdirectory(elfin_robot/elfin_kinematic_solver)
+-- +++ processing catkin package: 'elfin_hardware_interface'
+-- ==> add_subdirectory(elfin_robot/elfin_hardware_interface)
+-- +++ processing catkin package: 'elfin_description'
+-- ==> add_subdirectory(elfin_robot/elfin_description)
+-- +++ processing catkin package: 'elfin10_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin10_moveit_config)
+-- +++ processing catkin package: 'elfin3_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin3_moveit_config)
+-- +++ processing catkin package: 'elfin5_moveit_config'
+-- ==> add_subdirectory(elfin_robot/elfin5_moveit_config)
+-- +++ processing catkin package: 'elfin_ethercat_driver'
+-- ==> add_subdirectory(elfin_robot/elfin_ethercat_driver)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_ethercat_driver/CMakeLists.txt:111 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_ros_control'
+-- ==> add_subdirectory(elfin_robot/elfin_ros_control)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_gazebo'
+-- ==> add_subdirectory(elfin_robot/elfin_gazebo)
+WARNING: package 'gazebo_ros' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+WARNING: package 'gazebo_msgs' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+WARNING: package 'gazebo_ros_control' is deprecated (This package has been deprecated as of January 2025 with Gazebo classic 11 reaching
+      end-of-life. Users are highly encouraged to migrate to the new Gazebo
+      using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+-- +++ processing catkin package: 'elfin_freedrive_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_freedrive_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_freedrive_controller: 1 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/calibrate_elfin_payload.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_robot/elfin_freedrive_controller/script/collect_elfin_gravity_calibration.py to /home/catas/ros_ws/devel/lib/elfin_freedrive_controller
+-- +++ processing catkin package: 'elfin10_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin10_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  
+-- Looking for cheev_
+-- Looking for cheev_ - not found
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin15_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin15_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin3_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin5_ikfast_plugin'
+-- ==> add_subdirectory(elfin_robot/elfin_ikfast_plugins/elfin5_ikfast_plugin)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- A library with LAPACK API found.
+-- +++ processing catkin package: 'elfin_vision'
+-- ==> add_subdirectory(elfin_vision)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- elfin_vision: 5 messages, 6 services
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/capture_rgbd_sample.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_rgbd_node.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/citrus_moveit_planner.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/cockpit_controller.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/demo_cradle_watchdog.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/detect_realsense.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/elfin_vision_dashboard.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/environment_cloud_filter.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/eye_in_hand_calibrator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/harvest_coordinator.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/publish_camera_tf.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- Installing devel-space wrapper /home/catas/ros_ws/src/elfin_vision/scripts/solve_eye_to_hand_points.py to /home/catas/ros_ws/devel/lib/elfin_vision
+-- +++ processing catkin package: 'elfin_basic_api'
+-- ==> add_subdirectory(elfin_robot/elfin_basic_api)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  elfin_robot/elfin_basic_api/CMakeLists.txt:118 (catkin_package)
+
+
+-- +++ processing catkin package: 'elfin_postrq_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_postrq_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'elfin_posvel_joint_trajectory_controller'
+-- ==> add_subdirectory(elfin_robot/elfin_posvel_joint_trajectory_controller)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros_ws/build
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODRead
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_SetInt16
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_CockpitJog
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_SetFloat64
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODWrite
+Scanning dependencies of target _elfin_robot_msgs_generate_messages_check_deps_SetString
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODWrite
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetFloat64
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_CockpitJog
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetString
+[  0%] Built target std_msgs_generate_messages_nodejs
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_py
+Scanning dependencies of target roscpp_generate_messages_cpp
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_SetInt16
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+Scanning dependencies of target roscpp_generate_messages_eus
+Scanning dependencies of target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target _elfin_robot_msgs_generate_messages_check_deps_ElfinIODRead
+Scanning dependencies of target roscpp_generate_messages_py
+Scanning dependencies of target rosgraph_msgs_generate_messages_cpp
+Scanning dependencies of target rosgraph_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+Scanning dependencies of target rosgraph_msgs_generate_messages_lisp
+Scanning dependencies of target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+Scanning dependencies of target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target trajectory_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target roscpp_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_eus
+Scanning dependencies of target trajectory_msgs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_nodejs
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+Scanning dependencies of target actionlib_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target trajectory_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target sensor_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+Scanning dependencies of target sensor_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+Scanning dependencies of target diagnostic_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_cpp
+Scanning dependencies of target controller_manager_msgs_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target diagnostic_msgs_generate_messages_nodejs
+Scanning dependencies of target diagnostic_msgs_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+[  0%] Built target controller_manager_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+Scanning dependencies of target controller_manager_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target actionlib_generate_messages_eus
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+Scanning dependencies of target sensor_msgs_generate_messages_eus
+Scanning dependencies of target actionlib_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+[  0%] Built target controller_manager_msgs_generate_messages_py
+Scanning dependencies of target controller_manager_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_py
+Scanning dependencies of target sensor_msgs_generate_messages_py
+Scanning dependencies of target controller_manager_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+Scanning dependencies of target tf2_msgs_generate_messages_py
+[  0%] Built target controller_manager_msgs_generate_messages_eus
+[  0%] Built target controller_manager_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+Scanning dependencies of target tf_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target diagnostic_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_py
+Scanning dependencies of target tf_generate_messages_cpp
+Scanning dependencies of target tf_generate_messages_eus
+Scanning dependencies of target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_lisp
+Scanning dependencies of target controller_manager_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_cpp
+Scanning dependencies of target tf_generate_messages_py
+[  0%] Built target tf_generate_messages_cpp
+Scanning dependencies of target diagnostic_msgs_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+Scanning dependencies of target tf_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target controller_manager_msgs_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+Scanning dependencies of target trajectory_msgs_generate_messages_nodejs
+Scanning dependencies of target dynamic_reconfigure_generate_messages_eus
+Scanning dependencies of target dynamic_reconfigure_gencfg
+Scanning dependencies of target dynamic_reconfigure_generate_messages_nodejs
+Scanning dependencies of target trajectory_msgs_generate_messages_eus
+Scanning dependencies of target _catkin_empty_exported_target
+Scanning dependencies of target actionlib_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+Scanning dependencies of target dynamic_reconfigure_generate_messages_lisp
+Scanning dependencies of target control_toolbox_gencfg
+[  0%] Built target _catkin_empty_exported_target
+Scanning dependencies of target control_msgs_generate_messages_lisp
+Scanning dependencies of target control_msgs_generate_messages_eus
+Scanning dependencies of target control_msgs_generate_messages_cpp
+[  0%] Built target control_msgs_generate_messages_lisp
+Scanning dependencies of target control_msgs_generate_messages_nodejs
+Scanning dependencies of target control_msgs_generate_messages_py
+[  0%] Built target control_toolbox_gencfg
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+Scanning dependencies of target control_toolbox_generate_messages_cpp
+[  0%] Built target control_msgs_generate_messages_eus
+[  0%] Built target control_msgs_generate_messages_py
+[  0%] Built target control_msgs_generate_messages_nodejs
+Scanning dependencies of target control_toolbox_generate_messages_eus
+[  0%] Built target control_toolbox_generate_messages_cpp
+Scanning dependencies of target control_toolbox_generate_messages_lisp
+Scanning dependencies of target dynamic_reconfigure_generate_messages_py
+[  0%] Built target control_msgs_generate_messages_cpp
+Scanning dependencies of target control_toolbox_generate_messages_py
+Scanning dependencies of target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target control_toolbox_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target control_toolbox_generate_messages_py
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+Scanning dependencies of target control_toolbox_generate_messages_nodejs
+[  0%] Built target control_toolbox_generate_messages_lisp
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_SetDampingScales
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_FreedriveTelemetry
+[  0%] Built target control_toolbox_generate_messages_nodejs
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_GetPayloadModel
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_SetPayloadModel
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_ListRecordedPoints
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_DeleteRecordedPoint
+Scanning dependencies of target _elfin_freedrive_controller_generate_messages_check_deps_EvaluatePayloadModel
+Scanning dependencies of target std_srvs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+Scanning dependencies of target std_srvs_generate_messages_lisp
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_SetPayloadModel
+Scanning dependencies of target std_srvs_generate_messages_eus
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_ListRecordedPoints
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_EvaluatePayloadModel
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_DeleteRecordedPoint
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_GetPayloadModel
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_SetDampingScales
+Scanning dependencies of target std_srvs_generate_messages_nodejs
+Scanning dependencies of target std_srvs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target _elfin_freedrive_controller_generate_messages_check_deps_FreedriveTelemetry
+[  0%] Built target std_srvs_generate_messages_eus
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CobraScan
+Scanning dependencies of target moveit_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_nodejs
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_PlanHarvestStage
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_PlanCitrus
+[  0%] Built target moveit_msgs_generate_messages_eus
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CobraScan
+Scanning dependencies of target elfin3_elfin_arm_moveit_ikfast_plugin
+[  0%] Built target _elfin_vision_generate_messages_check_deps_PlanHarvestStage
+[  0%] Built target _elfin_vision_generate_messages_check_deps_PlanCitrus
+[  0%] Building CXX object elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/CMakeFiles/elfin3_elfin_arm_moveit_ikfast_plugin.dir/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp.o
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_HarvestStatus
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CitrusTargetArray
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CockpitStatus
+Scanning dependencies of target elfin5_elfin_arm_moveit_ikfast_plugin
+[  0%] Built target _elfin_vision_generate_messages_check_deps_HarvestStatus
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CitrusTargetArray
+[  0%] Building CXX object elfin_robot/elfin_ikfast_plugins/elfin5_ikfast_plugin/CMakeFiles/elfin5_elfin_arm_moveit_ikfast_plugin.dir/src/elfin5_elfin_arm_ikfast_moveit_plugin.cpp.o
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CockpitInput
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_HarvestCommand
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CockpitStatus
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CockpitRecover
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CockpitInput
+[  0%] Built target _elfin_vision_generate_messages_check_deps_HarvestCommand
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_RuntimeConfig
+Scanning dependencies of target _elfin_vision_generate_messages_check_deps_CitrusTarget
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CockpitRecover
+Scanning dependencies of target moveit_msgs_generate_messages_nodejs
+[  0%] Built target _elfin_vision_generate_messages_check_deps_RuntimeConfig
+[  0%] Built target _elfin_vision_generate_messages_check_deps_CitrusTarget
+[  0%] Built target moveit_msgs_generate_messages_nodejs
+Scanning dependencies of target moveit_msgs_generate_messages_lisp
+Scanning dependencies of target moveit_msgs_generate_messages_cpp
+[  0%] Built target moveit_msgs_generate_messages_lisp
+[  0%] Built target moveit_msgs_generate_messages_cpp
+Scanning dependencies of target moveit_msgs_generate_messages_py
+Scanning dependencies of target moveit_ros_planning_gencfg
+[  0%] Built target moveit_msgs_generate_messages_py
+[  0%] Built target moveit_ros_planning_gencfg
+Scanning dependencies of target visualization_msgs_generate_messages_nodejs
+Scanning dependencies of target elfin15_elfin_arm_moveit_ikfast_plugin
+Scanning dependencies of target octomap_msgs_generate_messages_cpp
+Scanning dependencies of target octomap_msgs_generate_messages_py
+[  0%] Building CXX object elfin_robot/elfin_ikfast_plugins/elfin15_ikfast_plugin/CMakeFiles/elfin15_elfin_arm_moveit_ikfast_plugin.dir/src/elfin15_elfin_arm_ikfast_moveit_plugin.cpp.o
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target octomap_msgs_generate_messages_cpp
+[  0%] Built target octomap_msgs_generate_messages_py
+Scanning dependencies of target shape_msgs_generate_messages_py
+Scanning dependencies of target octomap_msgs_generate_messages_eus
+[  0%] Built target shape_msgs_generate_messages_py
+[  0%] Built target octomap_msgs_generate_messages_eus
+Scanning dependencies of target shape_msgs_generate_messages_nodejs
+[  0%] Built target shape_msgs_generate_messages_nodejs
+Scanning dependencies of target object_recognition_msgs_generate_messages_py
+Scanning dependencies of target shape_msgs_generate_messages_lisp
+Scanning dependencies of target visualization_msgs_generate_messages_cpp
+[  0%] Built target object_recognition_msgs_generate_messages_py
+[  0%] Built target shape_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_cpp
+Scanning dependencies of target object_recognition_msgs_generate_messages_cpp
+Scanning dependencies of target shape_msgs_generate_messages_eus
+[  0%] Built target object_recognition_msgs_generate_messages_cpp
+[  0%] Built target shape_msgs_generate_messages_eus
+Scanning dependencies of target visualization_msgs_generate_messages_lisp
+Scanning dependencies of target visualization_msgs_generate_messages_py
+Scanning dependencies of target shape_msgs_generate_messages_cpp
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target shape_msgs_generate_messages_cpp
+[  0%] Built target visualization_msgs_generate_messages_py
+Scanning dependencies of target object_recognition_msgs_generate_messages_lisp
+Scanning dependencies of target visualization_msgs_generate_messages_eus
+Scanning dependencies of target object_recognition_msgs_generate_messages_eus
+[  0%] Built target object_recognition_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_eus
+[  0%] Built target object_recognition_msgs_generate_messages_eus
+Scanning dependencies of target object_recognition_msgs_generate_messages_nodejs
+Scanning dependencies of target octomap_msgs_generate_messages_lisp
+[  0%] Built target object_recognition_msgs_generate_messages_nodejs
+[  0%] Built target octomap_msgs_generate_messages_lisp
+Scanning dependencies of target octomap_msgs_generate_messages_nodejs
+Scanning dependencies of target moveit_planners_ompl_gencfg
+Scanning dependencies of target elfin_basic_api_gencfg
+[  0%] Built target octomap_msgs_generate_messages_nodejs
+[  1%] Generating dynamic reconfigure files from cfg/ElfinBasicAPIDynamicReconfigure.cfg: /home/catas/ros_ws/devel/include/elfin_basic_api/ElfinBasicAPIDynamicReconfigureConfig.h /home/catas/ros_ws/devel/lib/python3/dist-packages/elfin_basic_api/cfg/ElfinBasicAPIDynamicReconfigureConfig.py
+[  1%] Built target moveit_planners_ompl_gencfg
+Generating reconfiguration files for ElfinBasicAPIDynamicReconfigure in elfin_basic_api
+Wrote header file in /home/catas/ros_ws/devel/include/elfin_basic_api/ElfinBasicAPIDynamicReconfigureConfig.h
+[  1%] Built target elfin_basic_api_gencfg
+Scanning dependencies of target moveit_ros_manipulation_gencfg
+[  1%] Built target moveit_ros_manipulation_gencfg
+Scanning dependencies of target elfin_postrq_joint_trajectory_controller
+[  1%] Building CXX object elfin_robot/elfin_postrq_joint_trajectory_controller/CMakeFiles/elfin_postrq_joint_trajectory_controller.dir/src/elfin_postrq_joint_trajectory_controller.cpp.o
+Scanning dependencies of target elfin_posvel_joint_trajectory_controller
+[  1%] Building CXX object elfin_robot/elfin_posvel_joint_trajectory_controller/CMakeFiles/elfin_posvel_joint_trajectory_controller.dir/src/elfin_posvel_joint_trajectory_controller.cpp.o
+Scanning dependencies of target elfin10_elfin_arm_moveit_ikfast_plugin
+[  1%] Building CXX object elfin_robot/elfin_ikfast_plugins/elfin10_ikfast_plugin/CMakeFiles/elfin10_elfin_arm_moveit_ikfast_plugin.dir/src/elfin10_elfin_arm_ikfast_moveit_plugin.cpp.o
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp: In member function ‘virtual bool ikfast_kinematics_plugin::IKFastKinematicsPlugin::initialize(const string&, const string&, const string&, const string&, double)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:337:86: warning: ‘virtual void kinematics::KinematicsBase::setValues(const string&, const string&, const string&, const string&, double)’ is deprecated [-Wdeprecated-declarations]
+  337 |   setValues(robot_description, group_name, base_name, tip_name, search_discretization);
+      |                                                                                      ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:344:31: note: declared here
+  344 |   [[deprecated]] virtual void setValues(const std::string& robot_description, const std::string& group_name,
+      |                               ^~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp: In member function ‘virtual bool ikfast_kinematics_plugin::IKFastKinematicsPlugin::searchPositionIK(const Pose&, const std::vector<double>&, double, const std::vector<double>&, std::vector<double>&, const IKCallbackFn&, moveit_msgs::MoveItErrorCodes&, const kinematics::KinematicsQueryOptions&) const’:
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:916:67: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  916 |     num_positive_increments = (int)((max_limit - initial_guess) / search_discretization_);
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:916:67: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  916 |     num_positive_increments = (int)((max_limit - initial_guess) / search_discretization_);
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:917:67: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  917 |     num_negative_increments = (int)((initial_guess - min_limit) / search_discretization_);
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:917:67: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  917 |     num_negative_increments = (int)((initial_guess - min_limit) / search_discretization_);
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:921:86: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  921 |     num_positive_increments = (joint_max_vector_[free_params_[0]] - initial_guess) / search_discretization_;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:921:86: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  921 |     num_positive_increments = (joint_max_vector_[free_params_[0]] - initial_guess) / search_discretization_;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:922:86: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  922 |     num_negative_increments = (initial_guess - joint_min_vector_[free_params_[0]]) / search_discretization_;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:922:86: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+  922 |     num_negative_increments = (initial_guess - joint_min_vector_[free_params_[0]]) / search_discretization_;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:1014:32: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+ 1014 |     vfree[0] = initial_guess + search_discretization_ * counter;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:1014:32: warning: ‘kinematics::KinematicsBase::search_discretization_’ is deprecated [-Wdeprecated-declarations]
+ 1014 |     vfree[0] = initial_guess + search_discretization_ * counter;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/src/elfin3_elfin_arm_ikfast_moveit_plugin.cpp:50:
+/opt/ros/noetic/include/moveit/kinematics_base/kinematics_base.h:597:25: note: declared here
+  597 |   [[deprecated]] double search_discretization_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+[  2%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin3_elfin_arm_moveit_ikfast_plugin.so
+[  3%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_posvel_joint_trajectory_controller.so
+[  3%] Built target elfin3_elfin_arm_moveit_ikfast_plugin
+Scanning dependencies of target elfin_robot_msgs_generate_messages_py
+[  4%] Generating Python code from SRV elfin_robot_msgs/SetInt16
+[  4%] Generating Python code from SRV elfin_robot_msgs/SetString
+[  4%] Generating Python code from SRV elfin_robot_msgs/ElfinIODRead
+[  5%] Generating Python code from SRV elfin_robot_msgs/SetFloat64
+[  6%] Generating Python code from SRV elfin_robot_msgs/ElfinIODWrite
+[  6%] Generating Python code from SRV elfin_robot_msgs/CockpitJog
+Scanning dependencies of target elfin_robot_msgs_generate_messages_lisp
+[  6%] Generating Lisp code from elfin_robot_msgs/ElfinIODRead.srv
+[  6%] Generating Lisp code from elfin_robot_msgs/SetInt16.srv
+[  7%] Generating Lisp code from elfin_robot_msgs/SetFloat64.srv
+[  8%] Generating Lisp code from elfin_robot_msgs/CockpitJog.srv
+[  9%] Generating Lisp code from elfin_robot_msgs/ElfinIODWrite.srv
+[ 10%] Generating Lisp code from elfin_robot_msgs/SetString.srv
+Scanning dependencies of target elfin_robot_msgs_generate_messages_nodejs
+Scanning dependencies of target elfin_robot_msgs_generate_messages_eus
+[ 11%] Generating Javascript code from elfin_robot_msgs/ElfinIODRead.srv
+[ 11%] Generating Javascript code from elfin_robot_msgs/SetFloat64.srv
+[ 13%] Generating Javascript code from elfin_robot_msgs/SetInt16.srv
+[ 14%] Generating Javascript code from elfin_robot_msgs/CockpitJog.srv
+[ 14%] Generating Javascript code from elfin_robot_msgs/ElfinIODWrite.srv
+[ 14%] Generating Javascript code from elfin_robot_msgs/SetString.srv
+[ 14%] Built target elfin_robot_msgs_generate_messages_lisp
+[ 15%] Generating EusLisp code from elfin_robot_msgs/SetFloat64.srv
+[ 16%] Generating EusLisp code from elfin_robot_msgs/ElfinIODRead.srv
+[ 16%] Generating EusLisp code from elfin_robot_msgs/SetInt16.srv
+[ 16%] Generating EusLisp code from elfin_robot_msgs/ElfinIODWrite.srv
+[ 17%] Generating EusLisp code from elfin_robot_msgs/CockpitJog.srv
+[ 17%] Generating EusLisp manifest code for elfin_robot_msgs
+[ 18%] Generating EusLisp code from elfin_robot_msgs/SetString.srv
+Scanning dependencies of target elfin_robot_msgs_generate_messages_cpp
+[ 18%] Built target elfin_robot_msgs_generate_messages_nodejs
+[ 19%] Generating C++ code from elfin_robot_msgs/ElfinIODRead.srv
+[ 19%] Generating C++ code from elfin_robot_msgs/SetFloat64.srv
+[ 19%] Generating C++ code from elfin_robot_msgs/CockpitJog.srv
+[ 19%] Generating C++ code from elfin_robot_msgs/SetInt16.srv
+[ 20%] Generating C++ code from elfin_robot_msgs/ElfinIODWrite.srv
+[ 21%] Generating C++ code from elfin_robot_msgs/SetString.srv
+Scanning dependencies of target elfin_kinematic_solver
+[ 22%] Building CXX object elfin_robot/elfin_kinematic_solver/CMakeFiles/elfin_kinematic_solver.dir/src/elfin3_ikfast_simple_api.cpp.o
+[ 23%] Building CXX object elfin_robot/elfin_kinematic_solver/CMakeFiles/elfin_kinematic_solver.dir/src/elfin10_ikfast_simple_api.cpp.o
+Scanning dependencies of target elfin_freedrive_controller_generate_messages_py
+[ 23%] Building CXX object elfin_robot/elfin_kinematic_solver/CMakeFiles/elfin_kinematic_solver.dir/src/elfin15_ikfast_simple_api.cpp.o
+[ 23%] Building CXX object elfin_robot/elfin_kinematic_solver/CMakeFiles/elfin_kinematic_solver.dir/src/elfin5_ikfast_simple_api.cpp.o
+[ 23%] Built target elfin_robot_msgs_generate_messages_cpp
+[ 25%] Generating Python code from SRV elfin_freedrive_controller/GetPayloadModel
+[ 26%] Generating Python code from SRV elfin_freedrive_controller/DeleteRecordedPoint
+[ 26%] Generating Python code from SRV elfin_freedrive_controller/EvaluatePayloadModel
+[ 26%] Generating Python code from SRV elfin_freedrive_controller/ListRecordedPoints
+[ 27%] Generating Python code from SRV elfin_freedrive_controller/SetDampingScales
+[ 28%] Generating Python code from SRV elfin_freedrive_controller/SetPayloadModel
+[ 28%] Generating Python from MSG elfin_freedrive_controller/FreedriveTelemetry
+[ 29%] Generating Python srv __init__.py for elfin_freedrive_controller
+[ 29%] Generating Python msg __init__.py for elfin_freedrive_controller
+[ 29%] Built target elfin_freedrive_controller_generate_messages_py
+Scanning dependencies of target elfin_freedrive_controller_generate_messages_cpp
+[ 29%] Generating C++ code from elfin_freedrive_controller/ListRecordedPoints.srv
+[ 29%] Generating C++ code from elfin_freedrive_controller/EvaluatePayloadModel.srv
+[ 30%] Generating C++ code from elfin_freedrive_controller/DeleteRecordedPoint.srv
+[ 31%] Generating C++ code from elfin_freedrive_controller/SetPayloadModel.srv
+[ 31%] Generating C++ code from elfin_freedrive_controller/SetDampingScales.srv
+[ 32%] Generating C++ code from elfin_freedrive_controller/GetPayloadModel.srv
+[ 32%] Generating C++ code from elfin_freedrive_controller/FreedriveTelemetry.msg
+[ 32%] Built target elfin_freedrive_controller_generate_messages_cpp
+Scanning dependencies of target elfin_freedrive_controller_generate_messages_lisp
+Scanning dependencies of target elfin_freedrive_controller_generate_messages_nodejs
+[ 32%] Generating Lisp code from elfin_freedrive_controller/FreedriveTelemetry.msg
+[ 33%] Generating Lisp code from elfin_freedrive_controller/EvaluatePayloadModel.srv
+[ 33%] Generating Lisp code from elfin_freedrive_controller/GetPayloadModel.srv
+[ 34%] Generating Lisp code from elfin_freedrive_controller/ListRecordedPoints.srv
+[ 35%] Generating Lisp code from elfin_freedrive_controller/DeleteRecordedPoint.srv
+[ 36%] Generating Lisp code from elfin_freedrive_controller/SetPayloadModel.srv
+[ 36%] Generating Lisp code from elfin_freedrive_controller/SetDampingScales.srv
+[ 38%] Generating Javascript code from elfin_freedrive_controller/DeleteRecordedPoint.srv
+[ 38%] Generating Javascript code from elfin_freedrive_controller/EvaluatePayloadModel.srv
+[ 38%] Generating Javascript code from elfin_freedrive_controller/FreedriveTelemetry.msg
+[ 39%] Generating Javascript code from elfin_freedrive_controller/ListRecordedPoints.srv
+[ 41%] Generating Javascript code from elfin_freedrive_controller/GetPayloadModel.srv
+[ 41%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_postrq_joint_trajectory_controller.so
+[ 42%] Generating Javascript code from elfin_freedrive_controller/SetPayloadModel.srv
+[ 42%] Generating Javascript code from elfin_freedrive_controller/SetDampingScales.srv
+[ 42%] Built target elfin_freedrive_controller_generate_messages_lisp
+[ 42%] Built target elfin_freedrive_controller_generate_messages_nodejs
+Scanning dependencies of target elfin_freedrive_controller_generate_messages_eus
+[ 43%] Generating EusLisp code from elfin_freedrive_controller/FreedriveTelemetry.msg
+[ 43%] Generating EusLisp code from elfin_freedrive_controller/EvaluatePayloadModel.srv
+[ 44%] Generating EusLisp code from elfin_freedrive_controller/DeleteRecordedPoint.srv
+[ 45%] Generating EusLisp code from elfin_freedrive_controller/GetPayloadModel.srv
+[ 45%] Generating EusLisp code from elfin_freedrive_controller/ListRecordedPoints.srv
+[ 46%] Generating EusLisp code from elfin_freedrive_controller/SetDampingScales.srv
+[ 46%] Generating EusLisp code from elfin_freedrive_controller/SetPayloadModel.srv
+[ 47%] Generating EusLisp manifest code for elfin_freedrive_controller
+Scanning dependencies of target elfin_vision_generate_messages_eus
+[ 48%] Generating EusLisp code from elfin_vision/CockpitInput.msg
+[ 48%] Generating EusLisp code from elfin_vision/CitrusTargetArray.msg
+[ 48%] Generating EusLisp code from elfin_vision/CockpitStatus.msg
+[ 50%] Generating EusLisp code from elfin_vision/CitrusTarget.msg
+[ 51%] Generating EusLisp code from elfin_vision/HarvestStatus.msg
+[ 51%] Generating EusLisp code from elfin_vision/CockpitRecover.srv
+[ 52%] Generating EusLisp code from elfin_vision/CobraScan.srv
+[ 52%] Generating EusLisp code from elfin_vision/HarvestCommand.srv
+[ 53%] Generating EusLisp code from elfin_vision/PlanCitrus.srv
+Scanning dependencies of target elfin_vision_generate_messages_nodejs
+[ 54%] Generating EusLisp code from elfin_vision/PlanHarvestStage.srv
+[ 54%] Generating EusLisp code from elfin_vision/RuntimeConfig.srv
+[ 55%] Generating EusLisp manifest code for elfin_vision
+[ 55%] Generating Javascript code from elfin_vision/CockpitInput.msg
+[ 56%] Generating Javascript code from elfin_vision/CockpitStatus.msg
+[ 57%] Generating Javascript code from elfin_vision/CitrusTargetArray.msg
+[ 58%] Generating Javascript code from elfin_vision/HarvestStatus.msg
+[ 58%] Generating Javascript code from elfin_vision/CockpitRecover.srv
+[ 59%] Generating Javascript code from elfin_vision/CobraScan.srv
+[ 59%] Generating Javascript code from elfin_vision/HarvestCommand.srv
+[ 60%] Generating Javascript code from elfin_vision/PlanCitrus.srv
+[ 60%] Generating Javascript code from elfin_vision/CitrusTarget.msg
+[ 60%] Generating Javascript code from elfin_vision/PlanHarvestStage.srv
+[ 61%] Generating Javascript code from elfin_vision/RuntimeConfig.srv
+[ 61%] Built target elfin_postrq_joint_trajectory_controller
+[ 61%] Built target elfin_vision_generate_messages_nodejs
+Scanning dependencies of target elfin_vision_generate_messages_lisp
+Scanning dependencies of target elfin_vision_generate_messages_cpp
+[ 63%] Generating Lisp code from elfin_vision/CockpitStatus.msg
+[ 64%] Generating Lisp code from elfin_vision/CitrusTargetArray.msg
+[ 64%] Generating Lisp code from elfin_vision/CockpitInput.msg
+[ 64%] Generating Lisp code from elfin_vision/HarvestStatus.msg
+[ 65%] Generating Lisp code from elfin_vision/CockpitRecover.srv
+[ 66%] Generating Lisp code from elfin_vision/CobraScan.srv
+[ 66%] Generating Lisp code from elfin_vision/HarvestCommand.srv
+[ 66%] Generating Lisp code from elfin_vision/CitrusTarget.msg
+[ 67%] Generating Lisp code from elfin_vision/PlanCitrus.srv
+[ 67%] Generating Lisp code from elfin_vision/PlanHarvestStage.srv
+[ 68%] Generating Lisp code from elfin_vision/RuntimeConfig.srv
+[ 69%] Generating C++ code from elfin_vision/CockpitInput.msg
+[ 70%] Generating C++ code from elfin_vision/HarvestStatus.msg
+[ 70%] Generating C++ code from elfin_vision/CockpitStatus.msg
+[ 71%] Generating C++ code from elfin_vision/CitrusTargetArray.msg
+[ 71%] Generating C++ code from elfin_vision/CockpitRecover.srv
+[ 72%] Generating C++ code from elfin_vision/CobraScan.srv
+[ 72%] Generating C++ code from elfin_vision/HarvestCommand.srv
+[ 73%] Generating C++ code from elfin_vision/PlanCitrus.srv
+[ 73%] Generating C++ code from elfin_vision/PlanHarvestStage.srv
+[ 73%] Generating C++ code from elfin_vision/CitrusTarget.msg
+[ 75%] Generating C++ code from elfin_vision/RuntimeConfig.srv
+[ 76%] Generating Python srv __init__.py for elfin_robot_msgs
+[ 76%] Built target elfin_vision_generate_messages_lisp
+[ 76%] Built target elfin_vision_generate_messages_cpp
+Scanning dependencies of target elfin_vision_generate_messages_py
+[ 77%] Generating Python from MSG elfin_vision/CockpitInput
+[ 78%] Generating Python from MSG elfin_vision/CockpitStatus
+[ 78%] Generating Python from MSG elfin_vision/CitrusTargetArray
+[ 78%] Generating Python code from SRV elfin_vision/CockpitRecover
+[ 79%] Generating Python from MSG elfin_vision/HarvestStatus
+[ 80%] Generating Python code from SRV elfin_vision/CobraScan
+[ 80%] Generating Python code from SRV elfin_vision/HarvestCommand
+[ 81%] Generating Python code from SRV elfin_vision/PlanCitrus
+[ 81%] Generating Python from MSG elfin_vision/CitrusTarget
+[ 81%] Generating Python code from SRV elfin_vision/PlanHarvestStage
+[ 82%] Generating Python code from SRV elfin_vision/RuntimeConfig
+[ 82%] Built target elfin_robot_msgs_generate_messages_py
+[ 82%] Built target elfin_vision_generate_messages_eus
+[ 82%] Built target elfin_posvel_joint_trajectory_controller
+[ 82%] Generating Python srv __init__.py for elfin_vision
+[ 83%] Generating Python msg __init__.py for elfin_vision
+[ 84%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin10_elfin_arm_moveit_ikfast_plugin.so
+[ 84%] Built target elfin_freedrive_controller_generate_messages_eus
+Scanning dependencies of target elfin_freedrive_controller_generate_messages
+[ 84%] Built target elfin_freedrive_controller_generate_messages
+[ 84%] Built target elfin_vision_generate_messages_py
+Scanning dependencies of target elfin_vision_generate_messages
+[ 84%] Built target elfin_vision_generate_messages
+[ 84%] Built target elfin10_elfin_arm_moveit_ikfast_plugin
+[ 84%] Built target elfin_robot_msgs_generate_messages_eus
+Scanning dependencies of target elfin_robot_msgs_generate_messages
+[ 84%] Built target elfin_robot_msgs_generate_messages
+Scanning dependencies of target elfin_freedrive_manager
+[ 84%] Building CXX object elfin_robot/elfin_freedrive_controller/CMakeFiles/elfin_freedrive_manager.dir/src/elfin_freedrive_manager.cpp.o
+Scanning dependencies of target elfin_freedrive_controller
+[ 85%] Building CXX object elfin_robot/elfin_freedrive_controller/CMakeFiles/elfin_freedrive_controller.dir/src/elfin_freedrive_controller.cpp.o
+Scanning dependencies of target elfin_safe_move_group
+[ 85%] Building CXX object elfin_vision/CMakeFiles/elfin_safe_move_group.dir/src/elfin_safe_move_group.cpp.o
+Scanning dependencies of target elfin_ethercat_driver
+[ 86%] Building CXX object elfin_robot/elfin_ethercat_driver/CMakeFiles/elfin_ethercat_driver.dir/src/elfin_ethercat_io_client.cpp.o
+[ 86%] Building CXX object elfin_robot/elfin_ethercat_driver/CMakeFiles/elfin_ethercat_driver.dir/src/elfin_ethercat_manager.cpp.o
+[ 88%] Building CXX object elfin_robot/elfin_ethercat_driver/CMakeFiles/elfin_ethercat_driver.dir/src/elfin_ethercat_client.cpp.o
+[ 88%] Building CXX object elfin_robot/elfin_ethercat_driver/CMakeFiles/elfin_ethercat_driver.dir/src/elfin_ethercat_driver.cpp.o
+[ 89%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin5_elfin_arm_moveit_ikfast_plugin.so
+[ 89%] Built target elfin5_elfin_arm_moveit_ikfast_plugin
+[ 89%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_ethercat_driver.so
+[ 89%] Built target elfin_ethercat_driver
+Scanning dependencies of target elfin_hardware_interface
+[ 89%] Building CXX object elfin_robot/elfin_ros_control/CMakeFiles/elfin_hardware_interface.dir/src/elfin_hardware_interface.cpp.o
+[ 90%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin15_elfin_arm_moveit_ikfast_plugin.so
+[ 90%] Built target elfin15_elfin_arm_moveit_ikfast_plugin
+[ 90%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_freedrive_controller.so
+[ 90%] Built target elfin_freedrive_controller
+Scanning dependencies of target elfin_basic_api
+Scanning dependencies of target elfin_basic_api_node
+[ 90%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api_node.dir/src/elfin_basic_api_node.cpp.o
+[ 91%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api.dir/src/elfin_motion_api.cpp.o
+[ 92%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api_node.dir/src/elfin_basic_api.cpp.o
+[ 92%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api_node.dir/src/elfin_teleop_api.cpp.o
+[ 93%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api_node.dir/src/elfin_motion_api.cpp.o
+[ 93%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api.dir/src/elfin_teleop_api.cpp.o
+[ 94%] Building CXX object elfin_robot/elfin_basic_api/CMakeFiles/elfin_basic_api.dir/src/elfin_basic_api.cpp.o
+[ 95%] Linking CXX executable /home/catas/ros_ws/devel/lib/elfin_vision/elfin_safe_move_group
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp: In constructor ‘elfin_basic_api::ElfinTeleopAPI::ElfinTeleopAPI(moveit::planning_interface::MoveGroupInterface*, std::string, planning_scene_monitor::PlanningSceneMonitorPtr)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp:49:56: warning: ‘const std::vector<std::__cxx11::basic_string<char> >& moveit::planning_interface::MoveGroupInterface::getJointNames() const’ is deprecated: use getVariableNames [-Wdeprecated-declarations]
+   49 |     goal_.trajectory.joint_names=group_->getJointNames();
+      |                                                        ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_teleop_api.h:45,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:205:74: note: declared here
+  205 |   [[deprecated("use getVariableNames")]] const std::vector<std::string>& getJointNames() const
+      |                                                                          ^~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp: In constructor ‘elfin_basic_api::ElfinMotionAPI::ElfinMotionAPI(moveit::planning_interface::MoveGroupInterface*, std::string, planning_scene_monitor::PlanningSceneMonitorPtr)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:53:56: warning: ‘const std::vector<std::__cxx11::basic_string<char> >& moveit::planning_interface::MoveGroupInterface::getJointNames() const’ is deprecated: use getVariableNames [-Wdeprecated-declarations]
+   53 |     goal_.trajectory.joint_names=group_->getJointNames();
+      |                                                        ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_motion_api.h:50,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:205:74: note: declared here
+  205 |   [[deprecated("use getVariableNames")]] const std::vector<std::string>& getJointNames() const
+      |                                                                          ^~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp: In member function ‘void elfin_basic_api::ElfinMotionAPI::cartPathGoalCB(const PoseArrayConstPtr&)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:185:81: warning: ‘double moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::RobotTrajectory&, bool, moveit_msgs::MoveItErrorCodes*)’ is deprecated: Drop jump_threshold [-Wdeprecated-declarations]
+  185 |     double fraction=group_->computeCartesianPath(pose_goal, 0.01, 1.5, cart_path);
+      |                                                                                 ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_motion_api.h:50,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:783:3: note: declared here
+  783 |   computeCartesianPath(const std::vector<geometry_msgs::Pose>& waypoints, double eef_step, double /*jump_threshold*/,
+      |   ^~~~~~~~~~~~~~~~~~~~
+[ 95%] Built target elfin_safe_move_group
+[ 96%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_kinematic_solver.so
+[ 96%] Built target elfin_kinematic_solver
+[ 97%] Linking CXX executable /home/catas/ros_ws/devel/lib/elfin_ros_control/elfin_hardware_interface
+[ 97%] Built target elfin_hardware_interface
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp: In constructor ‘elfin_basic_api::ElfinMotionAPI::ElfinMotionAPI(moveit::planning_interface::MoveGroupInterface*, std::string, planning_scene_monitor::PlanningSceneMonitorPtr)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:53:56: warning: ‘const std::vector<std::__cxx11::basic_string<char> >& moveit::planning_interface::MoveGroupInterface::getJointNames() const’ is deprecated: use getVariableNames [-Wdeprecated-declarations]
+   53 |     goal_.trajectory.joint_names=group_->getJointNames();
+      |                                                        ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_motion_api.h:50,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:205:74: note: declared here
+  205 |   [[deprecated("use getVariableNames")]] const std::vector<std::string>& getJointNames() const
+      |                                                                          ^~~~~~~~~~~~~
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp: In member function ‘void elfin_basic_api::ElfinMotionAPI::cartPathGoalCB(const PoseArrayConstPtr&)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:185:81: warning: ‘double moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::RobotTrajectory&, bool, moveit_msgs::MoveItErrorCodes*)’ is deprecated: Drop jump_threshold [-Wdeprecated-declarations]
+  185 |     double fraction=group_->computeCartesianPath(pose_goal, 0.01, 1.5, cart_path);
+      |                                                                                 ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_motion_api.h:50,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_motion_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:783:3: note: declared here
+  783 |   computeCartesianPath(const std::vector<geometry_msgs::Pose>& waypoints, double eef_step, double /*jump_threshold*/,
+      |   ^~~~~~~~~~~~~~~~~~~~
+[ 98%] Linking CXX executable /home/catas/ros_ws/devel/lib/elfin_freedrive_controller/elfin_freedrive_manager
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp: In constructor ‘elfin_basic_api::ElfinTeleopAPI::ElfinTeleopAPI(moveit::planning_interface::MoveGroupInterface*, std::string, planning_scene_monitor::PlanningSceneMonitorPtr)’:
+/home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp:49:56: warning: ‘const std::vector<std::__cxx11::basic_string<char> >& moveit::planning_interface::MoveGroupInterface::getJointNames() const’ is deprecated: use getVariableNames [-Wdeprecated-declarations]
+   49 |     goal_.trajectory.joint_names=group_->getJointNames();
+      |                                                        ^
+In file included from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/include/elfin_basic_api/elfin_teleop_api.h:45,
+                 from /home/catas/ros_ws/src/elfin_robot/elfin_basic_api/src/elfin_teleop_api.cpp:40:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:205:74: note: declared here
+  205 |   [[deprecated("use getVariableNames")]] const std::vector<std::string>& getJointNames() const
+      |                                                                          ^~~~~~~~~~~~~
+[ 98%] Built target elfin_freedrive_manager
+[ 98%] Linking CXX shared library /home/catas/ros_ws/devel/lib/libelfin_basic_api.so
+[ 98%] Built target elfin_basic_api
+[100%] Linking CXX executable /home/catas/ros_ws/devel/lib/elfin_basic_api/elfin_basic_api_node
+[100%] Built target elfin_basic_api_node
+Base path: /home/catas/ros_ws
+Source space: /home/catas/ros_ws/src
+Build space: /home/catas/ros_ws/build
+Devel space: /home/catas/ros_ws/devel
+Install space: /home/catas/ros_ws/install
+####
+#### Running command: "cmake /home/catas/ros_ws/src -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_WHITELIST_PACKAGES= -DCATKIN_DEVEL_PREFIX=/home/catas/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros_ws/install -G Unix Makefiles" in "/home/catas/ros_ws/build"
+####
+####
+#### Running command: "make -j32 -l32" in "/home/catas/ros_ws/build"
+####
+make: invalid option -- 'U'
+make: invalid option -- 'P'
+make: invalid option -- 'Y'
+make: invalid option -- '_'
+make: invalid option -- 'E'
+make: invalid option -- 'M'
+Usage: make [options] [target] ...
+Options:
+  -b, -m                      Ignored for compatibility.
+  -B, --always-make           Unconditionally make all targets.
+  -C DIRECTORY, --directory=DIRECTORY
+                              Change to DIRECTORY before doing anything.
+  -d                          Print lots of debugging information.
+  --debug[=FLAGS]             Print various types of debugging information.
+  -e, --environment-overrides
+                              Environment variables override makefiles.
+  --eval=STRING               Evaluate STRING as a makefile statement.
+  -f FILE, --file=FILE, --makefile=FILE
+                              Read FILE as a makefile.
+  -h, --help                  Print this message and exit.
+  -i, --ignore-errors         Ignore errors from recipes.
+  -I DIRECTORY, --include-dir=DIRECTORY
+                              Search DIRECTORY for included makefiles.
+  -j [N], --jobs[=N]          Allow N jobs at once; infinite jobs with no arg.
+  -k, --keep-going            Keep going when some targets can't be made.
+  -l [N], --load-average[=N], --max-load[=N]
+                              Don't start multiple jobs unless load is below N.
+  -L, --check-symlink-times   Use the latest mtime between symlinks and target.
+  -n, --just-print, --dry-run, --recon
+                              Don't actually run any recipe; just print them.
+  -o FILE, --old-file=FILE, --assume-old=FILE
+                              Consider FILE to be very old and don't remake it.
+  -O[TYPE], --output-sync[=TYPE]
+                              Synchronize output of parallel jobs by TYPE.
+  -p, --print-data-base       Print make's internal database.
+  -q, --question              Run no recipe; exit status says if up to date.
+  -r, --no-builtin-rules      Disable the built-in implicit rules.
+  -R, --no-builtin-variables  Disable the built-in variable settings.
+  -s, --silent, --quiet       Don't echo recipes.
+  -S, --no-keep-going, --stop
+                              Turns off -k.
+  -t, --touch                 Touch targets instead of remaking them.
+  --trace                     Print tracing information.
+  -v, --version               Print the version number of make and exit.
+  -w, --print-directory       Print the current directory.
+  --no-print-directory        Turn off -w, even if it was turned on implicitly.
+  -W FILE, --what-if=FILE, --new-file=FILE, --assume-new=FILE
+                              Consider FILE to be infinitely new.
+  --warn-undefined-variables  Warn when an undefined variable is referenced.
+
+This program built for x86_64-pc-linux-gnu
+Report bugs to <bug-make@gnu.org>
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/catas/ros2_ws/build"
+####
+####
+#### Running command: "make -UPY_EM -j32 -l32" in "/home/catas/ros2_ws/build"
+####
+Invoking "make -UPY_EM -j32 -l32" failed
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros2_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /home/catas/.local/lib/python3.8/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros2_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - realsense2_description
+-- ~~  - realsense2_camera
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'realsense2_description'
+-- ==> add_subdirectory(realsense-ros/realsense2_description)
+-- +++ processing catkin package: 'realsense2_camera'
+-- ==> add_subdirectory(realsense-ros/realsense2_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Create Release Build.
+-- realsense2_camera: 3 messages, 1 services
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PY_EM
+
+
+-- Build files have been written to: /home/catas/ros2_ws/build
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_DeviceInfo
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Extrinsics
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Metadata
+[  0%] Built target _catkin_empty_exported_target
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_IMUInfo
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_py
+[ 14%] Built target realsense2_camera_generate_messages_nodejs
+[ 33%] Built target realsense2_camera_generate_messages_eus
+[ 33%] Built target nodelet_generate_messages_py
+[ 33%] Built target tf_generate_messages_lisp
+[ 33%] Built target nav_msgs_generate_messages_py
+[ 48%] Built target realsense2_camera_generate_messages_lisp
+[ 62%] Built target realsense2_camera_generate_messages_cpp
+[ 85%] Built target realsense2_camera_generate_messages_py
+[ 85%] Built target realsense2_camera_generate_messages
+[100%] Built target realsense2_camera
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+####
+#### Running command: "cmake /home/catas/ros2_ws/src -DCMAKE_BUILD_TYPE=Release -DOpenCV_DIR=/usr/lib/x86_64-linux-gnu/cmake/opencv4 -DPY_EM=/usr/lib/python3/dist-packages/em.py -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/catas/ros2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros2_ws/install -G Unix Makefiles" in "/home/catas/ros2_ws/build"
+####
+####
+#### Running command: "make -j32 -l32" in "/home/catas/ros2_ws/build"
+####
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/catas/ros2_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/catas/ros2_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - realsense2_description
+-- ~~  - realsense2_camera
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'realsense2_description'
+-- ==> add_subdirectory(realsense-ros/realsense2_description)
+-- +++ processing catkin package: 'realsense2_camera'
+-- ==> add_subdirectory(realsense-ros/realsense2_camera)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
+-- Create Release Build.
+-- realsense2_camera: 3 messages, 1 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/catas/ros2_ws/build
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_Extrinsics
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_DeviceInfo
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_Metadata
+[  0%] Built target std_msgs_generate_messages_nodejs
+Scanning dependencies of target sensor_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_lisp
+Scanning dependencies of target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target _realsense2_camera_generate_messages_check_deps_IMUInfo
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Extrinsics
+Scanning dependencies of target sensor_msgs_generate_messages_eus
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_Metadata
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+Scanning dependencies of target sensor_msgs_generate_messages_cpp
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target sensor_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_cpp
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_DeviceInfo
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+Scanning dependencies of target std_msgs_generate_messages_py
+Scanning dependencies of target tf_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_py
+Scanning dependencies of target _catkin_empty_exported_target
+[  0%] Built target _realsense2_camera_generate_messages_check_deps_IMUInfo
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _catkin_empty_exported_target
+[  0%] Built target tf_generate_messages_nodejs
+Scanning dependencies of target diagnostic_msgs_generate_messages_cpp
+Scanning dependencies of target dynamic_reconfigure_gencfg
+Scanning dependencies of target diagnostic_msgs_generate_messages_eus
+Scanning dependencies of target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target tf2_msgs_generate_messages_nodejs
+Scanning dependencies of target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+Scanning dependencies of target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+Scanning dependencies of target tf2_msgs_generate_messages_cpp
+Scanning dependencies of target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+Scanning dependencies of target actionlib_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_lisp
+Scanning dependencies of target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_gencfg
+Scanning dependencies of target diagnostic_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_py
+Scanning dependencies of target actionlib_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+Scanning dependencies of target dynamic_reconfigure_generate_messages_py
+Scanning dependencies of target roscpp_generate_messages_eus
+Scanning dependencies of target roscpp_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_cpp
+Scanning dependencies of target nav_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target nav_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+Scanning dependencies of target roscpp_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_cpp
+Scanning dependencies of target nav_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+Scanning dependencies of target tf2_msgs_generate_messages_eus
+Scanning dependencies of target actionlib_generate_messages_lisp
+Scanning dependencies of target roscpp_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target std_srvs_generate_messages_cpp
+Scanning dependencies of target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target tf_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target tf_generate_messages_eus
+Scanning dependencies of target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+Scanning dependencies of target roscpp_generate_messages_nodejs
+Scanning dependencies of target std_srvs_generate_messages_py
+Scanning dependencies of target rosgraph_msgs_generate_messages_eus
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+Scanning dependencies of target tf_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+Scanning dependencies of target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+Scanning dependencies of target tf_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+Scanning dependencies of target diagnostic_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target diagnostic_msgs_generate_messages_py
+Scanning dependencies of target bond_generate_messages_lisp
+Scanning dependencies of target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target nav_msgs_generate_messages_nodejs
+Scanning dependencies of target bond_generate_messages_cpp
+Scanning dependencies of target tf2_msgs_generate_messages_py
+Scanning dependencies of target dynamic_reconfigure_generate_messages_nodejs
+Scanning dependencies of target bond_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target bond_generate_messages_lisp
+Scanning dependencies of target std_srvs_generate_messages_eus
+Scanning dependencies of target nodelet_generate_messages_cpp
+Scanning dependencies of target std_srvs_generate_messages_lisp
+Scanning dependencies of target nodelet_generate_messages_lisp
+Scanning dependencies of target actionlib_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_eus
+Scanning dependencies of target nodelet_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_lisp
+Scanning dependencies of target nodelet_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_cpp
+Scanning dependencies of target std_srvs_generate_messages_nodejs
+Scanning dependencies of target bond_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_nodejs
+Scanning dependencies of target nodelet_generate_messages_py
+Scanning dependencies of target nav_msgs_generate_messages_py
+[  0%] Built target nodelet_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_py
+Scanning dependencies of target tf_generate_messages_lisp
+Scanning dependencies of target bond_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_py
+Scanning dependencies of target realsense2_camera_generate_messages_lisp
+Scanning dependencies of target realsense2_camera_generate_messages_eus
+[  3%] Generating Lisp code from realsense2_camera/Extrinsics.msg
+[  7%] Generating Lisp code from realsense2_camera/Metadata.msg
+[ 11%] Generating Lisp code from realsense2_camera/IMUInfo.msg
+[ 11%] Built target bond_generate_messages_py
+[ 14%] Generating Lisp code from realsense2_camera/DeviceInfo.srv
+Scanning dependencies of target realsense2_camera_generate_messages_cpp
+Scanning dependencies of target realsense2_camera_generate_messages_py
+[ 18%] Generating EusLisp code from realsense2_camera/Metadata.msg
+[ 25%] Generating C++ code from realsense2_camera/Extrinsics.msg
+[ 25%] Generating EusLisp code from realsense2_camera/Extrinsics.msg
+[ 29%] Generating EusLisp code from realsense2_camera/DeviceInfo.srv
+[ 33%] Generating EusLisp code from realsense2_camera/IMUInfo.msg
+[ 37%] Generating EusLisp manifest code for realsense2_camera
+[ 40%] Generating C++ code from realsense2_camera/DeviceInfo.srv
+[ 44%] Generating C++ code from realsense2_camera/IMUInfo.msg
+[ 48%] Generating C++ code from realsense2_camera/Metadata.msg
+[ 51%] Generating Python from MSG realsense2_camera/Metadata
+[ 55%] Generating Python from MSG realsense2_camera/Extrinsics
+[ 59%] Generating Python code from SRV realsense2_camera/DeviceInfo
+[ 62%] Generating Python from MSG realsense2_camera/IMUInfo
+Scanning dependencies of target realsense2_camera_generate_messages_nodejs
+[ 66%] Generating Javascript code from realsense2_camera/Metadata.msg
+[ 70%] Generating Javascript code from realsense2_camera/DeviceInfo.srv
+[ 74%] Generating Javascript code from realsense2_camera/Extrinsics.msg
+[ 77%] Generating Javascript code from realsense2_camera/IMUInfo.msg
+[ 77%] Built target realsense2_camera_generate_messages_cpp
+[ 77%] Built target tf_generate_messages_lisp
+[ 77%] Built target realsense2_camera_generate_messages_nodejs
+[ 81%] Generating Python msg __init__.py for realsense2_camera
+[ 85%] Generating Python srv __init__.py for realsense2_camera
+[ 85%] Built target realsense2_camera_generate_messages_lisp
+[ 85%] Built target realsense2_camera_generate_messages_py
+Scanning dependencies of target realsense2_camera
+[ 88%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o
+[ 92%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o
+[ 96%] Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o
+[ 96%] Built target realsense2_camera_generate_messages_eus
+Scanning dependencies of target realsense2_camera_generate_messages
+[ 96%] Built target realsense2_camera_generate_messages
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp:4:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/base_realsense_node.h:6,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp:1:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/noetic/include/librealsense2/hpp/rs_sensor.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_device.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_record_playback.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/hpp/rs_context.hpp:8,
+                 from /opt/ros/noetic/include/librealsense2/rs.hpp:9,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/include/../include/realsense_node_factory.h:12,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h:6,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/../include/t265_realsense_node.h:3,
+                 from /home/catas/ros2_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp:1:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1047:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1047 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1069:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1069 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp: In lambda function:
+/opt/ros/noetic/include/librealsense2/hpp/rs_frame.hpp:1091:58: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const size_t’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1091 |                         frm.get_profile().stream_index() == index) f = frm;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[100%] Linking CXX shared library /home/catas/ros2_ws/devel/lib/librealsense2_camera.so
+[100%] Built target realsense2_camera
+Base path: /home/catas/ros2_ws
+Source space: /home/catas/ros2_ws/src
+Build space: /home/catas/ros2_ws/build
+Devel space: /home/catas/ros2_ws/devel
+Install space: /home/catas/ros2_ws/install
+####
+#### Running command: "cmake /home/catas/ros2_ws/src -DCMAKE_BUILD_TYPE=Release -DOpenCV_DIR=/usr/lib/x86_64-linux-gnu/cmake/opencv4 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/catas/ros2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/catas/ros2_ws/install -G Unix Makefiles" in "/home/catas/ros2_ws/build"
+####
+####
+#### Running command: "make -j32 -l32" in "/home/catas/ros2_ws/build"
+####

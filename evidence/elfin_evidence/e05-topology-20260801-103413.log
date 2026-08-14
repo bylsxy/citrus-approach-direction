@@ -1,0 +1,103 @@
+timestamp=2026-08-01T10:34:13+08:00
+interface=enx207bd51a34e1
+scan_status=0
+SOEM (Simple Open EtherCAT Master)
+Slaveinfo
+Starting slaveinfo
+ec_init on enx207bd51a34e1 succeeded.
+4 slaves found and configured.
+Calculated workcounter 12
+
+Slave:1
+ Name:Hans Robot
+ Output size: 512bits
+ Input size: 512bits
+ State: 4
+ Delay: 0[ns]
+ Has DC: 1
+ DCParentport:0
+ Activeports:1.1.0.0
+ Configured address: 1001
+ Man: 0000001a ID: 50440200 Rev: 05132016
+ SM0 A:1000 L: 256 F:00010036 Type:1
+ SM1 A:1200 L: 256 F:00010032 Type:2
+ SM2 A:1400 L:  64 F:00010034 Type:3
+ SM3 A:1800 L:  64 F:00010030 Type:4
+ FMMU0 Ls:00000000 Ll:  64 Lsb:0 Leb:7 Ps:1400 Psb:0 Ty:02 Act:01
+ FMMU1 Ls:000000e8 Ll:  64 Lsb:0 Leb:7 Ps:1800 Psb:0 Ty:01 Act:01
+ FMMUfunc 0:1 1:2 2:0 3:0
+ MBX length wr: 256 rd: 256 MBX protocols : 0c
+ CoE details: 0f FoE details: 01 EoE details: 00 SoE details: 00
+ Ebus current: 0[mA]
+ only LRD/LWR:0
+
+Slave:2
+ Name:Hans Robot
+ Output size: 512bits
+ Input size: 512bits
+ State: 4
+ Delay: 600[ns]
+ Has DC: 1
+ DCParentport:1
+ Activeports:1.1.0.0
+ Configured address: 1002
+ Man: 0000001a ID: 50440200 Rev: 05132016
+ SM0 A:1000 L: 256 F:00010036 Type:1
+ SM1 A:1200 L: 256 F:00010032 Type:2
+ SM2 A:1400 L:  64 F:00010034 Type:3
+ SM3 A:1800 L:  64 F:00010030 Type:4
+ FMMU0 Ls:00000040 Ll:  64 Lsb:0 Leb:7 Ps:1400 Psb:0 Ty:02 Act:01
+ FMMU1 Ls:00000128 Ll:  64 Lsb:0 Leb:7 Ps:1800 Psb:0 Ty:01 Act:01
+ FMMUfunc 0:1 1:2 2:0 3:0
+ MBX length wr: 256 rd: 256 MBX protocols : 0c
+ CoE details: 0f FoE details: 01 EoE details: 00 SoE details: 00
+ Ebus current: 0[mA]
+ only LRD/LWR:0
+
+Slave:3
+ Name:Hans Robot
+ Output size: 512bits
+ Input size: 512bits
+ State: 4
+ Delay: 1180[ns]
+ Has DC: 1
+ DCParentport:1
+ Activeports:1.1.0.0
+ Configured address: 1003
+ Man: 0000001a ID: 50440200 Rev: 05132016
+ SM0 A:1000 L: 256 F:00010036 Type:1
+ SM1 A:1200 L: 256 F:00010032 Type:2
+ SM2 A:1400 L:  64 F:00010034 Type:3
+ SM3 A:1800 L:  64 F:00010030 Type:4
+ FMMU0 Ls:00000080 Ll:  64 Lsb:0 Leb:7 Ps:1400 Psb:0 Ty:02 Act:01
+ FMMU1 Ls:00000168 Ll:  64 Lsb:0 Leb:7 Ps:1800 Psb:0 Ty:01 Act:01
+ FMMUfunc 0:1 1:2 2:0 3:0
+ MBX length wr: 256 rd: 256 MBX protocols : 0c
+ CoE details: 0f FoE details: 01 EoE details: 00 SoE details: 00
+ Ebus current: 0[mA]
+ only LRD/LWR:0
+
+Slave:4
+ Name:F2838x CPU1 EtherCAT Slave
+ Output size: 320bits
+ Input size: 272bits
+ State: 4
+ Delay: 1800[ns]
+ Has DC: 1
+ DCParentport:1
+ Activeports:1.0.0.0
+ Configured address: 1004
+ Man: 00201911 ID: 10003201 Rev: 00000001
+ SM0 A:1000 L: 512 F:00010026 Type:1
+ SM1 A:1200 L: 512 F:00010022 Type:2
+ SM2 A:1400 L:  34 F:00010064 Type:4
+ SM3 A:1700 L:  40 F:00010020 Type:3
+ FMMU0 Ls:000000c0 Ll:  40 Lsb:0 Leb:7 Ps:1700 Psb:0 Ty:02 Act:01
+ FMMU1 Ls:000001a8 Ll:  34 Lsb:0 Leb:7 Ps:1400 Psb:0 Ty:01 Act:01
+ FMMUfunc 0:1 1:2 2:3 3:0
+ MBX length wr: 512 rd: 512 MBX protocols : 04
+ CoE details: 23 FoE details: 00 EoE details: 00 SoE details: 00
+ Ebus current: 0[mA]
+ only LRD/LWR:0
+End slaveinfo, close socket
+End program

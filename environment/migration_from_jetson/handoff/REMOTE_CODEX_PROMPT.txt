@@ -1,0 +1,13 @@
+现在你已经在新电脑 catas（/home/catas）上接管本次迁移。先完整阅读
+/home/catas/migration_from_jetson/handoff/REMOTE_CODEX_HANDOFF.md，然后调用
+get_goal 检查活动 goal；若不存在，就用该文档中的原 objective 创建 goal。
+继续执行全部剩余任务直到真实完成，并保持 goal active，不能把 PRoot 的
+无运动构建验证冒充真实 EtherCAT 就绪。
+
+Noetic apt 安装已经由另一进程在新机独立运行，先只读检查，不要启动第二个
+apt；完成后继续构建、测试、文档、完整 ros2 镜像归档、真实运行环境准备和
+最终逐项审计。严格遵守机器人安全门槛，未获用户当次明确授权绝不发运动命令。
+
+Jetson 端接下来会按用户要求删除本机 Codex sessions/memory 和旧 provider
+密钥，不要依赖回连 Jetson 恢复这些内容。所有后续结果、会话和记录只写在
+新电脑。请立即开始工作，并先向用户报告你已在 catas 接管。

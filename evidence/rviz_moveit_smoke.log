@@ -1,0 +1,210 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[33m[WARN] [1785982802.891894860]: Shutdown request received.[0m
+[33m[WARN] [1785982802.896419722]: Reason given for shutdown: [[/robot_state_publisher] Reason: new node registered with same name][0m
+[33m[WARN] [1785982802.916633919]: MoveGroup launched with ~default_planning_pipeline '' not configured in ~planning_pipelines[0m
+[33m[WARN] [1785982802.917856956]: Falling back to using the move_group node's namespace (deprecated Melodic behavior).[0m
+[0m[INFO] [1785982802.936476254]: Loading robot model 'elfin5'...[0m
+[0m[INFO] [1785982802.936508658]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+[33m[WARN] [1785982803.238579353]: IK plugin for group 'elfin_arm' relies on deprecated API. Please implement initialize(RobotModel, ...).[0m
+[0m[INFO] [1785982803.240072851]: IK Using joint elfin_link1 -3.14 3.14[0m
+[0m[INFO] [1785982803.240083197]: IK Using joint elfin_link2 -2.35 2.35[0m
+[0m[INFO] [1785982803.240087119]: IK Using joint elfin_link3 -2.61 2.61[0m
+[0m[INFO] [1785982803.240091046]: IK Using joint elfin_link4 -3.14 3.14[0m
+[0m[INFO] [1785982803.240094846]: IK Using joint elfin_link5 -2.56 2.56[0m
+[0m[INFO] [1785982803.240098245]: IK Using joint elfin_link6 -3.14 3.14[0m
+[0m[INFO] [1785982803.240103331]: Looking in common namespaces for param name: elfin_arm/position_only_ik[0m
+[0m[INFO] [1785982803.240686080]: Looking in common namespaces for param name: elfin_arm/solve_type[0m
+[0m[INFO] [1785982803.241215781]: Using solve type Speed[0m
+[0m[INFO] [1785982803.880449064]: Publishing maintained planning scene on 'monitored_planning_scene'[0m
+[0m[INFO] [1785982803.881717110]: Listening to 'joint_states' for joint states[0m
+[0m[INFO] [1785982803.883121212]: Listening to '/attached_collision_object' for attached collision objects[0m
+[0m[INFO] [1785982803.883134344]: Starting planning scene monitor[0m
+[0m[INFO] [1785982803.883741442]: Listening to '/planning_scene'[0m
+[0m[INFO] [1785982803.883748538]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.[0m
+[0m[INFO] [1785982803.884312000]: Listening to '/collision_object'[0m
+[0m[INFO] [1785982803.884867818]: Listening to '/planning_scene_world' for planning scene world geometry[0m
+[0m[INFO] [1785982805.129505176]: Loading planning pipeline ''[0m
+[0m[INFO] [1785982805.158524760]: Using planning interface 'OMPL'[0m
+[0m[INFO] [1785982805.161542078]: Param 'default_workspace_bounds' was not set. Using default value: 10[0m
+[0m[INFO] [1785982805.161874826]: Param 'start_state_max_bounds_error' was set to 0.1[0m
+[0m[INFO] [1785982805.162297654]: Param 'start_state_max_dt' was not set. Using default value: 0.5[0m
+[0m[INFO] [1785982805.162699394]: Param 'start_state_max_dt' was not set. Using default value: 0.5[0m
+[0m[INFO] [1785982805.163097849]: Param 'jiggle_fraction' was set to 0.05[0m
+[0m[INFO] [1785982805.163436605]: Param 'max_sampling_attempts' was not set. Using default value: 100[0m
+[0m[INFO] [1785982805.163468530]: Using planning request adapter 'Add Time Parameterization'[0m
+[0m[INFO] [1785982805.163482798]: Using planning request adapter 'Fix Workspace Bounds'[0m
+[0m[INFO] [1785982805.163493416]: Using planning request adapter 'Fix Start State Bounds'[0m
+[0m[INFO] [1785982805.163503746]: Using planning request adapter 'Fix Start State In Collision'[0m
+[0m[INFO] [1785982805.163511566]: Using planning request adapter 'Fix Start State Path Constraints'[0m
+[0m[INFO] [1785982805.175126829]: Fake controller 'fake_elfin_arm_controller' with joints [ elfin_joint1 elfin_joint2 elfin_joint3 elfin_joint4 elfin_joint5 elfin_joint6 ][0m
+[0m[INFO] [1785982805.175535445]: Fake controller 'fake_elfin_end_group_controller' with joints [ ][0m
+[0m[INFO] [1785982805.175765628]: Returned 2 controllers in list[0m
+[0m[INFO] [1785982805.186355131]: Trajectory execution is managing controllers[0m
+[0m[INFO] [1785982805.186372347]: MoveGroup debug mode is OFF[0m
+[96mLoading 'move_group/ApplyPlanningSceneService'...
+[0m[96mLoading 'move_group/ClearOctomapService'...
+[0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[0m[96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[0m[96mLoading 'move_group/MoveGroupPickPlaceAction'...
+[0m[96mLoading 'move_group/MoveGroupPlanService'...
+[0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[0m[0m[INFO] [1785982805.255370382]: 
+
+********************************************************
+* MoveGroup using: 
+*     - ApplyPlanningSceneService
+*     - ClearOctomapService
+*     - CartesianPathService
+*     - ExecuteTrajectoryAction
+*     - GetPlanningSceneService
+*     - KinematicsService
+*     - MoveAction
+*     - PickPlaceAction
+*     - MotionPlanService
+*     - QueryPlannersService
+*     - StateValidationService
+********************************************************
+[0m
+[0m[INFO] [1785982805.255625167]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner[0m
+[0m[INFO] [1785982805.255642707]: MoveGroup context initialization complete[0m
+[92m
+You can start planning now!
+
+[0m... logging to /home/catas/.ros/log/6c2deaf8-9130-11f1-a230-c4c6e661f1ab/roslaunch-catas-25625.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/catas/ros_ws/src/elfin_robot/elfin5_moveit_config/launch/demo.launch
+[1mstarted roslaunch server http://127.0.0.1:38247/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joint_state_publisher/rate: 30
+ * /joint_state_publisher/use_gui: False
+ * /move_group/allow_trajectory_execution: True
+ * /move_group/controller_list: [{'name': 'fake_e...
+ * /move_group/elfin_arm/longest_valid_segment_fraction: 0.05
+ * /move_group/elfin_arm/planner_configs: ['SBLkConfigDefau...
+ * /move_group/elfin_arm/projection_evaluator: joints(elfin_join...
+ * /move_group/elfin_end_group/planner_configs: ['SBLkConfigDefau...
+ * /move_group/jiggle_fraction: 0.05
+ * /move_group/max_safe_path_cost: 1
+ * /move_group/moveit_controller_manager: moveit_fake_contr...
+ * /move_group/moveit_manage_controllers: True
+ * /move_group/planner_configs/BKPIECEkConfigDefault/border_fraction: 0.9
+ * /move_group/planner_configs/BKPIECEkConfigDefault/failed_expansion_score_factor: 0.5
+ * /move_group/planner_configs/BKPIECEkConfigDefault/min_valid_path_fraction: 0.5
+ * /move_group/planner_configs/BKPIECEkConfigDefault/range: 0.0
+ * /move_group/planner_configs/BKPIECEkConfigDefault/type: geometric::BKPIECE
+ * /move_group/planner_configs/ESTkConfigDefault/goal_bias: 0.05
+ * /move_group/planner_configs/ESTkConfigDefault/range: 0.0
+ * /move_group/planner_configs/ESTkConfigDefault/type: geometric::EST
+ * /move_group/planner_configs/KPIECEkConfigDefault/border_fraction: 0.9
+ * /move_group/planner_configs/KPIECEkConfigDefault/failed_expansion_score_factor: 0.5
+ * /move_group/planner_configs/KPIECEkConfigDefault/goal_bias: 0.05
+ * /move_group/planner_configs/KPIECEkConfigDefault/min_valid_path_fraction: 0.5
+ * /move_group/planner_configs/KPIECEkConfigDefault/range: 0.0
+ * /move_group/planner_configs/KPIECEkConfigDefault/type: geometric::KPIECE
+ * /move_group/planner_configs/LBKPIECEkConfigDefault/border_fraction: 0.9
+ * /move_group/planner_configs/LBKPIECEkConfigDefault/min_valid_path_fraction: 0.5
+ * /move_group/planner_configs/LBKPIECEkConfigDefault/range: 0.0
+ * /move_group/planner_configs/LBKPIECEkConfigDefault/type: geometric::LBKPIECE
+ * /move_group/planner_configs/PRMkConfigDefault/max_nearest_neighbors: 10
+ * /move_group/planner_configs/PRMkConfigDefault/type: geometric::PRM
+ * /move_group/planner_configs/PRMstarkConfigDefault/type: geometric::PRMstar
+ * /move_group/planner_configs/RRTConnectkConfigDefault/range: 0.0
+ * /move_group/planner_configs/RRTConnectkConfigDefault/type: geometric::RRTCon...
+ * /move_group/planner_configs/RRTkConfigDefault/goal_bias: 0.05
+ * /move_group/planner_configs/RRTkConfigDefault/range: 0.0
+ * /move_group/planner_configs/RRTkConfigDefault/type: geometric::RRT
+ * /move_group/planner_configs/RRTstarkConfigDefault/delay_collision_checking: 1
+ * /move_group/planner_configs/RRTstarkConfigDefault/goal_bias: 0.05
+ * /move_group/planner_configs/RRTstarkConfigDefault/range: 0.0
+ * /move_group/planner_configs/RRTstarkConfigDefault/type: geometric::RRTstar
+ * /move_group/planner_configs/SBLkConfigDefault/range: 0.0
+ * /move_group/planner_configs/SBLkConfigDefault/type: geometric::SBL
+ * /move_group/planner_configs/TRRTkConfigDefault/frountierNodeRatio: 0.1
+ * /move_group/planner_configs/TRRTkConfigDefault/frountier_threshold: 0.0
+ * /move_group/planner_configs/TRRTkConfigDefault/goal_bias: 0.05
+ * /move_group/planner_configs/TRRTkConfigDefault/init_temperature: 10e-6
+ * /move_group/planner_configs/TRRTkConfigDefault/k_constant: 0.0
+ * /move_group/planner_configs/TRRTkConfigDefault/max_states_failed: 10
+ * /move_group/planner_configs/TRRTkConfigDefault/min_temperature: 10e-10
+ * /move_group/planner_configs/TRRTkConfigDefault/range: 0.0
+ * /move_group/planner_configs/TRRTkConfigDefault/temp_change_factor: 2.0
+ * /move_group/planner_configs/TRRTkConfigDefault/type: geometric::TRRT
+ * /move_group/planning_plugin: ompl_interface/OM...
+ * /move_group/planning_scene_monitor/publish_geometry_updates: True
+ * /move_group/planning_scene_monitor/publish_planning_scene: True
+ * /move_group/planning_scene_monitor/publish_state_updates: True
+ * /move_group/planning_scene_monitor/publish_transforms_updates: True
+ * /move_group/request_adapters: default_planner_r...
+ * /move_group/sensors: []
+ * /move_group/start_state_max_bounds_error: 0.1
+ * /move_group/trajectory_execution/allowed_execution_duration_scaling: 4.0
+ * /move_group/trajectory_execution/allowed_goal_duration_margin: 0.5
+ * /move_group/trajectory_execution/allowed_start_tolerance: 0.01
+ * /move_group/trajectory_execution/execution_duration_monitoring: False
+ * /robot_description: <?xml version="1....
+ * /robot_description_kinematics/elfin_arm/kinematics_solver: trac_ik_kinematic...
+ * /robot_description_kinematics/elfin_arm/kinematics_solver_search_resolution: 0.005
+ * /robot_description_kinematics/elfin_arm/kinematics_solver_timeout: 0.05
+ * /robot_description_planning/joint_limits/elfin_joint1/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint1/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint1/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint1/max_velocity: 1.57
+ * /robot_description_planning/joint_limits/elfin_joint2/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint2/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint2/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint2/max_velocity: 1.57
+ * /robot_description_planning/joint_limits/elfin_joint3/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint3/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint3/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint3/max_velocity: 1.57
+ * /robot_description_planning/joint_limits/elfin_joint4/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint4/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint4/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint4/max_velocity: 1.57
+ * /robot_description_planning/joint_limits/elfin_joint5/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint5/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint5/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint5/max_velocity: 1.57
+ * /robot_description_planning/joint_limits/elfin_joint6/has_acceleration_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint6/has_velocity_limits: True
+ * /robot_description_planning/joint_limits/elfin_joint6/max_acceleration: 12.56
+ * /robot_description_planning/joint_limits/elfin_joint6/max_velocity: 1.57
+ * /robot_description_planning/shape_transform_cache_lookup_wait_time: 0.1
+ * /robot_description_semantic: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /source_list: ['/move_group/fak...
+
+NODES
+  /
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    move_group (moveit_ros_move_group/move_group)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/home/catas/ros_ws/src/elfin_robot/elfin5_moveit_config/launch/demo.launch http://127.0.0.1:11311
+[1mprocess[joint_state_publisher-1]: started with pid [26009][0m
+[1mprocess[robot_state_publisher-2]: started with pid [26010][0m
+[1mprocess[move_group-3]: started with pid [26011][0m
+[1m[robot_state_publisher-2] process has finished cleanly
+log file: /home/catas/.ros/log/6c2deaf8-9130-11f1-a230-c4c6e661f1ab/robot_state_publisher-2*.log[0m
+[robot_state_publisher-2] restarting process
+[1mprocess[robot_state_publisher-2]: started with pid [26189][0m
+[move_group-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[joint_state_publisher-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
