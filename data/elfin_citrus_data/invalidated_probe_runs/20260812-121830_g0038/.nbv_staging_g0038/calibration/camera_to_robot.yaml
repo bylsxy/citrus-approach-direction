@@ -1,0 +1,43 @@
+configured: true
+quality_passed: true
+mount: eye_in_hand
+parent_frame: elfin_end_link
+child_frame: camera_link
+translation_m:
+- 0.1359090798275013
+- -0.04741087488766123
+- 0.09265926747066378
+quaternion_xyzw:
+- 0.6818131922966574
+- -0.01474974569551318
+- 0.730368020096802
+- 0.038415765410002814
+calibration_method: opencv_park_charuco_rgbd
+calibration_date: '2026-08-11T08:00:13'
+camera_serial: '234222302617'
+camera_device_type: d455
+sample_count: 16
+fit_sample_count: 13
+holdout_sample_count: 3
+motion_diversity:
+  translation_span_m: 0.7591980275918375
+  rotation_span_deg: 150.57988139456364
+  rotation_vector_rank: 3
+fit_error:
+  translation_rms_m: 0.0023685005943625227
+  translation_max_m: 0.003768489741719851
+  rotation_rms_deg: 0.8795502741294756
+  rotation_max_deg: 1.4669478621787855
+holdout_error:
+  translation_rms_m: 0.002957191250796148
+  translation_max_m: 0.00328080736906267
+  rotation_rms_deg: 1.2072363591253101
+  rotation_max_deg: 1.6889985958845324
+source_samples_file: /home/catas/elfin_citrus_data/calibration/dashboard_d455_eye_in_hand_20260811-074913/samples.yaml
+note: Installed after quality and camera-serial validation; tool TCP remains distinct
+  from this eye-in-hand extrinsic.
+installed_at: '2026-08-11T08:00:13'
+installed_by: eye_in_hand_calibrator
+source_candidate: /home/catas/elfin_citrus_data/calibration/dashboard_d455_eye_in_hand_20260811-074913/camera_to_robot_candidate.yaml
+previous_live_sha256: 6e6d50b8ce77643499e9eafdb1daa03a8fe46d08bba80411455dcecc72509d68
+backup_path: /home/catas/ros_ws/src/elfin_vision/config/backups/camera_to_robot.20260811-080013.6e6d50b8ce77.yaml
